@@ -1,0 +1,13 @@
+D:\Cosas facultad\PAV1\Trabajo Practico\Trabajo Practico\bin\Debug\Trabajo Practico.exe.config
+D:\Cosas facultad\PAV1\Trabajo Practico\Trabajo Practico\bin\Debug\Trabajo Practico.exe
+D:\Cosas facultad\PAV1\Trabajo Practico\Trabajo Practico\bin\Debug\Trabajo Practico.pdb
+D:\Cosas facultad\PAV1\Trabajo Practico\Trabajo Practico\obj\Debug\Trabajo Practico.csproj.AssemblyReference.cache
+D:\Cosas facultad\PAV1\Trabajo Practico\Trabajo Practico\obj\Debug\Trabajo Practico.csproj.SuggestedBindingRedirects.cache
+D:\Cosas facultad\PAV1\Trabajo Practico\Trabajo Practico\obj\Debug\Trabajo_Practico.LoginForm.resources
+D:\Cosas facultad\PAV1\Trabajo Practico\Trabajo Practico\obj\Debug\Trabajo_Practico.Properties.Resources.resources
+D:\Cosas facultad\PAV1\Trabajo Practico\Trabajo Practico\obj\Debug\Trabajo Practico.csproj.GenerateResource.cache
+D:\Cosas facultad\PAV1\Trabajo Practico\Trabajo Practico\obj\Debug\Trabajo Practico.csproj.CoreCompileInputs.cache
+D:\Cosas facultad\PAV1\Trabajo Practico\Trabajo Practico\obj\Debug\Trabajo Practico.exe
+D:\Cosas facultad\PAV1\Trabajo Practico\Trabajo Practico\obj\Debug\Trabajo Practico.pdb
+D:\Cosas facultad\PAV1\Trabajo Practico\Trabajo Practico\obj\Debug\Trabajo_Practico.Formularios.PrincipalForm.resources
+D:\Cosas facultad\PAV1\Trabajo Practico\Trabajo Practico\obj\Debug\Trabajo_Practico.Formularios.NewUsuarioForm.resources
