@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Trabajo_Practico.Clases;
+using Trabajo_Practico.Formularios.ABMC;
 
 namespace Trabajo_Practico.Formularios
 {
@@ -25,6 +26,18 @@ namespace Trabajo_Practico.Formularios
         private void PrincipalForm_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void empleadosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Empleados ventanaEmpleados = new Empleados();
+            ventanaEmpleados.Show();
+        }
+
+        private void clientesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Clientes ventanaClientes = new Clientes();
+            ventanaClientes.Show();
         }
     }
 }

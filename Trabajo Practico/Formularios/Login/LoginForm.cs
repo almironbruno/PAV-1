@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using Trabajo_Practico.Clases;
 using Trabajo_Practico.Formularios;
+using System.Data.SqlClient;
 
 namespace Trabajo_Practico
 {
@@ -55,6 +56,44 @@ namespace Trabajo_Practico
 
             nuevoUsuarioVtn.Show();
             this.Hide();
+        }
+        private bool ValidarUsuario(string nombreDeUsuario, string password)
+        {
+            string cadenaConexion = System.Configuration.ConfigurationManager.AppSettings["CadenaBD"];
+            SqlConnection cn = new SqlConnection(cadenaConexion);
+            try
+            {
+                SqlCommand cmd = new SqlCommand();
+                string consulta = "SELECT * FROM usuarios U WHERE U.nombreUsuario LIKE @nombreUsu AND U.password LIKE @pass";
+                cmd.Parameters.Clear();
+                cmd.Parameters.AddWithValue("@nombreusu", nombreDeUsuario);
+                cmd.Parameters.AddWithValue("@pass", password);
+                cmd.CommandType = CommandType.Text;
+                cmd.CommandText = consulta;
+                cn.Open();
+                cmd.Connection = cn;
+                DataTable tabla = new DataTable();
+                SqlDataAdapter da = new SqlDataAdapter(cmd);
+                da.Fill(tabla);
+
+                if (tabla.Rows.Count == 1)
+                {
+                    return true;
+                }
+                else
+                {
+                    return false;
+                }
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+            finally 
+            {
+                cn.Close();
+            }
         }
     }
 }
