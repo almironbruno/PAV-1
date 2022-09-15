@@ -16,11 +16,10 @@ namespace Trabajo_Practico.Formularios
     {
 
         //Seteo que reciba al usuario que se conectó como parametro
-        public PrincipalForm(Usuario usuarioGenerico)
+        public PrincipalForm()
         {
             InitializeComponent();
-            lblUsr.Text = "Usuario Conectado: " + usuarioGenerico.NombreDeUsuario;
-            lblUsr.Visible = true;
+            
         }
 
         private void PrincipalForm_Load(object sender, EventArgs e)
@@ -38,6 +37,19 @@ namespace Trabajo_Practico.Formularios
         {
             Clientes ventanaClientes = new Clientes();
             ventanaClientes.Show();
+        }
+
+        private void autosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Autos ventanaAutos = new Autos();
+            ventanaAutos.Show();
+        }
+
+        private void marcaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Marcas ventanaMarcas = new Marcas();
+            ventanaMarcas.Show();
+
         }
     }
 }

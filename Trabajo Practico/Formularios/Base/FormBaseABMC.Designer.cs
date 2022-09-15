@@ -115,7 +115,7 @@
             this.lbl_advertencia.TabIndex = 7;
             this.lbl_advertencia.Text = "Debe seleccionar uno para eliminar o actualizar";
             // 
-            // FormBaseAMBC
+            // FormBaseABMC
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -123,9 +123,10 @@
             this.Controls.Add(this.lbl_advertencia);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.lbl_titulo);
-            this.Name = "FormBaseAMBC";
+            this.Name = "FormBaseABMC";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormBaseAMBC";
+            this.Load += new System.EventHandler(this.FormBaseABMC_Load);
             this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();

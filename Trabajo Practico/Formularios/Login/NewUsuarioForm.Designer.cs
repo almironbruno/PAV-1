@@ -35,10 +35,11 @@
             this.label5 = new System.Windows.Forms.Label();
             this.txtNomNewUsu = new System.Windows.Forms.TextBox();
             this.txtApeNewUsu = new System.Windows.Forms.TextBox();
-            this.txtCorrNewUsu = new System.Windows.Forms.TextBox();
             this.txtPassNewUsu = new System.Windows.Forms.TextBox();
             this.txtRepPassNewUsu = new System.Windows.Forms.TextBox();
             this.btnCrearUsuario = new System.Windows.Forms.Button();
+            this.txtCorreoNewUsu = new System.Windows.Forms.TextBox();
+            this.lblValido = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -100,17 +101,11 @@
             this.txtApeNewUsu.Size = new System.Drawing.Size(181, 20);
             this.txtApeNewUsu.TabIndex = 6;
             // 
-            // txtCorrNewUsu
-            // 
-            this.txtCorrNewUsu.Location = new System.Drawing.Point(270, 119);
-            this.txtCorrNewUsu.Name = "txtCorrNewUsu";
-            this.txtCorrNewUsu.Size = new System.Drawing.Size(181, 20);
-            this.txtCorrNewUsu.TabIndex = 7;
-            // 
             // txtPassNewUsu
             // 
             this.txtPassNewUsu.Location = new System.Drawing.Point(270, 152);
             this.txtPassNewUsu.Name = "txtPassNewUsu";
+            this.txtPassNewUsu.PasswordChar = '*';
             this.txtPassNewUsu.Size = new System.Drawing.Size(181, 20);
             this.txtPassNewUsu.TabIndex = 8;
             // 
@@ -118,27 +113,46 @@
             // 
             this.txtRepPassNewUsu.Location = new System.Drawing.Point(270, 187);
             this.txtRepPassNewUsu.Name = "txtRepPassNewUsu";
+            this.txtRepPassNewUsu.PasswordChar = '*';
             this.txtRepPassNewUsu.Size = new System.Drawing.Size(181, 20);
             this.txtRepPassNewUsu.TabIndex = 9;
             // 
             // btnCrearUsuario
             // 
-            this.btnCrearUsuario.Location = new System.Drawing.Point(270, 239);
+            this.btnCrearUsuario.Location = new System.Drawing.Point(296, 233);
             this.btnCrearUsuario.Name = "btnCrearUsuario";
             this.btnCrearUsuario.Size = new System.Drawing.Size(155, 32);
             this.btnCrearUsuario.TabIndex = 10;
             this.btnCrearUsuario.Text = "Crear Nuevo Usuario";
             this.btnCrearUsuario.UseVisualStyleBackColor = true;
+            this.btnCrearUsuario.Click += new System.EventHandler(this.btnCrearUsuario_Click);
+            // 
+            // txtCorreoNewUsu
+            // 
+            this.txtCorreoNewUsu.Location = new System.Drawing.Point(270, 118);
+            this.txtCorreoNewUsu.Name = "txtCorreoNewUsu";
+            this.txtCorreoNewUsu.Size = new System.Drawing.Size(181, 20);
+            this.txtCorreoNewUsu.TabIndex = 11;
+            // 
+            // lblValido
+            // 
+            this.lblValido.AutoSize = true;
+            this.lblValido.Location = new System.Drawing.Point(461, 120);
+            this.lblValido.Name = "lblValido";
+            this.lblValido.Size = new System.Drawing.Size(94, 13);
+            this.lblValido.TabIndex = 12;
+            this.lblValido.Text = "Valido o No Valido";
             // 
             // NewUsuarioForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(608, 398);
+            this.Controls.Add(this.lblValido);
+            this.Controls.Add(this.txtCorreoNewUsu);
             this.Controls.Add(this.btnCrearUsuario);
             this.Controls.Add(this.txtRepPassNewUsu);
             this.Controls.Add(this.txtPassNewUsu);
-            this.Controls.Add(this.txtCorrNewUsu);
             this.Controls.Add(this.txtApeNewUsu);
             this.Controls.Add(this.txtNomNewUsu);
             this.Controls.Add(this.label5);
@@ -147,6 +161,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "NewUsuarioForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Registrar Nuevo Usuario";
             this.Load += new System.EventHandler(this.NewUsuarioForm_Load);
             this.ResumeLayout(false);
@@ -163,9 +178,10 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox txtNomNewUsu;
         private System.Windows.Forms.TextBox txtApeNewUsu;
-        private System.Windows.Forms.TextBox txtCorrNewUsu;
         private System.Windows.Forms.TextBox txtPassNewUsu;
         private System.Windows.Forms.TextBox txtRepPassNewUsu;
         private System.Windows.Forms.Button btnCrearUsuario;
+        private System.Windows.Forms.TextBox txtCorreoNewUsu;
+        private System.Windows.Forms.Label lblValido;
     }
 }

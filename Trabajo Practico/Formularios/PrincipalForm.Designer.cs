@@ -122,12 +122,14 @@
             this.autosToolStripMenuItem.Name = "autosToolStripMenuItem";
             this.autosToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.autosToolStripMenuItem.Text = "Autos";
+            this.autosToolStripMenuItem.Click += new System.EventHandler(this.autosToolStripMenuItem_Click);
             // 
             // marcaToolStripMenuItem
             // 
             this.marcaToolStripMenuItem.Name = "marcaToolStripMenuItem";
             this.marcaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.marcaToolStripMenuItem.Text = "Marcas";
+            this.marcaToolStripMenuItem.Click += new System.EventHandler(this.marcaToolStripMenuItem_Click);
             // 
             // nombreComercialToolStripMenuItem
             // 

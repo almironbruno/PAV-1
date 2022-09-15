@@ -10,13 +10,18 @@ namespace Trabajo_Practico.Clases
     public class Usuario
     {
         private string NombreUsu;
+        private string ApellidoUsu;
         private string PassUsu;
+        private string EmailUsu;
 
         //Constructor
-        public Usuario(string nombreUsuario, string password)
+        public Usuario(string nombreUsuario, string apellidoUsu ,string password, string email)
         {
             NombreUsu = nombreUsuario;
+            ApellidoUsu = apellidoUsu;
             PassUsu = password;
+            EmailUsu = email;
+            
         }
 
         // Set y Get NombreUSU
@@ -27,6 +32,12 @@ namespace Trabajo_Practico.Clases
 
         }
 
+        public string ApellidoUsuario
+        {
+            get => ApellidoUsu;
+            set => ApellidoUsu = value;     
+
+        }
         // Set y Get PassUSU
         public string Password
         {
@@ -34,6 +45,14 @@ namespace Trabajo_Practico.Clases
             set => PassUsu = value;
 
         }
+
+        public string EmailUsuario
+        {
+            get => EmailUsu;
+            set => EmailUsu = value;
+        }
+
+        
 
 
     }
