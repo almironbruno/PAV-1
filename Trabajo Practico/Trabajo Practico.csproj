@@ -34,6 +34,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -46,11 +47,50 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Clases\BackEnd\BE_Acceso_Datos.cs" />
+    <Compile Include="Clases\BackEnd\ValidarEmail.cs" />
+    <Compile Include="Clases\BackEnd\NegocioUsuarios\NE_usuarios.cs" />
     <Compile Include="Clases\Usuario.cs" />
-    <Compile Include="Formularios\LoginForm.cs">
+    <Compile Include="Formularios\ABMC\Clientes.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Formularios\LoginForm.Designer.cs">
+    <Compile Include="Formularios\ABMC\Clientes.Designer.cs">
+      <DependentUpon>Clientes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\ABMC\Empleados.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\ABMC\Empleados.Designer.cs">
+      <DependentUpon>Empleados.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\ABMC\Autos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\ABMC\Autos.Designer.cs">
+      <DependentUpon>Autos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\ABMC\Marcas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\ABMC\Marcas.Designer.cs">
+      <DependentUpon>Marcas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\ABMC\Usuarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\ABMC\Usuarios.Designer.cs">
+      <DependentUpon>Usuarios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Base\FormBaseABMC.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Base\FormBaseABMC.Designer.cs">
+      <DependentUpon>FormBaseABMC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Login\LoginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Login\LoginForm.Designer.cs">
       <DependentUpon>LoginForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Formularios\PrincipalForm.cs">
@@ -59,21 +99,33 @@
     <Compile Include="Formularios\PrincipalForm.Designer.cs">
       <DependentUpon>PrincipalForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Formularios\NewUsuarioForm.cs">
+    <Compile Include="Formularios\Login\NewUsuarioForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Formularios\NewUsuarioForm.Designer.cs">
+    <Compile Include="Formularios\Login\NewUsuarioForm.Designer.cs">
       <DependentUpon>NewUsuarioForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Formularios\LoginForm.resx">
+    <EmbeddedResource Include="Formularios\ABMC\Autos.resx">
+      <DependentUpon>Autos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\ABMC\Empleados.resx">
+      <DependentUpon>Empleados.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\ABMC\Marcas.resx">
+      <DependentUpon>Marcas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Base\FormBaseABMC.resx">
+      <DependentUpon>FormBaseABMC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Login\LoginForm.resx">
       <DependentUpon>LoginForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\PrincipalForm.resx">
       <DependentUpon>PrincipalForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Formularios\NewUsuarioForm.resx">
+    <EmbeddedResource Include="Formularios\Login\NewUsuarioForm.resx">
       <DependentUpon>NewUsuarioForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">

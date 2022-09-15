@@ -66,6 +66,7 @@
             // 
             this.txtContraUsu.Location = new System.Drawing.Point(222, 166);
             this.txtContraUsu.Name = "txtContraUsu";
+            this.txtContraUsu.PasswordChar = '*';
             this.txtContraUsu.Size = new System.Drawing.Size(197, 20);
             this.txtContraUsu.TabIndex = 3;
             // 
@@ -113,6 +114,7 @@
             this.Name = "LoginForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Inicio de Sesion";
+            this.Load += new System.EventHandler(this.LoginForm_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

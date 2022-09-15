@@ -7,19 +7,17 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Trabajo_Practico.Formularios;
 
-namespace Trabajo_Practico.Formularios
+namespace Trabajo_Practico.Formularios.ABMC
 {
-    public partial class NewUsuarioForm : Form
+    public partial class Clientes : FormBaseABMC
     {
-        public NewUsuarioForm()
+        public Clientes()
         {
             InitializeComponent();
-        }
-        //Ventana de creacion de nuevos objetos del tipo Usuario
-        private void NewUsuarioForm_Load(object sender, EventArgs e)
-        {
-
+            // cambia los nombres de la ventana a cliente --Eliminar comentario despues--
+            cambiarNombre("Clientes");
         }
     }
 }
