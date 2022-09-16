@@ -51,5 +51,17 @@ namespace Trabajo_Practico.Formularios
             ventanaMarcas.Show();
 
         }
+
+        private void gamaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Gamas ventanaGamas = new Gamas();
+            ventanaGamas.Show();
+        }
+
+        private void barriosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Barrios ventanaBarrios = new Barrios();
+            ventanaBarrios.Show();
+        }
     }
 }

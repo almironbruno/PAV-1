@@ -37,6 +37,8 @@
             this.autosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.marcaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.nombreComercialToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.gamaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.barriosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.estadisticasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.empleadosToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.clientesToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
@@ -98,7 +100,9 @@
             this.clientesToolStripMenuItem,
             this.autosToolStripMenuItem,
             this.marcaToolStripMenuItem,
-            this.nombreComercialToolStripMenuItem});
+            this.nombreComercialToolStripMenuItem,
+            this.gamaToolStripMenuItem,
+            this.barriosToolStripMenuItem});
             this.reportesToolStripMenuItem.Name = "reportesToolStripMenuItem";
             this.reportesToolStripMenuItem.Size = new System.Drawing.Size(238, 20);
             this.reportesToolStripMenuItem.Text = "Altas - Bajas - Modificaciones - Consultas";
@@ -136,6 +140,20 @@
             this.nombreComercialToolStripMenuItem.Name = "nombreComercialToolStripMenuItem";
             this.nombreComercialToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.nombreComercialToolStripMenuItem.Text = "Nombre Comercial";
+            // 
+            // gamaToolStripMenuItem
+            // 
+            this.gamaToolStripMenuItem.Name = "gamaToolStripMenuItem";
+            this.gamaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.gamaToolStripMenuItem.Text = "Gamas";
+            this.gamaToolStripMenuItem.Click += new System.EventHandler(this.gamaToolStripMenuItem_Click);
+            // 
+            // barriosToolStripMenuItem
+            // 
+            this.barriosToolStripMenuItem.Name = "barriosToolStripMenuItem";
+            this.barriosToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.barriosToolStripMenuItem.Text = "Barrios";
+            this.barriosToolStripMenuItem.Click += new System.EventHandler(this.barriosToolStripMenuItem_Click);
             // 
             // estadisticasToolStripMenuItem
             // 
@@ -345,5 +363,7 @@
         private System.Windows.Forms.ToolStripMenuItem autosToolStripMenuItem3;
         private System.Windows.Forms.ToolStripMenuItem marcasToolStripMenuItem2;
         private System.Windows.Forms.ToolStripMenuItem nombreComercialToolStripMenuItem3;
+        private System.Windows.Forms.ToolStripMenuItem gamaToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem barriosToolStripMenuItem;
     }
 }
