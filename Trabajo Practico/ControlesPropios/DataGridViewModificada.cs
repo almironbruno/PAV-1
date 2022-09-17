@@ -18,10 +18,13 @@ namespace Trabajo_Practico
         }
         public void cargar(DataTable unaTabla)
         {
+            //Se carga la grilla con los datos de la tabla
             dgr_Principal.DataSource=unaTabla;
 
         }
-        public DataGridViewRow FilaSeleccionada() {
+        public DataGridViewRow FilaSeleccionada() 
+        {
+            //Retorna la fila que seleccionamos, se usa para la baja o modificacion
             return dgr_Principal.SelectedRows[0];
         
         }

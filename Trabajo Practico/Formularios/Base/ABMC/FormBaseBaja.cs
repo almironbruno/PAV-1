@@ -16,11 +16,13 @@ namespace Trabajo_Practico.Formularios.Base
         public FormBaseBaja(DataGridViewRow row)
         {
             InitializeComponent();
+            //TODO: Aca se le tiene que asignar la info del registro a borrar
             txt_Ejemplo.cargar(row.Cells[1].Value.ToString());
         }
 
         private void FormBaseBaja_Load(object sender, EventArgs e)
         {
+            //Se le cambia el texto al label del componente TextBoxCargable
             txt_Ejemplo.cambiarTexto("texto");
         }
     }

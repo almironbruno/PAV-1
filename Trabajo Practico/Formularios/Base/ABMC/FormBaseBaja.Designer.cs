@@ -35,11 +35,12 @@
             // lbl_EstaSeguro
             // 
             this.lbl_EstaSeguro.AutoSize = true;
-            this.lbl_EstaSeguro.Location = new System.Drawing.Point(97, 87);
+            this.lbl_EstaSeguro.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_EstaSeguro.Location = new System.Drawing.Point(89, 80);
             this.lbl_EstaSeguro.Name = "lbl_EstaSeguro";
-            this.lbl_EstaSeguro.Size = new System.Drawing.Size(91, 13);
+            this.lbl_EstaSeguro.Size = new System.Drawing.Size(259, 18);
             this.lbl_EstaSeguro.TabIndex = 2;
-            this.lbl_EstaSeguro.Text = "Esta seguro de eli";
+            this.lbl_EstaSeguro.Text = "Se eliminara el siguiente registro:";
             // 
             // txt_Ejemplo
             // 

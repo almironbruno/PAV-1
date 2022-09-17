@@ -19,9 +19,10 @@ namespace Trabajo_Practico.ControlesPropios
         }
         public void cargar(string tabla, string columna)
         {
+            //Se carga el combo con la tabla y la columna que se le asigna
             BE_Acceso_Datos bd = new BE_Acceso_Datos();
             DataTable tabalPrincipal =bd.Ejecutar_Select($"SELECT {columna} FROM {tabla}");
-
+  
             cmb_Cargable.DisplayMember = columna;
             cmb_Cargable.ValueMember = columna;
             cmb_Cargable.DataSource = tabalPrincipal;
@@ -29,6 +30,7 @@ namespace Trabajo_Practico.ControlesPropios
         }
         public void cambiarTexto(string texto)
         {
+            //Se le cambia el texto al label asociado
             lbl_Nombre.Text = texto;
 
         }

@@ -20,11 +20,13 @@ namespace Trabajo_Practico.ControlesPropios
 
         public void cargar(string texto)
         {
+            //Se le asigna el texto al textBox
             txt_cargable.Text= texto;   
 
         }
         public void cambiarTexto(string texto)
         {
+            //Se le cambia el nombre al label asociado
             lbl_nombre.Text = texto;
 
         }

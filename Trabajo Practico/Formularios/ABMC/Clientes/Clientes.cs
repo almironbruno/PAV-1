@@ -15,7 +15,7 @@ namespace Trabajo_Practico.Formularios.ABMC
     {
         public Clientes()
         {
-            tablaPrincipal = "clientes";
+            consultaPrincipal = "clientes";
             InitializeComponent();
             
             // cambia los nombres de la ventana a cliente --Eliminar comentario despues--

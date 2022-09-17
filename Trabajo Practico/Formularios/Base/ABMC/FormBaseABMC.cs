@@ -20,8 +20,8 @@ namespace Trabajo_Practico.Formularios
         protected string sqlInsertar;
         protected string sqlEliminar;
         protected string sqlModificar;
-        protected DataTable tabla;
-        protected string tablaPrincipal;
+        //protected DataTable tabla;
+        protected string consultaPrincipal;
         public FormBaseABMC()
         {
             InitializeComponent();
@@ -46,16 +46,17 @@ namespace Trabajo_Practico.Formularios
 
         protected void btn_Actualizar_Click(object sender, EventArgs e)
         {
-            bd.modificar(sqlModificar);
+            //bd.modificar(sqlModificar);
         }
 
         protected void btn_Buscar_Click(object sender, EventArgs e)
         {
-            bd.Ejecutar_Select(sqlConsulta);
+            //bd.Ejecutar_Select(sqlConsulta);
         }
 
         protected void btn_Eliminar_Click(object sender, EventArgs e)
         {
+            // Se crea la ventana de Baja y se le asigna la fila seleccionada del grid
             DataGridViewRow fila = dataGridViewModificada1.FilaSeleccionada();
             FormBaseBaja ventanaBaja = new FormBaseBaja(fila);
             ventanaBaja.Show();
@@ -65,7 +66,8 @@ namespace Trabajo_Practico.Formularios
 
         private void FormBaseABMC_Load(object sender, EventArgs e)
         {
-            dataGridViewModificada1.cargar(bd.Ejecutar_Select("SELECT * FROM "+tablaPrincipal));
+            //Se carga la grid cuando se carga el formulario
+            dataGridViewModificada1.cargar(bd.Ejecutar_Select(consultaPrincipal));
 
         }
 
