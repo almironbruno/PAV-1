@@ -5,19 +5,19 @@ using System.Data;
 using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
-using Trabajo_Practico.Formularios;
+using Trabajo_Practico.Formularios.Base;
 
 namespace Trabajo_Practico.Formularios.ABMC
 {
-    public partial class Marcas : Trabajo_Practico.Formularios.FormBaseABMC
+    public partial class Autos : FormBaseABMC
     {
-        public Marcas()
+        public Autos()
         {
             InitializeComponent();
-            cambiarNombre("Marcas");
+            cambiarNombre("Autos");
         }
 
-        private void Marcas_Load(object sender, EventArgs e)
+        private void Autos_Load(object sender, EventArgs e)
         {
 
         }

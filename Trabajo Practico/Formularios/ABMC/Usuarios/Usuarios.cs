@@ -5,21 +5,15 @@ using System.Data;
 using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
-using Trabajo_Practico.Formularios;
+using Trabajo_Practico.Formularios.Base;
 
 namespace Trabajo_Practico.Formularios.ABMC
 {
-    public partial class Autos : FormBaseABMC
+    public partial class Usuarios : Trabajo_Practico.Formularios.FormBaseABMC
     {
-        public Autos()
+        public Usuarios()
         {
             InitializeComponent();
-            cambiarNombre("Autos");
-        }
-
-        private void Autos_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }

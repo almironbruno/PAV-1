@@ -27,7 +27,7 @@
         /// Required method for Designer support - do not modify
         /// the contents of this method with the code editor.
         /// </summary>
-        protected void InitializeComponent()
+        private void InitializeComponent()
         {
             this.btn_Agregar = new System.Windows.Forms.Button();
             this.btn_Actualizar = new System.Windows.Forms.Button();
@@ -36,6 +36,7 @@
             this.btn_Buscar = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.lbl_advertencia = new System.Windows.Forms.Label();
+            this.dataGridViewModificada1 = new Trabajo_Practico.DataGridViewModificada();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -109,17 +110,26 @@
             // lbl_advertencia
             // 
             this.lbl_advertencia.AutoSize = true;
-            this.lbl_advertencia.Location = new System.Drawing.Point(53, 376);
+            this.lbl_advertencia.Location = new System.Drawing.Point(53, 392);
             this.lbl_advertencia.Name = "lbl_advertencia";
             this.lbl_advertencia.Size = new System.Drawing.Size(230, 13);
             this.lbl_advertencia.TabIndex = 7;
             this.lbl_advertencia.Text = "Debe seleccionar uno para eliminar o actualizar";
+            this.lbl_advertencia.Click += new System.EventHandler(this.lbl_advertencia_Click);
+            // 
+            // dataGridViewModificada1
+            // 
+            this.dataGridViewModificada1.Location = new System.Drawing.Point(56, 83);
+            this.dataGridViewModificada1.Name = "dataGridViewModificada1";
+            this.dataGridViewModificada1.Size = new System.Drawing.Size(546, 306);
+            this.dataGridViewModificada1.TabIndex = 8;
             // 
             // FormBaseABMC
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.dataGridViewModificada1);
             this.Controls.Add(this.lbl_advertencia);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.lbl_titulo);
@@ -141,7 +151,7 @@
         protected System.Windows.Forms.Label lbl_titulo;
         protected System.Windows.Forms.Button btn_Buscar;
         protected System.Windows.Forms.Panel panel1;
-        protected System.Windows.Forms.Label lbl_advertencia;
-        
+        private System.Windows.Forms.Label lbl_advertencia;
+        protected DataGridViewModificada dataGridViewModificada1;
     }
 }

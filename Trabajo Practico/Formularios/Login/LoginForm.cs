@@ -28,6 +28,7 @@ namespace Trabajo_Practico
         {
 
             NE_usuarios usuario = new NE_usuarios();
+
             if (ValidarEmail.ValidarCorreo(txtEmailUsu.Text) == true)
             {
                 //Expresion Programada
