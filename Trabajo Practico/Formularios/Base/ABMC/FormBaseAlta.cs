@@ -7,17 +7,19 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using Trabajo_Practico.Formularios;
 
-namespace Trabajo_Practico.Formularios
+namespace Trabajo_Practico.Formularios.Base
 {
-    public partial class Empleados : FormBaseABMC
+    public partial class FormBaseAlta : FormBaseBotones
     {
-        public Empleados()
+        public FormBaseAlta()
         {
             InitializeComponent();
-            // cambia los nombres de la ventana a cliente --Eliminar comentario despues--
-            cambiarNombre("Empleados");
+        }
+
+        private void comboCargable1_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

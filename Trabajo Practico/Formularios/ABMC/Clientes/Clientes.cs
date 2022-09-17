@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using Trabajo_Practico.Formularios;
+using Trabajo_Practico.Formularios.Base;
 
 namespace Trabajo_Practico.Formularios.ABMC
 {
@@ -15,9 +15,13 @@ namespace Trabajo_Practico.Formularios.ABMC
     {
         public Clientes()
         {
+            tablaPrincipal = "clientes";
             InitializeComponent();
+            
             // cambia los nombres de la ventana a cliente --Eliminar comentario despues--
             cambiarNombre("Clientes");
+            
+            
         }
     }
 }
