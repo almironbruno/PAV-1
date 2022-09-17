@@ -7,6 +7,7 @@ using System.Data.SqlClient;
 using System.Data;
 namespace Trabajo_Practico.Clases.BackEnd
 
+
 {
     public class BE_Acceso_Datos
     {

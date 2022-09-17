@@ -29,17 +29,25 @@ namespace Trabajo_Practico
 
             NE_usuarios usuario = new NE_usuarios();
 
-            //Expresion Programada
-            //if(usuario.ValidarUsuario(txtNombreUsu.Text, txtContraUsu.Text) == NE_usuarios.ResultadoValidacion.existe)
-            //{
-                PrincipalForm vtnPrincipal = new PrincipalForm();
-                vtnPrincipal.Show();
-            //    this.Hide();
-            //}
-            //else
-            //{
-            //    MessageBox.Show("Usuario Inexistente o Datos Incorrectos");
-            //}
+            if (ValidarEmail.ValidarCorreo(txtEmailUsu.Text) == true)
+            {
+                //Expresion Programada
+                if (usuario.ValidarUsuario(txtEmailUsu.Text, txtContraUsu.Text) == NE_usuarios.ResultadoValidacion.existe)
+                {
+                    PrincipalForm vtnPrincipal = new PrincipalForm();
+                    vtnPrincipal.Show();
+                    this.Hide();
+                }
+                else
+                {
+                    MessageBox.Show("Usuario Inexistente o Datos Incorrectos");
+                }
+
+            }
+            else
+            {
+                MessageBox.Show("Ingrese un email en formato valido");
+            }
 
 
         }
