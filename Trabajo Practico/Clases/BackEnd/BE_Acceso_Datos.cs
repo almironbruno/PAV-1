@@ -4,7 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Data.SqlClient;
+using System.Data;
 namespace Trabajo_Practico.Clases.BackEnd
+
 
 {
     class BE_Acceso_Datos
