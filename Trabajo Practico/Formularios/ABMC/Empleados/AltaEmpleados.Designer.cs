@@ -32,6 +32,10 @@
             this.comboCargable2 = new Trabajo_Practico.ControlesPropios.ComboCargable();
             this.SuspendLayout();
             // 
+            // btn_Aceptar
+            // 
+            this.btn_Aceptar.Click += new System.EventHandler(this.btn_Aceptar_Click_1);
+            // 
             // comboCargable1
             // 
             this.comboCargable1.Location = new System.Drawing.Point(214, 105);
@@ -56,6 +60,8 @@
             this.Name = "AltaEmpleados";
             this.Text = "AltaEmpleados";
             this.Load += new System.EventHandler(this.AltaEmpleados_Load);
+            this.Controls.SetChildIndex(this.btn_Aceptar, 0);
+            this.Controls.SetChildIndex(this.btn_Cancelar, 0);
             this.Controls.SetChildIndex(this.comboCargable1, 0);
             this.Controls.SetChildIndex(this.comboCargable2, 0);
             this.ResumeLayout(false);

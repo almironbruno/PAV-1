@@ -41,6 +41,7 @@
             this.btn_Aceptar.TabIndex = 0;
             this.btn_Aceptar.Text = "Aceptar";
             this.btn_Aceptar.UseVisualStyleBackColor = false;
+            this.btn_Aceptar.Click += new System.EventHandler(this.btn_Aceptar_Click);
             // 
             // btn_Cancelar
             // 
@@ -51,6 +52,7 @@
             this.btn_Cancelar.TabIndex = 1;
             this.btn_Cancelar.Text = "Cancelar";
             this.btn_Cancelar.UseVisualStyleBackColor = false;
+            this.btn_Cancelar.Click += new System.EventHandler(this.btn_Cancelar_Click);
             // 
             // FormBaseBotones
             // 
@@ -68,7 +70,7 @@
 
         #endregion
 
-        private System.Windows.Forms.Button btn_Aceptar;
-        private System.Windows.Forms.Button btn_Cancelar;
+        protected System.Windows.Forms.Button btn_Aceptar;
+        protected System.Windows.Forms.Button btn_Cancelar;
     }
 }

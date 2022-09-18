@@ -16,5 +16,15 @@ namespace Trabajo_Practico.Formularios.Base
         {
             InitializeComponent();
         }
+
+        protected virtual void btn_Aceptar_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        protected virtual void btn_Cancelar_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
