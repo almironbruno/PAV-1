@@ -28,6 +28,12 @@ namespace Trabajo_Practico.Formularios
             bd = new BE_Acceso_Datos();
             
         }
+        protected void cargargrilla()
+        {
+            dataGridViewModificada1.cargar(bd.Ejecutar_Select(consultaPrincipal));
+
+        }
+        
         protected void cambiarNombre(string nombre)
         {
             //Cambia los nombres de todos los componentes graficos del Form 
@@ -36,7 +42,7 @@ namespace Trabajo_Practico.Formularios
             btn_Eliminar.Text = $"Eliminar" + Environment.NewLine + nombre;
             btn_Buscar.Text= $"Buscar" + Environment.NewLine + nombre;
             btn_Agregar.Text = $"Agregar" + Environment.NewLine +nombre;
-
+            cargargrilla();
         }
 
         public virtual void btn_Agregar_Click(object sender, EventArgs e)
