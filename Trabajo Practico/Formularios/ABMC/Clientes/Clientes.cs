@@ -15,13 +15,18 @@ namespace Trabajo_Practico.Formularios.ABMC
     {
         public Clientes()
         {
-            consultaPrincipal = "clientes";
+            consultaPrincipal = "SELECT * FROM clientes";
             InitializeComponent();
             
             // cambia los nombres de la ventana a cliente --Eliminar comentario despues--
             cambiarNombre("Clientes");
             
             
+        }
+
+        private void Clientes_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

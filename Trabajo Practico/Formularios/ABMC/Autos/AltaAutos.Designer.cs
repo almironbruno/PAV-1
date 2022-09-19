@@ -1,6 +1,6 @@
-﻿namespace Trabajo_Practico.Formularios.ABMC
+﻿namespace Trabajo_Practico.Formularios.ABMC.Autos
 {
-    partial class Clientes
+    partial class AltaAutos
     {
         /// <summary>
         /// Required designer variable.
@@ -28,20 +28,17 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // Clientes
+            // AltaAutos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Name = "Clientes";
-            this.Text = "Clientes";
-            this.Load += new System.EventHandler(this.Clientes_Load);
-            this.panel1.ResumeLayout(false);
+            this.Name = "AltaAutos";
+            this.Text = "AltaAutos";
+            this.Load += new System.EventHandler(this.AltaAutos_Load);
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 

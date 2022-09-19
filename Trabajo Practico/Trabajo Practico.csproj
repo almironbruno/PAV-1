@@ -69,6 +69,12 @@
     <Compile Include="ControlesPropios\TextBoxCargable.Designer.cs">
       <DependentUpon>TextBoxCargable.cs</DependentUpon>
     </Compile>
+    <Compile Include="Formularios\ABMC\Autos\AltaAutos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\ABMC\Autos\AltaAutos.Designer.cs">
+      <DependentUpon>AltaAutos.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formularios\ABMC\Clientes\Clientes.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -169,6 +175,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ControlesPropios\TextBoxCargable.resx">
       <DependentUpon>TextBoxCargable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\ABMC\Autos\AltaAutos.resx">
+      <DependentUpon>AltaAutos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\ABMC\Autos\Autos.resx">
       <DependentUpon>Autos.cs</DependentUpon>

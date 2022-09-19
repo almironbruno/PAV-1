@@ -5,14 +5,17 @@ using System.Data;
 using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
+using Trabajo_Practico.Formularios.ABMC.Autos;
 using Trabajo_Practico.Formularios.Base;
 
-namespace Trabajo_Practico.Formularios.ABMC
+
+namespace Trabajo_Practico.Formularios
 {
     public partial class Autos : FormBaseABMC
     {
         public Autos()
         {
+            consultaPrincipal = "SELECT * FROM autos";
             InitializeComponent();
             cambiarNombre("Autos");
         }
@@ -20,6 +23,12 @@ namespace Trabajo_Practico.Formularios.ABMC
         private void Autos_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void btn_Agregar_Click_1(object sender, EventArgs e)
+        {
+            AltaAutos vtnAltaAutos = new AltaAutos();
+            vtnAltaAutos.Show();
         }
     }
 }

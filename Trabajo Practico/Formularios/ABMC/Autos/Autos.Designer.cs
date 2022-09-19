@@ -1,4 +1,4 @@
-﻿namespace Trabajo_Practico.Formularios.ABMC
+﻿namespace Trabajo_Practico.Formularios
 {
     partial class Autos
     {
@@ -30,6 +30,10 @@
         {
             this.panel1.SuspendLayout();
             this.SuspendLayout();
+            // 
+            // btn_Agregar
+            // 
+            this.btn_Agregar.Click += new System.EventHandler(this.btn_Agregar_Click_1);
             // 
             // Autos
             // 

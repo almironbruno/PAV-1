@@ -31,6 +31,9 @@ namespace Trabajo_Practico.Formularios
             ventanaAlta.Show();
         }
 
+        private void Empleados_Load(object sender, EventArgs e)
+        {
 
+        }
     }
 }
