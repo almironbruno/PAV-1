@@ -28,23 +28,13 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.lbl_Nombre = new System.Windows.Forms.Label();
             this.cmb_Cargable = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
-            // 
-            // lbl_Nombre
-            // 
-            this.lbl_Nombre.AutoSize = true;
-            this.lbl_Nombre.Location = new System.Drawing.Point(15, 12);
-            this.lbl_Nombre.Name = "lbl_Nombre";
-            this.lbl_Nombre.Size = new System.Drawing.Size(77, 13);
-            this.lbl_Nombre.TabIndex = 0;
-            this.lbl_Nombre.Text = "NombreCombo";
             // 
             // cmb_Cargable
             // 
             this.cmb_Cargable.FormattingEnabled = true;
-            this.cmb_Cargable.Location = new System.Drawing.Point(98, 9);
+            this.cmb_Cargable.Location = new System.Drawing.Point(3, 3);
             this.cmb_Cargable.Name = "cmb_Cargable";
             this.cmb_Cargable.Size = new System.Drawing.Size(121, 21);
             this.cmb_Cargable.TabIndex = 1;
@@ -54,17 +44,13 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.cmb_Cargable);
-            this.Controls.Add(this.lbl_Nombre);
             this.Name = "ComboCargable";
             this.Size = new System.Drawing.Size(226, 36);
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.Label lbl_Nombre;
         private System.Windows.Forms.ComboBox cmb_Cargable;
     }
 }

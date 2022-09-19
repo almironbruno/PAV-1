@@ -28,10 +28,10 @@ namespace Trabajo_Practico.ControlesPropios
             cmb_Cargable.DataSource = tabalPrincipal;
         
         }
-        public void cambiarTexto(string texto)
+        
+
+        private void lbl_Nombre_Click(object sender, EventArgs e)
         {
-            //Se le cambia el texto al label asociado
-            lbl_Nombre.Text = texto;
 
         }
     }
