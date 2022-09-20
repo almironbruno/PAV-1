@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using System.Data;
 using Trabajo_Practico.Clases;
 using System.Windows.Forms;
+using Trabajo_Practico.Clases.Entidades;
 
 namespace Trabajo_Practico.Clases.BackEnd
 {
@@ -18,10 +19,10 @@ namespace Trabajo_Practico.Clases.BackEnd
 
 
 
-        public ResultadoValidacion ValidarUsuario(string nombre, string password)
+        public ResultadoValidacion ValidarUsuario(string email, string password)
         {
             //Consulta para validar Usuarios
-            string consulta = @"SELECT * FROM usuarios WHERE nombre  = '" + nombre + "'" + " AND password = '" +password+ "'";
+            string consulta = @"SELECT * FROM usuarios WHERE email  = '" + email + "'" + " AND password = '" +password+ "'";
             
             //Creamos un objeto BE con un memotecnico _BD
             
@@ -91,6 +92,9 @@ namespace Trabajo_Practico.Clases.BackEnd
             
 
         }
+
+
+
 
 
 

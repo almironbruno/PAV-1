@@ -26,20 +26,31 @@ namespace Trabajo_Practico
         //Validar btn inicioSesion
         private void btnIniciarSS_Click(object sender, EventArgs e)
         {
+            PrincipalForm vtnPrincipal = new PrincipalForm();
+            vtnPrincipal.Show();
+            this.Hide();
 
-            NE_usuarios usuario = new NE_usuarios();
+            /*/ NE_usuarios usuario = new NE_usuarios();
 
-            //Expresion Programada
-            if(usuario.ValidarUsuario(txtNombreUsu.Text, txtContraUsu.Text) == NE_usuarios.ResultadoValidacion.existe)
-            {
-                PrincipalForm vtnPrincipal = new PrincipalForm();
-                vtnPrincipal.Show();
-                this.Hide();
-            }
-            else
-            {
-                MessageBox.Show("Usuario Inexistente o Datos Incorrectos");
-            }
+             if (ValidarEmail.ValidarCorreo(txtEmailUsu.Text) == true)
+             {
+                 //Expresion Programada
+                 if (usuario.ValidarUsuario(txtEmailUsu.Text, txtContraUsu.Text) == NE_usuarios.ResultadoValidacion.existe)
+                 {
+                     PrincipalForm vtnPrincipal = new PrincipalForm();
+                     vtnPrincipal.Show();
+                     this.Hide();
+                 }
+                 else
+                 {
+                     MessageBox.Show("Usuario Inexistente o Datos Incorrectos");
+                 }
+
+             }
+             else
+             {
+                 MessageBox.Show("Ingrese un email en formato valido");
+             }/*/
 
 
         }

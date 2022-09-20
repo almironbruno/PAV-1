@@ -30,7 +30,7 @@
         {
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.txtNombreUsu = new System.Windows.Forms.TextBox();
+            this.txtEmailUsu = new System.Windows.Forms.TextBox();
             this.txtContraUsu = new System.Windows.Forms.TextBox();
             this.btnIniciarSS = new System.Windows.Forms.Button();
             this.btnRegUsu = new System.Windows.Forms.Button();
@@ -40,11 +40,11 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(106, 120);
+            this.label1.Location = new System.Drawing.Point(115, 116);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(101, 13);
+            this.label1.Size = new System.Drawing.Size(92, 13);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Nombre de Usuario:";
+            this.label1.Text = "Email de Usuario: ";
             // 
             // label2
             // 
@@ -55,12 +55,12 @@
             this.label2.TabIndex = 1;
             this.label2.Text = "Contraseña:";
             // 
-            // txtNombreUsu
+            // txtEmailUsu
             // 
-            this.txtNombreUsu.Location = new System.Drawing.Point(222, 113);
-            this.txtNombreUsu.Name = "txtNombreUsu";
-            this.txtNombreUsu.Size = new System.Drawing.Size(197, 20);
-            this.txtNombreUsu.TabIndex = 2;
+            this.txtEmailUsu.Location = new System.Drawing.Point(222, 113);
+            this.txtEmailUsu.Name = "txtEmailUsu";
+            this.txtEmailUsu.Size = new System.Drawing.Size(197, 20);
+            this.txtEmailUsu.TabIndex = 2;
             // 
             // txtContraUsu
             // 
@@ -108,7 +108,7 @@
             this.Controls.Add(this.btnRegUsu);
             this.Controls.Add(this.btnIniciarSS);
             this.Controls.Add(this.txtContraUsu);
-            this.Controls.Add(this.txtNombreUsu);
+            this.Controls.Add(this.txtEmailUsu);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "LoginForm";
@@ -124,7 +124,7 @@
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox txtNombreUsu;
+        private System.Windows.Forms.TextBox txtEmailUsu;
         private System.Windows.Forms.TextBox txtContraUsu;
         private System.Windows.Forms.Button btnIniciarSS;
         private System.Windows.Forms.Button btnRegUsu;
