@@ -77,12 +77,6 @@
     <Compile Include="Formularios\ABMC\Autos\AltaAutos.Designer.cs">
       <DependentUpon>AltaAutos.cs</DependentUpon>
     </Compile>
-    <Compile Include="Formularios\ABMC\Autos\BajaAutos.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Formularios\ABMC\Autos\BajaAutos.Designer.cs">
-      <DependentUpon>BajaAutos.cs</DependentUpon>
-    </Compile>
     <Compile Include="Formularios\ABMC\Clientes\Clientes.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -189,9 +183,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\ABMC\Autos\Autos.resx">
       <DependentUpon>Autos.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Formularios\ABMC\Autos\BajaAutos.resx">
-      <DependentUpon>BajaAutos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\ABMC\Clientes\Clientes.resx">
       <DependentUpon>Clientes.cs</DependentUpon>
