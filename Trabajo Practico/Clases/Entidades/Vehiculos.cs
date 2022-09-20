@@ -35,8 +35,8 @@ namespace Trabajo_Practico.Clases.Entidades
 
         public string mostrar(Vehiculos vehi)
         {
-            string salida = "Cod.Serie: " + cod_serie_fabrica + " - Nom.Comercial: " + nombreComercial + " - Año.Fab: " + año_Fabricacion +
-                " - Condicion: " + condicion + " - Nro.Chas: " + nro_Chasis + " - Nro.Motor: " + nro_Motor + " - Patente: " + patente + ".";
+            string salida = "Cod.Serie: " + vehi.cod_serie_fabrica + " - Nom.Comercial: " + vehi.nombreComercial + " - Año.Fab: " + vehi.año_Fabricacion +
+                " - Condicion: " + vehi.condicion + " - Nro.Chas: " + vehi.nro_Chasis + " - Nro.Motor: " + vehi.nro_Motor + " - Patente: " + vehi.patente + ".";
             return salida;
         }
     }
