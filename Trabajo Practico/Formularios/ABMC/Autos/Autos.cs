@@ -30,5 +30,21 @@ namespace Trabajo_Practico.Formularios
             AltaAutos vtnAltaAutos = new AltaAutos();
             vtnAltaAutos.Show();
         }
+
+        private void dataGridViewModificada1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn_Actualizar_Click_1(object sender, EventArgs e)
+        {
+            cargargrilla();
+        }
+
+        private void btn_Eliminar_Click_1(object sender, EventArgs e)
+        {
+            BajaAutos vtnBaja = new BajaAutos();
+            vtnBaja.Show();
+        }
     }
 }

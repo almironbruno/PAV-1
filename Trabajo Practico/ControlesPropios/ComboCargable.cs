@@ -34,5 +34,10 @@ namespace Trabajo_Practico.ControlesPropios
         {
 
         }
+
+        private void cmb_Cargable_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

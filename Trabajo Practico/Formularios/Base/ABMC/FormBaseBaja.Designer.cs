@@ -32,6 +32,10 @@
             this.txt_Ejemplo = new Trabajo_Practico.ControlesPropios.TextBoxCargable();
             this.SuspendLayout();
             // 
+            // btn_Aceptar
+            // 
+            this.btn_Aceptar.Click += new System.EventHandler(this.btn_Aceptar_Click_1);
+            // 
             // lbl_EstaSeguro
             // 
             this.lbl_EstaSeguro.AutoSize = true;
@@ -59,6 +63,8 @@
             this.Name = "FormBaseBaja";
             this.Text = "FormBaseBaja";
             this.Load += new System.EventHandler(this.FormBaseBaja_Load);
+            this.Controls.SetChildIndex(this.btn_Aceptar, 0);
+            this.Controls.SetChildIndex(this.btn_Cancelar, 0);
             this.Controls.SetChildIndex(this.lbl_EstaSeguro, 0);
             this.Controls.SetChildIndex(this.txt_Ejemplo, 0);
             this.ResumeLayout(false);

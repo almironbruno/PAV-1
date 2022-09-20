@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using System.Data;
 using Trabajo_Practico.Clases;
 using System.Windows.Forms;
+using Trabajo_Practico.Clases.Entidades;
 
 namespace Trabajo_Practico.Clases.BackEnd
 {
@@ -91,6 +92,9 @@ namespace Trabajo_Practico.Clases.BackEnd
             
 
         }
+
+
+
 
 
 

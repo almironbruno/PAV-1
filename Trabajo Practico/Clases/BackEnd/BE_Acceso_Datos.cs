@@ -5,6 +5,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Data.SqlClient;
 using System.Data;
+using System.Windows.Forms;
+
 namespace Trabajo_Practico.Clases.BackEnd
 
 
@@ -59,6 +61,9 @@ namespace Trabajo_Practico.Clases.BackEnd
         
         } 
 
+
+        
+
         public void Insertar(string SqlInsertar)
         {
             conectar();
@@ -73,8 +78,17 @@ namespace Trabajo_Practico.Clases.BackEnd
         }
         public void Eliminar(string sqlEliminar) 
         {
+            int flag = 0;
             cmd.CommandText = sqlEliminar;
-            cmd.ExecuteNonQuery();
+            flag = cmd.ExecuteNonQuery();
+            if (flag == 1)
+            {
+                MessageBox.Show("Eliminado Exitosamente. Actualice para Visualizar los cambios");    
+            }
+            else
+            {
+                MessageBox.Show("Vehiculo Inexistente para ser Eliminado.");
+            }
         }
         public void modificar(string sqlModificar)
         {

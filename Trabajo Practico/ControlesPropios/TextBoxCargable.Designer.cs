@@ -40,6 +40,7 @@
             this.lbl_nombre.Size = new System.Drawing.Size(45, 13);
             this.lbl_nombre.TabIndex = 0;
             this.lbl_nombre.Text = "nombre:";
+            this.lbl_nombre.Click += new System.EventHandler(this.lbl_nombre_Click);
             // 
             // txt_cargable
             // 
@@ -64,7 +65,7 @@
 
         #endregion
 
-        private System.Windows.Forms.Label lbl_nombre;
-        private System.Windows.Forms.TextBox txt_cargable;
+        public System.Windows.Forms.Label lbl_nombre;
+        public System.Windows.Forms.TextBox txt_cargable;
     }
 }

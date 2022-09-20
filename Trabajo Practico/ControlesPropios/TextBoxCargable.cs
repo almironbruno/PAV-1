@@ -30,5 +30,10 @@ namespace Trabajo_Practico.ControlesPropios
             lbl_nombre.Text = texto;
 
         }
+
+        public void lbl_nombre_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
