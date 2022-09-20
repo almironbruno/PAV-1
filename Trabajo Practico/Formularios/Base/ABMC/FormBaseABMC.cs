@@ -64,8 +64,8 @@ namespace Trabajo_Practico.Formularios
         {
             // Se crea la ventana de Baja y se le asigna la fila seleccionada del grid
             DataGridViewRow fila = dataGridViewModificada1.FilaSeleccionada();
-            FormBaseBaja ventanaBaja = new FormBaseBaja(fila);
-            ventanaBaja.Show();
+            
+           
 
            //bd.Eliminar(sqlEliminar);
         }

@@ -20,8 +20,10 @@ namespace Trabajo_Practico.Formularios.ABMC.Empleados
 
         private void AltaEmpleados_Load(object sender, EventArgs e)
         {
-            comboCargable1.cargar("empleados", "nombre");
-            comboCargable2.cargar("empleados","apellido");
+            //Acordate del cambio en el cmbbox, seria comboCargable1.cargar(ConsultaSql,"nombrecolumna","pk")
+
+            //comboCargable1.cargar("empleados", "nombre");
+            //comboCargable2.cargar("empleados","apellido");
         }
 
         private void btn_Aceptar_Click_1(object sender, EventArgs e)

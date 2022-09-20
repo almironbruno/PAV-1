@@ -23,8 +23,10 @@ namespace Trabajo_Practico.Formularios.ABMC.Autos
 
         private void AltaAutos_Load(object sender, EventArgs e)
         {
-            cmbCondicion.cargar("condicion", "id_condicion");
-            cmbNomComr.cargar("nombres_comerciales", "id_nombrecomercial");
+            string sqlCondicion = (@"SELECT * FROM condicion");
+            string sqlNombreComr = (@"SELECT * FROM nombres_comerciales");
+            cmbCondicion.cargar(sqlCondicion,"nombre_condicion","id_condicion");
+            cmbNomComr.cargar(sqlNombreComr,"nombre_comercial","id_nombrecomercial");
         }
 
         private void btn_Aceptar_Click_1(object sender, EventArgs e)
@@ -32,9 +34,9 @@ namespace Trabajo_Practico.Formularios.ABMC.Autos
 
         {
             string codSerie = txtCodSerieFab.Text;
-            string nombComer = cmbNomComr.cmb_Cargable.Text;
+            string nombComer = cmbNomComr.cmb_Cargable.SelectedValue.ToString();
             int añoFab = int.Parse(txtAñoFab.Text);
-            string condicion = cmbCondicion.cmb_Cargable.Text;
+            string condicion = cmbCondicion.cmb_Cargable.SelectedValue.ToString();
             int nroChasis = int.Parse(txtNroChasis.Text);
             int nroMotor = int.Parse(txtNroMotor.Text);
             string patente = txtPatente.Text;
@@ -46,7 +48,10 @@ namespace Trabajo_Practico.Formularios.ABMC.Autos
             NE_Autos Vehiculo = new NE_Autos();
 
             Vehiculo.AgregarAuto(nvoAuto);
+            
+            
 
+            
 
 
 
