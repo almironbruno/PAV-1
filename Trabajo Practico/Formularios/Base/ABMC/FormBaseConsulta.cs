@@ -25,5 +25,10 @@ namespace Trabajo_Practico.Formularios.Base
             
 
         }
+
+        private void FormBaseConsulta_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

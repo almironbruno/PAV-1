@@ -20,10 +20,15 @@ namespace Trabajo_Practico.Formularios.Base
             txt_Ejemplo.cargar(row.Cells[1].Value.ToString());
         }
 
-        private void FormBaseBaja_Load(object sender, EventArgs e)
+        public void FormBaseBaja_Load(object sender, EventArgs e)
         {
             //Se le cambia el texto al label del componente TextBoxCargable
             txt_Ejemplo.cambiarTexto("texto");
+        }
+
+        private void btn_Aceptar_Click_1(object sender, EventArgs e)
+        {
+
         }
     }
 }

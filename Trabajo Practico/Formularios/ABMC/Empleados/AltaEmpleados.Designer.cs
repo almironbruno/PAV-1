@@ -42,6 +42,7 @@
             this.comboCargable1.Name = "comboCargable1";
             this.comboCargable1.Size = new System.Drawing.Size(226, 36);
             this.comboCargable1.TabIndex = 2;
+            this.comboCargable1.Load += new System.EventHandler(this.comboCargable1_Load);
             // 
             // comboCargable2
             // 

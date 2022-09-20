@@ -48,8 +48,10 @@
             this.ClientSize = new System.Drawing.Size(741, 452);
             this.Controls.Add(this.lbl_buscar);
             this.Name = "FormBaseConsulta";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormBaseConsulta";
+            this.Load += new System.EventHandler(this.FormBaseConsulta_Load);
+            this.Controls.SetChildIndex(this.btn_Aceptar, 0);
+            this.Controls.SetChildIndex(this.btn_Cancelar, 0);
             this.Controls.SetChildIndex(this.lbl_buscar, 0);
             this.ResumeLayout(false);
             this.PerformLayout();

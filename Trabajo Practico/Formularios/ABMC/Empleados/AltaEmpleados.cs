@@ -28,5 +28,10 @@ namespace Trabajo_Practico.Formularios.ABMC.Empleados
         {
 
         }
+
+        private void comboCargable1_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

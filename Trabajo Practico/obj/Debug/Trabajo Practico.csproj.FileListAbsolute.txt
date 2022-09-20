@@ -97,3 +97,4 @@ D:\TP PAV\PAV-1\Trabajo Practico\obj\Debug\Trabajo Practico.exe
 D:\TP PAV\PAV-1\Trabajo Practico\obj\Debug\Trabajo Practico.pdb
 D:\TP PAV\PAV-1\Trabajo Practico\obj\Debug\Trabajo_Practico.Formularios.ABMC.Autos.AltaAutos.resources
 D:\TP PAV\PAV-1\Trabajo Practico\obj\Debug\Trabajo_Practico.Formularios.Autos.resources
+D:\TP PAV\PAV-1\Trabajo Practico\obj\Debug\Trabajo_Practico.Formularios.ABMC.Autos.BajaAutos.resources

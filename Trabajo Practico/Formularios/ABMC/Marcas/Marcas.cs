@@ -13,6 +13,7 @@ namespace Trabajo_Practico.Formularios.ABMC
     {
         public Marcas()
         {
+            consultaPrincipal = "SELECT * FROM marcas";
             InitializeComponent();
             cambiarNombre("Marcas");
         }

@@ -35,5 +35,10 @@ namespace Trabajo_Practico.Formularios
         {
 
         }
+
+        private void btn_Eliminar_Click_1(object sender, EventArgs e)
+        {
+
+        }
     }
 }
