@@ -9,6 +9,8 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using Trabajo_Practico.Clases;
 using Trabajo_Practico.Formularios.ABMC;
+using Trabajo_Practico.Formularios.ABMC.Barrios;
+using Trabajo_Practico.Formularios.ABMC.Gamas;
 
 namespace Trabajo_Practico.Formularios
 {

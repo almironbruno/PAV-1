@@ -77,6 +77,12 @@
     <Compile Include="Formularios\ABMC\Autos\AltaAutos.Designer.cs">
       <DependentUpon>AltaAutos.cs</DependentUpon>
     </Compile>
+    <Compile Include="Formularios\ABMC\Barrios\Barrios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\ABMC\Barrios\Barrios.Designer.cs">
+      <DependentUpon>Barrios.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formularios\ABMC\Clientes\Clientes.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -101,7 +107,12 @@
     <Compile Include="Formularios\ABMC\Autos\Autos.Designer.cs">
       <DependentUpon>Autos.cs</DependentUpon>
     </Compile>
-
+    <Compile Include="Formularios\ABMC\Gamas\Gamas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\ABMC\Gamas\Gamas.Designer.cs">
+      <DependentUpon>Gamas.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formularios\ABMC\Marcas\Marcas.cs">
       <SubType>Form</SubType>
     </Compile>
