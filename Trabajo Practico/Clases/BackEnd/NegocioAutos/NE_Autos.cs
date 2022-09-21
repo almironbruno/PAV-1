@@ -38,7 +38,7 @@ namespace Trabajo_Practico.Clases.BackEnd.NegocioAutos
 
         public void BorrarAuto(string patente)
         {
-            string sqlBorrar = "DELETE FROM autos WHERE patente";
+            string sqlBorrar = "DELETE FROM autos WHERE patente = '"+ patente +"'";
             _BD.Eliminar(sqlBorrar);
         }
     }

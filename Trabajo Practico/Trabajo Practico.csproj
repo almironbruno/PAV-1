@@ -49,8 +49,10 @@
   <ItemGroup>
     <Compile Include="Clases\BackEnd\BE_Acceso_Datos.cs" />
     <Compile Include="Clases\BackEnd\NegocioAutos\NE_Autos.cs" />
+    <Compile Include="Clases\BackEnd\NegocioMarcas\NE_Marcas.cs" />
     <Compile Include="Clases\BackEnd\ValidarEmail.cs" />
     <Compile Include="Clases\BackEnd\NegocioUsuarios\NE_usuarios.cs" />
+    <Compile Include="Clases\Entidades\Marca.cs" />
     <Compile Include="Clases\Entidades\Vehiculos.cs" />
     <Compile Include="Clases\Entidades\Usuario.cs" />
     <Compile Include="ControlesPropios\ComboCargable.cs">
@@ -100,6 +102,12 @@
     </Compile>
     <Compile Include="Formularios\ABMC\Autos\Autos.Designer.cs">
       <DependentUpon>Autos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\ABMC\Marcas\AltaMarcas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\ABMC\Marcas\AltaMarcas.Designer.cs">
+      <DependentUpon>AltaMarcas.cs</DependentUpon>
     </Compile>
     <Compile Include="Formularios\ABMC\Marcas\Marcas.cs">
       <SubType>Form</SubType>
@@ -192,6 +200,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\ABMC\Empleados\Empleados.resx">
       <DependentUpon>Empleados.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\ABMC\Marcas\AltaMarcas.resx">
+      <DependentUpon>AltaMarcas.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\ABMC\Marcas\Marcas.resx">
       <DependentUpon>Marcas.cs</DependentUpon>
