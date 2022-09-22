@@ -70,7 +70,7 @@ namespace Trabajo_Practico.Formularios
                 NE_Autos borrarAuto = new NE_Autos();
                 borrarAuto.BorrarAuto(patente);
 
-                cargargrilla();
+                //cargargrilla();
             }
             else
             {

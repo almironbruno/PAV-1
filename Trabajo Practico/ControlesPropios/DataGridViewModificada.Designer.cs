@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.dgr_Principal = new System.Windows.Forms.DataGridView();
             ((System.ComponentModel.ISupportInitialize)(this.dgr_Principal)).BeginInit();
             this.SuspendLayout();
@@ -38,14 +39,24 @@
             this.dgr_Principal.AllowUserToResizeColumns = false;
             this.dgr_Principal.AllowUserToResizeRows = false;
             this.dgr_Principal.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgr_Principal.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dgr_Principal.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgr_Principal.Location = new System.Drawing.Point(3, 3);
+            this.dgr_Principal.Location = new System.Drawing.Point(0, 0);
+            this.dgr_Principal.MultiSelect = false;
             this.dgr_Principal.Name = "dgr_Principal";
             this.dgr_Principal.ReadOnly = true;
             this.dgr_Principal.RowHeadersVisible = false;
             this.dgr_Principal.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgr_Principal.Size = new System.Drawing.Size(540, 298);
+            this.dgr_Principal.Size = new System.Drawing.Size(540, 306);
             this.dgr_Principal.TabIndex = 0;
+           
             // 
             // DataGridViewModificada
             // 
@@ -53,7 +64,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.dgr_Principal);
             this.Name = "DataGridViewModificada";
-            this.Size = new System.Drawing.Size(546, 306);
+            this.Size = new System.Drawing.Size(549, 306);
             ((System.ComponentModel.ISupportInitialize)(this.dgr_Principal)).EndInit();
             this.ResumeLayout(false);
 
@@ -61,6 +72,6 @@
 
         #endregion
 
-        private System.Windows.Forms.DataGridView dgr_Principal;
+        public System.Windows.Forms.DataGridView dgr_Principal;
     }
 }

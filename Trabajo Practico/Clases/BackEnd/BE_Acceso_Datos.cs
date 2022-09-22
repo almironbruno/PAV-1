@@ -106,6 +106,26 @@ namespace Trabajo_Practico.Clases.BackEnd
             cmd.CommandText = sqlModificar;
             cmd.ExecuteNonQuery();
         }
+        public void ejecutar(string sql)
+        {
+            // Intenta ejecutar la operacion
+            //try {
+
+                conectar();
+                cmd.CommandText = sql;
+                cmd.ExecuteNonQuery();
+                desconectar();
+                MessageBox.Show("Se ha realizado con exito la operacion!");
+            //}
+            // En caso de que falle
+            //catch(Exception e) 
+            //{
+              //  MessageBox.Show("No se pudo realizar la operacion \n " +
+                //    "Motivo: "+ e.Message.ToString());
+            
+           // }
+
+        }
 
 
         

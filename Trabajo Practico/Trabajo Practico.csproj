@@ -49,9 +49,13 @@
   <ItemGroup>
     <Compile Include="Clases\BackEnd\BE_Acceso_Datos.cs" />
     <Compile Include="Clases\BackEnd\NegocioAutos\NE_Autos.cs" />
+    <Compile Include="Clases\BackEnd\NegocioClientes\NE_Clientes.cs" />
+    <Compile Include="Clases\BackEnd\NegocioEmpleados\NE_Empleados.cs" />
     <Compile Include="Clases\BackEnd\NegocioMarcas\NE_Marcas.cs" />
     <Compile Include="Clases\BackEnd\ValidarEmail.cs" />
     <Compile Include="Clases\BackEnd\NegocioUsuarios\NE_usuarios.cs" />
+    <Compile Include="Clases\Entidades\Clientes.cs" />
+    <Compile Include="Clases\Entidades\Empleados.cs" />
     <Compile Include="Clases\Entidades\Marca.cs" />
     <Compile Include="Clases\Entidades\Vehiculos.cs" />
     <Compile Include="Clases\Entidades\Usuario.cs" />
@@ -79,11 +83,23 @@
     <Compile Include="Formularios\ABMC\Autos\AltaAutos.Designer.cs">
       <DependentUpon>AltaAutos.cs</DependentUpon>
     </Compile>
+    <Compile Include="Formularios\ABMC\Clientes\AltaClientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\ABMC\Clientes\AltaClientes.Designer.cs">
+      <DependentUpon>AltaClientes.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formularios\ABMC\Clientes\Clientes.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Formularios\ABMC\Clientes\Clientes.Designer.cs">
       <DependentUpon>Clientes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\ABMC\Clientes\ModificacionCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\ABMC\Clientes\ModificacionCliente.Designer.cs">
+      <DependentUpon>ModificacionCliente.cs</DependentUpon>
     </Compile>
     <Compile Include="Formularios\ABMC\Empleados\AltaEmpleados.cs">
       <SubType>Form</SubType>
@@ -192,8 +208,14 @@
     <EmbeddedResource Include="Formularios\ABMC\Autos\Autos.resx">
       <DependentUpon>Autos.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\ABMC\Clientes\AltaClientes.resx">
+      <DependentUpon>AltaClientes.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Formularios\ABMC\Clientes\Clientes.resx">
       <DependentUpon>Clientes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\ABMC\Clientes\ModificacionCliente.resx">
+      <DependentUpon>ModificacionCliente.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\ABMC\Empleados\AltaEmpleados.resx">
       <DependentUpon>AltaEmpleados.cs</DependentUpon>

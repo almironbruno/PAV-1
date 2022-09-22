@@ -40,8 +40,8 @@
             // 
             // btn_Cancelar
             // 
-            this.btn_Cancelar.Location = new System.Drawing.Point(339, 330);
-            this.btn_Cancelar.Click += new System.EventHandler(this.btn_Cancelar_Click_1);
+            //this.btn_Cancelar.Location = new System.Drawing.Point(339, 330);
+            //this.btn_Cancelar.Click += new System.EventHandler(this.btn_Cancelar_Click_1);
             // 
             // label1
             // 
@@ -82,7 +82,7 @@
             this.Text = "AltaMarcas";
             this.Load += new System.EventHandler(this.AltaMarcas_Load);
             this.Controls.SetChildIndex(this.btn_Aceptar, 0);
-            this.Controls.SetChildIndex(this.btn_Cancelar, 0);
+            //this.Controls.SetChildIndex(this.btn_Cancelar, 0);
             this.Controls.SetChildIndex(this.label1, 0);
             this.Controls.SetChildIndex(this.txtMarcaRegs, 0);
             this.Controls.SetChildIndex(this.label2, 0);
