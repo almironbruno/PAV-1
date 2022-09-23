@@ -62,7 +62,7 @@
             this.Text = "AltaEmpleados";
             this.Load += new System.EventHandler(this.AltaEmpleados_Load);
             this.Controls.SetChildIndex(this.btn_Aceptar, 0);
-            this.Controls.SetChildIndex(this.btn_Cancelar, 0);
+            //this.Controls.SetChildIndex(this.btn_Cancelar, 0);
             this.Controls.SetChildIndex(this.comboCargable1, 0);
             this.Controls.SetChildIndex(this.comboCargable2, 0);
             this.ResumeLayout(false);

@@ -58,20 +58,20 @@ namespace Trabajo_Practico.Formularios.ABMC.Autos
 
         }
 
-        private void btn_LimpiarCampos_Click(object sender, EventArgs e)
-        {
-            txtCodSerieFab.Text = "";
-            cmbNomComr.cmb_Cargable.Text = "";
-            txtAñoFab.Text = "";
-            cmbCondicion.cmb_Cargable.Text = "";
-            txtNroChasis.Text = "";
-            txtNroMotor.Text = "";
-            txtPatente.Text = "";
-        }
+        // protected override void btn_LimpiarCampos_Click(object sender, EventArgs e)
+        //{
+        //    txtCodSerieFab.Text = "";
+        //    cmbNomComr.cmb_Cargable.Text = "";
+        //    txtAñoFab.Text = "";
+        //    cmbCondicion.cmb_Cargable.Text = "";
+        //    txtNroChasis.Text = "";
+        //    txtNroMotor.Text = "";
+        //    txtPatente.Text = "";
+        //}
 
-        private void btn_Cancelar_Click_1(object sender, EventArgs e)
-        {
-            this.Close();
-        }
+        //private void btn_Cancelar_Click_1(object sender, EventArgs e)
+        //{
+        //    this.Close();
+        //}
     }
 }

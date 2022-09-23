@@ -27,7 +27,7 @@
         /// Required method for Designer support - do not modify
         /// the contents of this method with the code editor.
         /// </summary>
-        public void InitializeComponent()
+        private void InitializeComponent()
         {
             this.btn_Agregar = new System.Windows.Forms.Button();
             this.btn_Actualizar = new System.Windows.Forms.Button();
@@ -136,7 +136,7 @@
             this.Name = "FormBaseABMC";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormBaseAMBC";
-            //this.Load += new System.EventHandler(this.FormBaseABMC_Load);
+            this.Activated += new System.EventHandler(this.FormBaseABMC_Activated);
             this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();

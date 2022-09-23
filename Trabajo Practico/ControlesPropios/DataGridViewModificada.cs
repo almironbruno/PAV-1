@@ -15,6 +15,8 @@ namespace Trabajo_Practico
         public DataGridViewModificada()
         {
             InitializeComponent();
+            
+            dgr_Principal.DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
         }
         public void cargar(DataTable unaTabla)
         {
@@ -28,5 +30,7 @@ namespace Trabajo_Practico
             return dgr_Principal.SelectedRows[0];
         
         }
+
+      
     }
 }
