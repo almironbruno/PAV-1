@@ -10,19 +10,19 @@ namespace Trabajo_Practico.Clases.Entidades
     {
         public string cod_serie_fabrica { get; set; }
 
-        public string nombreComercial { get; set; }
+        public int nombreComercial { get; set; }
 
-        public int año_Fabricacion { get; set; }
+        public string año_Fabricacion { get; set; }
 
-        public string condicion { get; set; }   
+        public int condicion { get; set; }   
 
-        public int nro_Chasis { get; set; } 
+        public string nro_Chasis { get; set; } 
 
-        public int nro_Motor { get; set; }  
+        public string nro_Motor { get; set; }  
 
         public string patente { get; set; }
 
-        public Vehiculos(string cod_serie_fabrica, string nombreComercial, int año_Fabricacion, string condicion, int nro_Chasis, int nro_Motor, string patente)
+        public Vehiculos(string cod_serie_fabrica, int nombreComercial, string año_Fabricacion, int condicion, string nro_Chasis, string nro_Motor, string patente)
         {
             this.cod_serie_fabrica = cod_serie_fabrica;
             this.nombreComercial = nombreComercial;
@@ -33,12 +33,13 @@ namespace Trabajo_Practico.Clases.Entidades
             this.patente = patente;
         }
 
-        public string mostrar(Vehiculos vehi)
+        /*/public string mostrar(Vehiculos vehi)
         {
             string salida = "Cod.Serie: " + vehi.cod_serie_fabrica + " - Nom.Comercial: " + vehi.nombreComercial + " - Año.Fab: " + vehi.año_Fabricacion +
                 " - Condicion: " + vehi.condicion + " - Nro.Chas: " + vehi.nro_Chasis + " - Nro.Motor: " + vehi.nro_Motor + " - Patente: " + vehi.patente + ".";
             return salida;
         }
+        /*/
     }
 
     

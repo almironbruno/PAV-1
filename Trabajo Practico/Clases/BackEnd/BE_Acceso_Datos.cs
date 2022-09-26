@@ -61,6 +61,25 @@ namespace Trabajo_Practico.Clases.BackEnd
         
         } 
 
+        //Sirve para buscar strings de FK y devolver su equivalencia de PK
+        public int SelectNumeros(string sqlBuscar)
+        {
+            int numero = 0;
+            conectar();
+            
+            cmd.CommandText = sqlBuscar;
+            numero = (int)cmd.ExecuteScalar();
+            desconectar();
+            if(numero > 0)
+            {
+                return numero;
+            }
+            else
+            {
+                return 0;
+            }
+            
+        }
 
         
 
@@ -101,10 +120,22 @@ namespace Trabajo_Practico.Clases.BackEnd
             }
             desconectar();
         }
+
         public void modificar(string sqlModificar)
         {
+            conectar();
+            int flag = 0;
             cmd.CommandText = sqlModificar;
-            cmd.ExecuteNonQuery();
+            flag = cmd.ExecuteNonQuery();
+            if (flag == 1)
+            {
+                MessageBox.Show("Modificacion Exitosamente.");
+            }
+            else
+            {
+                MessageBox.Show("Modificacion Errona");
+            }
+            desconectar();
         }
         public void ejecutar(string sql)
         {
