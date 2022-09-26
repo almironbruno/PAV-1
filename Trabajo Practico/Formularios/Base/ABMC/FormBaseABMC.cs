@@ -9,6 +9,8 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using Trabajo_Practico.Clases.BackEnd;
 using Trabajo_Practico.Formularios.Base;
+using Trabajo_Practico.ControlesPropios;
+using Trabajo_Practico.Clases.BackEnd.NegocioAutos;
 
 namespace Trabajo_Practico.Formularios
 {
@@ -81,5 +83,14 @@ namespace Trabajo_Practico.Formularios
         {
 
         }
+
+        private void FormBaseABMC_Activated(object sender, EventArgs e)
+        {
+            dataGridViewModificada1.cargar(bd.Ejecutar_Select(consultaPrincipal));
+        }
+
+
+
+        
     }
 }

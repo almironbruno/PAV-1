@@ -64,7 +64,7 @@
             this.Text = "FormBaseBaja";
             this.Load += new System.EventHandler(this.FormBaseBaja_Load);
             this.Controls.SetChildIndex(this.btn_Aceptar, 0);
-            this.Controls.SetChildIndex(this.btn_Cancelar, 0);
+            //this.Controls.SetChildIndex(this.btn_Cancelar, 0);
             this.Controls.SetChildIndex(this.lbl_EstaSeguro, 0);
             this.Controls.SetChildIndex(this.txt_Ejemplo, 0);
             this.ResumeLayout(false);
