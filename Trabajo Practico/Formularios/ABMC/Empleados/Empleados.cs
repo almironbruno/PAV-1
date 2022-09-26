@@ -40,5 +40,10 @@ namespace Trabajo_Practico.Formularios
         {
 
         }
+
+        private void btn_Actualizar_Click_1(object sender, EventArgs e)
+        {
+
+        }
     }
 }

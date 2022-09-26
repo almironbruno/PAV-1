@@ -50,7 +50,6 @@ D:\TP PAV\PAV-1\Trabajo Practico\obj\Debug\Trabajo Practico.csproj.SuggestedBind
 D:\TP PAV\PAV-1\Trabajo Practico\obj\Debug\Trabajo_Practico.ControlesPropios.ComboCargable.resources
 D:\TP PAV\PAV-1\Trabajo Practico\obj\Debug\Trabajo_Practico.DataGridViewModificada.resources
 D:\TP PAV\PAV-1\Trabajo Practico\obj\Debug\Trabajo_Practico.ControlesPropios.TextBoxCargable.resources
-D:\TP PAV\PAV-1\Trabajo Practico\obj\Debug\Trabajo_Practico.Formularios.ABMC.Clientes.resources
 D:\TP PAV\PAV-1\Trabajo Practico\obj\Debug\Trabajo_Practico.Formularios.ABMC.Empleados.AltaEmpleados.resources
 D:\TP PAV\PAV-1\Trabajo Practico\obj\Debug\Trabajo_Practico.Formularios.Empleados.resources
 D:\TP PAV\PAV-1\Trabajo Practico\obj\Debug\Trabajo_Practico.Formularios.FormBaseABMC.resources
@@ -102,3 +101,7 @@ C:\Users\Almir\Desktop\PAV\PAV-1-tp\Trabajo Practico\obj\Debug\Trabajo Practico.
 C:\Users\Almir\Desktop\PAV\PAV-1-tp\Trabajo Practico\obj\Debug\Trabajo_Practico.Formularios.ABMC.Clientes.AltaClientes.resources
 C:\Users\Almir\Desktop\PAV\PAV-1-tp\Trabajo Practico\obj\Debug\Trabajo_Practico.Formularios.ABMC.Clientes.Clientes.resources
 C:\Users\Almir\Desktop\PAV\PAV-1-tp\Trabajo Practico\obj\Debug\Trabajo_Practico.Formularios.ABMC.Clientes.ModificacionCliente.resources
+D:\TP PAV\PAV-1\Trabajo Practico\obj\Debug\Trabajo_Practico.Formularios.ABMC.Clientes.AltaClientes.resources
+D:\TP PAV\PAV-1\Trabajo Practico\obj\Debug\Trabajo_Practico.Formularios.ABMC.Clientes.Clientes.resources
+D:\TP PAV\PAV-1\Trabajo Practico\obj\Debug\Trabajo_Practico.Formularios.ABMC.Clientes.ModificacionCliente.resources
+D:\TP PAV\PAV-1\Trabajo Practico\obj\Debug\Trabajo_Practico.Formularios.ABMC.Autos.ModificarAuto.resources

@@ -36,10 +36,59 @@ namespace Trabajo_Practico.Clases.BackEnd.NegocioAutos
         }
 
 
+        //recibe el valor de string condicion, y devuelve la pk para poder relacionarlo , el objeto lo trabaja como int.
+        public int ConsultarCondicion(string condicion)
+        {
+            int rta = 0;
+            string Consulta = "SELECT id_condicion FROM condicion WHERE nombre_condicion = '"+condicion+"'";
+            if (_BD.SelectNumeros(Consulta) > 0)
+            {
+                rta = _BD.SelectNumeros(Consulta);
+            }
+            else
+            {
+                rta = 0;
+            }
+            return rta;
+            
+        }
+
+        //recibe el valor de string nombre_comercial, y devuelve la pk para poder relacionarlo , el objeto lo trabaja como int.
+        public int ConsultarNombreComer(string nombreComercial)
+        {
+            int rta = 0;
+            string Consulta = "SELECT id_nombrecomercial FROM nombres_comerciales WHERE nombre_comercial = '" + nombreComercial + "'";
+            if (_BD.SelectNumeros(Consulta) > 0)
+            {
+                rta = _BD.SelectNumeros(Consulta);
+            }
+            else
+            {
+                rta = 0;
+            }
+            return rta;
+
+        }
+
+
         public void BorrarAuto(string patente)
         {
             string sqlBorrar = "DELETE FROM autos WHERE patente = '"+ patente +"'";
             _BD.Eliminar(sqlBorrar);
         }
+
+        //Relacionar el auto modificado , con algun dato que sirva como antecedente para vincularlo, en este caso la patente vieja.
+        public void ModificarAuto(Vehiculos autoMod,string patentevieja)
+        {
+            string sqlInsertar = $"UPDATE autos SET cod_serie_fabrica = '"+autoMod.cod_serie_fabrica+"', id_nombrecomercial = '"+autoMod.nombreComercial+"', año_fabricacion = '"+autoMod.año_Fabricacion+"' " +
+                $", id_condicion = '"+autoMod.condicion+"', nro_chasis = '"+autoMod.nro_Chasis+"', nro_motor ='"+autoMod.nro_Motor+"' , patente = '"+autoMod.patente+"' " +
+                $" WHERE patente = '"+patentevieja+"' ";
+            _BD.modificar(sqlInsertar);
+        }
+
+       
+
+
+
     }
 }
