@@ -14,8 +14,22 @@ namespace Trabajo_Practico.Formularios.ABMC.Barrios
     {
         public Barrios()
         {
+
+            //Consulta principal para ver los barrios. 
+            consultaPrincipal = (@"SELECT *  from barrios ");
             InitializeComponent();
             cambiarNombre("Barrios");
+        }
+
+        private void btn_Agregar_Click_1(object sender, EventArgs e)
+        {
+            AltaBarrio vtnAltaBarrio = new AltaBarrio();
+            vtnAltaBarrio.Show();
+        }
+
+        private void btn_Actualizar_Click_1(object sender, EventArgs e)
+        {
+            cargargrilla();
         }
     }
 }

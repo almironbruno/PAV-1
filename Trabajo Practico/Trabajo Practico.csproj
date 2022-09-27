@@ -49,8 +49,10 @@
   <ItemGroup>
     <Compile Include="Clases\BackEnd\BE_Acceso_Datos.cs" />
     <Compile Include="Clases\BackEnd\NegocioAutos\NE_Autos.cs" />
+    <Compile Include="Clases\BackEnd\NegocioBarrio\NE_Barrio.cs" />
     <Compile Include="Clases\BackEnd\ValidarEmail.cs" />
     <Compile Include="Clases\BackEnd\NegocioUsuarios\NE_usuarios.cs" />
+    <Compile Include="Clases\Entidades\Barrio.cs" />
     <Compile Include="Clases\Entidades\Vehiculos.cs" />
     <Compile Include="Clases\Entidades\Usuario.cs" />
     <Compile Include="ControlesPropios\ComboCargable.cs">
@@ -76,6 +78,12 @@
     </Compile>
     <Compile Include="Formularios\ABMC\Autos\AltaAutos.Designer.cs">
       <DependentUpon>AltaAutos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\ABMC\Barrios\AltaBarrio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\ABMC\Barrios\AltaBarrio.Designer.cs">
+      <DependentUpon>AltaBarrio.cs</DependentUpon>
     </Compile>
     <Compile Include="Formularios\ABMC\Barrios\Barrios.cs">
       <SubType>Form</SubType>
@@ -195,6 +203,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\ABMC\Autos\Autos.resx">
       <DependentUpon>Autos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\ABMC\Barrios\AltaBarrio.resx">
+      <DependentUpon>AltaBarrio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\ABMC\Barrios\Barrios.resx">
+      <DependentUpon>Barrios.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\ABMC\Clientes\Clientes.resx">
       <DependentUpon>Clientes.cs</DependentUpon>
