@@ -116,5 +116,11 @@ namespace Trabajo_Practico.Formularios
 
 
         }
+
+        private void btn_Buscar_Click_1(object sender, EventArgs e)
+        {
+            BuscarAuto vtnBuscarAuto = new BuscarAuto();
+            vtnBuscarAuto.Show();
+        }
     }
 }

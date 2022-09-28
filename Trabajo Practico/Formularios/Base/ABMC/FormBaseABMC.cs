@@ -89,8 +89,9 @@ namespace Trabajo_Practico.Formularios
             dataGridViewModificada1.cargar(bd.Ejecutar_Select(consultaPrincipal));
         }
 
+        private void FormBaseABMC_Load_1(object sender, EventArgs e)
+        {
 
-
-        
+        }
     }
 }

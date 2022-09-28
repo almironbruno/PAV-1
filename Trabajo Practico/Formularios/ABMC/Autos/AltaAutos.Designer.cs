@@ -42,7 +42,7 @@
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.txtPatente = new System.Windows.Forms.TextBox();
-            //this.btn_LimpiarCampos = new System.Windows.Forms.Button();
+            this.label8 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btn_Aceptar
@@ -50,12 +50,6 @@
             this.btn_Aceptar.Location = new System.Drawing.Point(152, 329);
             this.btn_Aceptar.TabIndex = 8;
             this.btn_Aceptar.Click += new System.EventHandler(this.btn_Aceptar_Click_1);
-            // 
-            // btn_Cancelar
-            // 
-            //this.btn_Cancelar.Location = new System.Drawing.Point(317, 329);
-            //this.btn_Cancelar.TabIndex = 9;
-            //this.btn_Cancelar.Click += new System.EventHandler(this.btn_Cancelar_Click_1);
             // 
             // label1
             // 
@@ -173,23 +167,23 @@
             this.txtPatente.Size = new System.Drawing.Size(100, 20);
             this.txtPatente.TabIndex = 6;
             // 
-            // btn_LimpiarCampos
+            // label8
             // 
-            //this.btn_LimpiarCampos.BackColor = System.Drawing.Color.LightSeaGreen;
-            //this.btn_LimpiarCampos.Location = new System.Drawing.Point(486, 329);
-            //this.btn_LimpiarCampos.Name = "btn_LimpiarCampos";
-            //this.btn_LimpiarCampos.Size = new System.Drawing.Size(113, 40);
-            //this.btn_LimpiarCampos.TabIndex = 15;
-            //this.btn_LimpiarCampos.Text = "LimpiarCampos";
-            //this.btn_LimpiarCampos.UseVisualStyleBackColor = false;
-            //this.btn_LimpiarCampos.Click += new System.EventHandler(this.btn_LimpiarCampos_Click);
-            //// 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.ForeColor = System.Drawing.SystemColors.MenuHighlight;
+            this.label8.Location = new System.Drawing.Point(293, 35);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(201, 25);
+            this.label8.TabIndex = 17;
+            this.label8.Text = "Registro de Vehiculos";
+            // 
             // AltaAutos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            //this.Controls.Add(this.btn_LimpiarCampos);
+            this.Controls.Add(this.label8);
             this.Controls.Add(this.txtPatente);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.txtNroMotor);
@@ -214,7 +208,6 @@
             this.Controls.SetChildIndex(this.label3, 0);
             this.Controls.SetChildIndex(this.txtAñoFab, 0);
             this.Controls.SetChildIndex(this.btn_Aceptar, 0);
-            //this.Controls.SetChildIndex(this.btn_Cancelar, 0);
             this.Controls.SetChildIndex(this.cmbCondicion, 0);
             this.Controls.SetChildIndex(this.label4, 0);
             this.Controls.SetChildIndex(this.label5, 0);
@@ -223,7 +216,7 @@
             this.Controls.SetChildIndex(this.txtNroMotor, 0);
             this.Controls.SetChildIndex(this.label7, 0);
             this.Controls.SetChildIndex(this.txtPatente, 0);
-            //this.Controls.SetChildIndex(this.btn_LimpiarCampos, 0);
+            this.Controls.SetChildIndex(this.label8, 0);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -245,6 +238,7 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.TextBox txtPatente;
+        public System.Windows.Forms.Label label8;
         //private System.Windows.Forms.Button btn_LimpiarCampos;
     }
 }
