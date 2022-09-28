@@ -7,9 +7,7 @@ using System.Data;
 using Trabajo_Practico.Clases;
 using System.Windows.Forms;
 using Trabajo_Practico.Clases.Entidades;
-
-
-
+using System.Xml.Serialization;
 
 namespace Trabajo_Practico.Clases.BackEnd.NegocioBarrio
 {
@@ -26,6 +24,18 @@ namespace Trabajo_Practico.Clases.BackEnd.NegocioBarrio
 
 
             //INSERTAR a traves de la funcion del BackEnd.
+            _BD.Insertar(sqlInsertar);
+        }
+
+        public void BorrarBarrio(string nombreBarrio)
+        {
+            string sqlBorrar = "DELETE FROM barrios WHERE nombre_barrio = '" + nombreBarrio + "' ";
+            _BD.Eliminar(sqlBorrar);
+        }
+
+        public void ModificarBarrio(Barrio modificarBarrio)
+        {
+            string sqlInsertar = $"UPDATE barrios SET nombre_barrio = {modificarBarrio.nombreBarrio}";
             _BD.Insertar(sqlInsertar);
         }
     }
