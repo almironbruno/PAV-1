@@ -49,7 +49,6 @@
   <ItemGroup>
     <Compile Include="Clases\BackEnd\BE_Acceso_Datos.cs" />
     <Compile Include="Clases\BackEnd\NegocioAutos\NE_Autos.cs" />
-<<<<<<< HEAD
     <Compile Include="Clases\BackEnd\NegocioClientes\NE_Clientes.cs" />
     <Compile Include="Clases\BackEnd\NegocioEmpleados\NE_Empleados.cs" />
     <Compile Include="Clases\BackEnd\NegocioMarcas\NE_Marcas.cs" />
@@ -58,12 +57,10 @@
     <Compile Include="Clases\Entidades\Clientes.cs" />
     <Compile Include="Clases\Entidades\Empleados.cs" />
     <Compile Include="Clases\Entidades\Marca.cs" />
-=======
     <Compile Include="Clases\BackEnd\NegocioBarrio\NE_Barrio.cs" />
     <Compile Include="Clases\BackEnd\ValidarEmail.cs" />
     <Compile Include="Clases\BackEnd\NegocioUsuarios\NE_usuarios.cs" />
     <Compile Include="Clases\Entidades\Barrio.cs" />
->>>>>>> 86d1a554ea02d2e45aad3d165814c58cfa661798
     <Compile Include="Clases\Entidades\Vehiculos.cs" />
     <Compile Include="Clases\Entidades\Usuario.cs" />
     <Compile Include="ControlesPropios\ComboCargable.cs">
@@ -101,6 +98,7 @@
     </Compile>
     <Compile Include="Formularios\ABMC\Barrios\Barrios.Designer.cs">
       <DependentUpon>Barrios.cs</DependentUpon>
+     </Compile>
     <Compile Include="Formularios\ABMC\Clientes\AltaClientes.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -137,19 +135,17 @@
     <Compile Include="Formularios\ABMC\Autos\Autos.Designer.cs">
       <DependentUpon>Autos.cs</DependentUpon>
     </Compile>
-<<<<<<< HEAD
     <Compile Include="Formularios\ABMC\Gamas\Gamas.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Formularios\ABMC\Gamas\Gamas.Designer.cs">
       <DependentUpon>Gamas.cs</DependentUpon>
-=======
+     </Compile>
     <Compile Include="Formularios\ABMC\Marcas\AltaMarcas.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Formularios\ABMC\Marcas\AltaMarcas.Designer.cs">
       <DependentUpon>AltaMarcas.cs</DependentUpon>
->>>>>>> main
     </Compile>
     <Compile Include="Formularios\ABMC\Marcas\Marcas.cs">
       <SubType>Form</SubType>
@@ -234,16 +230,14 @@
     <EmbeddedResource Include="Formularios\ABMC\Autos\Autos.resx">
       <DependentUpon>Autos.cs</DependentUpon>
     </EmbeddedResource>
-<<<<<<< HEAD
     <EmbeddedResource Include="Formularios\ABMC\Clientes\AltaClientes.resx">
       <DependentUpon>AltaClientes.cs</DependentUpon>
-=======
+    </EmbeddedResource>
     <EmbeddedResource Include="Formularios\ABMC\Barrios\AltaBarrio.resx">
       <DependentUpon>AltaBarrio.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\ABMC\Barrios\Barrios.resx">
       <DependentUpon>Barrios.cs</DependentUpon>
->>>>>>> 86d1a554ea02d2e45aad3d165814c58cfa661798
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\ABMC\Clientes\Clientes.resx">
       <DependentUpon>Clientes.cs</DependentUpon>
@@ -312,6 +306,6 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
