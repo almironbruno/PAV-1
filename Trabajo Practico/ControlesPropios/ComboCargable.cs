@@ -19,6 +19,8 @@ namespace Trabajo_Practico.ControlesPropios
         }
         public void cargar(string sql, string nombreColumna, string pk)
         {
+            // Params : nombreColumna = columna que muestra, pk = valor que se asocia a cada item
+
             //Combo viejo
             //Se carga el combo con la tabla y la columna que se le asigna
             BE_Acceso_Datos bd = new BE_Acceso_Datos();

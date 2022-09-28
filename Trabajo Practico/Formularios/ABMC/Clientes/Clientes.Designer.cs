@@ -1,4 +1,4 @@
-﻿namespace Trabajo_Practico.Formularios.ABMC
+﻿namespace Trabajo_Practico.Formularios.ABMC.Clientes
 {
     partial class Clientes
     {
@@ -30,6 +30,18 @@
         {
             this.panel1.SuspendLayout();
             this.SuspendLayout();
+            // 
+            // btn_Agregar
+            // 
+            this.btn_Agregar.Click += new System.EventHandler(this.btn_Agregar_Click_1);
+            // 
+            // btn_Actualizar
+            // 
+            this.btn_Actualizar.Click += new System.EventHandler(this.btn_Actualizar_Click_1);
+            // 
+            // btn_Eliminar
+            // 
+            this.btn_Eliminar.Click += new System.EventHandler(this.btn_Eliminar_Click_1);
             // 
             // Clientes
             // 

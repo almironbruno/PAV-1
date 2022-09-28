@@ -68,33 +68,64 @@ namespace Trabajo_Practico.Clases.BackEnd
         public void Insertar(string SqlInsertar)
         {
             conectar();
-
+            int flag = 0;
             cmd.CommandText = SqlInsertar;
             //Comando del tipo "NO CONSULTA" Insersion
-            cmd.ExecuteNonQuery();
-
+            flag = cmd.ExecuteNonQuery();
+            if (flag == 1)
+            {
+                MessageBox.Show("Registro Exitoso");
+            }
+            else
+            {
+                MessageBox.Show("El Elemento ya se encontraba registrado.");
+            }
             desconectar();
 
 
         }
         public void Eliminar(string sqlEliminar) 
+
+
         {
+            conectar();
             int flag = 0;
             cmd.CommandText = sqlEliminar;
             flag = cmd.ExecuteNonQuery();
             if (flag == 1)
             {
-                MessageBox.Show("Eliminado Exitosamente. Actualice para Visualizar los cambios");    
+                MessageBox.Show("Eliminacion Exitosamente.");    
             }
             else
             {
-                MessageBox.Show("Vehiculo Inexistente para ser Eliminado.");
+                MessageBox.Show("Eliminacion Errona a falta del registro solicitado");
             }
+            desconectar();
         }
         public void modificar(string sqlModificar)
         {
             cmd.CommandText = sqlModificar;
             cmd.ExecuteNonQuery();
+        }
+        public void ejecutar(string sql)
+        {
+            // Intenta ejecutar la operacion
+            //try {
+
+                conectar();
+                cmd.CommandText = sql;
+                cmd.ExecuteNonQuery();
+                desconectar();
+                MessageBox.Show("Se ha realizado con exito la operacion!");
+            //}
+            // En caso de que falle
+            //catch(Exception e) 
+            //{
+              //  MessageBox.Show("No se pudo realizar la operacion \n " +
+                //    "Motivo: "+ e.Message.ToString());
+            
+           // }
+
         }
 
 
