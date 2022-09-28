@@ -107,6 +107,12 @@
     <Compile Include="Formularios\ABMC\Empleados\AltaEmpleados.Designer.cs">
       <DependentUpon>AltaEmpleados.cs</DependentUpon>
     </Compile>
+    <Compile Include="Formularios\ABMC\Empleados\CamposEmpleados.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\ABMC\Empleados\CamposEmpleados.Designer.cs">
+      <DependentUpon>CamposEmpleados.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formularios\ABMC\Empleados\Empleados.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -219,6 +225,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\ABMC\Empleados\AltaEmpleados.resx">
       <DependentUpon>AltaEmpleados.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\ABMC\Empleados\CamposEmpleados.resx">
+      <DependentUpon>CamposEmpleados.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\ABMC\Empleados\Empleados.resx">
       <DependentUpon>Empleados.cs</DependentUpon>

@@ -59,6 +59,7 @@
             this.marcasToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
             this.nombreComercialToolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
             this.lblUsr = new System.Windows.Forms.Label();
+            this.telefonosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -98,7 +99,8 @@
             this.clientesToolStripMenuItem,
             this.autosToolStripMenuItem,
             this.marcaToolStripMenuItem,
-            this.nombreComercialToolStripMenuItem});
+            this.nombreComercialToolStripMenuItem,
+            this.telefonosToolStripMenuItem});
             this.reportesToolStripMenuItem.Name = "reportesToolStripMenuItem";
             this.reportesToolStripMenuItem.Size = new System.Drawing.Size(238, 20);
             this.reportesToolStripMenuItem.Text = "Altas - Bajas - Modificaciones - Consultas";
@@ -292,6 +294,7 @@
             this.lblUsr.Size = new System.Drawing.Size(46, 13);
             this.lblUsr.TabIndex = 1;
             this.lblUsr.Text = "Usuario ";
+            
             // 
             // PrincipalForm
             // 
@@ -345,5 +348,6 @@
         private System.Windows.Forms.ToolStripMenuItem autosToolStripMenuItem3;
         private System.Windows.Forms.ToolStripMenuItem marcasToolStripMenuItem2;
         private System.Windows.Forms.ToolStripMenuItem nombreComercialToolStripMenuItem3;
+        private System.Windows.Forms.ToolStripMenuItem telefonosToolStripMenuItem;
     }
 }

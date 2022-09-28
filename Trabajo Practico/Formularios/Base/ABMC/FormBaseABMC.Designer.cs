@@ -37,6 +37,7 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.lbl_advertencia = new System.Windows.Forms.Label();
             this.dataGridViewModificada1 = new Trabajo_Practico.DataGridViewModificada();
+            this.lbl_Cantidad = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -124,11 +125,21 @@
             this.dataGridViewModificada1.Size = new System.Drawing.Size(546, 306);
             this.dataGridViewModificada1.TabIndex = 8;
             // 
+            // lbl_Cantidad
+            // 
+            this.lbl_Cantidad.AutoSize = true;
+            this.lbl_Cantidad.Location = new System.Drawing.Point(519, 392);
+            this.lbl_Cantidad.Name = "lbl_Cantidad";
+            this.lbl_Cantidad.Size = new System.Drawing.Size(52, 13);
+            this.lbl_Cantidad.TabIndex = 9;
+            this.lbl_Cantidad.Text = "Cantidad:";
+            // 
             // FormBaseABMC
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.lbl_Cantidad);
             this.Controls.Add(this.dataGridViewModificada1);
             this.Controls.Add(this.lbl_advertencia);
             this.Controls.Add(this.panel1);
@@ -153,5 +164,6 @@
         protected System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label lbl_advertencia;
         protected DataGridViewModificada dataGridViewModificada1;
+        private System.Windows.Forms.Label lbl_Cantidad;
     }
 }

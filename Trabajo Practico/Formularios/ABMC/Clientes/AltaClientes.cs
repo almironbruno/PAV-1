@@ -24,22 +24,30 @@ namespace Trabajo_Practico.Formularios.ABMC.Clientes
 
         private void btn_Aceptar_Click_1(object sender, EventArgs e)
         {
-            string tipoDoc = cmbCargable_TipoDoc.cmb_Cargable.SelectedValue.ToString();
-            string nroDoc = mTxt_NroDocu.Text;
-            string nombre = mTxt_Nombre.Text;
-            string apellido = mTxt_Apellido.Text;
-            string fechaNac = mTxt_FechaNac.Text;
-            string calle = mtxt_Calle.Text;
-            string nroCalle = mTxt_NroCalle.Text;
-            string id_Barrio = cmbCargable_Barrio.cmb_Cargable.SelectedValue.ToString();
+            if (validarCampos())
+            {
+                string tipoDoc = cmbCargable_TipoDoc.cmb_Cargable.SelectedValue.ToString();
+                string nroDoc = mTxt_NroDocu.Text;
+                string nombre = mTxt_Nombre.Text;
+                string apellido = mTxt_Apellido.Text;
+                string fechaNac = mTxt_FechaNac.Text;
+                string calle = mtxt_Calle.Text;
+                string nroCalle = mTxt_NroCalle.Text;
+                string id_Barrio = cmbCargable_Barrio.cmb_Cargable.SelectedValue.ToString();
 
-            Trabajo_Practico.Clases.Entidades.Clientes nuevoCliente= new Trabajo_Practico.Clases.Entidades.Clientes(tipoDoc,nroDoc,nombre,apellido,fechaNac,calle,nroDoc,id_Barrio);
-            MessageBox.Show(nuevoCliente.toString());
+                Trabajo_Practico.Clases.Entidades.Clientes nuevoCliente = new Trabajo_Practico.Clases.Entidades.Clientes(tipoDoc, nroDoc, nombre, apellido, fechaNac, calle, nroDoc, id_Barrio);
+                MessageBox.Show(nuevoCliente.toString());
 
-            NE_Clientes Cliente = new NE_Clientes();
+                NE_Clientes Cliente = new NE_Clientes();
 
-            Cliente.AgregarCliente(nuevoCliente);
-            this.Close();
+                Cliente.AgregarCliente(nuevoCliente);
+                this.Close();
+            }
+            else
+            {
+                return;
+            }
+            
         }
     }
 }

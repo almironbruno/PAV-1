@@ -7,19 +7,23 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Trabajo_Practico.Formularios.Base;
 
 namespace Trabajo_Practico.Formularios.ABMC.Empleados
 {
-    public partial class AltaEmpleados : CamposEmpleados
+    public partial class CamposEmpleados : FormBaseBotones
     {
-        public AltaEmpleados()
+        public CamposEmpleados()
         {
-            
             InitializeComponent();
-            //Se carga el comboBox de Cargos
-            cmbCargable_Cargos.cargar("SELECT * FROM cargos_empleados", "nombre_cargo", "id_cargo");
+            
         }
 
+        private void crearObjecto()
+        {
+            
+
+        }
         private void btn_Aceptar_Click_1(object sender, EventArgs e)
         {
 

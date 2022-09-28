@@ -29,6 +29,7 @@ namespace Trabajo_Practico.Formularios
             //Se crea la ventana de alta
             AltaEmpleados ventanaAlta= new AltaEmpleados();
             ventanaAlta.Show();
+           
         }
 
         private void Empleados_Load(object sender, EventArgs e)

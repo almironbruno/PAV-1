@@ -28,9 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.btn_Aceptar = new System.Windows.Forms.Button();
             this.btn_Cancelar = new System.Windows.Forms.Button();
             this.btn_LimpiarCampos = new System.Windows.Forms.Button();
+            this.errorProviderBase = new System.Windows.Forms.ErrorProvider(this.components);
+            ((System.ComponentModel.ISupportInitialize)(this.errorProviderBase)).BeginInit();
             this.SuspendLayout();
             // 
             // btn_Aceptar
@@ -66,6 +69,11 @@
             this.btn_LimpiarCampos.UseVisualStyleBackColor = false;
             this.btn_LimpiarCampos.Click += new System.EventHandler(this.btn_LimpiarCampos_Click);
             // 
+            // errorProviderBase
+            // 
+            this.errorProviderBase.BlinkStyle = System.Windows.Forms.ErrorBlinkStyle.NeverBlink;
+            this.errorProviderBase.ContainerControl = this;
+            // 
             // FormBaseBotones
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -77,6 +85,7 @@
             this.Name = "FormBaseBotones";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormBaseBotones";
+            ((System.ComponentModel.ISupportInitialize)(this.errorProviderBase)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -86,5 +95,6 @@
         protected System.Windows.Forms.Button btn_Aceptar;
         private  System.Windows.Forms.Button btn_Cancelar;
         private  System.Windows.Forms.Button btn_LimpiarCampos;
+        private System.Windows.Forms.ErrorProvider errorProviderBase;
     }
 }
