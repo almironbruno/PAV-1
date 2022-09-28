@@ -69,6 +69,27 @@ namespace Trabajo_Practico.Clases.BackEnd.NegocioAutos
             return rta;
 
         }
+        //Recibe un id condicion y devuelve el nombre correspondiente
+        public DataTable ConsultarNombreCondicionString(int id_condicion)
+        {
+            string Consulta = "SELECT nombre_condicion  FROM condicion WHERE id_condicion = '"+id_condicion+"'";
+            return _BD.Ejecutar_Select(Consulta);
+            
+
+            
+
+        }
+        //recibe un id comercial y devuelve el nombre correspondiente
+        public DataTable ConsultarNombreComercialString(int id_nombreComercial)
+        {
+            string Consulta = "SELECT nombre_comercial  FROM nombres_comerciales WHERE id_nombrecomercial = '" + id_nombreComercial + "'";
+            
+            return _BD.Ejecutar_Select(Consulta);
+            
+        }
+
+
+
 
 
         public void BorrarAuto(string patente)
@@ -76,6 +97,8 @@ namespace Trabajo_Practico.Clases.BackEnd.NegocioAutos
             string sqlBorrar = "DELETE FROM autos WHERE patente = '"+ patente +"'";
             _BD.Eliminar(sqlBorrar);
         }
+
+
 
         //Relacionar el auto modificado , con algun dato que sirva como antecedente para vincularlo, en este caso la patente vieja.
         public void ModificarAuto(Vehiculos autoMod,string patentevieja)
@@ -87,6 +110,17 @@ namespace Trabajo_Practico.Clases.BackEnd.NegocioAutos
         }
 
        
+
+        //Buscar auto a travez de un codigo de Serie.
+        public DataTable BuscarAuto(string codigoPk)
+        {
+            
+
+            string consulta = "SELECT *  FROM autos WHERE cod_serie_fabrica = '"+codigoPk+"'";
+
+            return _BD.Ejecutar_Select(consulta);
+
+        }
 
 
 

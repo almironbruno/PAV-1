@@ -26,5 +26,13 @@ namespace Trabajo_Practico.Clases.BackEnd.NegocioMarcas
             string sqlBorrar = "DELETE FROM marcas WHERE nombre = '" + nombre + "'";
             _BD.Eliminar(sqlBorrar);
         }
+
+        public void ModificarMarca(Marca marcaMod, string nombreViejo)
+        {
+            string sqlInsertar = "UPDATE marcas SET nombre = '"+marcaMod.nombreMarca+"' WHERE nombre = '"+nombreViejo+"'";
+            _BD.modificar(sqlInsertar);
+        }
+
+
     }
 }

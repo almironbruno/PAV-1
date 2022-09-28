@@ -43,6 +43,10 @@
             // 
             this.btn_Eliminar.Click += new System.EventHandler(this.btn_Eliminar_Click_1);
             // 
+            // btn_Buscar
+            // 
+            this.btn_Buscar.Click += new System.EventHandler(this.btn_Buscar_Click_1);
+            // 
             // dataGridViewModificada1
             // 
             this.dataGridViewModificada1.Load += new System.EventHandler(this.dataGridViewModificada1_Load);

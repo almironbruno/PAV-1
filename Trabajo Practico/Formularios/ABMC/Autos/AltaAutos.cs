@@ -73,16 +73,12 @@ namespace Trabajo_Practico.Formularios.ABMC.Autos
                 {
                     MessageBox.Show("Complete todos los campos para registrar un Vehiculo");
                 }
-               
-
-
+ 
             }
-
-
             catch (Exception)
             {
-                
-                throw;
+
+                MessageBox.Show("Ya se encuentra registrado el vehiculo");
             }
            
         }
