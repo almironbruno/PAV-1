@@ -37,17 +37,17 @@ namespace Trabajo_Practico.Formularios.ABMC.Clientes
 
         private void btn_Aceptar_Click_1(object sender, EventArgs e)
         {
-            base.btn_Aceptar_Click(sender,e);
-            NE_Clientes clientes = new NE_Clientes();
-            ClienteMod.nombre = mTxt_Nombre.Text.Trim();
-            ClienteMod.apellido= mTxt_Apellido.Text.Trim();
-            ClienteMod.fecha_nacimiento = mTxt_FechaNac.Text.Trim();
-            ClienteMod.calle = mtxt_Calle.Text.Trim();
-            ClienteMod.nro_calle = mTxt_NroCalle.Text.Trim();
-            ClienteMod.tipo_doc = cmbCargable_TipoDoc.cmb_Cargable.SelectedValue.ToString();
-            ClienteMod.nro_doc= mTxt_NroDocu.Text.Trim();
-            ClienteMod.id_barrio = cmbCargable_Barrio.cmb_Cargable.SelectedValue.ToString();
-            clientes.ModificarCliente(ClienteMod);
+            //base.btn_Aceptar_Click(sender,e);
+            //NE_Clientes clientes = new NE_Clientes();
+            //ClienteMod.nombre = mTxt_Nombre.Text.Trim();
+            //ClienteMod.apellido= mTxt_Apellido.Text.Trim();
+            //ClienteMod.fecha_nacimiento = mTxt_FechaNac.Text.Trim();
+            //ClienteMod.calle = mtxt_Calle.Text.Trim();
+            //ClienteMod.nro_calle = mTxt_NroCalle.Text.Trim();
+            //ClienteMod.tipo_doc = cmbCargable_TipoDoc.cmb_Cargable.SelectedValue.ToString();
+            //ClienteMod.nro_doc= mTxt_NroDocu.Text.Trim();
+            //ClienteMod.id_barrio = cmbCargable_Barrio.cmb_Cargable.SelectedValue.ToString();
+            //clientes.ModificarCliente(ClienteMod);
         }
 
         private void ModificacionCliente_Load(object sender, EventArgs e)

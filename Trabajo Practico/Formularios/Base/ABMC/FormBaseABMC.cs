@@ -76,6 +76,7 @@ namespace Trabajo_Practico.Formularios
         {
             //Se carga la grid cuando se carga el formulario
             dataGridViewModificada1.cargar(bd.Ejecutar_Select(consultaPrincipal));
+            
 
         }
 
@@ -87,6 +88,7 @@ namespace Trabajo_Practico.Formularios
         private void FormBaseABMC_Activated(object sender, EventArgs e)
         {
             dataGridViewModificada1.cargar(bd.Ejecutar_Select(consultaPrincipal));
+            lbl_Cantidad.Text = "Cantidad: "+dataGridViewModificada1.dgr_Principal.Rows.Count;
         }
 
         private void FormBaseABMC_Load_1(object sender, EventArgs e)

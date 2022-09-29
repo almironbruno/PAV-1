@@ -6,13 +6,13 @@ using System.Threading.Tasks;
 
 namespace Trabajo_Practico.Clases.Entidades
 {
-    internal class Empleados
+    public class Empleados
     {
 
-        private int legajoEmpleado { set; get; }
-        private string nombre;
-        private string apellido;
-        private int cargo;
+        public int legajoEmpleado { set; get; }
+        public string nombre { set;  get; }
+        public string apellido { set;  get; }
+        public int cargo { set;  get; }
 
 
         public Empleados(int legajo,string nom, string ape,int carg)

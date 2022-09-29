@@ -1,6 +1,6 @@
-﻿namespace Trabajo_Practico.Formularios.Base
+﻿namespace Trabajo_Practico.Formularios
 {
-    partial class FormBaseAlta
+    partial class ABMC_Empleados
     {
         /// <summary>
         /// Required designer variable.
@@ -28,26 +28,28 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // btn_Aceptar
+            // btn_Actualizar
             // 
-            this.btn_Aceptar.Location = new System.Drawing.Point(168, 330);
-            
+            this.btn_Actualizar.Click += new System.EventHandler(this.btn_Actualizar_Click_1);
             // 
-            // btn_Cancelar
+            // btn_Eliminar
             // 
-           // this.btn_Cancelar.Location = new System.Drawing.Point(344, 330);
+            this.btn_Eliminar.Click += new System.EventHandler(this.btn_Eliminar_Click_1);
             // 
-            // FormBaseAlta
+            // ABMC_Empleados
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Name = "FormBaseAlta";
-            this.Text = "FormBaseAlta";
-            this.Load += new System.EventHandler(this.FormBaseAlta_Load);
+            this.Name = "ABMC_Empleados";
+            this.Text = "Empleados";
+            this.Load += new System.EventHandler(this.Empleados_Load);
+            this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 

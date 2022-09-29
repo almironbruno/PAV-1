@@ -17,9 +17,9 @@ namespace Trabajo_Practico.Formularios.Base
             InitializeComponent();
         }
 
-        protected virtual void btn_Aceptar_Click(object sender, EventArgs e)
+        private void btn_Aceptar_Click(object sender, EventArgs e)
         {
-
+            if(!validarCampos()) return;
         }
 
         private  void btn_Cancelar_Click(object sender, EventArgs e)
@@ -47,8 +47,60 @@ namespace Trabajo_Practico.Formularios.Base
 
                     }
                 }
+                errorProviderBase.Clear();
+            }
+
+        }
+
+        protected bool validarCampos()
+        {
+            //Devuelve true si la vadilacion da que los campos estan completos
+
+            bool hayErrores = false; //Bandera 
+            errorProviderBase.Clear(); //Limpia la pantalla 
+
+            //Recorre los controles del formulario y pregunta si es TextBox o MaskedTextbox
+            foreach (Control item in this.Controls)
+            {
+                if (item is TextBox || item is MaskedTextBox)
+                {
+                    //Si el control está vacio
+                    if (item.Text.Equals(""))
+                    {
+                        //Pone el icono de error al lado del control (control, mensaje a mostrar)
+                        item.Focus();
+                        errorProviderBase.SetError(item, "No puede estar vacio");
+                        hayErrores = true;
+                    }
+
+                }
+                //Control para mtextbox de tipo fechas
+                if (item is MaskedTextBox)
+                {
+                    //Hace la conversion a tipo mtxtbox para poder usar el campo ValidatingType(para preguntar si es de tipo fecha)
+                    MaskedTextBox maskedTextBox = (MaskedTextBox)item;
+                    //MaskCompleted controla si la mascara está completa 
+                    if (!maskedTextBox.MaskCompleted && maskedTextBox.ValidatingType == typeof(DateTime))
+                    {
+                        item.Focus(); // Mueve el cursor al campo
+                        errorProviderBase.SetError(item, "No puede ingresar una fecha incompleta");
+                        hayErrores = true;
+                    }
+
+                }
+
+            }
+            if (hayErrores)
+            {
+                return false;
+            }
+            else
+            {
+                //No hay errores
+                return true;
             }
             
+
 
         }
     }

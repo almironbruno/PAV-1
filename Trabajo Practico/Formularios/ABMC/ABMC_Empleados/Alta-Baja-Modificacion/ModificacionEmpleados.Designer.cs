@@ -1,6 +1,6 @@
-﻿namespace Trabajo_Practico.Formularios.Base
+﻿namespace Trabajo_Practico.Formularios.ABMC.Empleados
 {
-    partial class FormBaseAlta
+    partial class ModificacionEmpleados
     {
         /// <summary>
         /// Required designer variable.
@@ -32,22 +32,17 @@
             // 
             // btn_Aceptar
             // 
-            this.btn_Aceptar.Location = new System.Drawing.Point(168, 330);
-            
+            this.btn_Aceptar.Click += new System.EventHandler(this.btn_Aceptar_Click);
             // 
-            // btn_Cancelar
-            // 
-           // this.btn_Cancelar.Location = new System.Drawing.Point(344, 330);
-            // 
-            // FormBaseAlta
+            // ModificacionEmpleados
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Name = "FormBaseAlta";
-            this.Text = "FormBaseAlta";
-            this.Load += new System.EventHandler(this.FormBaseAlta_Load);
+            this.Name = "ModificacionEmpleados";
+            this.Text = "ModificacionEmpleados";
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 

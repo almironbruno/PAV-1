@@ -12,6 +12,7 @@ using Trabajo_Practico.Formularios.ABMC;
 using Trabajo_Practico.Formularios.ABMC.Marcas;
 using Trabajo_Practico.Formularios.ABMC.Clientes;
 
+
 namespace Trabajo_Practico.Formularios
 {
     public partial class PrincipalForm : Form
@@ -31,7 +32,7 @@ namespace Trabajo_Practico.Formularios
 
         private void empleadosToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Empleados ventanaEmpleados = new Empleados();
+            ABMC_Empleados ventanaEmpleados = new ABMC_Empleados();
             ventanaEmpleados.Show();
         }
 
@@ -53,5 +54,7 @@ namespace Trabajo_Practico.Formularios
             ventanaMarcas.Show();
 
         }
+
+       
     }
 }

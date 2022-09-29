@@ -1,6 +1,6 @@
-﻿namespace Trabajo_Practico.Formularios.Base
+﻿namespace Trabajo_Practico.Formularios.ABMC.ABMC_Empleados
 {
-    partial class FormBaseAlta
+    partial class BajaEmpleado
     {
         /// <summary>
         /// Required designer variable.
@@ -28,27 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.SuspendLayout();
-            // 
-            // btn_Aceptar
-            // 
-            this.btn_Aceptar.Location = new System.Drawing.Point(168, 330);
-            
-            // 
-            // btn_Cancelar
-            // 
-           // this.btn_Cancelar.Location = new System.Drawing.Point(344, 330);
-            // 
-            // FormBaseAlta
-            // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.components = new System.ComponentModel.Container();
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Name = "FormBaseAlta";
-            this.Text = "FormBaseAlta";
-            this.Load += new System.EventHandler(this.FormBaseAlta_Load);
-            this.ResumeLayout(false);
-
+            this.Text = "BajaEmpleado";
         }
 
         #endregion
