@@ -17,7 +17,7 @@ namespace Trabajo_Practico.Formularios.Base
             InitializeComponent();
         }
 
-        protected virtual void btn_Aceptar_Click(object sender, EventArgs e)
+        private void btn_Aceptar_Click(object sender, EventArgs e)
         {
             if(!validarCampos()) return;
         }

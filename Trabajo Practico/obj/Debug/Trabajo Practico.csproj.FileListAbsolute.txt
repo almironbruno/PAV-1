@@ -84,7 +84,6 @@ C:\Users\Almir\Desktop\PAV\PAV-1-tp\Trabajo Practico\obj\Debug\Trabajo_Practico.
 C:\Users\Almir\Desktop\PAV\PAV-1-tp\Trabajo Practico\obj\Debug\Trabajo_Practico.Formularios.ABMC.Clientes.AltaClientes.resources
 C:\Users\Almir\Desktop\PAV\PAV-1-tp\Trabajo Practico\obj\Debug\Trabajo_Practico.Formularios.ABMC.Clientes.Clientes.resources
 C:\Users\Almir\Desktop\PAV\PAV-1-tp\Trabajo Practico\obj\Debug\Trabajo_Practico.Formularios.ABMC.Clientes.ModificacionCliente.resources
-C:\Users\Almir\Desktop\PAV\PAV-1-tp\Trabajo Practico\obj\Debug\Trabajo_Practico.Formularios.Empleados.resources
 C:\Users\Almir\Desktop\PAV\PAV-1-tp\Trabajo Practico\obj\Debug\Trabajo_Practico.Formularios.ABMC.Marcas.AltaMarcas.resources
 C:\Users\Almir\Desktop\PAV\PAV-1-tp\Trabajo Practico\obj\Debug\Trabajo_Practico.Formularios.Marcas.resources
 C:\Users\Almir\Desktop\PAV\PAV-1-tp\Trabajo Practico\obj\Debug\Trabajo_Practico.Formularios.FormBaseABMC.resources
@@ -103,3 +102,5 @@ C:\Users\Almir\Desktop\PAV\PAV-1-tp\Trabajo Practico\obj\Debug\Trabajo Practico.
 C:\Users\Almir\Desktop\PAV\PAV-1-tp\Trabajo Practico\obj\Debug\Trabajo Practico.pdb
 C:\Users\Almir\Desktop\PAV\PAV-1-tp\Trabajo Practico\obj\Debug\Trabajo_Practico.Formularios.ABMC.Empleados.CamposEmpleados.resources
 C:\Users\Almir\Desktop\PAV\PAV-1-tp\Trabajo Practico\obj\Debug\Trabajo_Practico.Formularios.ABMC.Empleados.AltaEmpleados.resources
+C:\Users\Almir\Desktop\PAV\PAV-1-tp\Trabajo Practico\obj\Debug\Trabajo_Practico.Formularios.ABMC_Empleados.resources
+C:\Users\Almir\Desktop\PAV\PAV-1-tp\Trabajo Practico\obj\Debug\Trabajo_Practico.Formularios.ABMC.Empleados.ModificacionEmpleados.resources

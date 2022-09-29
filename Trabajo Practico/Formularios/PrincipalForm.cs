@@ -32,7 +32,7 @@ namespace Trabajo_Practico.Formularios
 
         private void empleadosToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Empleados ventanaEmpleados = new Empleados();
+            ABMC_Empleados ventanaEmpleados = new ABMC_Empleados();
             ventanaEmpleados.Show();
         }
 

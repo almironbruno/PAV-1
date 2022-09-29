@@ -33,15 +33,11 @@
             this.lbl_Nombre = new System.Windows.Forms.Label();
             this.lbl_Apellido = new System.Windows.Forms.Label();
             this.cmbCargable_Cargos = new Trabajo_Practico.ControlesPropios.ComboCargable();
-            this.maskedTextBox1 = new System.Windows.Forms.MaskedTextBox();
+            this.mtxt_Legajo = new System.Windows.Forms.MaskedTextBox();
             this.lbl_Legajo = new System.Windows.Forms.Label();
             this.lbl_Cargo = new System.Windows.Forms.Label();
             this.SuspendLayout();
-            // 
-            // btn_Aceptar
-            // 
-            this.btn_Aceptar.Click += new System.EventHandler(this.btn_Aceptar_Click_1);
-            // 
+            //  
             // mTxt_Nombre
             // 
             this.mTxt_Nombre.Location = new System.Drawing.Point(209, 155);
@@ -80,17 +76,18 @@
             // 
             this.cmbCargable_Cargos.Location = new System.Drawing.Point(448, 147);
             this.cmbCargable_Cargos.Name = "cmbCargable_Cargos";
-            this.cmbCargable_Cargos.Size = new System.Drawing.Size(200, 28);
+            this.cmbCargable_Cargos.Size = new System.Drawing.Size(230, 28);
             this.cmbCargable_Cargos.TabIndex = 22;
+            this.cmbCargable_Cargos.cmb_Cargable.Size= new System.Drawing.Size(148, 28);
             // 
-            // maskedTextBox1
+            // mtxt_Legajo
             // 
-            this.maskedTextBox1.Location = new System.Drawing.Point(209, 117);
-            this.maskedTextBox1.Mask = "99999";
-            this.maskedTextBox1.Name = "maskedTextBox1";
-            this.maskedTextBox1.Size = new System.Drawing.Size(100, 20);
-            this.maskedTextBox1.TabIndex = 23;
-            this.maskedTextBox1.ValidatingType = typeof(int);
+            this.mtxt_Legajo.Location = new System.Drawing.Point(209, 117);
+            this.mtxt_Legajo.Mask = "99999";
+            this.mtxt_Legajo.Name = "mtxt_Legajo";
+            this.mtxt_Legajo.Size = new System.Drawing.Size(100, 20);
+            this.mtxt_Legajo.TabIndex = 23;
+            this.mtxt_Legajo.ValidatingType = typeof(int);
             // 
             // lbl_Legajo
             // 
@@ -117,7 +114,7 @@
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.lbl_Cargo);
             this.Controls.Add(this.lbl_Legajo);
-            this.Controls.Add(this.maskedTextBox1);
+            this.Controls.Add(this.mtxt_Legajo);
             this.Controls.Add(this.cmbCargable_Cargos);
             this.Controls.Add(this.lbl_Apellido);
             this.Controls.Add(this.lbl_Nombre);
@@ -131,7 +128,7 @@
             this.Controls.SetChildIndex(this.lbl_Apellido, 0);
             this.Controls.SetChildIndex(this.cmbCargable_Cargos, 0);
             this.Controls.SetChildIndex(this.btn_Aceptar, 0);
-            this.Controls.SetChildIndex(this.maskedTextBox1, 0);
+            this.Controls.SetChildIndex(this.mtxt_Legajo, 0);
             this.Controls.SetChildIndex(this.lbl_Legajo, 0);
             this.Controls.SetChildIndex(this.lbl_Cargo, 0);
             this.ResumeLayout(false);
@@ -140,12 +137,12 @@
         }
 
         #endregion
-        private System.Windows.Forms.MaskedTextBox mTxt_Nombre;
-        private System.Windows.Forms.MaskedTextBox mTxt_Apellido;
+        protected System.Windows.Forms.MaskedTextBox mTxt_Nombre;
+        protected System.Windows.Forms.MaskedTextBox mTxt_Apellido;
         private System.Windows.Forms.Label lbl_Nombre;
         private System.Windows.Forms.Label lbl_Apellido;
         protected ControlesPropios.ComboCargable cmbCargable_Cargos;
-        private System.Windows.Forms.MaskedTextBox maskedTextBox1;
+        protected System.Windows.Forms.MaskedTextBox mtxt_Legajo;
         private System.Windows.Forms.Label lbl_Legajo;
         private System.Windows.Forms.Label lbl_Cargo;
     }
