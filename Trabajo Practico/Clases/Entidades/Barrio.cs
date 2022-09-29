@@ -10,9 +10,12 @@ namespace Trabajo_Practico.Clases.Entidades
     {
         public string nombreBarrio { get; set; }
 
+        
+
         public Barrio(string nombreBarrio)
         {
             this.nombreBarrio = nombreBarrio;
+            
         }
 
         public string Mostrar(Barrio bar)
