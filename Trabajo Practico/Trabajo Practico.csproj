@@ -137,6 +137,12 @@
     <Compile Include="Formularios\ABMC\Marcas\AltaMarcas.Designer.cs">
       <DependentUpon>AltaMarcas.cs</DependentUpon>
     </Compile>
+    <Compile Include="Formularios\ABMC\Marcas\BuscarMarca.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\ABMC\Marcas\BuscarMarca.Designer.cs">
+      <DependentUpon>BuscarMarca.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formularios\ABMC\Marcas\Marcas.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -249,6 +255,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\ABMC\Marcas\AltaMarcas.resx">
       <DependentUpon>AltaMarcas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\ABMC\Marcas\BuscarMarca.resx">
+      <DependentUpon>BuscarMarca.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\ABMC\Marcas\Marcas.resx">
       <DependentUpon>Marcas.cs</DependentUpon>
