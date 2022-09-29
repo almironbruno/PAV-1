@@ -9,6 +9,8 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using Trabajo_Practico.Formularios.Base;
 using Trabajo_Practico.Clases.BackEnd.NegocioBarrio;
+using System.Text.RegularExpressions;
+using Trabajo_Practico.Formularios.ABMC.Clientes;
 
 namespace Trabajo_Practico.Formularios.ABMC.Barrios
 {
@@ -31,7 +33,24 @@ namespace Trabajo_Practico.Formularios.ABMC.Barrios
 
         private void btn_Actualizar_Click_1(object sender, EventArgs e)
         {
+            string nombreBarrio = dataGridViewModificada1.FilaSeleccionada().Cells["nombre_barrio"].Value.ToString().Trim(); 
 
+            string nuevoBarrio = "Desea modificar el barrio: " + nombreBarrio + System.Environment.NewLine;
+
+            Trabajo_Practico.Clases.Entidades.Barrio barrio = new Trabajo_Practico.Clases.Entidades.Barrio(nombreBarrio);
+
+            DialogResult dialogResult = MessageBox.Show(nuevoBarrio, "MODIFICAR BARRIO", MessageBoxButtons.YesNo);
+
+            if (dialogResult == DialogResult.Yes)
+            {
+                ModBarrio ventanaMod = new ModBarrio(barrio);
+                ventanaMod.Show();
+
+            }
+            else
+            {
+                // Nada ya que no se elimina, al oprimir no se cierra el txtbox
+            }
         }
 
         private void btn_Eliminar_Click_1(object sender, EventArgs e)

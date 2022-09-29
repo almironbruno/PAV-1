@@ -33,6 +33,8 @@ namespace Trabajo_Practico.Formularios.ABMC.Barrios
             Barrio.AgregarBarrio(nvoBarrio);
 
             LimpiarCampos();
+
+            this.Close();
         }
 
         private void btn_LimpiarCampos_Click(object sender, EventArgs e)
