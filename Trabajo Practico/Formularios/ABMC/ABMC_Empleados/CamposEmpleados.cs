@@ -21,6 +21,15 @@ namespace Trabajo_Practico.Formularios.ABMC.Empleados
             InitializeComponent();
             
         }
+        public CamposEmpleados(Trabajo_Practico.Clases.Entidades.Empleados empleado)
+        {
+            cargarCampos(empleado);
+            mtxt_Legajo.Enabled = false;
+            mTxt_Apellido.Enabled = false;
+            mTxt_Nombre.Enabled = false;
+            cmbCargable_Cargos.Enabled = false;
+
+        }
 
         protected void cargarCampos(Trabajo_Practico.Clases.Entidades.Empleados empleado)
         {

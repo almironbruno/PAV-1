@@ -12,6 +12,7 @@ namespace Trabajo_Practico
 {
     public partial class DataGridViewModificada : UserControl
     {
+       
         public DataGridViewModificada()
         {
             InitializeComponent();
@@ -30,7 +31,6 @@ namespace Trabajo_Practico
             return dgr_Principal.SelectedRows[0];
         
         }
-
-      
+        
     }
 }
