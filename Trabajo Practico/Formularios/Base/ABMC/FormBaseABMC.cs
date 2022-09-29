@@ -91,8 +91,9 @@ namespace Trabajo_Practico.Formularios
             lbl_Cantidad.Text = "Cantidad: "+dataGridViewModificada1.dgr_Principal.Rows.Count;
         }
 
+        private void FormBaseABMC_Load_1(object sender, EventArgs e)
+        {
 
-
-        
+        }
     }
 }

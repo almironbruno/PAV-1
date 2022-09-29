@@ -49,5 +49,10 @@ namespace Trabajo_Practico.Formularios
             ModificacionEmpleados ventana =  new ModificacionEmpleados(dataGridViewModificada1.FilaSeleccionada());
             ventana.Show();
         }
+
+        private void btn_Actualizar_Click_1(object sender, EventArgs e)
+        {
+
+        }
     }
 }

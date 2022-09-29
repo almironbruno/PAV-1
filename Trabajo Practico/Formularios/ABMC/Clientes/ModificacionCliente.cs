@@ -49,5 +49,10 @@ namespace Trabajo_Practico.Formularios.ABMC.Clientes
             //ClienteMod.id_barrio = cmbCargable_Barrio.cmb_Cargable.SelectedValue.ToString();
             //clientes.ModificarCliente(ClienteMod);
         }
+
+        private void ModificacionCliente_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

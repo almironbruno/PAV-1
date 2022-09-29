@@ -36,10 +36,93 @@ namespace Trabajo_Practico.Clases.BackEnd.NegocioAutos
         }
 
 
+        //recibe el valor de string condicion, y devuelve la pk para poder relacionarlo , el objeto lo trabaja como int.
+        public int ConsultarCondicion(string condicion)
+        {
+            int rta = 0;
+            string Consulta = "SELECT id_condicion FROM condicion WHERE nombre_condicion = '"+condicion+"'";
+            if (_BD.SelectNumeros(Consulta) > 0)
+            {
+                rta = _BD.SelectNumeros(Consulta);
+            }
+            else
+            {
+                rta = 0;
+            }
+            return rta;
+            
+        }
+
+        //recibe el valor de string nombre_comercial, y devuelve la pk para poder relacionarlo , el objeto lo trabaja como int.
+        public int ConsultarNombreComer(string nombreComercial)
+        {
+            int rta = 0;
+            string Consulta = "SELECT id_nombrecomercial FROM nombres_comerciales WHERE nombre_comercial = '" + nombreComercial + "'";
+            if (_BD.SelectNumeros(Consulta) > 0)
+            {
+                rta = _BD.SelectNumeros(Consulta);
+            }
+            else
+            {
+                rta = 0;
+            }
+            return rta;
+
+        }
+        //Recibe un id condicion y devuelve el nombre correspondiente
+        public DataTable ConsultarNombreCondicionString(int id_condicion)
+        {
+            string Consulta = "SELECT nombre_condicion  FROM condicion WHERE id_condicion = '"+id_condicion+"'";
+            return _BD.Ejecutar_Select(Consulta);
+            
+
+            
+
+        }
+        //recibe un id comercial y devuelve el nombre correspondiente
+        public DataTable ConsultarNombreComercialString(int id_nombreComercial)
+        {
+            string Consulta = "SELECT nombre_comercial  FROM nombres_comerciales WHERE id_nombrecomercial = '" + id_nombreComercial + "'";
+            
+            return _BD.Ejecutar_Select(Consulta);
+            
+        }
+
+
+
+
+
         public void BorrarAuto(string patente)
         {
             string sqlBorrar = "DELETE FROM autos WHERE patente = '"+ patente +"'";
             _BD.Eliminar(sqlBorrar);
         }
+
+
+
+        //Relacionar el auto modificado , con algun dato que sirva como antecedente para vincularlo, en este caso la patente vieja.
+        public void ModificarAuto(Vehiculos autoMod,string patentevieja)
+        {
+            string sqlInsertar = $"UPDATE autos SET cod_serie_fabrica = '"+autoMod.cod_serie_fabrica+"', id_nombrecomercial = '"+autoMod.nombreComercial+"', año_fabricacion = '"+autoMod.año_Fabricacion+"' " +
+                $", id_condicion = '"+autoMod.condicion+"', nro_chasis = '"+autoMod.nro_Chasis+"', nro_motor ='"+autoMod.nro_Motor+"' , patente = '"+autoMod.patente+"' " +
+                $" WHERE patente = '"+patentevieja+"' ";
+            _BD.modificar(sqlInsertar);
+        }
+
+       
+
+        //Buscar auto a travez de un codigo de Serie.
+        public DataTable BuscarAuto(string codigoPk)
+        {
+            
+
+            string consulta = "SELECT *  FROM autos WHERE cod_serie_fabrica = '"+codigoPk+"'";
+
+            return _BD.Ejecutar_Select(consulta);
+
+        }
+
+
+
     }
 }

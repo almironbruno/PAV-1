@@ -49,5 +49,15 @@ namespace Trabajo_Practico.Formularios.ABMC.Clientes
             }
             
         }
+
+        private void AltaClientes_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cmbCargable_TipoDoc_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

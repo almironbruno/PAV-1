@@ -56,6 +56,7 @@
             this.cmbCargable_TipoDoc.Name = "cmbCargable_TipoDoc";
             this.cmbCargable_TipoDoc.Size = new System.Drawing.Size(128, 28);
             this.cmbCargable_TipoDoc.TabIndex = 17;
+            this.cmbCargable_TipoDoc.Load += new System.EventHandler(this.cmbCargable_TipoDoc_Load);
             // 
             // lbl_tipoDocumento
             // 
@@ -211,6 +212,7 @@
             this.Controls.Add(this.cmbCargable_TipoDoc);
             this.Name = "AltaClientes";
             this.Text = "AltaClientes";
+            this.Load += new System.EventHandler(this.AltaClientes_Load);
             this.Controls.SetChildIndex(this.btn_Aceptar, 0);
             this.Controls.SetChildIndex(this.cmbCargable_TipoDoc, 0);
             this.Controls.SetChildIndex(this.lbl_tipoDocumento, 0);

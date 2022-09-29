@@ -38,6 +38,7 @@ namespace Trabajo_Practico.Clases.BackEnd
             cn.Close();
         }
 
+        // Select de tabla
         public DataTable Ejecutar_Select (string sql)
         {
             conectar();
@@ -49,8 +50,21 @@ namespace Trabajo_Practico.Clases.BackEnd
             DataTable tabla = new DataTable();
 
             //Cargar en tabla el comando consultado
-                           //Comando de Lectura
-            tabla.Load(cmd.ExecuteReader());
+            try
+            {
+                tabla.Load(cmd.ExecuteReader());
+            }
+            catch (Exception e)
+            {
+
+                MessageBox.Show("Error en la base de datos con la consulta: " +
+                     sql + " el error es: " + e.Message);
+
+                desconectar();
+                return tabla;
+
+            }                //Comando de Lectura
+            
 
             //Desconectar de la bd
             desconectar();
@@ -59,10 +73,34 @@ namespace Trabajo_Practico.Clases.BackEnd
             return tabla;
         
         
+
         } 
 
+      
+        //Sirve para buscar strings de FK y devolver su equivalencia de PK, recib string y devuelve pk.
+        public int SelectNumeros(string sqlBuscar)
+        {
+            int numero = 0;
+            conectar();
+            
+            cmd.CommandText = sqlBuscar;
+            numero = (int)cmd.ExecuteScalar();
+            desconectar();
+            if(numero > 0)
+            {
+                return numero;
+            }
+            else
+            {
+                return 0;
+            }
+            
+        }
 
         
+        
+        
+
 
         public void Insertar(string SqlInsertar)
         {
@@ -101,10 +139,22 @@ namespace Trabajo_Practico.Clases.BackEnd
             }
             desconectar();
         }
+
         public void modificar(string sqlModificar)
         {
+            conectar();
+            int flag = 0;
             cmd.CommandText = sqlModificar;
-            cmd.ExecuteNonQuery();
+            flag = cmd.ExecuteNonQuery();
+            if (flag == 1)
+            {
+                MessageBox.Show("Modificacion Exitosamente.");
+            }
+            else
+            {
+                MessageBox.Show("Modificacion Errona");
+            }
+            desconectar();
         }
         public void ejecutar(string sql)
         {
