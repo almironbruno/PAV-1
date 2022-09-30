@@ -1,6 +1,6 @@
-﻿namespace Trabajo_Practico.Formularios.ABMC.Autos
+﻿namespace Trabajo_Practico.Formularios.ABMC.Marcas
 {
-    partial class BuscarAuto
+    partial class BuscarMarca
     {
         /// <summary>
         /// Required designer variable.
@@ -28,69 +28,68 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.txtMarcBuscar = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.txtCodBuscar = new System.Windows.Forms.TextBox();
-            this.txtPatenteBuscar = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
+            this.txtIdMarca = new System.Windows.Forms.MaskedTextBox();
             this.SuspendLayout();
             // 
             // btn_Aceptar
             // 
             this.btn_Aceptar.Click += new System.EventHandler(this.btn_Aceptar_Click_1);
             // 
+            // txtMarcBuscar
+            // 
+            this.txtMarcBuscar.Location = new System.Drawing.Point(484, 205);
+            this.txtMarcBuscar.Margin = new System.Windows.Forms.Padding(4);
+            this.txtMarcBuscar.Name = "txtMarcBuscar";
+            this.txtMarcBuscar.Size = new System.Drawing.Size(221, 22);
+            this.txtMarcBuscar.TabIndex = 20;
+            // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(264, 199);
+            this.label1.Location = new System.Drawing.Point(278, 211);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(256, 16);
-            this.label1.TabIndex = 17;
-            this.label1.Text = "Codigo de Serie de Fabrica del Vehiculo: ";
-            // 
-            // txtCodBuscar
-            // 
-            this.txtCodBuscar.Location = new System.Drawing.Point(541, 191);
-            this.txtCodBuscar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.txtCodBuscar.Name = "txtCodBuscar";
-            this.txtCodBuscar.Size = new System.Drawing.Size(221, 22);
-            this.txtCodBuscar.TabIndex = 18;
-            // 
-            // txtPatenteBuscar
-            // 
-            this.txtPatenteBuscar.Location = new System.Drawing.Point(541, 237);
-            this.txtPatenteBuscar.Name = "txtPatenteBuscar";
-            this.txtPatenteBuscar.Size = new System.Drawing.Size(221, 22);
-            this.txtPatenteBuscar.TabIndex = 19;
+            this.label1.Size = new System.Drawing.Size(186, 16);
+            this.label1.TabIndex = 19;
+            this.label1.Text = "Nombre de Marca automotriz: ";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(384, 243);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Location = new System.Drawing.Point(308, 257);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(136, 16);
-            this.label2.TabIndex = 20;
-            this.label2.Text = "Patente del Vehiculo: ";
+            this.label2.Size = new System.Drawing.Size(154, 16);
+            this.label2.TabIndex = 21;
+            this.label2.Text = "Id de la Marca a Buscar: ";
             // 
-            // BuscarAuto
+            // txtIdMarca
+            // 
+            this.txtIdMarca.Location = new System.Drawing.Point(484, 251);
+            this.txtIdMarca.Mask = "99";
+            this.txtIdMarca.Name = "txtIdMarca";
+            this.txtIdMarca.Size = new System.Drawing.Size(22, 22);
+            this.txtIdMarca.TabIndex = 22;
+            // 
+            // BuscarMarca
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1067, 554);
+            this.ClientSize = new System.Drawing.Size(1074, 543);
+            this.Controls.Add(this.txtIdMarca);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.txtPatenteBuscar);
-            this.Controls.Add(this.txtCodBuscar);
+            this.Controls.Add(this.txtMarcBuscar);
             this.Controls.Add(this.label1);
-            this.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
-            this.Name = "BuscarAuto";
-            this.Text = "BuscarAuto";
-            this.Load += new System.EventHandler(this.BuscarAuto_Load);
+            this.Name = "BuscarMarca";
+            this.Text = "BuscarMarca";
+            this.Load += new System.EventHandler(this.BuscarMarca_Load);
             this.Controls.SetChildIndex(this.btn_Aceptar, 0);
             this.Controls.SetChildIndex(this.label1, 0);
-            this.Controls.SetChildIndex(this.txtCodBuscar, 0);
-            this.Controls.SetChildIndex(this.txtPatenteBuscar, 0);
+            this.Controls.SetChildIndex(this.txtMarcBuscar, 0);
             this.Controls.SetChildIndex(this.label2, 0);
+            this.Controls.SetChildIndex(this.txtIdMarca, 0);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -98,9 +97,9 @@
 
         #endregion
 
+        private System.Windows.Forms.TextBox txtMarcBuscar;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox txtCodBuscar;
-        private System.Windows.Forms.TextBox txtPatenteBuscar;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.MaskedTextBox txtIdMarca;
     }
 }
