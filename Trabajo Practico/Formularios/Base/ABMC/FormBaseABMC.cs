@@ -23,7 +23,7 @@ namespace Trabajo_Practico.Formularios
         protected string sqlEliminar;
         protected string sqlModificar;
         //protected DataTable tabla;
-        protected string consultaPrincipal;
+        public string consultaPrincipal;
         public FormBaseABMC()
         {
             InitializeComponent();

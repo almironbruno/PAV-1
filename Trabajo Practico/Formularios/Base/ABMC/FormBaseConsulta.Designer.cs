@@ -60,6 +60,7 @@
             this.Controls.SetChildIndex(this.lbl_buscar, 0);
             this.ResumeLayout(false);
             this.PerformLayout();
+            // Boton cancelar -> B
 
         }
 

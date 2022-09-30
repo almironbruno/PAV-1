@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Trabajo_Practico.Formularios.ABMC.Empleados;
 
 namespace Trabajo_Practico.Formularios.Base
 {
@@ -15,6 +16,7 @@ namespace Trabajo_Practico.Formularios.Base
         public FormBaseConsulta()
         {
             InitializeComponent();
+            
         }
 
 
@@ -30,5 +32,6 @@ namespace Trabajo_Practico.Formularios.Base
         {
 
         }
+        //public virtual void cargarInfo(DataGridViewRow row) { }
     }
 }

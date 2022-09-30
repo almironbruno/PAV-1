@@ -10,8 +10,10 @@ using System.Windows.Forms;
 
 namespace Trabajo_Practico.Formularios.Base
 {
+    
     public partial class FormBaseBotones : Form
     {
+        protected bool modoConsulta = false;
         public FormBaseBotones()
         {
             InitializeComponent();
@@ -19,7 +21,7 @@ namespace Trabajo_Practico.Formularios.Base
 
         private void btn_Aceptar_Click(object sender, EventArgs e)
         {
-            if(!validarCampos()) return;
+            if(!modoConsulta && !validarCampos()) return;
         }
 
         private  void btn_Cancelar_Click(object sender, EventArgs e)
@@ -102,6 +104,18 @@ namespace Trabajo_Practico.Formularios.Base
             
 
 
+        }
+
+        //Obliga a los hijos a implementar este metodo, llenando el form que corresponda
+        public virtual void cargarInfo(DataGridViewRow row) { }
+
+        public void cambiarFormaConsulta()
+        {
+            //Metodo que cambia los botones al "Modo Consulta"
+            btn_Cancelar.Text = "Volver";
+            btn_LimpiarCampos.Hide();
+            modoConsulta = true;
+            
         }
     }
 }

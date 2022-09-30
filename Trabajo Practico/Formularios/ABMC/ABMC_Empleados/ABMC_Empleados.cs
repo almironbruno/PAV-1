@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Trabajo_Practico.Formularios.ABMC.ABMC_Empleados;
+using Trabajo_Practico.Formularios.ABMC.ABMC_Empleados.Forms;
 using Trabajo_Practico.Formularios.ABMC.Empleados;
 using Trabajo_Practico.Formularios.Base;
 
@@ -17,6 +18,7 @@ namespace Trabajo_Practico.Formularios
     {
         public ABMC_Empleados()
         {
+            dataGridViewModificada1.formularioDatosCompletos = new InfoEmpleados();
             //Asigna la tabla sobre la cual trabaja el ABM
             consultaPrincipal = "SELECT * FROM empleados";
             InitializeComponent();
@@ -50,6 +52,11 @@ namespace Trabajo_Practico.Formularios
             ventana.Show();
         }
 
-        
+        private void btn_Buscar_Click_1(object sender, EventArgs e)
+        {
+            Consulta ventana = new Consulta(this);
+            ventana.Show();
+            
+        }
     }
 }
