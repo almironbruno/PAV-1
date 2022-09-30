@@ -65,3 +65,6 @@ C:\Users\Tomas\Desktop\PAV-1\Trabajo Practico\obj\Debug\Trabajo Practico.csproj.
 C:\Users\Tomas\Desktop\PAV-1\Trabajo Practico\obj\Debug\Trabajo Practico.exe
 C:\Users\Tomas\Desktop\PAV-1\Trabajo Practico\obj\Debug\Trabajo Practico.pdb
 C:\Users\Tomas\Desktop\PAV-1\Trabajo Practico\obj\Debug\Trabajo_Practico.Formularios.ABMC.Barrios.ModBarrio.resources
+C:\Users\Tomas\Desktop\PAV-1\Trabajo Practico\obj\Debug\Trabajo_Practico.Formularios.ABMC.Telefonos.TelefonosPrincipal.resources
+C:\Users\Tomas\Desktop\PAV-1\Trabajo Practico\obj\Debug\Trabajo_Practico.Formularios.ABMC.Telefonos.AltaTelefono.resources
+C:\Users\Tomas\Desktop\PAV-1\Trabajo Practico\obj\Debug\Trabajo_Practico.Formularios.ABMC.Telefonos.ModificacionTelefono.resources

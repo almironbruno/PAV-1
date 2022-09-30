@@ -13,7 +13,8 @@ using Trabajo_Practico.Formularios.ABMC.Barrios;
 using Trabajo_Practico.Formularios.ABMC.Gamas;
 using Trabajo_Practico.Formularios.ABMC.Marcas;
 using Trabajo_Practico.Formularios.ABMC.Clientes;
-
+using Trabajo_Practico.Formularios.ABMC.Telefonos;
+using Trabajo_Practico.Clases.Entidades;
 
 namespace Trabajo_Practico.Formularios
 {
@@ -40,8 +41,8 @@ namespace Trabajo_Practico.Formularios
 
         private void clientesToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Clientes ventanaClientes = new Clientes();
-            ventanaClientes.Show();
+            //Clientes ventanaClientes = new Clientes();
+            //ventanaClientes.Show();
         }
 
         private void autosToolStripMenuItem_Click(object sender, EventArgs e)
@@ -67,6 +68,12 @@ namespace Trabajo_Practico.Formularios
         {
             Barrios ventanaBarrios = new Barrios();
             ventanaBarrios.Show();
+        }
+
+        private void telefonosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            TelefonosPrincipal ventanaTelefono = new TelefonosPrincipal();
+            ventanaTelefono.Show();
         }
     }
 }

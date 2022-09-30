@@ -18,7 +18,7 @@ namespace Trabajo_Practico.Formularios.ABMC.Clientes
         public AltaClientes()
         {
             InitializeComponent();
-            cmbCargable_TipoDoc.cargar("SELECT * FROM tipo_doc_clientes","nombre_tipo_doc","id_doc_cliente");
+            cmbCargable_TipoDoc.cargar("SELECT * FROM tipo_doc_clientes","nombre_tipo_doc"," ");
             cmbCargable_Barrio.cargar("SELECT * FROM barrios","nombre_barrio","id_barrios");
         }
 
