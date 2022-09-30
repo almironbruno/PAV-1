@@ -54,8 +54,9 @@ namespace Trabajo_Practico.Formularios
 
         private void btn_Buscar_Click_1(object sender, EventArgs e)
         {
-            Consulta ventana = new Consulta();
+            Consulta ventana = new Consulta(this);
             ventana.Show();
+            
         }
     }
 }

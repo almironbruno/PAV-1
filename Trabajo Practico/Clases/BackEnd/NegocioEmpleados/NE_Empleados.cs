@@ -45,13 +45,23 @@ namespace Trabajo_Practico.Clases.BackEnd.NegocioEmpleados
 
         public DataTable consultaEmpleados(string legajo,string nombre,string apellido,string cargo) 
         {
-            if (legajo.Equals("")) legajo = "*";
-            if (apellido.Equals("")) apellido = "*";
-            if (nombre.Equals("")) nombre = "*";
-            if (cargo.Equals("")) cargo = "*";
-            string sqlConsulta = $"SELECT * FROM Empleados WHERE legajo_empleado={legajo} AND nombre={nombre} AND apellido={apellido} AND cargo={cargo}";
+            if (legajo.Equals("")) legajo = "%";
+            if (apellido.Equals("")) apellido = "%";
+            if (nombre.Equals("")) nombre = "%";
+            if (cargo.Equals("")) cargo = "%";
+            string sqlConsulta = $"SELECT * FROM Empleados WHERE legajo_empleado LIKE'{legajo}' AND nombre LIKE'{nombre}' AND apellido LIKE'{apellido}' AND cargo LIKE'{cargo}'";
             DataTable e = bd.Ejecutar_Select(sqlConsulta);
             return e;
+        }
+        public string consultemp(string legajo, string nombre, string apellido, string cargo)
+        {
+            if (legajo.Equals("")) legajo = "%";
+            if (apellido.Equals("")) apellido = "%";
+            if (nombre.Equals("")) nombre = "%";
+            if (cargo.Equals("")) cargo = "%";
+            string sqlConsulta = $"SELECT * FROM empleados WHERE legajo_empleado LIKE'{legajo}' AND nombre LIKE'{nombre}' AND apellido LIKE'{apellido}' AND cargo LIKE'{cargo}'";
+            return sqlConsulta;
+
         }
     }
 }
