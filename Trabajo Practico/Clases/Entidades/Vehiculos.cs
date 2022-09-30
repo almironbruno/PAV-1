@@ -75,7 +75,7 @@ namespace Trabajo_Practico.Clases.Entidades
             
             //Salida completa de los datos del auto
             string salida = "Cod.Serie: " + vehi.cod_serie_fabrica + " - Nom.Comercial: " + comer + " - Año.Fab: " + vehi.año_Fabricacion +
-                " - Condicion: " + condi + " - Nro.Chas: " + vehi.nro_Chasis + " - Nro.Motor: " + vehi.nro_Motor + " - Patente: " + vehi.patente + ".";
+                System.Environment.NewLine +"Condicion: " + condi + " - Nro.Chas: " + vehi.nro_Chasis + " - Nro.Motor: " + vehi.nro_Motor +System.Environment.NewLine+"Patente: " + vehi.patente + ".";
             
             return salida;
         }
