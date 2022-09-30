@@ -8,19 +8,21 @@ namespace Trabajo_Practico.Clases.Entidades
 {
     public class Barrio
     {
-        public string nombreBarrio { get; set; }
 
-        
+        public string nombre_Barrio { get; set; }
+
+ 
 
         public Barrio(string nombreBarrio)
         {
-            this.nombreBarrio = nombreBarrio;
+            nombre_Barrio = nombreBarrio;
             
         }
 
+
         public string Mostrar(Barrio bar)
         {
-            string salida = "Nombre del nuevo Barrio: " + bar.nombreBarrio;
+            string salida = "Nombre del nuevo Barrio: " + bar.nombre_Barrio;
 
             return salida;
         }

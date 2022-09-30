@@ -19,7 +19,7 @@ namespace Trabajo_Practico.Clases.BackEnd.NegocioBarrio
         {
             string sqlInsertar = @"INSERT into barrios"
                                   +"(nombre_barrio)"
-                                  +"VALUES('" + barrioAgregar.nombreBarrio + "')";
+                                  +"VALUES('" + barrioAgregar.nombre_Barrio + "')";
 
 
 
@@ -33,9 +33,9 @@ namespace Trabajo_Practico.Clases.BackEnd.NegocioBarrio
             _BD.Eliminar(sqlBorrar);
         }
 
-        public void ModificarBarrio(Barrio modificarBarrio)
+        public void ModificarBarrio(Barrio modificarBarrio, string pk)
         {
-            string sqlInsertar = $"UPDATE barrios SET nombre_barrio = {modificarBarrio.nombreBarrio}";
+            string sqlInsertar = $"UPDATE barrios SET nombre_barrio = '{modificarBarrio.nombre_Barrio}' WHERE Id_barrios = {pk}";
             _BD.Insertar(sqlInsertar);
         }
     }

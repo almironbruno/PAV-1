@@ -19,13 +19,15 @@ namespace Trabajo_Practico.Formularios.ABMC.Barrios
     {
 
         Trabajo_Practico.Clases.Entidades.Barrio BarrioMod;
+        string idBarrio;
 
-        public ModBarrio(Trabajo_Practico.Clases.Entidades.Barrio barrio)
+        public ModBarrio(Trabajo_Practico.Clases.Entidades.Barrio barrio, string pk)
         {
             InitializeComponent();
             BarrioMod = barrio;
+            idBarrio = pk;
 
-            txtReemplazoNombreBarrio.Text = barrio.nombreBarrio.Trim();
+            txtReemplazoNombreBarrio.Text = barrio.nombre_Barrio.Trim();
 
             
         }
@@ -34,9 +36,10 @@ namespace Trabajo_Practico.Formularios.ABMC.Barrios
         {
             base.btn_Aceptar_Click(sender, e);
             NE_Barrio barrio = new NE_Barrio();
-
-            BarrioMod.nombreBarrio = txtReemplazoNombreBarrio.Text.Trim();
-            barrio.ModificarBarrio(BarrioMod);
+            string pk = idBarrio;
+            BarrioMod.nombre_Barrio = txtReemplazoNombreBarrio.Text.Trim();
+            barrio.ModificarBarrio(BarrioMod,pk);
+            this.Close();
         }
     }
 }
