@@ -56,7 +56,7 @@
             this.dgr_Principal.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgr_Principal.Size = new System.Drawing.Size(540, 306);
             this.dgr_Principal.TabIndex = 0;
-            
+            this.dgr_Principal.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgr_Principal_CellDoubleClick);
             // 
             // DataGridViewModificada
             // 

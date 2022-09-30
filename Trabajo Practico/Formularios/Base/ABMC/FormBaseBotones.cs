@@ -103,5 +103,16 @@ namespace Trabajo_Practico.Formularios.Base
 
 
         }
+
+        //Obliga a los hijos a implementar este metodo, llenando el form que corresponda
+        public virtual void cargarInfo(DataGridViewRow row) { }
+
+        public void cambiarFormaConsulta()
+        {
+            //Metodo que cambia los botones al "Modo Consulta"
+            btn_Cancelar.Text = "Volver";
+            btn_LimpiarCampos.Hide();
+            
+        }
     }
 }

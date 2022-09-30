@@ -50,11 +50,9 @@
             this.Name = "FormBaseConsulta";
             this.Text = "FormBaseConsulta";
             this.Load += new System.EventHandler(this.FormBaseConsulta_Load);
-            this.Controls.SetChildIndex(this.btn_Aceptar, 0);
-            //this.Controls.SetChildIndex(this.btn_Cancelar, 0);
-            this.Controls.SetChildIndex(this.lbl_buscar, 0);
             this.ResumeLayout(false);
             this.PerformLayout();
+            // Boton cancelar -> B
 
         }
 

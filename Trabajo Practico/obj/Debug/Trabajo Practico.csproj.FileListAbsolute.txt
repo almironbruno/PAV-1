@@ -34,3 +34,4 @@ C:\Users\Almir\Desktop\PAV\PAV-1-tp\Trabajo Practico\bin\Debug\Trabajo Practico.
 C:\Users\Almir\Desktop\PAV\PAV-1-tp\Trabajo Practico\bin\Debug\Trabajo Practico.pdb
 C:\Users\Almir\Desktop\PAV\PAV-1-tp\Trabajo Practico\obj\Debug\Trabajo Practico.exe
 C:\Users\Almir\Desktop\PAV\PAV-1-tp\Trabajo Practico\obj\Debug\Trabajo Practico.pdb
+C:\Users\Almir\Desktop\PAV\PAV-1-tp\Trabajo Practico\obj\Debug\Trabajo_Practico.Formularios.ABMC.ABMC_Empleados.BajaEmpleado.resources

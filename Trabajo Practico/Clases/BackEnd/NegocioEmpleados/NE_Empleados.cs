@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -32,7 +33,25 @@ namespace Trabajo_Practico.Clases.BackEnd.NegocioEmpleados
 
             bd.ejecutar(sqlModificar);
         
-   
+        }
+
+        public void bajaEmpleados(string legajo) 
+        {
+
+            string sqlBorrar = "DELETE FROM empleados WHERE legajo_empleado = " + legajo;
+            bd.Eliminar(sqlBorrar);
+
+        }
+
+        public DataTable consultaEmpleados(string legajo,string nombre,string apellido,string cargo) 
+        {
+            if (legajo.Equals("")) legajo = "*";
+            if (apellido.Equals("")) apellido = "*";
+            if (nombre.Equals("")) nombre = "*";
+            if (cargo.Equals("")) cargo = "*";
+            string sqlConsulta = $"SELECT * FROM Empleados WHERE legajo_empleado={legajo} AND nombre={nombre} AND apellido={apellido} AND cargo={cargo}";
+            DataTable e = bd.Ejecutar_Select(sqlConsulta);
+            return e;
         }
     }
 }

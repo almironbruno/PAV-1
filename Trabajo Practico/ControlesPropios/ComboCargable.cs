@@ -35,6 +35,7 @@ namespace Trabajo_Practico.ControlesPropios
         }
         
 
+
         private void lbl_Nombre_Click(object sender, EventArgs e)
         {
 

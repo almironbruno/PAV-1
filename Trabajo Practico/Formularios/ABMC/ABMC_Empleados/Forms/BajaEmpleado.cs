@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Trabajo_Practico.Clases.BackEnd.NegocioEmpleados;
 using Trabajo_Practico.Formularios.ABMC.Empleados;
 
 namespace Trabajo_Practico.Formularios.ABMC.ABMC_Empleados
@@ -17,9 +18,10 @@ namespace Trabajo_Practico.Formularios.ABMC.ABMC_Empleados
         {
             //Desactivo todos los campos
             btn_LimpiarCampos.Enabled = false;
+            mTxt_Apellido.ReadOnly = true;
             mtxt_Legajo.Enabled = false;
             mTxt_Nombre.Enabled = false;
-            mTxt_Apellido.Enabled = false;
+            //mTxt_Apellido.Enabled = false;
             cmbCargable_Cargos.Enabled = false;
 
             //Tomo la info de la fila seleccionada
@@ -34,6 +36,13 @@ namespace Trabajo_Practico.Formularios.ABMC.ABMC_Empleados
 
 
             InitializeComponent();
+        }
+
+        private void btn_Aceptar_Click(object sender, EventArgs e)
+        {
+            NE_Empleados empleadosBorrar = new NE_Empleados();
+            empleadosBorrar.bajaEmpleados(mtxt_Legajo.Text);
+            this.Close();
         }
     }
 }
