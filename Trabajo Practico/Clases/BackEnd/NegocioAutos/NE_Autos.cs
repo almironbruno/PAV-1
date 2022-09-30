@@ -112,7 +112,7 @@ namespace Trabajo_Practico.Clases.BackEnd.NegocioAutos
        
 
         //Buscar auto a travez de un codigo de Serie.
-        public DataTable BuscarAuto(string codigoPk)
+        public DataTable BuscarAutoCodSerie(string codigoPk)
         {
             
 
@@ -121,6 +121,28 @@ namespace Trabajo_Practico.Clases.BackEnd.NegocioAutos
             return _BD.Ejecutar_Select(consulta);
 
         }
+
+        public DataTable BuscarAutoPatente(string patente)
+        {
+
+
+            string consulta = "SELECT *  FROM autos WHERE patente = '" + patente + "'";
+
+            return _BD.Ejecutar_Select(consulta);
+
+        }
+
+        public DataTable BuscarDobleCriterio(string patente, string id)
+        {
+
+
+            string consulta = "SELECT * FROM autos WHERE cod_serie_fabrica = '"+id+"' AND patente = '"+patente+"'";
+
+            return _BD.Ejecutar_Select(consulta);
+
+        }
+
+
 
 
 

@@ -87,5 +87,11 @@ namespace Trabajo_Practico.Formularios
            
 
         }
+
+        private void btn_Buscar_Click_1(object sender, EventArgs e)
+        {
+            BuscarMarca vtnBuscarMarca = new BuscarMarca();
+            vtnBuscarMarca.Show();
+        }
     }
 }
