@@ -1,6 +1,6 @@
-﻿namespace Trabajo_Practico.Formularios
+﻿namespace Trabajo_Practico.Formularios.ABMC.Clientes
 {
-    partial class ABMC_Empleados
+    partial class ABMC_Clientes
     {
         /// <summary>
         /// Required designer variable.
@@ -31,6 +31,10 @@
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
+            // btn_Agregar
+            // 
+            this.btn_Agregar.Click += new System.EventHandler(this.btn_Agregar_Click_1);
+            // 
             // btn_Actualizar
             // 
             this.btn_Actualizar.Click += new System.EventHandler(this.btn_Actualizar_Click_1);
@@ -39,19 +43,15 @@
             // 
             this.btn_Eliminar.Click += new System.EventHandler(this.btn_Eliminar_Click_1);
             // 
-            // btn_Buscar
-            // 
-            this.btn_Buscar.Click += new System.EventHandler(this.btn_Buscar_Click_1);
-            // 
-            // ABMC_Empleados
+            // ABMC_Clientes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Name = "ABMC_Empleados";
-            this.Text = "Empleados";
-            this.Activated += new System.EventHandler(this.ABMC_Empleados_Activated);
-            this.Load += new System.EventHandler(this.Empleados_Load);
+            this.Name = "ABMC_Clientes";
+            this.Text = "Clientes";
+            this.Activated += new System.EventHandler(this.ABMC_Clientes_Activated);
+            this.Load += new System.EventHandler(this.Clientes_Load);
             this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();

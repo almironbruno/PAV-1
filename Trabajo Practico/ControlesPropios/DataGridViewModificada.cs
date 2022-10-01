@@ -14,7 +14,8 @@ namespace Trabajo_Practico
 {
     public partial class DataGridViewModificada : UserControl
     {
-        public FormBaseBotones formularioDatosCompletos;
+        public FormBaseBotones forme;
+
         public DataGridViewModificada()
         {
             InitializeComponent();
@@ -42,7 +43,8 @@ namespace Trabajo_Practico
 
         private void dgr_Principal_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
-            InfoEmpleados ventana = new InfoEmpleados();
+            //Llama al form que se define en cada ABM
+            FormBaseBotones ventana =  forme;
             ventana.cargarInfo(FilaSeleccionada());
             ventana.Show();
         }

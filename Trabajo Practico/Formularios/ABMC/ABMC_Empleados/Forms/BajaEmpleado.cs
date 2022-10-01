@@ -21,8 +21,9 @@ namespace Trabajo_Practico.Formularios.ABMC.ABMC_Empleados
             mTxt_Apellido.ReadOnly = true;
             mtxt_Legajo.Enabled = false;
             mTxt_Nombre.Enabled = false;
-            //mTxt_Apellido.Enabled = false;
+            mTxt_Apellido.Enabled = false;
             cmbCargable_Cargos.Enabled = false;
+            btn_LimpiarCampos.Hide();
 
             //Tomo la info de la fila seleccionada
             int legajo = int.Parse(row.Cells[0].Value.ToString());

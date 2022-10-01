@@ -8,17 +8,17 @@ namespace Trabajo_Practico.Clases.Entidades
 {
     public class Clientes
     {
-        public string tipo_doc {  set; get; }
-        public string nro_doc {  set; get; }
+        public int tipo_doc {  set; get; }
+        public int nro_doc {  set; get; }
         public string nombre {  set; get; }
         public string apellido {  set; get; }
         public string fecha_nacimiento {  set; get; }
         public string calle {  set; get; }
-        public string nro_calle {  set; get; }
-        public string id_barrio {  set; get; }
+        public int nro_calle {  set; get; }
+        public int id_barrio {  set; get; }
 
 
-        public Clientes(string tipo_docu,string nro_docu,string nom,string ape,string fechNac,string unaCalle,string nro_Call,string barrio) 
+        public Clientes(int tipo_docu,int nro_docu,string nom,string ape,string fechNac,string unaCalle,int nro_Call,int barrio) 
         { 
             tipo_doc = tipo_docu;
             nro_doc = nro_docu;

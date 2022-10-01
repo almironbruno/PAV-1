@@ -9,11 +9,12 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using Trabajo_Practico.Clases.BackEnd.NegocioClientes;
 using Trabajo_Practico.Clases.Entidades;
+using Trabajo_Practico.Formularios.ABMC.ABMC_Clientes;
 using Trabajo_Practico.Formularios.Base;
 
 namespace Trabajo_Practico.Formularios.ABMC.Clientes
 {
-    public partial class AltaClientes : FormBaseAlta 
+    public partial class AltaClientes : CamposClientes
     {
         public AltaClientes()
         {
@@ -26,14 +27,14 @@ namespace Trabajo_Practico.Formularios.ABMC.Clientes
         {
             if (validarCampos())
             {
-                string tipoDoc = cmbCargable_TipoDoc.cmb_Cargable.SelectedValue.ToString();
-                string nroDoc = mTxt_NroDocu.Text;
+                int tipoDoc = int.Parse(cmbCargable_TipoDoc.cmb_Cargable.SelectedValue.ToString());
+                int nroDoc = int.Parse(mTxt_NroDocu.Text);
                 string nombre = mTxt_Nombre.Text;
                 string apellido = mTxt_Apellido.Text;
                 string fechaNac = mTxt_FechaNac.Text;
                 string calle = mtxt_Calle.Text;
-                string nroCalle = mTxt_NroCalle.Text;
-                string id_Barrio = cmbCargable_Barrio.cmb_Cargable.SelectedValue.ToString();
+                int nroCalle = int.Parse(mTxt_NroCalle.Text);
+                int id_Barrio = int.Parse(cmbCargable_Barrio.cmb_Cargable.SelectedValue.ToString());
 
                 Trabajo_Practico.Clases.Entidades.Clientes nuevoCliente = new Trabajo_Practico.Clases.Entidades.Clientes(tipoDoc, nroDoc, nombre, apellido, fechaNac, calle, nroDoc, id_Barrio);
                 MessageBox.Show(nuevoCliente.toString());
@@ -43,10 +44,7 @@ namespace Trabajo_Practico.Formularios.ABMC.Clientes
                 Cliente.AgregarCliente(nuevoCliente);
                 this.Close();
             }
-            else
-            {
-                return;
-            }
+   
             
         }
 

@@ -23,7 +23,7 @@ namespace Trabajo_Practico.Formularios.Base
 
         private void btn_Aceptar_Click(object sender, EventArgs e)
         {
-            if(!modoConsulta && !validarCampos()) return;
+            //if(!modoConsulta && !validarCampos()) return;
         }
 
         private  void btn_Cancelar_Click(object sender, EventArgs e)

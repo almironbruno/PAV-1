@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Trabajo_Practico.Formularios.ABMC.ABMC_Clientes.Forms;
 using Trabajo_Practico.Formularios.ABMC.ABMC_Empleados;
 using Trabajo_Practico.Formularios.ABMC.ABMC_Empleados.Forms;
 using Trabajo_Practico.Formularios.ABMC.Empleados;
@@ -18,7 +19,7 @@ namespace Trabajo_Practico.Formularios
     {
         public ABMC_Empleados()
         {
-            dataGridViewModificada1.formularioDatosCompletos = new InfoEmpleados();
+            
             //Asigna la tabla sobre la cual trabaja el ABM
             consultaPrincipal = @"SELECT E.legajo_empleado AS 'Legajo', 
                                     E.nombre AS 'Nombre', 
@@ -29,6 +30,7 @@ namespace Trabajo_Practico.Formularios
             InitializeComponent();
             // cambia los nombres de la ventana a cliente --Eliminar comentario despues--
             cambiarNombre("Empleados");
+            //dataGridViewModificada1.formularioDatosCompletos = new InfoEmpleados();
         }
 
         //Se sobreescribe el metodo 
@@ -42,7 +44,7 @@ namespace Trabajo_Practico.Formularios
 
         private void Empleados_Load(object sender, EventArgs e)
         {
-
+            dataGridViewModificada1.forme = new InfoEmpleados();
         }
 
         private void btn_Eliminar_Click_1(object sender, EventArgs e)
@@ -62,6 +64,11 @@ namespace Trabajo_Practico.Formularios
             Consulta ventana = new Consulta(this);
             ventana.Show();
             
+        }
+
+        private void ABMC_Empleados_Activated(object sender, EventArgs e)
+        {
+            dataGridViewModificada1.forme = new InfoEmpleados();
         }
     }
 }

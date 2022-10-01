@@ -38,7 +38,7 @@ namespace Trabajo_Practico.Formularios
 
         private void clientesToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Clientes ventanaClientes = new Clientes();
+            ABMC_Clientes ventanaClientes = new ABMC_Clientes();
             ventanaClientes.Show();
         }
 
