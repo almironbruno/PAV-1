@@ -11,7 +11,7 @@ using Trabajo_Practico.Clases;
 using Trabajo_Practico.Formularios.ABMC;
 using Trabajo_Practico.Formularios.ABMC.Marcas;
 using Trabajo_Practico.Formularios.ABMC.Clientes;
-
+using Trabajo_Practico.Formularios.ABMC.Localidades;
 
 namespace Trabajo_Practico.Formularios
 {
@@ -60,6 +60,17 @@ namespace Trabajo_Practico.Formularios
             this.Close();
             LoginForm vtnLogin = new LoginForm();
             vtnLogin.Show();
+        }
+
+        private void localidadesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Localidades ventana = new Localidades();
+            ventana.Show();
+        }
+
+        private void reportesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

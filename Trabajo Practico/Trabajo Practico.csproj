@@ -51,11 +51,13 @@
     <Compile Include="Clases\BackEnd\NegocioAutos\NE_Autos.cs" />
     <Compile Include="Clases\BackEnd\NegocioClientes\NE_Clientes.cs" />
     <Compile Include="Clases\BackEnd\NegocioEmpleados\NE_Empleados.cs" />
+    <Compile Include="Clases\BackEnd\NegocioLocalidades\Ne_Localidades.cs" />
     <Compile Include="Clases\BackEnd\NegocioMarcas\NE_Marcas.cs" />
     <Compile Include="Clases\BackEnd\ValidarEmail.cs" />
     <Compile Include="Clases\BackEnd\NegocioUsuarios\NE_usuarios.cs" />
     <Compile Include="Clases\Entidades\Clientes.cs" />
     <Compile Include="Clases\Entidades\Empleados.cs" />
+    <Compile Include="Clases\Entidades\Localidades.cs" />
     <Compile Include="Clases\Entidades\Marca.cs" />
     <Compile Include="Clases\Entidades\Vehiculos.cs" />
     <Compile Include="Clases\Entidades\Usuario.cs" />
@@ -160,6 +162,30 @@
     </Compile>
     <Compile Include="Formularios\ABMC\ABMC_Empleados\Forms\ModificacionEmpleados.Designer.cs">
       <DependentUpon>ModificacionEmpleados.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\ABMC\Localidades\AltaLocalidades.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\ABMC\Localidades\AltaLocalidades.Designer.cs">
+      <DependentUpon>AltaLocalidades.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\ABMC\Localidades\BuscarLocalidades.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\ABMC\Localidades\BuscarLocalidades.Designer.cs">
+      <DependentUpon>BuscarLocalidades.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\ABMC\Localidades\Localidades.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\ABMC\Localidades\Localidades.Designer.cs">
+      <DependentUpon>Localidades.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\ABMC\Localidades\ModificarLocalidad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\ABMC\Localidades\ModificarLocalidad.Designer.cs">
+      <DependentUpon>ModificarLocalidad.cs</DependentUpon>
     </Compile>
     <Compile Include="Formularios\ABMC\Marcas\AltaMarcas.cs">
       <SubType>Form</SubType>
@@ -295,6 +321,18 @@
     <EmbeddedResource Include="Formularios\ABMC\ABMC_Empleados\Forms\ModificacionEmpleados.resx">
       <DependentUpon>ModificacionEmpleados.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\ABMC\Localidades\AltaLocalidades.resx">
+      <DependentUpon>AltaLocalidades.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\ABMC\Localidades\BuscarLocalidades.resx">
+      <DependentUpon>BuscarLocalidades.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\ABMC\Localidades\Localidades.resx">
+      <DependentUpon>Localidades.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\ABMC\Localidades\ModificarLocalidad.resx">
+      <DependentUpon>ModificarLocalidad.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Formularios\ABMC\Marcas\AltaMarcas.resx">
       <DependentUpon>AltaMarcas.cs</DependentUpon>
     </EmbeddedResource>
@@ -404,6 +442,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\6578917_broom_clean_cleaning_housekeeping_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Location.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
