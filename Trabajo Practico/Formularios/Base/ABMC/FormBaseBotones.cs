@@ -117,5 +117,10 @@ namespace Trabajo_Practico.Formularios.Base
             modoConsulta = true;
             
         }
+
+        private void FormBaseBotones_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
