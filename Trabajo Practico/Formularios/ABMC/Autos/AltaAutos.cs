@@ -83,6 +83,11 @@ namespace Trabajo_Practico.Formularios.ABMC.Autos
            
         }
 
+        private void btn_LimpiarCampos_Click(object sender, EventArgs e)
+        {
+
+        }
+
         // protected override void btn_LimpiarCampos_Click(object sender, EventArgs e)
         //{
         //    txtCodSerieFab.Text = "";

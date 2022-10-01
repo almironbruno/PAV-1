@@ -11,6 +11,7 @@ using Trabajo_Practico.Clases;
 using Trabajo_Practico.Clases.BackEnd;
 
 
+
 namespace Trabajo_Practico.Formularios
 {
     public partial class NewUsuarioForm : Form
@@ -100,16 +101,31 @@ namespace Trabajo_Practico.Formularios
                     }
                 
                 
-                }   
+                }
 
+              
 
             }
 
         }
 
+        private void button1_Click(object sender, EventArgs e)
+        {
+            DialogResult result = MessageBox.Show("Va a borrar todos los camppos \n\t ¿Esta seguro?", "Advertencia para borrar campos", MessageBoxButtons.OKCancel);
+            //Si el usuario selecciona OK, borra los campos
+            if (result == DialogResult.OK)
+            {
+                //Recorre los controles del form y borra los TextBox - MaskedTextBox
+                foreach (Control item in this.Controls)
+                {
+                    if (item is TextBox || item is MaskedTextBox)
+                    {
+                        item.Text = "";
 
-
-
-
+                    }
+                }
+               
+            }
+        }
     }
 }
