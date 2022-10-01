@@ -61,10 +61,15 @@ namespace Trabajo_Practico
 
         private void dgr_Principal_CellMouseEnter(object sender, DataGridViewCellEventArgs e)
         {
-            for (int i = 0; i < dgr_Principal.Columns.Count; i++)
-            {
-                dgr_Principal.SelectedRows[0].Cells[i].ToolTipText = "Doble Click para mas informacion";
-            }
+            
+                //Establece los toolTips para cada celda
+                for (int i = 0; i < dgr_Principal.Columns.Count; i++)
+                {
+                    if (dgr_Principal.Rows.Count>0)
+                    dgr_Principal.SelectedRows[0].Cells[i].ToolTipText = "Doble Click para mas informacion";
+                }
+            
+            
         }
     }
 }

@@ -3,7 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 using Trabajo_Practico.Clases.Entidades;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.TextBox;
 
 namespace Trabajo_Practico.Clases.BackEnd.NegocioClientes
 {
@@ -34,5 +36,34 @@ namespace Trabajo_Practico.Clases.BackEnd.NegocioClientes
             string sqlInsertar = $"UPDATE clientes SET tipo_doc_cliente = {clienteModificar.tipo_doc}, nro_doc_cliente = {clienteModificar.nro_doc}, nombre = '{clienteModificar.nombre}' , apellido = '{clienteModificar.apellido}', fecha_nacimiento = CONVERT(DATETIME, '{clienteModificar.fecha_nacimiento}',103), calle = '{clienteModificar.calle}', nro_calle ={clienteModificar.nro_calle} , id_barrio = {clienteModificar.id_barrio} WHERE tipo_doc_cliente = {clienteModificar.tipo_doc} AND  nro_doc_cliente = {clienteModificar.nro_doc} ";
             _BD.ejecutar(sqlInsertar);
         }
+
+
+
+        public string consultaCl(string tipoDoc,string nroDoc,string nombre,string apellido,string fechaNac,string calle,string nroCalle,string barrio) 
+        {
+            if (tipoDoc.Equals("0")) tipoDoc= "%";
+            if (nroDoc.Equals("")) nroDoc = "%";
+            if (nombre.Equals("")) nombre = "%";
+            if (apellido.Equals("")) apellido = "%";
+            if (fechaNac.Equals("/  /")) fechaNac = "%";
+            else {fechaNac=fechaNac.Replace("/","-"); };
+            if (calle.Equals("")) calle = "%";
+            if (nroCalle.Equals("")) nroCalle = "%";
+            if (barrio.Equals("0")) barrio = "%";
+            string sqlConsulta = $@"SELECT * FROM clientes WHERE 
+                                tipo_doc_cliente LIKE '{tipoDoc}' AND 
+                                nro_doc_cliente LIKE '{nroDoc}' AND
+                                nombre LIKE '{nombre}' AND 
+                                apellido LIKE '{apellido}' AND 
+                                fecha_nacimiento LIKE '{fechaNac}' AND
+                                calle LIKE '{calle}' AND
+                                nro_calle LIKE '{nroCalle}' AND
+                                id_barrio LIKE '{barrio}'";
+            return sqlConsulta;
+
+
+
+        }
+        
     }
 }
