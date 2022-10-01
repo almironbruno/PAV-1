@@ -23,20 +23,24 @@ namespace Trabajo_Practico.Formularios.ABMC.ABMC_Empleados.Forms
             InitializeComponent();
             //Cambia el form a modo consulta
             cambiarFormaConsulta();
-            cmbCargable_Cargos.cargar("SELECT * FROM cargos_empleados", "nombre_cargo", "id_cargo");
+            
+            cmbCargable_Cargos.cargarParaConsulta("SELECT * FROM cargos_empleados", "nombre_cargo", "id_cargo");
+            
         }
 
         private void btn_Aceptar_Click(object sender, EventArgs e)
         {
+            //Asigno los datos que selecciona el usuario
             string legajo = mtxt_Legajo.Text.Trim();
             string nombre = mTxt_Nombre.Text.Trim();
             string apellido = mTxt_Apellido.Text.Trim();
-            string cargo = "";//cmbCargable_Cargos.cmb_Cargable.SelectedValue.ToString();
-            //Terminar de implementar
+            string cargo = cmbCargable_Cargos.cmb_Cargable.SelectedValue.ToString();
+            //Llama al BackEnd
             NE_Empleados em = new NE_Empleados();
             form1.consultaPrincipal = em.consultemp(legajo,nombre,apellido,cargo);
-            
 
+            //Vuelvo al formPrincipal del ABM
+            this.Close();
         }
     }
 }

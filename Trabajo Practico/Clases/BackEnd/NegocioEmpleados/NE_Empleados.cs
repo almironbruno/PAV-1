@@ -58,7 +58,7 @@ namespace Trabajo_Practico.Clases.BackEnd.NegocioEmpleados
             if (legajo.Equals("")) legajo = "%";
             if (apellido.Equals("")) apellido = "%";
             if (nombre.Equals("")) nombre = "%";
-            if (cargo.Equals("")) cargo = "%";
+            if (cargo.Equals("0")) cargo = "%";
             string sqlConsulta = $"SELECT * FROM empleados WHERE legajo_empleado LIKE'{legajo}' AND nombre LIKE'{nombre}' AND apellido LIKE'{apellido}' AND cargo LIKE'{cargo}'";
             return sqlConsulta;
 
