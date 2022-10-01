@@ -20,7 +20,8 @@ namespace Trabajo_Practico.Formularios.ABMC.ABMC_Empleados.Forms
             mtxt_Legajo.Enabled = false;
             mTxt_Apellido.Enabled = false;
             cmbCargable_Cargos.cmb_Cargable.Enabled = false;
-
+            btn_LimpiarCampos.Hide();
+            btn_Aceptar.Hide();
             InitializeComponent();
             //Cambia los botones al modo Consulta
             cambiarFormaConsulta();
@@ -31,7 +32,7 @@ namespace Trabajo_Practico.Formularios.ABMC.ABMC_Empleados.Forms
             mtxt_Legajo.Text = row.Cells[0].Value.ToString();
             mTxt_Nombre.Text = row.Cells[1].Value.ToString();
             mTxt_Apellido.Text = row.Cells[2].Value.ToString();
-            cmbCargable_Cargos.cmb_Cargable.SelectedValue = row.Cells[3].Value;
+            cmbCargable_Cargos.cmb_Cargable.Text = row.Cells[3].Value.ToString();
 
         }
     }

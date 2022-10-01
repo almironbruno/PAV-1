@@ -20,7 +20,7 @@ namespace Trabajo_Practico.Formularios.ABMC.Empleados
             int legajo = int.Parse(row.Cells[0].Value.ToString());
             string nombre = row.Cells[1].Value.ToString();
             string apellido= row.Cells[2].Value.ToString();
-            int cargo= int.Parse(row.Cells[3].Value.ToString());
+            int cargo = bd.SelectNumeros($"SELECT id_cargo FROM cargos_empleados WHERE nombre_cargo LIKE '{row.Cells[3].Value.ToString()}'");
             //Creo el objeto empleado
             Trabajo_Practico.Clases.Entidades.Empleados empleado = new Trabajo_Practico.Clases.Entidades.Empleados(legajo,nombre,apellido,cargo);
             //Cargos los campos con los datos del empleado

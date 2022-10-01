@@ -37,9 +37,10 @@
             this.lbl_Legajo = new System.Windows.Forms.Label();
             this.lbl_Cargo = new System.Windows.Forms.Label();
             this.SuspendLayout();
-            //  
+            // 
             // mTxt_Nombre
             // 
+            this.mTxt_Nombre.HidePromptOnLeave = true;
             this.mTxt_Nombre.Location = new System.Drawing.Point(209, 155);
             this.mTxt_Nombre.Mask = "LLLLLLLLLLLLLL";
             this.mTxt_Nombre.Name = "mTxt_Nombre";
@@ -48,6 +49,7 @@
             // 
             // mTxt_Apellido
             // 
+            this.mTxt_Apellido.HidePromptOnLeave = true;
             this.mTxt_Apellido.Location = new System.Drawing.Point(209, 193);
             this.mTxt_Apellido.Mask = "LLLLLLLLLLLLLLL";
             this.mTxt_Apellido.Name = "mTxt_Apellido";
@@ -77,11 +79,12 @@
             this.cmbCargable_Cargos.Location = new System.Drawing.Point(448, 147);
             this.cmbCargable_Cargos.Name = "cmbCargable_Cargos";
             this.cmbCargable_Cargos.Size = new System.Drawing.Size(230, 28);
+            this.cmbCargable_Cargos.cmb_Cargable.Size=new System.Drawing.Size(130, 28);
             this.cmbCargable_Cargos.TabIndex = 22;
-            this.cmbCargable_Cargos.cmb_Cargable.Size= new System.Drawing.Size(148, 28);
             // 
             // mtxt_Legajo
             // 
+            this.mtxt_Legajo.HidePromptOnLeave = true;
             this.mtxt_Legajo.Location = new System.Drawing.Point(209, 117);
             this.mtxt_Legajo.Mask = "99999";
             this.mtxt_Legajo.Name = "mtxt_Legajo";
@@ -122,6 +125,7 @@
             this.Controls.Add(this.mTxt_Nombre);
             this.Name = "CamposEmpleados";
             this.Text = "CamposEmpleados";
+            this.Controls.SetChildIndex(this.btn_LimpiarCampos, 0);
             this.Controls.SetChildIndex(this.mTxt_Nombre, 0);
             this.Controls.SetChildIndex(this.mTxt_Apellido, 0);
             this.Controls.SetChildIndex(this.lbl_Nombre, 0);

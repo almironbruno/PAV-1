@@ -262,6 +262,9 @@
     <EmbeddedResource Include="Formularios\ABMC\ABMC_Empleados\Forms\Consulta.resx">
       <DependentUpon>Consulta.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\ABMC\ABMC_Empleados\Forms\InfoEmpleados.resx">
+      <DependentUpon>InfoEmpleados.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Formularios\ABMC\Autos\AltaAutos.resx">
       <DependentUpon>AltaAutos.cs</DependentUpon>
     </EmbeddedResource>

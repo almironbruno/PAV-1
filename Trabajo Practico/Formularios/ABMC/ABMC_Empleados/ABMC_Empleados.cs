@@ -20,7 +20,12 @@ namespace Trabajo_Practico.Formularios
         {
             dataGridViewModificada1.formularioDatosCompletos = new InfoEmpleados();
             //Asigna la tabla sobre la cual trabaja el ABM
-            consultaPrincipal = "SELECT * FROM empleados";
+            consultaPrincipal = @"SELECT E.legajo_empleado AS 'Legajo', 
+                                    E.nombre AS 'Nombre', 
+                                    E.apellido AS 'Apellido', 
+                                    C.nombre_cargo AS 'Cargo'
+                                FROM empleados E JOIN cargos_empleados C
+                                    ON E.cargo=C.id_cargo";
             InitializeComponent();
             // cambia los nombres de la ventana a cliente --Eliminar comentario despues--
             cambiarNombre("Empleados");

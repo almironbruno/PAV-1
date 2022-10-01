@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Trabajo_Practico.Formularios.ABMC.ABMC_Empleados.Forms;
 using Trabajo_Practico.Formularios.Base;
 
 namespace Trabajo_Practico
@@ -17,11 +18,17 @@ namespace Trabajo_Practico
         public DataGridViewModificada()
         {
             InitializeComponent();
-            
+            dgr_Principal.ShowCellToolTips = true;
             dgr_Principal.DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
         }
         public void cargar(DataTable unaTabla)
         {
+            //Si la tabla esta vacia se muestra un mensaje
+            if (unaTabla.Rows.Count==0)
+            {
+                unaTabla.Columns.Clear();
+                unaTabla.Columns.Add("No hay registros");
+            }
             //Se carga la grilla con los datos de la tabla
             dgr_Principal.DataSource=unaTabla;
 
@@ -35,9 +42,27 @@ namespace Trabajo_Practico
 
         private void dgr_Principal_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
-            formularioDatosCompletos.cargarInfo(FilaSeleccionada());
-            formularioDatosCompletos.Show();
+            InfoEmpleados ventana = new InfoEmpleados();
+            ventana.cargarInfo(FilaSeleccionada());
+            ventana.Show();
         }
-        
+
+        private void dgr_Principal_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            for (int i = 0; i < dgr_Principal.Columns.Count; i++)
+            {
+                dgr_Principal.SelectedRows[0].Cells[i].ToolTipText = "Doble Click para mas informacion";
+            }
+
+
+        }
+
+        private void dgr_Principal_CellMouseEnter(object sender, DataGridViewCellEventArgs e)
+        {
+            for (int i = 0; i < dgr_Principal.Columns.Count; i++)
+            {
+                dgr_Principal.SelectedRows[0].Cells[i].ToolTipText = "Doble Click para mas informacion";
+            }
+        }
     }
 }

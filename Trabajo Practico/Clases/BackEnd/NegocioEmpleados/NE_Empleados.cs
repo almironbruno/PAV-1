@@ -16,8 +16,8 @@ namespace Trabajo_Practico.Clases.BackEnd.NegocioEmpleados
         {
             string sqlInsertar = $@"INSERT INTO empleados VALUES 
            ({empleado.legajoEmpleado},
-            '{empleado.nombre}',
             '{empleado.apellido}',
+            '{empleado.nombre}',
             {empleado.cargo})";
 
             bd.ejecutar(sqlInsertar);

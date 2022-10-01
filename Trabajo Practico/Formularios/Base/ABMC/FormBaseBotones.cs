@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Trabajo_Practico.Clases.BackEnd;
 
 namespace Trabajo_Practico.Formularios.Base
 {
@@ -14,6 +15,7 @@ namespace Trabajo_Practico.Formularios.Base
     public partial class FormBaseBotones : Form
     {
         protected bool modoConsulta = false;
+        protected BE_Acceso_Datos bd = new BE_Acceso_Datos();
         public FormBaseBotones()
         {
             InitializeComponent();
@@ -113,10 +115,11 @@ namespace Trabajo_Practico.Formularios.Base
         {
             //Metodo que cambia los botones al "Modo Consulta"
             btn_Cancelar.Text = "Volver";
-            btn_LimpiarCampos.Hide();
+            //.Hide();
             modoConsulta = true;
             
         }
+        
 
         private void FormBaseBotones_Load(object sender, EventArgs e)
         {
