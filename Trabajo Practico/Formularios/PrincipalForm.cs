@@ -55,6 +55,11 @@ namespace Trabajo_Practico.Formularios
 
         }
 
-       
+        private void cerrarSesionToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            LoginForm vtnLogin = new LoginForm();
+            vtnLogin.Show();
+        }
     }
 }
