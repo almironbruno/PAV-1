@@ -29,6 +29,16 @@
         private void InitializeComponent()
         {
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.registrosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.cerrarSesionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.reportesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.empleadosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.clientesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.autosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.marcaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.nombreComercialToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.gamaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.barriosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.estadisticasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.empleadosToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.clientesToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
@@ -50,6 +60,7 @@
             this.marcasToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
             this.nombreComercialToolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
             this.lblUsr = new System.Windows.Forms.Label();
+<<<<<<< HEAD
             this.registrosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cerrarSesionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.reportesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -58,6 +69,8 @@
             this.autosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.marcaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.nombreComercialToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+=======
+>>>>>>> a2dc30fa7fe77ac4a016789b3208b71d94e51834
             this.telefonosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -78,6 +91,86 @@
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
+<<<<<<< HEAD
+            // registrosToolStripMenuItem
+            // 
+            this.registrosToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.cerrarSesionToolStripMenuItem});
+            this.registrosToolStripMenuItem.Name = "registrosToolStripMenuItem";
+            this.registrosToolStripMenuItem.Size = new System.Drawing.Size(60, 20);
+            this.registrosToolStripMenuItem.Text = "Sistema";
+            // 
+            // cerrarSesionToolStripMenuItem
+            // 
+            this.cerrarSesionToolStripMenuItem.Name = "cerrarSesionToolStripMenuItem";
+            this.cerrarSesionToolStripMenuItem.Size = new System.Drawing.Size(143, 22);
+            this.cerrarSesionToolStripMenuItem.Text = "Cerrar Sesion";
+            // 
+            // reportesToolStripMenuItem
+            // 
+            this.reportesToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.empleadosToolStripMenuItem,
+            this.clientesToolStripMenuItem,
+            this.autosToolStripMenuItem,
+            this.marcaToolStripMenuItem,
+            this.nombreComercialToolStripMenuItem,
+            this.gamaToolStripMenuItem,
+            this.barriosToolStripMenuItem,
+            this.telefonosToolStripMenuItem});
+            this.reportesToolStripMenuItem.Name = "reportesToolStripMenuItem";
+            this.reportesToolStripMenuItem.Size = new System.Drawing.Size(238, 20);
+            this.reportesToolStripMenuItem.Text = "Altas - Bajas - Modificaciones - Consultas";
+            // 
+            // empleadosToolStripMenuItem
+            // 
+            this.empleadosToolStripMenuItem.Name = "empleadosToolStripMenuItem";
+            this.empleadosToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.empleadosToolStripMenuItem.Text = "Empleados";
+            this.empleadosToolStripMenuItem.Click += new System.EventHandler(this.empleadosToolStripMenuItem_Click);
+            // 
+            // clientesToolStripMenuItem
+            // 
+            this.clientesToolStripMenuItem.Name = "clientesToolStripMenuItem";
+            this.clientesToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.clientesToolStripMenuItem.Text = "Clientes";
+            this.clientesToolStripMenuItem.Click += new System.EventHandler(this.clientesToolStripMenuItem_Click);
+            // 
+            // autosToolStripMenuItem
+            // 
+            this.autosToolStripMenuItem.Name = "autosToolStripMenuItem";
+            this.autosToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.autosToolStripMenuItem.Text = "Autos";
+            this.autosToolStripMenuItem.Click += new System.EventHandler(this.autosToolStripMenuItem_Click);
+            // 
+            // marcaToolStripMenuItem
+            // 
+            this.marcaToolStripMenuItem.Name = "marcaToolStripMenuItem";
+            this.marcaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.marcaToolStripMenuItem.Text = "Marcas";
+            this.marcaToolStripMenuItem.Click += new System.EventHandler(this.marcaToolStripMenuItem_Click);
+            // 
+            // nombreComercialToolStripMenuItem
+            // 
+            this.nombreComercialToolStripMenuItem.Name = "nombreComercialToolStripMenuItem";
+            this.nombreComercialToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.nombreComercialToolStripMenuItem.Text = "Nombre Comercial";
+            // 
+            // gamaToolStripMenuItem
+            // 
+            this.gamaToolStripMenuItem.Name = "gamaToolStripMenuItem";
+            this.gamaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.gamaToolStripMenuItem.Text = "Gamas";
+            this.gamaToolStripMenuItem.Click += new System.EventHandler(this.gamaToolStripMenuItem_Click);
+            // 
+            // barriosToolStripMenuItem
+            // 
+            this.barriosToolStripMenuItem.Name = "barriosToolStripMenuItem";
+            this.barriosToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.barriosToolStripMenuItem.Text = "Barrios";
+            this.barriosToolStripMenuItem.Click += new System.EventHandler(this.barriosToolStripMenuItem_Click);
+            // 
+=======
+>>>>>>> main
             // estadisticasToolStripMenuItem
             // 
             this.estadisticasToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -228,6 +321,7 @@
             this.lblUsr.TabIndex = 1;
             this.lblUsr.Text = "Usuario ";
             // 
+<<<<<<< HEAD
             // registrosToolStripMenuItem
             // 
             this.registrosToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -302,6 +396,14 @@
             // 
             this.telefonosToolStripMenuItem.Name = "telefonosToolStripMenuItem";
             this.telefonosToolStripMenuItem.Size = new System.Drawing.Size(218, 26);
+=======
+            // telefonosToolStripMenuItem
+            // 
+            this.telefonosToolStripMenuItem.Name = "telefonosToolStripMenuItem";
+            this.telefonosToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.telefonosToolStripMenuItem.Text = "Telefonos";
+            this.telefonosToolStripMenuItem.Click += new System.EventHandler(this.telefonosToolStripMenuItem_Click);
+>>>>>>> a2dc30fa7fe77ac4a016789b3208b71d94e51834
             // 
             // PrincipalForm
             // 
@@ -355,6 +457,15 @@
         private System.Windows.Forms.ToolStripMenuItem autosToolStripMenuItem3;
         private System.Windows.Forms.ToolStripMenuItem marcasToolStripMenuItem2;
         private System.Windows.Forms.ToolStripMenuItem nombreComercialToolStripMenuItem3;
+<<<<<<< HEAD
+        private System.Windows.Forms.ToolStripMenuItem gamaToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem barriosToolStripMenuItem;
+<<<<<<< HEAD
+=======
         private System.Windows.Forms.ToolStripMenuItem telefonosToolStripMenuItem;
+>>>>>>> main
+=======
+        private System.Windows.Forms.ToolStripMenuItem telefonosToolStripMenuItem;
+>>>>>>> a2dc30fa7fe77ac4a016789b3208b71d94e51834
     }
 }
