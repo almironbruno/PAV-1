@@ -19,6 +19,8 @@ namespace Trabajo_Practico.Formularios.ABMC.Telefonos
     {
 
         Trabajo_Practico.Clases.Entidades.Telefono TelefonoMod;
+        string pkVieja;
+ 
 
         public ModificacionTelefono(Trabajo_Practico.Clases.Entidades.Telefono telefono)
         {
@@ -32,6 +34,7 @@ namespace Trabajo_Practico.Formularios.ABMC.Telefonos
             cmbCargable_Region.cmb_Cargable.SelectedValue = telefono.nroCaracteristica.Trim();
             txtTipoDoc.Text = telefono.tipoDocCliente.Trim();
             txtNumeroDoc.Text = telefono.nroDocCliente.Trim();
+            pkVieja = telefono.nroTelefono.Trim();
             
 
         }
@@ -45,9 +48,10 @@ namespace Trabajo_Practico.Formularios.ABMC.Telefonos
             TelefonoMod.nroTelefono = txtNumModificado.Text.Trim();
             TelefonoMod.nroCaracteristica = cmbCargable_Region.cmb_Cargable.SelectedValue.ToString();
             TelefonoMod.tipoDocCliente = txtTipoDoc.Text.Trim();
-            TelefonoMod.nroDocCliente = txtTipoDoc.Text.Trim();
+            TelefonoMod.nroDocCliente = txtNumeroDoc.Text.Trim();
             
-            telefono.ModificarTelefono(TelefonoMod);
+            
+            telefono.ModificarTelefono(TelefonoMod,pkVieja);
             this.Close();
 
 
