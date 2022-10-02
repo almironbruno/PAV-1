@@ -56,6 +56,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Name = "Autos";
+            this.Activated += new System.EventHandler(this.ABMC_Autos_Activated);
             this.Load += new System.EventHandler(this.Autos_Load);
             this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);

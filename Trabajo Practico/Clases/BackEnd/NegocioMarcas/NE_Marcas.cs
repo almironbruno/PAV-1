@@ -17,7 +17,7 @@ namespace Trabajo_Practico.Clases.BackEnd.NegocioMarcas
 
         public void AgregarMarca(Marca marca)
         {
-            string sqlInsertar = "INSERT INTO marcas(nombre) SELECT '" + marca.nombreMarca + "' WHERE NOT EXISTS(SELECT 1 FROM marcas WHERE nombre = '" + marca.nombreMarca + "')";
+            string sqlInsertar = "INSERT INTO marcas(nombre) SELECT '" + marca.nombreMarca.ToUpper().Trim() + "' WHERE NOT EXISTS(SELECT 1 FROM marcas WHERE nombre = '" + marca.nombreMarca.ToUpper().Trim() + "')";
 
 
             _BD.Insertar(sqlInsertar);
@@ -32,7 +32,7 @@ namespace Trabajo_Practico.Clases.BackEnd.NegocioMarcas
             }
             catch (Exception e)
             {
-                MessageBox.Show("No se puede eliminar una marca en uso por algun vehiculo del registro.");
+                MessageBox.Show("No se puede eliminar una marca en uso por algun vehiculo del registro." + e.Message);
                 
             }
             
