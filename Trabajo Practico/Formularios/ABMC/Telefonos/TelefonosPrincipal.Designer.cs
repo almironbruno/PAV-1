@@ -1,6 +1,6 @@
-﻿namespace Trabajo_Practico.Formularios.ABMC.Barrios
+﻿namespace Trabajo_Practico.Formularios.ABMC.Telefonos
 {
-    partial class Barrios
+    partial class TelefonosPrincipal
     {
         /// <summary>
         /// Required designer variable.
@@ -43,13 +43,13 @@
             // 
             this.btn_Eliminar.Click += new System.EventHandler(this.btn_Eliminar_Click_1);
             // 
-            // Barrios
+            // TelefonosPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Name = "Barrios";
-            this.Text = "Barrios";
+            this.Name = "TelefonosPrincipal";
+            this.Text = "Telefonos";
             this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();

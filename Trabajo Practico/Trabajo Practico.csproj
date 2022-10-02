@@ -52,6 +52,7 @@
     <Compile Include="Clases\BackEnd\NegocioClientes\NE_Clientes.cs" />
     <Compile Include="Clases\BackEnd\NegocioEmpleados\NE_Empleados.cs" />
     <Compile Include="Clases\BackEnd\NegocioMarcas\NE_Marcas.cs" />
+    <Compile Include="Clases\BackEnd\NegocioTelefonos\NE_Telefonos.cs" />
     <Compile Include="Clases\BackEnd\ValidarEmail.cs" />
     <Compile Include="Clases\BackEnd\NegocioUsuarios\NE_usuarios.cs" />
     <Compile Include="Clases\Entidades\Clientes.cs" />
@@ -61,6 +62,7 @@
     <Compile Include="Clases\BackEnd\ValidarEmail.cs" />
     <Compile Include="Clases\BackEnd\NegocioUsuarios\NE_usuarios.cs" />
     <Compile Include="Clases\Entidades\Barrio.cs" />
+    <Compile Include="Clases\Entidades\Telefono.cs" />
     <Compile Include="Clases\Entidades\Vehiculos.cs" />
     <Compile Include="Clases\Entidades\Usuario.cs" />
     <Compile Include="ControlesPropios\ComboCargable.cs">
@@ -140,7 +142,13 @@
     </Compile>
     <Compile Include="Formularios\ABMC\Barrios\Barrios.Designer.cs">
       <DependentUpon>Barrios.cs</DependentUpon>
-     </Compile>
+    </Compile>
+    <Compile Include="Formularios\ABMC\Barrios\ModificacionBarrio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\ABMC\Barrios\ModificacionBarrio.Designer.cs">
+      <DependentUpon>ModificacionBarrio.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formularios\ABMC\Clientes\AltaClientes.cs">
     <Compile Include="Formularios\ABMC\Autos\BuscarAuto.cs">
       <SubType>Form</SubType>
@@ -202,6 +210,7 @@
     </Compile>
     <Compile Include="Formularios\ABMC\Gamas\Gamas.Designer.cs">
       <DependentUpon>Gamas.cs</DependentUpon>
+<<<<<<< HEAD
      </Compile>
 =======
     <Compile Include="Formularios\ABMC\ABMC_Empleados\Forms\ModificacionEmpleados.cs">
@@ -211,6 +220,9 @@
       <DependentUpon>ModificacionEmpleados.cs</DependentUpon>
     </Compile>
 >>>>>>> main
+=======
+    </Compile>
+>>>>>>> a2dc30fa7fe77ac4a016789b3208b71d94e51834
     <Compile Include="Formularios\ABMC\Marcas\AltaMarcas.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -229,11 +241,31 @@
     <Compile Include="Formularios\ABMC\Marcas\Marcas.Designer.cs">
       <DependentUpon>Marcas.cs</DependentUpon>
     </Compile>
+<<<<<<< HEAD
     <Compile Include="Formularios\ABMC\Marcas\ModificarMarca.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Formularios\ABMC\Marcas\ModificarMarca.Designer.cs">
       <DependentUpon>ModificarMarca.cs</DependentUpon>
+=======
+    <Compile Include="Formularios\ABMC\Telefonos\AltaTelefono.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\ABMC\Telefonos\AltaTelefono.Designer.cs">
+      <DependentUpon>AltaTelefono.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\ABMC\Telefonos\ModificacionTelefono.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\ABMC\Telefonos\ModificacionTelefono.Designer.cs">
+      <DependentUpon>ModificacionTelefono.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\ABMC\Telefonos\TelefonosPrincipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\ABMC\Telefonos\TelefonosPrincipal.Designer.cs">
+      <DependentUpon>TelefonosPrincipal.cs</DependentUpon>
+>>>>>>> a2dc30fa7fe77ac4a016789b3208b71d94e51834
     </Compile>
     <Compile Include="Formularios\ABMC\Usuarios\Usuarios.cs">
       <SubType>Form</SubType>
@@ -330,6 +362,7 @@
     <EmbeddedResource Include="Formularios\ABMC\Autos\Autos.resx">
       <DependentUpon>Autos.cs</DependentUpon>
     </EmbeddedResource>
+<<<<<<< HEAD
     <EmbeddedResource Include="Formularios\ABMC\Autos\BuscarAuto.resx">
       <DependentUpon>BuscarAuto.cs</DependentUpon>
     </EmbeddedResource>
@@ -337,6 +370,12 @@
       <DependentUpon>ModificarAuto.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\ABMC\ABMC_Clientes\Forms\AltaClientes.resx">
+=======
+    <EmbeddedResource Include="Formularios\ABMC\Barrios\ModificacionBarrio.resx">
+      <DependentUpon>ModificacionBarrio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\ABMC\Clientes\AltaClientes.resx">
+>>>>>>> a2dc30fa7fe77ac4a016789b3208b71d94e51834
       <DependentUpon>AltaClientes.cs</DependentUpon>
     </EmbeddedResource>
 <<<<<<< HEAD
@@ -377,8 +416,19 @@
     <EmbeddedResource Include="Formularios\ABMC\Marcas\Marcas.resx">
       <DependentUpon>Marcas.cs</DependentUpon>
     </EmbeddedResource>
+<<<<<<< HEAD
     <EmbeddedResource Include="Formularios\ABMC\Marcas\ModificarMarca.resx">
       <DependentUpon>ModificarMarca.cs</DependentUpon>
+=======
+    <EmbeddedResource Include="Formularios\ABMC\Telefonos\AltaTelefono.resx">
+      <DependentUpon>AltaTelefono.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\ABMC\Telefonos\ModificacionTelefono.resx">
+      <DependentUpon>ModificacionTelefono.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\ABMC\Telefonos\TelefonosPrincipal.resx">
+      <DependentUpon>TelefonosPrincipal.cs</DependentUpon>
+>>>>>>> a2dc30fa7fe77ac4a016789b3208b71d94e51834
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\Base\ABMC\FormBaseABMC.resx">
       <DependentUpon>FormBaseABMC.cs</DependentUpon>
@@ -430,6 +480,7 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+<<<<<<< HEAD
 <<<<<<< HEAD
 
 =======
@@ -483,5 +534,8 @@
   </ItemGroup>
   <ItemGroup />
 >>>>>>> main
+=======
+  <ItemGroup />
+>>>>>>> a2dc30fa7fe77ac4a016789b3208b71d94e51834
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
