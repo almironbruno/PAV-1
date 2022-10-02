@@ -10,6 +10,7 @@ using System.Windows.Forms;
 using Trabajo_Practico.Clases;
 using Trabajo_Practico.Formularios.ABMC;
 using Trabajo_Practico.Formularios.ABMC.Marcas;
+using Trabajo_Practico.Formularios.ABMC.NombreComercial;
 
 namespace Trabajo_Practico.Formularios
 {
@@ -51,6 +52,12 @@ namespace Trabajo_Practico.Formularios
             Marcas ventanaMarcas = new Marcas();
             ventanaMarcas.Show();
 
+        }
+
+        private void nombreComercialToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            NombreComercial ventaNombreComercial = new NombreComercial();
+            ventaNombreComercial.Show();
         }
     }
 }

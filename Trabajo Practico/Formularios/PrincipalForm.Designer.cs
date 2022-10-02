@@ -136,6 +136,7 @@
             this.nombreComercialToolStripMenuItem.Name = "nombreComercialToolStripMenuItem";
             this.nombreComercialToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.nombreComercialToolStripMenuItem.Text = "Nombre Comercial";
+            this.nombreComercialToolStripMenuItem.Click += new System.EventHandler(this.nombreComercialToolStripMenuItem_Click);
             // 
             // estadisticasToolStripMenuItem
             // 

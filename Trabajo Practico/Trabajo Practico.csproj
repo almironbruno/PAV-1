@@ -50,9 +50,11 @@
     <Compile Include="Clases\BackEnd\BE_Acceso_Datos.cs" />
     <Compile Include="Clases\BackEnd\NegocioAutos\NE_Autos.cs" />
     <Compile Include="Clases\BackEnd\NegocioMarcas\NE_Marcas.cs" />
+    <Compile Include="Clases\BackEnd\NegocioNombreComercial\NE_NombreComercial.cs" />
     <Compile Include="Clases\BackEnd\ValidarEmail.cs" />
     <Compile Include="Clases\BackEnd\NegocioUsuarios\NE_usuarios.cs" />
     <Compile Include="Clases\Entidades\Marca.cs" />
+    <Compile Include="Clases\Entidades\NombresComerciales.cs" />
     <Compile Include="Clases\Entidades\Vehiculos.cs" />
     <Compile Include="Clases\Entidades\Usuario.cs" />
     <Compile Include="ControlesPropios\ComboCargable.cs">
@@ -114,6 +116,18 @@
     </Compile>
     <Compile Include="Formularios\ABMC\Marcas\Marcas.Designer.cs">
       <DependentUpon>Marcas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\ABMC\NombreComercial\AltaNombreComercial.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\ABMC\NombreComercial\AltaNombreComercial.Designer.cs">
+      <DependentUpon>AltaNombreComercial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\ABMC\NombreComercial\NombreComercial.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\ABMC\NombreComercial\NombreComercial.Designer.cs">
+      <DependentUpon>NombreComercial.cs</DependentUpon>
     </Compile>
     <Compile Include="Formularios\ABMC\Usuarios\Usuarios.cs">
       <SubType>Form</SubType>
@@ -206,6 +220,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\ABMC\Marcas\Marcas.resx">
       <DependentUpon>Marcas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\ABMC\NombreComercial\AltaNombreComercial.resx">
+      <DependentUpon>AltaNombreComercial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\ABMC\NombreComercial\NombreComercial.resx">
+      <DependentUpon>NombreComercial.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\Base\ABMC\FormBaseABMC.resx">
       <DependentUpon>FormBaseABMC.cs</DependentUpon>

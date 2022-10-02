@@ -136,7 +136,7 @@
             this.Name = "FormBaseABMC";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormBaseAMBC";
-            //this.Load += new System.EventHandler(this.FormBaseABMC_Load);
+            this.Load += new System.EventHandler(this.FormBaseABMC_Load_1);
             this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
