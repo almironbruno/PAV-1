@@ -58,7 +58,7 @@
             this.dgr_Principal.TabIndex = 0;
             this.dgr_Principal.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgr_Principal_CellClick);
             this.dgr_Principal.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgr_Principal_CellDoubleClick);
-            this.dgr_Principal.CellMouseEnter += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgr_Principal_CellMouseEnter);
+            //this.dgr_Principal.CellMouseEnter += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgr_Principal_CellMouseEnter);
             // 
             // DataGridViewModificada
             // 

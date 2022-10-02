@@ -31,9 +31,9 @@ namespace Trabajo_Practico.Clases.BackEnd.NegocioTelefonos
         }
 
 
-        public void ModificarTelefono(Telefono telefonoModificar)
+        public void ModificarTelefono(Telefono telefonoModificar, string pkVieja)
         {
-            string sqlInsertar = $"UPDATE telefonos SET nro_telefono = {telefonoModificar.nroTelefono}, nro_caracteristica = {telefonoModificar.nroCaracteristica} WHERE nro_doc_cliente = {telefonoModificar.nroDocCliente} AND tipo_doc_cliente = {telefonoModificar.tipoDocCliente}";
+            string sqlInsertar = $"UPDATE telefonos SET nro_telefono = {telefonoModificar.nroTelefono}, nro_caracteristica = {telefonoModificar.nroCaracteristica} WHERE nro_doc_cliente = {telefonoModificar.nroDocCliente} AND tipo_doc_cliente = {telefonoModificar.tipoDocCliente} AND nro_telefono = {pkVieja}";
             _BD.ejecutar(sqlInsertar);
                
         }
