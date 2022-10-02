@@ -60,7 +60,7 @@
             this.marcasToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
             this.nombreComercialToolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
             this.lblUsr = new System.Windows.Forms.Label();
-<<<<<<< HEAD
+
             this.registrosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cerrarSesionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.reportesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -69,8 +69,7 @@
             this.autosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.marcaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.nombreComercialToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-=======
->>>>>>> a2dc30fa7fe77ac4a016789b3208b71d94e51834
+
             this.telefonosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -91,7 +90,7 @@
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
-<<<<<<< HEAD
+
             // registrosToolStripMenuItem
             // 
             this.registrosToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -169,8 +168,7 @@
             this.barriosToolStripMenuItem.Text = "Barrios";
             this.barriosToolStripMenuItem.Click += new System.EventHandler(this.barriosToolStripMenuItem_Click);
             // 
-=======
->>>>>>> main
+
             // estadisticasToolStripMenuItem
             // 
             this.estadisticasToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -321,7 +319,7 @@
             this.lblUsr.TabIndex = 1;
             this.lblUsr.Text = "Usuario ";
             // 
-<<<<<<< HEAD
+
             // registrosToolStripMenuItem
             // 
             this.registrosToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -396,14 +394,14 @@
             // 
             this.telefonosToolStripMenuItem.Name = "telefonosToolStripMenuItem";
             this.telefonosToolStripMenuItem.Size = new System.Drawing.Size(218, 26);
-=======
+
             // telefonosToolStripMenuItem
             // 
             this.telefonosToolStripMenuItem.Name = "telefonosToolStripMenuItem";
             this.telefonosToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.telefonosToolStripMenuItem.Text = "Telefonos";
             this.telefonosToolStripMenuItem.Click += new System.EventHandler(this.telefonosToolStripMenuItem_Click);
->>>>>>> a2dc30fa7fe77ac4a016789b3208b71d94e51834
+
             // 
             // PrincipalForm
             // 
@@ -457,15 +455,11 @@
         private System.Windows.Forms.ToolStripMenuItem autosToolStripMenuItem3;
         private System.Windows.Forms.ToolStripMenuItem marcasToolStripMenuItem2;
         private System.Windows.Forms.ToolStripMenuItem nombreComercialToolStripMenuItem3;
-<<<<<<< HEAD
+
         private System.Windows.Forms.ToolStripMenuItem gamaToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem barriosToolStripMenuItem;
-<<<<<<< HEAD
-=======
+
         private System.Windows.Forms.ToolStripMenuItem telefonosToolStripMenuItem;
->>>>>>> main
-=======
-        private System.Windows.Forms.ToolStripMenuItem telefonosToolStripMenuItem;
->>>>>>> a2dc30fa7fe77ac4a016789b3208b71d94e51834
+
     }
 }
