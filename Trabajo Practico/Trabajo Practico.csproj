@@ -81,6 +81,48 @@
     <Compile Include="ControlesPropios\TextBoxCargable.Designer.cs">
       <DependentUpon>TextBoxCargable.cs</DependentUpon>
     </Compile>
+    <Compile Include="Formularios\ABMC\ABMC_Clientes\CamposClientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\ABMC\ABMC_Clientes\CamposClientes.Designer.cs">
+      <DependentUpon>CamposClientes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\ABMC\ABMC_Clientes\Forms\BajaClientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\ABMC\ABMC_Clientes\Forms\BajaClientes.Designer.cs">
+      <DependentUpon>BajaClientes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\ABMC\ABMC_Clientes\Forms\ConsultaClientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\ABMC\ABMC_Clientes\Forms\ConsultaClientes.Designer.cs">
+      <DependentUpon>ConsultaClientes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\ABMC\ABMC_Clientes\Forms\InfoClientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\ABMC\ABMC_Clientes\Forms\InfoClientes.Designer.cs">
+      <DependentUpon>InfoClientes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\ABMC\ABMC_Empleados\Forms\BajaEmpleado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\ABMC\ABMC_Empleados\Forms\BajaEmpleado.Designer.cs">
+      <DependentUpon>BajaEmpleado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\ABMC\ABMC_Empleados\Forms\Consulta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\ABMC\ABMC_Empleados\Forms\Consulta.Designer.cs">
+      <DependentUpon>Consulta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\ABMC\ABMC_Empleados\Forms\InfoEmpleados.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\ABMC\ABMC_Empleados\Forms\InfoEmpleados.Designer.cs">
+      <DependentUpon>InfoEmpleados.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formularios\ABMC\Autos\AltaAutos.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -100,34 +142,53 @@
       <DependentUpon>Barrios.cs</DependentUpon>
      </Compile>
     <Compile Include="Formularios\ABMC\Clientes\AltaClientes.cs">
+    <Compile Include="Formularios\ABMC\Autos\BuscarAuto.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Formularios\ABMC\Clientes\AltaClientes.Designer.cs">
+    <Compile Include="Formularios\ABMC\Autos\BuscarAuto.Designer.cs">
+      <DependentUpon>BuscarAuto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\ABMC\Autos\ModificarAuto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\ABMC\Autos\ModificarAuto.Designer.cs">
+      <DependentUpon>ModificarAuto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\ABMC\ABMC_Clientes\Forms\AltaClientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\ABMC\ABMC_Clientes\Forms\AltaClientes.Designer.cs">
       <DependentUpon>AltaClientes.cs</DependentUpon>
     </Compile>
-    <Compile Include="Formularios\ABMC\Clientes\Clientes.cs">
+    <Compile Include="Formularios\ABMC\ABMC_Clientes\ABMC_Clientes.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Formularios\ABMC\Clientes\Clientes.Designer.cs">
-      <DependentUpon>Clientes.cs</DependentUpon>
+    <Compile Include="Formularios\ABMC\ABMC_Clientes\ABMC_Clientes.Designer.cs">
+      <DependentUpon>ABMC_Clientes.cs</DependentUpon>
     </Compile>
-    <Compile Include="Formularios\ABMC\Clientes\ModificacionCliente.cs">
+    <Compile Include="Formularios\ABMC\ABMC_Clientes\Forms\ModificacionCliente.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Formularios\ABMC\Clientes\ModificacionCliente.Designer.cs">
+    <Compile Include="Formularios\ABMC\ABMC_Clientes\Forms\ModificacionCliente.Designer.cs">
       <DependentUpon>ModificacionCliente.cs</DependentUpon>
     </Compile>
-    <Compile Include="Formularios\ABMC\Empleados\AltaEmpleados.cs">
+    <Compile Include="Formularios\ABMC\ABMC_Empleados\Forms\AltaEmpleados.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Formularios\ABMC\Empleados\AltaEmpleados.Designer.cs">
+    <Compile Include="Formularios\ABMC\ABMC_Empleados\Forms\AltaEmpleados.Designer.cs">
       <DependentUpon>AltaEmpleados.cs</DependentUpon>
     </Compile>
-    <Compile Include="Formularios\ABMC\Empleados\Empleados.cs">
+    <Compile Include="Formularios\ABMC\ABMC_Empleados\CamposEmpleados.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Formularios\ABMC\Empleados\Empleados.Designer.cs">
-      <DependentUpon>Empleados.cs</DependentUpon>
+    <Compile Include="Formularios\ABMC\ABMC_Empleados\CamposEmpleados.Designer.cs">
+      <DependentUpon>CamposEmpleados.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\ABMC\ABMC_Empleados\ABMC_Empleados.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\ABMC\ABMC_Empleados\ABMC_Empleados.Designer.cs">
+      <DependentUpon>ABMC_Empleados.cs</DependentUpon>
     </Compile>
     <Compile Include="Formularios\ABMC\Autos\Autos.cs">
       <SubType>Form</SubType>
@@ -135,23 +196,44 @@
     <Compile Include="Formularios\ABMC\Autos\Autos.Designer.cs">
       <DependentUpon>Autos.cs</DependentUpon>
     </Compile>
+<<<<<<< HEAD
     <Compile Include="Formularios\ABMC\Gamas\Gamas.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Formularios\ABMC\Gamas\Gamas.Designer.cs">
       <DependentUpon>Gamas.cs</DependentUpon>
      </Compile>
+=======
+    <Compile Include="Formularios\ABMC\ABMC_Empleados\Forms\ModificacionEmpleados.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\ABMC\ABMC_Empleados\Forms\ModificacionEmpleados.Designer.cs">
+      <DependentUpon>ModificacionEmpleados.cs</DependentUpon>
+    </Compile>
+>>>>>>> main
     <Compile Include="Formularios\ABMC\Marcas\AltaMarcas.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Formularios\ABMC\Marcas\AltaMarcas.Designer.cs">
       <DependentUpon>AltaMarcas.cs</DependentUpon>
     </Compile>
+    <Compile Include="Formularios\ABMC\Marcas\BuscarMarca.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\ABMC\Marcas\BuscarMarca.Designer.cs">
+      <DependentUpon>BuscarMarca.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formularios\ABMC\Marcas\Marcas.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Formularios\ABMC\Marcas\Marcas.Designer.cs">
       <DependentUpon>Marcas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\ABMC\Marcas\ModificarMarca.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\ABMC\Marcas\ModificarMarca.Designer.cs">
+      <DependentUpon>ModificarMarca.cs</DependentUpon>
     </Compile>
     <Compile Include="Formularios\ABMC\Usuarios\Usuarios.cs">
       <SubType>Form</SubType>
@@ -224,15 +306,40 @@
     <EmbeddedResource Include="ControlesPropios\TextBoxCargable.resx">
       <DependentUpon>TextBoxCargable.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\ABMC\ABMC_Clientes\CamposClientes.resx">
+      <DependentUpon>CamposClientes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\ABMC\ABMC_Clientes\Forms\BajaClientes.resx">
+      <DependentUpon>BajaClientes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\ABMC\ABMC_Clientes\Forms\ConsultaClientes.resx">
+      <DependentUpon>ConsultaClientes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\ABMC\ABMC_Empleados\Forms\BajaEmpleado.resx">
+      <DependentUpon>BajaEmpleado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\ABMC\ABMC_Empleados\Forms\Consulta.resx">
+      <DependentUpon>Consulta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\ABMC\ABMC_Empleados\Forms\InfoEmpleados.resx">
+      <DependentUpon>InfoEmpleados.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Formularios\ABMC\Autos\AltaAutos.resx">
       <DependentUpon>AltaAutos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\ABMC\Autos\Autos.resx">
       <DependentUpon>Autos.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Formularios\ABMC\Clientes\AltaClientes.resx">
+    <EmbeddedResource Include="Formularios\ABMC\Autos\BuscarAuto.resx">
+      <DependentUpon>BuscarAuto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\ABMC\Autos\ModificarAuto.resx">
+      <DependentUpon>ModificarAuto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\ABMC\ABMC_Clientes\Forms\AltaClientes.resx">
       <DependentUpon>AltaClientes.cs</DependentUpon>
     </EmbeddedResource>
+<<<<<<< HEAD
     <EmbeddedResource Include="Formularios\ABMC\Barrios\AltaBarrio.resx">
       <DependentUpon>AltaBarrio.cs</DependentUpon>
     </EmbeddedResource>
@@ -241,21 +348,37 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\ABMC\Clientes\Clientes.resx">
       <DependentUpon>Clientes.cs</DependentUpon>
+=======
+    <EmbeddedResource Include="Formularios\ABMC\ABMC_Clientes\ABMC_Clientes.resx">
+      <DependentUpon>ABMC_Clientes.cs</DependentUpon>
+>>>>>>> main
     </EmbeddedResource>
-    <EmbeddedResource Include="Formularios\ABMC\Clientes\ModificacionCliente.resx">
+    <EmbeddedResource Include="Formularios\ABMC\ABMC_Clientes\Forms\ModificacionCliente.resx">
       <DependentUpon>ModificacionCliente.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Formularios\ABMC\Empleados\AltaEmpleados.resx">
+    <EmbeddedResource Include="Formularios\ABMC\ABMC_Empleados\Forms\AltaEmpleados.resx">
       <DependentUpon>AltaEmpleados.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Formularios\ABMC\Empleados\Empleados.resx">
-      <DependentUpon>Empleados.cs</DependentUpon>
+    <EmbeddedResource Include="Formularios\ABMC\ABMC_Empleados\CamposEmpleados.resx">
+      <DependentUpon>CamposEmpleados.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\ABMC\ABMC_Empleados\ABMC_Empleados.resx">
+      <DependentUpon>ABMC_Empleados.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\ABMC\ABMC_Empleados\Forms\ModificacionEmpleados.resx">
+      <DependentUpon>ModificacionEmpleados.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\ABMC\Marcas\AltaMarcas.resx">
       <DependentUpon>AltaMarcas.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\ABMC\Marcas\BuscarMarca.resx">
+      <DependentUpon>BuscarMarca.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Formularios\ABMC\Marcas\Marcas.resx">
       <DependentUpon>Marcas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\ABMC\Marcas\ModificarMarca.resx">
+      <DependentUpon>ModificarMarca.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\Base\ABMC\FormBaseABMC.resx">
       <DependentUpon>FormBaseABMC.cs</DependentUpon>
@@ -292,6 +415,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -306,6 +430,58 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+<<<<<<< HEAD
 
+=======
+  <ItemGroup>
+    <None Include="Resources\8559859_settings_options_configuration_setting_system_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3994382_access_close_exit_logout_sign out_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\9044874_query_queue_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\4308153_chart_data_employee_graph_manager_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\4308184_client_costs_employee_finance_money_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\352315_car_directions_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\7422513_ford_cars_logo_motors_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\4544812_business_comerce_delivery_shop_tag_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\330397_accept_active_agree_approved_check_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\330400_arrows_connection_move_replication_transfer_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\330396_browse_estimate_explore_explorer_find_icon %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\330399_bad_cancel_clear_close_decline_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\7623201_arrow_right_login_ui_login icon_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\7518690_user_avatar_mail_people_plus_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\5875967_action_compose_edit_new_pencil_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\6578917_broom_clean_cleaning_housekeeping_icon.png" />
+  </ItemGroup>
+  <ItemGroup />
+>>>>>>> main
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

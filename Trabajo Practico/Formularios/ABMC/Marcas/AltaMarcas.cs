@@ -29,13 +29,53 @@ namespace Trabajo_Practico.Formularios.ABMC.Marcas
 
         private void btn_Aceptar_Click_1(object sender, EventArgs e)
         {
-            string nombremarca = txtMarcaRegs.Text;
 
-            Marca marc = new Marca(nombremarca);
+            try
+            {
+                bool vacios = false;
+                foreach (Control item in this.Controls)
+                {
 
-            NE_Marcas marcAgregar = new NE_Marcas();
+                    if (item is TextBox || item is MaskedTextBox)
+                    {
+                        if (item.Text.Equals(""))
+                        {
+                            item.Select();
+                            vacios = true;
+                            break;
 
-            marcAgregar.AgregarMarca(marc);
+                        }
+                    }
+
+                }
+                if (vacios == false)
+                {
+                    string nombremarca = txtMarcaRegs.Text;
+
+                    Marca marc = new Marca(nombremarca);
+
+                    NE_Marcas marcAgregar = new NE_Marcas();
+
+                    marcAgregar.AgregarMarca(marc);
+                }
+                else
+                {
+                    MessageBox.Show("Complete el campo con el nombre de una Marca a registrar.");
+                }
+
+
+
+            }
+
+
+            catch (Exception)
+            {
+
+                throw;
+            }
+
+
+           
 
 
             

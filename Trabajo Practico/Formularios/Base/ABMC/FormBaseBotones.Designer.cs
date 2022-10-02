@@ -28,17 +28,21 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.btn_Aceptar = new System.Windows.Forms.Button();
             this.btn_Cancelar = new System.Windows.Forms.Button();
             this.btn_LimpiarCampos = new System.Windows.Forms.Button();
+            this.errorProviderBase = new System.Windows.Forms.ErrorProvider(this.components);
+            ((System.ComponentModel.ISupportInitialize)(this.errorProviderBase)).BeginInit();
             this.SuspendLayout();
             // 
             // btn_Aceptar
             // 
             this.btn_Aceptar.BackColor = System.Drawing.Color.LightGreen;
-            this.btn_Aceptar.Location = new System.Drawing.Point(189, 330);
+            this.btn_Aceptar.Location = new System.Drawing.Point(252, 406);
+            this.btn_Aceptar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btn_Aceptar.Name = "btn_Aceptar";
-            this.btn_Aceptar.Size = new System.Drawing.Size(113, 40);
+            this.btn_Aceptar.Size = new System.Drawing.Size(151, 49);
             this.btn_Aceptar.TabIndex = 0;
             this.btn_Aceptar.Text = "Aceptar";
             this.btn_Aceptar.UseVisualStyleBackColor = false;
@@ -47,9 +51,10 @@
             // btn_Cancelar
             // 
             this.btn_Cancelar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.btn_Cancelar.Location = new System.Drawing.Point(344, 330);
+            this.btn_Cancelar.Location = new System.Drawing.Point(455, 406);
+            this.btn_Cancelar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btn_Cancelar.Name = "btn_Cancelar";
-            this.btn_Cancelar.Size = new System.Drawing.Size(113, 40);
+            this.btn_Cancelar.Size = new System.Drawing.Size(151, 49);
             this.btn_Cancelar.TabIndex = 1;
             this.btn_Cancelar.Text = "Cancelar";
             this.btn_Cancelar.UseVisualStyleBackColor = false;
@@ -58,25 +63,34 @@
             // btn_LimpiarCampos
             // 
             this.btn_LimpiarCampos.BackColor = System.Drawing.Color.LightSeaGreen;
-            this.btn_LimpiarCampos.Location = new System.Drawing.Point(492, 330);
+            this.btn_LimpiarCampos.Location = new System.Drawing.Point(656, 406);
+            this.btn_LimpiarCampos.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btn_LimpiarCampos.Name = "btn_LimpiarCampos";
-            this.btn_LimpiarCampos.Size = new System.Drawing.Size(113, 40);
+            this.btn_LimpiarCampos.Size = new System.Drawing.Size(151, 49);
             this.btn_LimpiarCampos.TabIndex = 16;
             this.btn_LimpiarCampos.Text = "LimpiarCampos";
             this.btn_LimpiarCampos.UseVisualStyleBackColor = false;
             this.btn_LimpiarCampos.Click += new System.EventHandler(this.btn_LimpiarCampos_Click);
             // 
+            // errorProviderBase
+            // 
+            this.errorProviderBase.BlinkStyle = System.Windows.Forms.ErrorBlinkStyle.NeverBlink;
+            this.errorProviderBase.ContainerControl = this;
+            // 
             // FormBaseBotones
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1067, 554);
             this.Controls.Add(this.btn_LimpiarCampos);
             this.Controls.Add(this.btn_Cancelar);
             this.Controls.Add(this.btn_Aceptar);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "FormBaseBotones";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormBaseBotones";
+            this.Load += new System.EventHandler(this.FormBaseBotones_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.errorProviderBase)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -85,6 +99,7 @@
 
         protected System.Windows.Forms.Button btn_Aceptar;
         private  System.Windows.Forms.Button btn_Cancelar;
-        private  System.Windows.Forms.Button btn_LimpiarCampos;
+        protected  System.Windows.Forms.Button btn_LimpiarCampos;
+        private System.Windows.Forms.ErrorProvider errorProviderBase;
     }
 }

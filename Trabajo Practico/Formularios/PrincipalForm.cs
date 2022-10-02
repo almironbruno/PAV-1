@@ -34,13 +34,13 @@ namespace Trabajo_Practico.Formularios
 
         private void empleadosToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Empleados ventanaEmpleados = new Empleados();
+            ABMC_Empleados ventanaEmpleados = new ABMC_Empleados();
             ventanaEmpleados.Show();
         }
 
         private void clientesToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Clientes ventanaClientes = new Clientes();
+            ABMC_Clientes ventanaClientes = new ABMC_Clientes();
             ventanaClientes.Show();
         }
 
@@ -67,6 +67,13 @@ namespace Trabajo_Practico.Formularios
         {
             Barrios ventanaBarrios = new Barrios();
             ventanaBarrios.Show();
+
+        private void cerrarSesionToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            LoginForm vtnLogin = new LoginForm();
+            vtnLogin.Show();
+
         }
     }
 }

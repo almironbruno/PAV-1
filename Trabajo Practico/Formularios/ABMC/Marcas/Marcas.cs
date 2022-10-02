@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using Trabajo_Practico.Formularios.ABMC.Marcas;
 using Trabajo_Practico.Clases.BackEnd.NegocioMarcas;
+using Trabajo_Practico.Clases.Entidades;
 
 namespace Trabajo_Practico.Formularios
 {
@@ -41,18 +42,56 @@ namespace Trabajo_Practico.Formularios
 
 
             DialogResult dialogResult = MessageBox.Show(registro, "Desea eliminar el Registro?", MessageBoxButtons.YesNo);
+            
+            try
+            {
+                if (dialogResult == DialogResult.Yes)
+                {
+                    NE_Marcas borrarMarca = new NE_Marcas();
+                    borrarMarca.BorrarMarca(nombre);
+
+                    cargargrilla();
+                }
+                else
+                {
+                    // Nada ya que no se elimina, al oprimir no se cierra el txtbox
+                }
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("No se puede borrar la marca ya que esta vinculada a un modelo de vehiculo");
+                
+            }
+            
+        }
+
+        private void btn_Actualizar_Click_1(object sender, EventArgs e)
+        {
+            string nombreMarca = dataGridViewModificada1.FilaSeleccionada().Cells["nombre"].Value.ToString().Trim();
+            string regis = "Marca Automotriz: " + nombreMarca;
+            DialogResult dialogResult = MessageBox.Show(regis, "Desea Modificar el registro?", MessageBoxButtons.YesNo);
+
+            Marca marca = new Marca(nombreMarca);
 
             if (dialogResult == DialogResult.Yes)
             {
-                NE_Marcas borrarMarca = new NE_Marcas();
-                borrarMarca.BorrarMarca(nombre);
+                ModificarMarca vtnModificar = new ModificarMarca(marca);
+                vtnModificar.Show();
 
-                cargargrilla();
             }
             else
             {
                 // Nada ya que no se elimina, al oprimir no se cierra el txtbox
             }
+           
+
+        }
+
+        private void btn_Buscar_Click_1(object sender, EventArgs e)
+        {
+            BuscarMarca vtnBuscarMarca = new BuscarMarca();
+            vtnBuscarMarca.Show();
         }
     }
 }
