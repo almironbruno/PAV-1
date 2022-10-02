@@ -52,6 +52,7 @@
             this.Controls.Add(this.lbl_Pregunta);
             this.Name = "BajaEmpleado";
             this.Text = "BajaEmpleado";
+            this.Load += new System.EventHandler(this.BajaEmpleado_Load);
             this.Controls.SetChildIndex(this.btn_LimpiarCampos, 0);
             this.Controls.SetChildIndex(this.mTxt_Nombre, 0);
             this.Controls.SetChildIndex(this.mTxt_Apellido, 0);

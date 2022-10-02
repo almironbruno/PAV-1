@@ -10,11 +10,12 @@ using System.Windows.Forms;
 using Trabajo_Practico.Formularios.Base;
 using Trabajo_Practico.Clases.Entidades;
 using Trabajo_Practico.Clases.BackEnd.NegocioAutos;
-
+using Trabajo_Practico.Formularios.ABMC.ABMC_Autos;
 
 namespace Trabajo_Practico.Formularios.ABMC.Autos
 {
-    public partial class AltaAutos : FormBaseAlta
+    public partial class AltaAutos : CamposAutos
+
     {
         public AltaAutos()
         {
@@ -88,20 +89,6 @@ namespace Trabajo_Practico.Formularios.ABMC.Autos
 
         }
 
-        // protected override void btn_LimpiarCampos_Click(object sender, EventArgs e)
-        //{
-        //    txtCodSerieFab.Text = "";
-        //    cmbNomComr.cmb_Cargable.Text = "";
-        //    txtAñoFab.Text = "";
-        //    cmbCondicion.cmb_Cargable.Text = "";
-        //    txtNroChasis.Text = "";
-        //    txtNroMotor.Text = "";
-        //    txtPatente.Text = "";
-        //}
-
-        //private void btn_Cancelar_Click_1(object sender, EventArgs e)
-        //{
-        //    this.Close();
-        //}
+        
     }
 }

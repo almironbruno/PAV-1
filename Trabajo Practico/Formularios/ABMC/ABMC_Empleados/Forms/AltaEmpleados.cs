@@ -45,5 +45,10 @@ namespace Trabajo_Practico.Formularios.ABMC.Empleados
             
 
         }
+
+        private void AltaEmpleados_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

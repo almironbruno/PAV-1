@@ -70,5 +70,10 @@ namespace Trabajo_Practico.Formularios
         {
             dataGridViewModificada1.forme = new InfoEmpleados();
         }
+
+        private void dataGridViewModificada1_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

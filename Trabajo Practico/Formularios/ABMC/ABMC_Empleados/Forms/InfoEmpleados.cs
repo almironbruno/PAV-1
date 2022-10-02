@@ -35,5 +35,10 @@ namespace Trabajo_Practico.Formularios.ABMC.ABMC_Empleados.Forms
             cmbCargable_Cargos.cmb_Cargable.Text = row.Cells[3].Value.ToString();
 
         }
+
+        private void InfoEmpleados_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

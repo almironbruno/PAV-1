@@ -4,6 +4,7 @@ using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 using Trabajo_Practico.Clases.BackEnd;
 using Trabajo_Practico.Clases.Entidades;
 
@@ -24,8 +25,17 @@ namespace Trabajo_Practico.Clases.BackEnd.NegocioMarcas
 
         public void BorrarMarca(string nombre)
         {
-            string sqlBorrar = "DELETE FROM marcas WHERE nombre = '" + nombre + "'";
-            _BD.Eliminar(sqlBorrar);
+            try
+            {
+                string sqlBorrar = "DELETE FROM marcas WHERE nombre = '" + nombre + "'";
+                _BD.Eliminar(sqlBorrar);
+            }
+            catch (Exception e)
+            {
+                MessageBox.Show("No se puede eliminar una marca en uso por algun vehiculo del registro.");
+                
+            }
+            
         }
 
         public void ModificarMarca(Marca marcaMod, string nombreViejo)

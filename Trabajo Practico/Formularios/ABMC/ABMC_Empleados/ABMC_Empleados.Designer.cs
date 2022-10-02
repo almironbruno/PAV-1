@@ -43,6 +43,10 @@
             // 
             this.btn_Buscar.Click += new System.EventHandler(this.btn_Buscar_Click_1);
             // 
+            // dataGridViewModificada1
+            // 
+            this.dataGridViewModificada1.Load += new System.EventHandler(this.dataGridViewModificada1_Load);
+            // 
             // ABMC_Empleados
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);

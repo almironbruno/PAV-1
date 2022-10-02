@@ -28,8 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
-            this.txtMarcaRegs = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
@@ -37,22 +35,6 @@
             // 
             this.btn_Aceptar.Location = new System.Drawing.Point(182, 330);
             this.btn_Aceptar.Click += new System.EventHandler(this.btn_Aceptar_Click_1);
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(164, 179);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(161, 13);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "Marca de Vehiculos a Registrar: ";
-            // 
-            // txtMarcaRegs
-            // 
-            this.txtMarcaRegs.Location = new System.Drawing.Point(344, 172);
-            this.txtMarcaRegs.Name = "txtMarcaRegs";
-            this.txtMarcaRegs.Size = new System.Drawing.Size(178, 20);
-            this.txtMarcaRegs.TabIndex = 3;
             // 
             // label2
             // 
@@ -71,14 +53,11 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(761, 441);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.txtMarcaRegs);
-            this.Controls.Add(this.label1);
             this.Name = "AltaMarcas";
             this.Text = "AltaMarcas";
             this.Load += new System.EventHandler(this.AltaMarcas_Load);
+            this.Controls.SetChildIndex(this.btn_LimpiarCampos, 0);
             this.Controls.SetChildIndex(this.btn_Aceptar, 0);
-            this.Controls.SetChildIndex(this.label1, 0);
-            this.Controls.SetChildIndex(this.txtMarcaRegs, 0);
             this.Controls.SetChildIndex(this.label2, 0);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -86,9 +65,6 @@
         }
 
         #endregion
-
-        public System.Windows.Forms.Label label1;
-        public System.Windows.Forms.TextBox txtMarcaRegs;
         public System.Windows.Forms.Label label2;
     }
 }

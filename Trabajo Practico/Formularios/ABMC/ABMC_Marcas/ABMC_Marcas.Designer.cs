@@ -1,16 +1,16 @@
 ﻿namespace Trabajo_Practico.Formularios
 {
-    partial class Autos
+    partial class ABMC_Marcas
     {
         /// <summary>
-        /// Variable del diseñador necesaria.
+        /// Required designer variable.
         /// </summary>
         private System.ComponentModel.IContainer components = null;
 
         /// <summary>
-        /// Limpiar los recursos que se estén usando.
+        /// Clean up any resources being used.
         /// </summary>
-        /// <param name="disposing">true si los recursos administrados se deben desechar; false en caso contrario.</param>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
         protected override void Dispose(bool disposing)
         {
             if (disposing && (components != null))
@@ -20,11 +20,11 @@
             base.Dispose(disposing);
         }
 
-        #region Código generado por el Diseñador de Windows Forms
+        #region Windows Form Designer generated code
 
         /// <summary>
-        /// Método necesario para admitir el Diseñador. No se puede modificar
-        /// el contenido de este método con el editor de código.
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
         /// </summary>
         private void InitializeComponent()
         {
@@ -47,16 +47,15 @@
             // 
             this.btn_Buscar.Click += new System.EventHandler(this.btn_Buscar_Click_1);
             // 
-            // dataGridViewModificada1
+            // Marcas
             // 
-            this.dataGridViewModificada1.Load += new System.EventHandler(this.dataGridViewModificada1_Load);
-            // 
-            // Autos
-            // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Name = "Autos";
-            this.Load += new System.EventHandler(this.Autos_Load);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(1067, 554);
+            this.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.Name = "Marcas";
+            this.Text = "Marcas";
+            this.Load += new System.EventHandler(this.Marcas_Load);
             this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
