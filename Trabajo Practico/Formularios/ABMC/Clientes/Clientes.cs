@@ -59,29 +59,7 @@ namespace Trabajo_Practico.Formularios.ABMC.Clientes
 
         private void btn_Actualizar_Click_1(object sender, EventArgs e)
         {
-            string tipoDoc = dataGridViewModificada1.FilaSeleccionada().Cells["tipo_doc_cliente"].Value.ToString().Trim();
-            string nroDoc = dataGridViewModificada1.FilaSeleccionada().Cells["nro_doc_cliente"].Value.ToString().Trim();
-            string nombre = dataGridViewModificada1.FilaSeleccionada().Cells["nombre"].Value.ToString().Trim();
-            string apellido = dataGridViewModificada1.FilaSeleccionada().Cells["apellido"].Value.ToString().Trim();
-            string fechaNac = dataGridViewModificada1.FilaSeleccionada().Cells["fecha_nacimiento"].Value.ToString();
-            string barrio = dataGridViewModificada1.FilaSeleccionada().Cells["id_barrio"].Value.ToString().Trim();
-            string calle = dataGridViewModificada1.FilaSeleccionada().Cells["calle"].Value.ToString().Trim();
-            string nroCalle = dataGridViewModificada1.FilaSeleccionada().Cells["nro_calle"].Value.ToString().Trim();
-            string regis = "Registro: Codigo de Serie del Vehiculo: " + System.Environment.NewLine + "Patente del Vehiculo: " + ".";
-
-            Trabajo_Practico.Clases.Entidades.Clientes cliente = new Trabajo_Practico.Clases.Entidades.Clientes(tipoDoc, nroDoc, nombre, apellido, fechaNac, calle, nroCalle, barrio);
-            DialogResult dialogResult = MessageBox.Show(regis, "Desea Modificar el registro?", MessageBoxButtons.YesNo);
-
-            if (dialogResult == DialogResult.Yes)
-            {
-               ModificacionCliente ventanaMod = new ModificacionCliente(cliente);
-                ventanaMod.Show();
-
-            }
-            else
-            {
-                // Nada ya que no se elimina, al oprimir no se cierra el txtbox
-            }
+           
         }
     }
 }

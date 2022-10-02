@@ -169,9 +169,11 @@
             // 
             // encargosToolStripMenuItem
             // 
+            this.encargosToolStripMenuItem.Image = global::Trabajo_Practico.Properties.Resources.Orders;
             this.encargosToolStripMenuItem.Name = "encargosToolStripMenuItem";
             this.encargosToolStripMenuItem.Size = new System.Drawing.Size(184, 26);
             this.encargosToolStripMenuItem.Text = "Encargos";
+            this.encargosToolStripMenuItem.Click += new System.EventHandler(this.encargosToolStripMenuItem_Click);
             // 
             // estadisticasToolStripMenuItem
             // 

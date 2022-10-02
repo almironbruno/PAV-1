@@ -213,7 +213,6 @@
             this.Name = "AltaClientes";
             this.Text = "AltaClientes";
             this.Load += new System.EventHandler(this.AltaClientes_Load);
-            this.Controls.SetChildIndex(this.btn_Aceptar, 0);
             this.Controls.SetChildIndex(this.cmbCargable_TipoDoc, 0);
             this.Controls.SetChildIndex(this.lbl_tipoDocumento, 0);
             this.Controls.SetChildIndex(this.label1, 0);
@@ -230,6 +229,8 @@
             this.Controls.SetChildIndex(this.mTxt_NroCalle, 0);
             this.Controls.SetChildIndex(this.cmbCargable_Barrio, 0);
             this.Controls.SetChildIndex(this.lbl_Barrio, 0);
+            this.Controls.SetChildIndex(this.btn_LimpiarCampos, 0);
+            this.Controls.SetChildIndex(this.btn_Aceptar, 0);
             this.ResumeLayout(false);
             this.PerformLayout();
 
