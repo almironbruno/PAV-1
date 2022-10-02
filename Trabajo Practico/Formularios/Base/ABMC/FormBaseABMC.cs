@@ -17,7 +17,8 @@ namespace Trabajo_Practico.Formularios
     public  partial class FormBaseABMC : Form
     {
         protected BE_Acceso_Datos bd;
-        //Se definen la consulta para que sean genericas
+        //Se definen la consultas para que sean genericas
+        // Este es un comentario
         protected string sqlConsulta;
         protected string sqlInsertar;
         protected string sqlEliminar;

@@ -233,7 +233,6 @@
             this.Controls.SetChildIndex(this.btn_LimpiarCampos, 0);
             this.ResumeLayout(false);
             this.PerformLayout();
-
         }
 
         #endregion
