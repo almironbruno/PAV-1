@@ -89,6 +89,12 @@
     <Compile Include="Formularios\ABMC\ABMC_Clientes\Forms\BajaClientes.Designer.cs">
       <DependentUpon>BajaClientes.cs</DependentUpon>
     </Compile>
+    <Compile Include="Formularios\ABMC\ABMC_Clientes\Forms\ConsultaClientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\ABMC\ABMC_Clientes\Forms\ConsultaClientes.Designer.cs">
+      <DependentUpon>ConsultaClientes.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formularios\ABMC\ABMC_Clientes\Forms\InfoClientes.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -279,6 +285,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\ABMC\ABMC_Clientes\Forms\BajaClientes.resx">
       <DependentUpon>BajaClientes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\ABMC\ABMC_Clientes\Forms\ConsultaClientes.resx">
+      <DependentUpon>ConsultaClientes.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\ABMC\ABMC_Empleados\Forms\BajaEmpleado.resx">
       <DependentUpon>BajaEmpleado.cs</DependentUpon>

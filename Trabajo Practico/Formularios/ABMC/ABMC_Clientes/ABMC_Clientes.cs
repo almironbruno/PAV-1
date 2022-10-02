@@ -105,5 +105,11 @@ namespace Trabajo_Practico.Formularios.ABMC.Clientes
         {
             dataGridViewModificada1.forme = new InfoClientes();
         }
+
+        private void btn_Buscar_Click_1(object sender, EventArgs e)
+        {
+            ConsultaClientes ventana = new ConsultaClientes(this);
+            ventana.Show();
+        }
     }
 }
