@@ -31,30 +31,36 @@
             this.lbl_buscar = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
+            // btn_Aceptar
+            // 
+            this.btn_Aceptar.Location = new System.Drawing.Point(261, 406);
+            // 
             // lbl_buscar
             // 
             this.lbl_buscar.AutoSize = true;
             this.lbl_buscar.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_buscar.Location = new System.Drawing.Point(230, 56);
+            this.lbl_buscar.Location = new System.Drawing.Point(307, 69);
+            this.lbl_buscar.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl_buscar.Name = "lbl_buscar";
-            this.lbl_buscar.Size = new System.Drawing.Size(61, 18);
+            this.lbl_buscar.Size = new System.Drawing.Size(74, 24);
             this.lbl_buscar.TabIndex = 2;
             this.lbl_buscar.Text = "Buscar";
             // 
             // FormBaseConsulta
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(741, 452);
+            this.ClientSize = new System.Drawing.Size(988, 556);
             this.Controls.Add(this.lbl_buscar);
+            this.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.Name = "FormBaseConsulta";
             this.Text = "FormBaseConsulta";
             this.Load += new System.EventHandler(this.FormBaseConsulta_Load);
             this.Controls.SetChildIndex(this.btn_Aceptar, 0);
-            this.Controls.SetChildIndex(this.btn_Cancelar, 0);
             this.Controls.SetChildIndex(this.lbl_buscar, 0);
             this.ResumeLayout(false);
             this.PerformLayout();
+            // Boton cancelar -> B
 
         }
 

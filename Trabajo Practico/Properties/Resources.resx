@@ -118,13 +118,61 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="330396_browse_estimate_explore_explorer_find_icon (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\330396_browse_estimate_explore_explorer_find_icon (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="7422513_ford_cars_logo_motors_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\7422513_ford_cars_logo_motors_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="4308184_client_costs_employee_finance_money_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\4308184_client_costs_employee_finance_money_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1988884_car_front_vehicle_icon (2)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\1988884_car_front_vehicle_icon (2).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="352315_car_directions_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\352315_car_directions_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="5875967_action_compose_edit_new_pencil_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\5875967_action_compose_edit_new_pencil_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="8559859_settings_options_configuration_setting_system_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\8559859_settings_options_configuration_setting_system_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="330397_accept_active_agree_approved_check_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\330397_accept_active_agree_approved_check_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="1988884_car_front_vehicle_icon (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\1988884_car_front_vehicle_icon (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="7623201_arrow_right_login_ui_login icon_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\7623201_arrow_right_login_ui_login icon_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="3994382_access_close_exit_logout_sign out_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\3994382_access_close_exit_logout_sign out_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="4544812_business_comerce_delivery_shop_tag_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\4544812_business_comerce_delivery_shop_tag_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="4308153_chart_data_employee_graph_manager_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\4308153_chart_data_employee_graph_manager_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="330399_bad_cancel_clear_close_decline_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\330399_bad_cancel_clear_close_decline_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="9044874_query_queue_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\9044874_query_queue_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="1988884_car_front_vehicle_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\1988884_car_front_vehicle_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="1988884_car_front_vehicle_icon (2)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\1988884_car_front_vehicle_icon (2).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="7518690_user_avatar_mail_people_plus_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\7518690_user_avatar_mail_people_plus_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="330400_arrows_connection_move_replication_transfer_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\330400_arrows_connection_move_replication_transfer_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="6578917_broom_clean_cleaning_housekeeping_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\6578917_broom_clean_cleaning_housekeeping_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

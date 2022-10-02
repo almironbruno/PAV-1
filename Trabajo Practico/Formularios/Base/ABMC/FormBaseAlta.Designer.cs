@@ -33,7 +33,11 @@
             // btn_Aceptar
             // 
             this.btn_Aceptar.Location = new System.Drawing.Point(168, 330);
-            this.btn_Aceptar.Click += new System.EventHandler(this.btn_Aceptar_Click_1);
+            
+            // 
+            // btn_Cancelar
+            // 
+           // this.btn_Cancelar.Location = new System.Drawing.Point(344, 330);
             // 
             // FormBaseAlta
             // 

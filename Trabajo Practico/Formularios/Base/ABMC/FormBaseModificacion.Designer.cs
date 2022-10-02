@@ -30,13 +30,16 @@
         {
             this.SuspendLayout();
             // 
+            // btn_Aceptar
+            // 
+            this.btn_Aceptar.Click += new System.EventHandler(this.btn_Aceptar_Click_1);
+            // 
             // FormBaseModificacion
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Name = "FormBaseModificacion";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormBaseModificacion";
             this.ResumeLayout(false);
 
