@@ -25,11 +25,6 @@ namespace Trabajo_Practico.Formularios.ABMC.Clientes
             
         }
 
-        private void Clientes_Load(object sender, EventArgs e)
-        {
-
-        }
-
         private void btn_Agregar_Click_1(object sender, EventArgs e)
         {
             AltaClientes ventanaAlta = new AltaClientes();

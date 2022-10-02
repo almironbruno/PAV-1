@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Trabajo_Practico.Clases.Entidades
 {
-    internal class Telefono
+    public class Telefono
     {
         public string nroTelefono { get; set; }    
 

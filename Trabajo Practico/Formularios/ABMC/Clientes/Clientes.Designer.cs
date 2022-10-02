@@ -50,7 +50,6 @@
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Name = "Clientes";
             this.Text = "Clientes";
-            this.Load += new System.EventHandler(this.Clientes_Load);
             this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();

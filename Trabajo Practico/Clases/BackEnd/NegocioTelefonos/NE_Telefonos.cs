@@ -21,5 +21,21 @@ namespace Trabajo_Practico.Clases.BackEnd.NegocioTelefonos
 
             _BD.ejecutar(sqlInsertar);
         }
+
+
+        public void BorrarTelefono(string numTel)
+        {
+
+            string sqlBorrar = "DELETE FROM telefonos WHERE nro_telefono = '" + numTel + "'";
+            _BD.Eliminar(sqlBorrar);
+        }
+
+
+        public void ModificarTelefono(Telefono telefonoModificar)
+        {
+            string sqlInsertar = $"UPDATE telefonos SET nro_telefono = {telefonoModificar.nroTelefono}, nro_caracteristica = {telefonoModificar.nroCaracteristica} WHERE nro_doc_cliente = {telefonoModificar.nroDocCliente} AND tipo_doc_cliente = {telefonoModificar.tipoDocCliente}";
+            _BD.ejecutar(sqlInsertar);
+               
+        }
     }
 }
