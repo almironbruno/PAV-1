@@ -39,7 +39,7 @@ namespace Trabajo_Practico.Formularios.ABMC.Telefonos
         private void btn_Aceptar_Click_1(object sender, EventArgs e)
         {
 
-            base.btn_Aceptar_Click(sender, e);
+            //base.btn_Aceptar_Click(sender, e);
             NE_Telefonos telefono = new NE_Telefonos();
             
             TelefonoMod.nroTelefono = txtNumModificado.Text.Trim();

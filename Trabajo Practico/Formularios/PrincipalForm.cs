@@ -25,7 +25,7 @@ namespace Trabajo_Practico.Formularios
         public PrincipalForm()
         {
             InitializeComponent();
-            
+
         }
 
         private void PrincipalForm_Load(object sender, EventArgs e)
@@ -41,13 +41,10 @@ namespace Trabajo_Practico.Formularios
 
         private void clientesToolStripMenuItem_Click(object sender, EventArgs e)
         {
-<<<<<<< HEAD
+
             ABMC_Clientes ventanaClientes = new ABMC_Clientes();
             ventanaClientes.Show();
-=======
-            //Clientes ventanaClientes = new Clientes();
-            //ventanaClientes.Show();
->>>>>>> a2dc30fa7fe77ac4a016789b3208b71d94e51834
+
         }
 
         private void autosToolStripMenuItem_Click(object sender, EventArgs e)
@@ -74,6 +71,11 @@ namespace Trabajo_Practico.Formularios
             Barrios ventanaBarrios = new Barrios();
             ventanaBarrios.Show();
 
+            
+
+            
+        }
+
         private void cerrarSesionToolStripMenuItem_Click(object sender, EventArgs e)
         {
             this.Close();
@@ -81,7 +83,6 @@ namespace Trabajo_Practico.Formularios
             vtnLogin.Show();
 
         }
-
         private void telefonosToolStripMenuItem_Click(object sender, EventArgs e)
         {
             TelefonosPrincipal ventanaTelefono = new TelefonosPrincipal();
@@ -89,3 +90,4 @@ namespace Trabajo_Practico.Formularios
         }
     }
 }
+

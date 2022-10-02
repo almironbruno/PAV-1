@@ -34,7 +34,7 @@ namespace Trabajo_Practico.Formularios.ABMC.Barrios
 
         private void btn_Aceptar_Click_1(object sender, EventArgs e)
         {
-            base.btn_Aceptar_Click(sender, e);
+            //base.btn_Aceptar_Click(sender, e);
             NE_Barrio barrio = new NE_Barrio();
             string pk = idBarrio;
             BarrioMod.nombre_Barrio = txtReemplazoNombreBarrio.Text.Trim();
