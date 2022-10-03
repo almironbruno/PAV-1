@@ -53,16 +53,17 @@
     <Compile Include="Clases\BackEnd\NegocioEmpleados\NE_Empleados.cs" />
     <Compile Include="Clases\BackEnd\NegocioMarcas\NE_Marcas.cs" />
     <Compile Include="Clases\BackEnd\NegocioTelefonos\NE_Telefonos.cs" />
+    <Compile Include="Clases\BackEnd\NegocioNombreComercial\NE_NombreComercial.cs" />
     <Compile Include="Clases\BackEnd\ValidarEmail.cs" />
     <Compile Include="Clases\BackEnd\NegocioUsuarios\NE_usuarios.cs" />
     <Compile Include="Clases\Entidades\Clientes.cs" />
     <Compile Include="Clases\Entidades\Empleados.cs" />
     <Compile Include="Clases\Entidades\Marca.cs" />
     <Compile Include="Clases\BackEnd\NegocioBarrio\NE_Barrio.cs" />
-    <Compile Include="Clases\BackEnd\ValidarEmail.cs" />
     <Compile Include="Clases\BackEnd\NegocioUsuarios\NE_usuarios.cs" />
     <Compile Include="Clases\Entidades\Barrio.cs" />
     <Compile Include="Clases\Entidades\Telefono.cs" />
+    <Compile Include="Clases\Entidades\NombresComerciales.cs" />
     <Compile Include="Clases\Entidades\Vehiculos.cs" />
     <Compile Include="Clases\Entidades\Usuario.cs" />
     <Compile Include="ControlesPropios\ComboCargable.cs">
@@ -118,6 +119,18 @@
     </Compile>
     <Compile Include="Formularios\ABMC\ABMC_Clientes\Forms\InfoClientes.Designer.cs">
       <DependentUpon>InfoClientes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\ABMC\ABMC_Empleados\ABMC_Empleados.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\ABMC\ABMC_Empleados\ABMC_Empleados.Designer.cs">
+      <DependentUpon>ABMC_Empleados.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\ABMC\ABMC_Empleados\CamposEmpleados.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\ABMC\ABMC_Empleados\CamposEmpleados.Designer.cs">
+      <DependentUpon>CamposEmpleados.cs</DependentUpon>
     </Compile>
     <Compile Include="Formularios\ABMC\ABMC_Empleados\Forms\BajaEmpleado.cs">
       <SubType>Form</SubType>
@@ -203,18 +216,6 @@
     <Compile Include="Formularios\ABMC\ABMC_Empleados\Forms\AltaEmpleados.Designer.cs">
       <DependentUpon>AltaEmpleados.cs</DependentUpon>
     </Compile>
-    <Compile Include="Formularios\ABMC\ABMC_Empleados\CamposEmpleados.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Formularios\ABMC\ABMC_Empleados\CamposEmpleados.Designer.cs">
-      <DependentUpon>CamposEmpleados.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Formularios\ABMC\ABMC_Empleados\ABMC_Empleados.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Formularios\ABMC\ABMC_Empleados\ABMC_Empleados.Designer.cs">
-      <DependentUpon>ABMC_Empleados.cs</DependentUpon>
-    </Compile>
     <Compile Include="Formularios\ABMC\ABMC_Autos\ABMC_Autos.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -268,6 +269,18 @@
     </Compile>
     <Compile Include="Formularios\ABMC\ABMC_Marcas\Forms\ModificarMarca.Designer.cs">
       <DependentUpon>ModificarMarca.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\ABMC\NombreComercial\AltaNombreComercial.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\ABMC\NombreComercial\AltaNombreComercial.Designer.cs">
+      <DependentUpon>AltaNombreComercial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\ABMC\NombreComercial\NombreComercial.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\ABMC\NombreComercial\NombreComercial.Designer.cs">
+      <DependentUpon>NombreComercial.cs</DependentUpon>
     </Compile>
     <Compile Include="Formularios\ABMC\Telefonos\AltaTelefono.cs">
       <SubType>Form</SubType>
@@ -376,6 +389,12 @@
     <EmbeddedResource Include="Formularios\ABMC\ABMC_Clientes\Forms\InfoClientes.resx">
       <DependentUpon>InfoClientes.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\ABMC\ABMC_Empleados\ABMC_Empleados.resx">
+      <DependentUpon>ABMC_Empleados.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\ABMC\ABMC_Empleados\CamposEmpleados.resx">
+      <DependentUpon>CamposEmpleados.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Formularios\ABMC\ABMC_Empleados\Forms\BajaEmpleado.resx">
       <DependentUpon>BajaEmpleado.cs</DependentUpon>
     </EmbeddedResource>
@@ -421,15 +440,6 @@
     <EmbeddedResource Include="Formularios\ABMC\ABMC_Empleados\Forms\AltaEmpleados.resx">
       <DependentUpon>AltaEmpleados.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Formularios\ABMC\ABMC_Empleados\CamposEmpleados.resx">
-      <DependentUpon>CamposEmpleados.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Formularios\ABMC\ABMC_Empleados\ABMC_Empleados.resx">
-      <DependentUpon>ABMC_Empleados.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Formularios\ABMC\ABMC_Empleados\Forms\ModificacionEmpleados.resx">
-      <DependentUpon>ModificacionEmpleados.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Formularios\ABMC\ABMC_Marcas\CamposMarcas.resx">
       <DependentUpon>CamposMarcas.cs</DependentUpon>
     </EmbeddedResource>
@@ -447,6 +457,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\ABMC\ABMC_Marcas\Forms\ModificarMarca.resx">
       <DependentUpon>ModificarMarca.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\ABMC\NombreComercial\AltaNombreComercial.resx">
+      <DependentUpon>AltaNombreComercial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\ABMC\NombreComercial\NombreComercial.resx">
+      <DependentUpon>NombreComercial.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\ABMC\Telefonos\AltaTelefono.resx">
       <DependentUpon>AltaTelefono.cs</DependentUpon>
@@ -492,7 +508,6 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
-      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -506,54 +521,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\8559859_settings_options_configuration_setting_system_icon.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\3994382_access_close_exit_logout_sign out_icon.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\9044874_query_queue_icon.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\4308153_chart_data_employee_graph_manager_icon.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\4308184_client_costs_employee_finance_money_icon.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\352315_car_directions_icon.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\7422513_ford_cars_logo_motors_icon.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\4544812_business_comerce_delivery_shop_tag_icon.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\330397_accept_active_agree_approved_check_icon.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\330400_arrows_connection_move_replication_transfer_icon.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\330396_browse_estimate_explore_explorer_find_icon %281%29.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\330399_bad_cancel_clear_close_decline_icon.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\7623201_arrow_right_login_ui_login icon_icon.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\7518690_user_avatar_mail_people_plus_icon.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\5875967_action_compose_edit_new_pencil_icon.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\6578917_broom_clean_cleaning_housekeeping_icon.png" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup />

@@ -15,6 +15,7 @@ using Trabajo_Practico.Formularios.ABMC.Marcas;
 using Trabajo_Practico.Formularios.ABMC.Telefonos;
 using Trabajo_Practico.Formularios.ABMC.Clientes;
 using Trabajo_Practico.Clases.Entidades;
+using Trabajo_Practico.Formularios.ABMC.NombreComercial;
 
 namespace Trabajo_Practico.Formularios
 {
@@ -35,7 +36,7 @@ namespace Trabajo_Practico.Formularios
 
         private void empleadosToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            ABMC_Empleados ventanaEmpleados = new ABMC_Empleados();
+            ABMC_Empleados ventanaEmpleados = new    ABMC_Empleados();
             ventanaEmpleados.Show();
         }
 
@@ -87,6 +88,11 @@ namespace Trabajo_Practico.Formularios
         {
             TelefonosPrincipal ventanaTelefono = new TelefonosPrincipal();
             ventanaTelefono.Show();
+	}
+        private void nombreComercialToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            NombreComercial ventaNombreComercial = new NombreComercial();
+            ventaNombreComercial.Show();
         }
     }
 }
