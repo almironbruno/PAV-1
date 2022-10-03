@@ -35,9 +35,17 @@
             // 
             this.btn_Agregar.Click += new System.EventHandler(this.btn_Agregar_Click_1);
             // 
+            // btn_Actualizar
+            // 
+            this.btn_Actualizar.Click += new System.EventHandler(this.btn_Actualizar_Click_1);
+            // 
+            // btn_Eliminar
+            // 
+            this.btn_Eliminar.Click += new System.EventHandler(this.btn_Eliminar_Click_1);
+            // 
             // btn_Buscar
             // 
-            //this.btn_Buscar.Click += new System.EventHandler(this.btn_Buscar_Click_1);
+            this.btn_Buscar.Click += new System.EventHandler(this.btn_Buscar_Click_1);
             // 
             // Encargos
             // 

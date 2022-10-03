@@ -58,7 +58,7 @@ namespace Trabajo_Practico.Formularios
                 }
 
             }
-            catch (Exception ex)
+            catch (Exception )
             {
                 MessageBox.Show("No se puede borrar la marca ya que esta vinculada a un modelo de vehiculo");
                 

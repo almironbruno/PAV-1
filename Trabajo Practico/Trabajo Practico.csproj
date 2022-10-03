@@ -517,15 +517,12 @@
   <ItemGroup>
     <None Include="Resources\6578917_broom_clean_cleaning_housekeeping_icon.png" />
   </ItemGroup>
-<<<<<<< HEAD
   <ItemGroup />
-=======
   <ItemGroup>
     <None Include="Resources\Location.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Orders.png" />
   </ItemGroup>
->>>>>>> 2a39e06d29769e4a96a22ba20db281fc73fca05f
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

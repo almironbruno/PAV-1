@@ -14,7 +14,7 @@ namespace Trabajo_Practico.Formularios.ABMC.Encargos
     {
         public Encargos()
         {
-            consultaPrincipal = "SELECT * FROM encargos";
+            consultaPrincipal = "SELECT e.nro_encargo, t.nombre_tipo_doc, e.nro_doc_cliente, e.fecha, n.nombre_comercial, e.legajo_empleado, e.cod_caracteristica, p.nombre_prioridad from encargos e join tipo_doc_clientes as t on e.tipo_doc_cliente = t.id_doc_cliente join nombres_comerciales as n on e.id_nombrecomercial = n.id_nombrecomercial join prioridades as p on e.prioridad =  p.id_prioridad";
             InitializeComponent();
             cambiarNombre("Encargos");
         }
@@ -25,5 +25,25 @@ namespace Trabajo_Practico.Formularios.ABMC.Encargos
             ventana.ShowDialog();
         }
 
+        private void btn_Buscar_Click_1(object sender, EventArgs e)
+        {
+            BuscarEncargos ventana = new BuscarEncargos();
+            ventana.Show();
+        }
+
+        private void btn_Actualizar_Click_1(object sender, EventArgs e)
+        {
+            ModificarEncargos ventanaMod = new ModificarEncargos(dataGridViewModificada1.FilaSeleccionada());
+            ventanaMod.ShowDialog();
+        }
+
+        private void btn_Eliminar_Click_1(object sender, EventArgs e)
+        {
+            
+        }
+        /*
+BajaClientes ventana = new BajaClientes(dataGridViewModificada1.FilaSeleccionada());
+            ventana.Show();
+*/
     }
 }

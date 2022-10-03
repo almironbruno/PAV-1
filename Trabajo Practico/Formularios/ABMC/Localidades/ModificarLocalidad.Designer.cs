@@ -28,31 +28,14 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.txtNombreLocalidad = new System.Windows.Forms.TextBox();
-            this.lblNombreLocalidad = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
+            this.lblNombreLocalidad = new System.Windows.Forms.Label();
+            this.txtNombreLocalidad = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // btn_Aceptar
             // 
             this.btn_Aceptar.Click += new System.EventHandler(this.btn_Aceptar_Click_1);
-            // 
-            // txtNombreLocalidad
-            // 
-            this.txtNombreLocalidad.Location = new System.Drawing.Point(347, 152);
-            this.txtNombreLocalidad.Name = "txtNombreLocalidad";
-            this.txtNombreLocalidad.Size = new System.Drawing.Size(173, 20);
-            this.txtNombreLocalidad.TabIndex = 20;
-            // 
-            // lblNombreLocalidad
-            // 
-            this.lblNombreLocalidad.AutoSize = true;
-            this.lblNombreLocalidad.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNombreLocalidad.Location = new System.Drawing.Point(203, 155);
-            this.lblNombreLocalidad.Name = "lblNombreLocalidad";
-            this.lblNombreLocalidad.Size = new System.Drawing.Size(138, 17);
-            this.lblNombreLocalidad.TabIndex = 21;
-            this.lblNombreLocalidad.Text = "Nombre de localidad";
             // 
             // label8
             // 
@@ -65,6 +48,23 @@
             this.label8.TabIndex = 32;
             this.label8.Text = "Modificar Localidad";
             // 
+            // lblNombreLocalidad
+            // 
+            this.lblNombreLocalidad.AutoSize = true;
+            this.lblNombreLocalidad.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNombreLocalidad.Location = new System.Drawing.Point(203, 155);
+            this.lblNombreLocalidad.Name = "lblNombreLocalidad";
+            this.lblNombreLocalidad.Size = new System.Drawing.Size(138, 17);
+            this.lblNombreLocalidad.TabIndex = 21;
+            this.lblNombreLocalidad.Text = "Nombre de localidad";
+            // 
+            // txtNombreLocalidad
+            // 
+            this.txtNombreLocalidad.Location = new System.Drawing.Point(347, 152);
+            this.txtNombreLocalidad.Name = "txtNombreLocalidad";
+            this.txtNombreLocalidad.Size = new System.Drawing.Size(173, 20);
+            this.txtNombreLocalidad.TabIndex = 20;
+            // 
             // ModificarLocalidad
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -75,20 +75,19 @@
             this.Controls.Add(this.lblNombreLocalidad);
             this.Name = "ModificarLocalidad";
             this.Text = "ModificarLocalidad";
-            this.Controls.SetChildIndex(this.btn_Aceptar, 0);
-            this.Controls.SetChildIndex(this.btn_LimpiarCampos, 0);
             this.Controls.SetChildIndex(this.lblNombreLocalidad, 0);
             this.Controls.SetChildIndex(this.txtNombreLocalidad, 0);
             this.Controls.SetChildIndex(this.label8, 0);
+            this.Controls.SetChildIndex(this.btn_Aceptar, 0);
+            this.Controls.SetChildIndex(this.btn_LimpiarCampos, 0);
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.TextBox txtNombreLocalidad;
-        private System.Windows.Forms.Label lblNombreLocalidad;
         public System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label lblNombreLocalidad;
+        private System.Windows.Forms.TextBox txtNombreLocalidad;
     }
 }
