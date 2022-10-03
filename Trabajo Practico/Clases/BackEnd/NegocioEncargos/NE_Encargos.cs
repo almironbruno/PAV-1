@@ -29,5 +29,12 @@ namespace Trabajo_Practico.Clases.BackEnd.NegocioEncargos
             string sqlModificar = $"UPDATE encargos SET tipo_doc_cliente = {encargoModificado.tipoDocumento}, nro_doc_cliente = {encargoModificado.nroDocumento}, fecha = CONVERT(DATETIME, '{encargoModificado.fecha}',103), id_nombrecomercial = {encargoModificado.nombreComercial}, legajo_empleado = {encargoModificado.legajoEmpletado}, cod_caracteristica = {encargoModificado.codCaracteristica}, prioridad = {encargoModificado.prioridad} WHERE tipo_doc_cliente = {encargoModificado.tipoDocumento} AND  nro_doc_cliente = {encargoModificado.nroDocumento} ";
             _BD.ejecutar(sqlModificar);
         }
+
+        public void BorrarEncargo(int nro_encargo)
+        {
+            string sqlBorrar = $"DELETE FROM encargos WHERE nro_encargo = {nro_encargo}";
+            _BD.Eliminar(sqlBorrar);
+        }
+
     }
 }

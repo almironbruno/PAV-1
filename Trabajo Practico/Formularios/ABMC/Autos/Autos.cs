@@ -88,8 +88,6 @@ namespace Trabajo_Practico.Formularios
 
         private void btn_Eliminar_Click_1(object sender, EventArgs e)
         {
-
-
             string cod_serie = dataGridViewModificada1.FilaSeleccionada().Cells[0].Value.ToString();
             string patente = dataGridViewModificada1.FilaSeleccionada().Cells[3].Value.ToString();
 

@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Trabajo_Practico.Clases.BackEnd.NegocioEncargos;
 using Trabajo_Practico.Formularios.Base;
 namespace Trabajo_Practico.Formularios.ABMC.Encargos
 {
@@ -39,12 +40,22 @@ namespace Trabajo_Practico.Formularios.ABMC.Encargos
 
         private void btn_Eliminar_Click_1(object sender, EventArgs e)
         {
-            BajaEncargos ventana = new BajaEncargos();
-            ventana.ShowDialog();
+            int nro_encargo = int.Parse(dataGridViewModificada1.FilaSeleccionada().Cells[0].Value.ToString());
+            string tipo_doc = dataGridViewModificada1.FilaSeleccionada().Cells[1].Value.ToString();
+            int nro_doc = int.Parse(dataGridViewModificada1.FilaSeleccionada().Cells[2].Value.ToString());
+
+            string registro = "Registro: Nro. de encargo: " + nro_encargo + System.Environment.NewLine + " Tipo de documento: " + tipo_doc + System.Environment.NewLine + " Nro. de documento: " + nro_doc;
+            // Confirmamos si desea realmente borra este registro
+            DialogResult dialogResult = MessageBox.Show(registro, "Desea eliminar el registro ?", MessageBoxButtons.YesNo);
+            if(dialogResult == DialogResult.Yes)
+            {
+                NE_Encargos borrarEncargo = new NE_Encargos();
+                borrarEncargo.BorrarEncargo(nro_encargo);
+            }
+        
+        
         }
-        /*
-BajaClientes ventana = new BajaClientes(dataGridViewModificada1.FilaSeleccionada());
-            ventana.Show();
-*/
+        
+
     }
 }

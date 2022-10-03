@@ -189,28 +189,16 @@
     <Compile Include="Formularios\ABMC\ABMC_Empleados\Forms\ModificacionEmpleados.Designer.cs">
       <DependentUpon>ModificacionEmpleados.cs</DependentUpon>
     </Compile>
-    <Compile Include="Formularios\ABMC\Encargos\CamposEncargos.cs">
+    <Compile Include="Formularios\ABMC\Encargos\AltaEncargos.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Formularios\ABMC\Encargos\CamposEncargos.Designer.cs">
-      <DependentUpon>CamposEncargos.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Formularios\ABMC\Encargos\Forms\AltaEncargos.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Formularios\ABMC\Encargos\Forms\AltaEncargos.Designer.cs">
+    <Compile Include="Formularios\ABMC\Encargos\AltaEncargos.Designer.cs">
       <DependentUpon>AltaEncargos.cs</DependentUpon>
     </Compile>
-    <Compile Include="Formularios\ABMC\Encargos\Forms\BajaEncargos.cs">
+    <Compile Include="Formularios\ABMC\Encargos\BuscarEncargos.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Formularios\ABMC\Encargos\Forms\BajaEncargos.Designer.cs">
-      <DependentUpon>BajaEncargos.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Formularios\ABMC\Encargos\Forms\BuscarEncargos.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Formularios\ABMC\Encargos\Forms\BuscarEncargos.Designer.cs">
+    <Compile Include="Formularios\ABMC\Encargos\BuscarEncargos.Designer.cs">
       <DependentUpon>BuscarEncargos.cs</DependentUpon>
     </Compile>
     <Compile Include="Formularios\ABMC\Encargos\Encargos.cs">
@@ -219,10 +207,10 @@
     <Compile Include="Formularios\ABMC\Encargos\Encargos.Designer.cs">
       <DependentUpon>Encargos.cs</DependentUpon>
     </Compile>
-    <Compile Include="Formularios\ABMC\Encargos\Forms\ModificarEncargos.cs">
+    <Compile Include="Formularios\ABMC\Encargos\ModificarEncargos.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Formularios\ABMC\Encargos\Forms\ModificarEncargos.Designer.cs">
+    <Compile Include="Formularios\ABMC\Encargos\ModificarEncargos.Designer.cs">
       <DependentUpon>ModificarEncargos.cs</DependentUpon>
     </Compile>
     <Compile Include="Formularios\ABMC\Localidades\AltaLocalidades.cs">
@@ -395,19 +383,16 @@
     <EmbeddedResource Include="Formularios\ABMC\ABMC_Empleados\Forms\ModificacionEmpleados.resx">
       <DependentUpon>ModificacionEmpleados.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Formularios\ABMC\Encargos\CamposEncargos.resx">
-      <DependentUpon>CamposEncargos.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Formularios\ABMC\Encargos\Forms\AltaEncargos.resx">
+    <EmbeddedResource Include="Formularios\ABMC\Encargos\AltaEncargos.resx">
       <DependentUpon>AltaEncargos.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Formularios\ABMC\Encargos\Forms\BuscarEncargos.resx">
+    <EmbeddedResource Include="Formularios\ABMC\Encargos\BuscarEncargos.resx">
       <DependentUpon>BuscarEncargos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\ABMC\Encargos\Encargos.resx">
       <DependentUpon>Encargos.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Formularios\ABMC\Encargos\Forms\ModificarEncargos.resx">
+    <EmbeddedResource Include="Formularios\ABMC\Encargos\ModificarEncargos.resx">
       <DependentUpon>ModificarEncargos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\ABMC\Localidades\AltaLocalidades.resx">
