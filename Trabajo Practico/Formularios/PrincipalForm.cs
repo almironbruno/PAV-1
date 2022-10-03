@@ -9,9 +9,13 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using Trabajo_Practico.Clases;
 using Trabajo_Practico.Formularios.ABMC;
+using Trabajo_Practico.Formularios.ABMC.Barrios;
+using Trabajo_Practico.Formularios.ABMC.Gamas;
 using Trabajo_Practico.Formularios.ABMC.Marcas;
+using Trabajo_Practico.Formularios.ABMC.Telefonos;
 using Trabajo_Practico.Formularios.ABMC.Clientes;
-
+using Trabajo_Practico.Clases.Entidades;
+using Trabajo_Practico.Formularios.ABMC.NombreComercial;
 
 namespace Trabajo_Practico.Formularios
 {
@@ -22,7 +26,7 @@ namespace Trabajo_Practico.Formularios
         public PrincipalForm()
         {
             InitializeComponent();
-            
+
         }
 
         private void PrincipalForm_Load(object sender, EventArgs e)
@@ -32,27 +36,45 @@ namespace Trabajo_Practico.Formularios
 
         private void empleadosToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            ABMC_Empleados ventanaEmpleados = new ABMC_Empleados();
+            ABMC_Empleados ventanaEmpleados = new    ABMC_Empleados();
             ventanaEmpleados.Show();
         }
 
         private void clientesToolStripMenuItem_Click(object sender, EventArgs e)
         {
+
             ABMC_Clientes ventanaClientes = new ABMC_Clientes();
             ventanaClientes.Show();
+
         }
 
         private void autosToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Autos ventanaAutos = new Autos();
+            ABMC_Autos ventanaAutos = new ABMC_Autos();
             ventanaAutos.Show();
         }
 
         private void marcaToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Marcas ventanaMarcas = new Marcas();
+            ABMC_Marcas ventanaMarcas = new ABMC_Marcas();
             ventanaMarcas.Show();
 
+        }
+
+        private void gamaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Gamas ventanaGamas = new Gamas();
+            ventanaGamas.Show();
+        }
+
+        private void barriosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Barrios ventanaBarrios = new Barrios();
+            ventanaBarrios.Show();
+
+            
+
+            
         }
 
         private void cerrarSesionToolStripMenuItem_Click(object sender, EventArgs e)
@@ -60,6 +82,18 @@ namespace Trabajo_Practico.Formularios
             this.Close();
             LoginForm vtnLogin = new LoginForm();
             vtnLogin.Show();
+
+        }
+        private void telefonosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            TelefonosPrincipal ventanaTelefono = new TelefonosPrincipal();
+            ventanaTelefono.Show();
+	}
+        private void nombreComercialToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            NombreComercial ventaNombreComercial = new NombreComercial();
+            ventaNombreComercial.Show();
         }
     }
 }
+

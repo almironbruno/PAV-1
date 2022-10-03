@@ -35,7 +35,7 @@ namespace Trabajo_Practico.Formularios.ABMC.ABMC_Empleados
             //Cargos los campos con los datos del empleado
             cargarCampos(empleado);
 
-
+            
             InitializeComponent();
         }
 
@@ -44,6 +44,11 @@ namespace Trabajo_Practico.Formularios.ABMC.ABMC_Empleados
             NE_Empleados empleadosBorrar = new NE_Empleados();
             empleadosBorrar.bajaEmpleados(mtxt_Legajo.Text);
             this.Close();
+        }
+
+        private void BajaEmpleado_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

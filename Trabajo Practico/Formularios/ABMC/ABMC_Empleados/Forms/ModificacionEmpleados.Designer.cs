@@ -41,6 +41,7 @@
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Name = "ModificacionEmpleados";
             this.Text = "ModificacionEmpleados";
+            this.Load += new System.EventHandler(this.ModificacionEmpleados_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
