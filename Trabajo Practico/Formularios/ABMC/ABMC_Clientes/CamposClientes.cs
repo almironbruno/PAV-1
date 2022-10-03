@@ -47,5 +47,10 @@ namespace Trabajo_Practico.Formularios.ABMC.ABMC_Clientes
 
 
         }
+
+        private void CamposClientes_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

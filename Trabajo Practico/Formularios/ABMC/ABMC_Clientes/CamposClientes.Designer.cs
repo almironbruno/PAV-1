@@ -213,6 +213,7 @@
             this.Controls.Add(this.cmbCargable_TipoDoc);
             this.Name = "CamposClientes";
             this.Text = "CamposClientes";
+            this.Load += new System.EventHandler(this.CamposClientes_Load);
             this.Controls.SetChildIndex(this.cmbCargable_TipoDoc, 0);
             this.Controls.SetChildIndex(this.lbl_tipoDocumento, 0);
             this.Controls.SetChildIndex(this.label1, 0);

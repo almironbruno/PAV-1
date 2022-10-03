@@ -11,11 +11,11 @@ using Trabajo_Practico.Formularios.Base;
 using Trabajo_Practico.Clases.Entidades;
 using Trabajo_Practico.Clases.BackEnd.NegocioMarcas;
 using Trabajo_Practico.Formularios.ABMC.Marcas;
-
+using Trabajo_Practico.Formularios.ABMC.ABMC_Marcas;
 
 namespace Trabajo_Practico.Formularios.ABMC.Marcas
 {
-    public partial class AltaMarcas : FormBaseAlta
+    public partial class AltaMarcas : CamposMarcas
     {
         public AltaMarcas()
         {
@@ -50,7 +50,7 @@ namespace Trabajo_Practico.Formularios.ABMC.Marcas
                 }
                 if (vacios == false)
                 {
-                    string nombremarca = txtMarcaRegs.Text;
+                    string nombremarca = txtMarcaRegs.Text.Trim();
 
                     Marca marc = new Marca(nombremarca);
 

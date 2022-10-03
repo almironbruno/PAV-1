@@ -42,5 +42,10 @@ namespace Trabajo_Practico.Formularios.ABMC.ABMC_Empleados.Forms
             //Vuelvo al formPrincipal del ABM
             this.Close();
         }
+
+        private void Consulta_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
