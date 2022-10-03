@@ -39,7 +39,8 @@ namespace Trabajo_Practico.Formularios.ABMC.Encargos
 
         private void btn_Eliminar_Click_1(object sender, EventArgs e)
         {
-            
+            BajaEncargos ventana = new BajaEncargos();
+            ventana.ShowDialog();
         }
         /*
 BajaClientes ventana = new BajaClientes(dataGridViewModificada1.FilaSeleccionada());

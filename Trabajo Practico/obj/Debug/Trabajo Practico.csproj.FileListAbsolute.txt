@@ -49,3 +49,4 @@ C:\Users\Family 7\Desktop\Nueva carpeta\PAV-1\Trabajo Practico\obj\Debug\Trabajo
 C:\Users\Family 7\Desktop\Nueva carpeta\PAV-1\Trabajo Practico\obj\Debug\Trabajo Practico.csproj.CoreCompileInputs.cache
 C:\Users\Family 7\Desktop\Nueva carpeta\PAV-1\Trabajo Practico\obj\Debug\Trabajo Practico.exe
 C:\Users\Family 7\Desktop\Nueva carpeta\PAV-1\Trabajo Practico\obj\Debug\Trabajo Practico.pdb
+C:\Users\Family 7\Desktop\Nueva carpeta\PAV-1\Trabajo Practico\obj\Debug\Trabajo_Practico.Formularios.ABMC.Encargos.CamposEncargos.resources
