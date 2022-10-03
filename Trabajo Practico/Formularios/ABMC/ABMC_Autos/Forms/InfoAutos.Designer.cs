@@ -1,6 +1,6 @@
-﻿namespace Trabajo_Practico.Formularios.ABMC.Empleados
+﻿namespace Trabajo_Practico.Formularios.ABMC.Autos
 {
-    partial class ModificacionEmpleados
+    partial class InfoAutos
     {
         /// <summary>
         /// Required designer variable.
@@ -30,20 +30,15 @@
         {
             this.SuspendLayout();
             // 
-            // btn_Aceptar
-            // 
-            this.btn_Aceptar.Click += new System.EventHandler(this.btn_Aceptar_Click);
-            // 
-            // ModificacionEmpleados
+            // InfoAutos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Name = "ModificacionEmpleados";
-            this.Text = "ModificacionEmpleados";
-            this.Load += new System.EventHandler(this.ModificacionEmpleados_Load);
+            this.Name = "InfoAutos";
+            this.Text = "InfoAutos";
+            this.Load += new System.EventHandler(this.InfoAutos_Load);
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 

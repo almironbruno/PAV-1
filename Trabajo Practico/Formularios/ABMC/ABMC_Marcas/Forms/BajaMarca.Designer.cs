@@ -1,6 +1,6 @@
-﻿namespace Trabajo_Practico.Formularios.ABMC.Empleados
+﻿namespace Trabajo_Practico.Formularios.ABMC.ABMC_Marcas.Forms
 {
-    partial class ModificacionEmpleados
+    partial class BajaMarca
     {
         /// <summary>
         /// Required designer variable.
@@ -34,14 +34,14 @@
             // 
             this.btn_Aceptar.Click += new System.EventHandler(this.btn_Aceptar_Click);
             // 
-            // ModificacionEmpleados
+            // BajaMarca
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Name = "ModificacionEmpleados";
-            this.Text = "ModificacionEmpleados";
-            this.Load += new System.EventHandler(this.ModificacionEmpleados_Load);
+            this.Name = "BajaMarca";
+            this.Text = "BajaMarca";
+            this.Load += new System.EventHandler(this.BajaMarca_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

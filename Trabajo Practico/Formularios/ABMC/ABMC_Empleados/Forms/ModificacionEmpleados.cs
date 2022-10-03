@@ -51,5 +51,10 @@ namespace Trabajo_Practico.Formularios.ABMC.Empleados
             }
 
         }
+
+        private void ModificacionEmpleados_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

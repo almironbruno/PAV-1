@@ -40,6 +40,10 @@ namespace Trabajo_Practico.Formularios.ABMC.Empleados
             mTxt_Apellido.Text = empleado.apellido;
             cmbCargable_Cargos.cmb_Cargable.SelectedValue = empleado.cargo;
         }
-        
+
+        private void CamposEmpleados_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
