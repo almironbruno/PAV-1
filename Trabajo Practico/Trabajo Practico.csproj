@@ -386,8 +386,6 @@
     <EmbeddedResource Include="Formularios\ABMC\ABMC_Clientes\Forms\ConsultaClientes.resx">
       <DependentUpon>ConsultaClientes.cs</DependentUpon>
     </EmbeddedResource>
-<<<<<<< HEAD
-=======
     <EmbeddedResource Include="Formularios\ABMC\ABMC_Clientes\Forms\InfoClientes.resx">
       <DependentUpon>InfoClientes.cs</DependentUpon>
     </EmbeddedResource>
@@ -397,7 +395,6 @@
     <EmbeddedResource Include="Formularios\ABMC\ABMC_Empleados\CamposEmpleados.resx">
       <DependentUpon>CamposEmpleados.cs</DependentUpon>
     </EmbeddedResource>
->>>>>>> main
     <EmbeddedResource Include="Formularios\ABMC\ABMC_Empleados\Forms\BajaEmpleado.resx">
       <DependentUpon>BajaEmpleado.cs</DependentUpon>
     </EmbeddedResource>
