@@ -34,8 +34,8 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.cmbCargableCaracteristica = new Trabajo_Practico.ControlesPropios.ComboCargable();
-            this.cmbCargableTipoDoc = new Trabajo_Practico.ControlesPropios.ComboCargable();
             this.cmbCargableNumDoc = new Trabajo_Practico.ControlesPropios.ComboCargable();
+            this.cmbCargableTipoDoc = new Trabajo_Practico.ControlesPropios.ComboCargable();
             this.SuspendLayout();
             // 
             // btn_Aceptar
@@ -96,13 +96,6 @@
             this.cmbCargableCaracteristica.Size = new System.Drawing.Size(128, 28);
             this.cmbCargableCaracteristica.TabIndex = 26;
             // 
-            // cmbCargableTipoDoc
-            // 
-            this.cmbCargableTipoDoc.Location = new System.Drawing.Point(292, 168);
-            this.cmbCargableTipoDoc.Name = "cmbCargableTipoDoc";
-            this.cmbCargableTipoDoc.Size = new System.Drawing.Size(128, 28);
-            this.cmbCargableTipoDoc.TabIndex = 25;
-            // 
             // cmbCargableNumDoc
             // 
             this.cmbCargableNumDoc.Location = new System.Drawing.Point(292, 215);
@@ -110,14 +103,21 @@
             this.cmbCargableNumDoc.Size = new System.Drawing.Size(128, 28);
             this.cmbCargableNumDoc.TabIndex = 27;
             // 
+            // cmbCargableTipoDoc
+            // 
+            this.cmbCargableTipoDoc.Location = new System.Drawing.Point(292, 168);
+            this.cmbCargableTipoDoc.Name = "cmbCargableTipoDoc";
+            this.cmbCargableTipoDoc.Size = new System.Drawing.Size(128, 28);
+            this.cmbCargableTipoDoc.TabIndex = 28;
+            // 
             // AltaTelefono
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.cmbCargableTipoDoc);
             this.Controls.Add(this.cmbCargableNumDoc);
             this.Controls.Add(this.cmbCargableCaracteristica);
-            this.Controls.Add(this.cmbCargableTipoDoc);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
@@ -125,15 +125,16 @@
             this.Controls.Add(this.label1);
             this.Name = "AltaTelefono";
             this.Text = "Alta Telefono";
+            this.Controls.SetChildIndex(this.btn_LimpiarCampos, 0);
             this.Controls.SetChildIndex(this.btn_Aceptar, 0);
             this.Controls.SetChildIndex(this.label1, 0);
             this.Controls.SetChildIndex(this.txtNumTelefono, 0);
             this.Controls.SetChildIndex(this.label2, 0);
             this.Controls.SetChildIndex(this.label3, 0);
             this.Controls.SetChildIndex(this.label4, 0);
-            this.Controls.SetChildIndex(this.cmbCargableTipoDoc, 0);
             this.Controls.SetChildIndex(this.cmbCargableCaracteristica, 0);
             this.Controls.SetChildIndex(this.cmbCargableNumDoc, 0);
+            this.Controls.SetChildIndex(this.cmbCargableTipoDoc, 0);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -146,8 +147,8 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
-        private ControlesPropios.ComboCargable cmbCargableTipoDoc;
         private ControlesPropios.ComboCargable cmbCargableCaracteristica;
         private ControlesPropios.ComboCargable cmbCargableNumDoc;
+        private ControlesPropios.ComboCargable cmbCargableTipoDoc;
     }
 }

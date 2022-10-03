@@ -143,6 +143,12 @@
     <Compile Include="Formularios\ABMC\Barrios\Barrios.Designer.cs">
       <DependentUpon>Barrios.cs</DependentUpon>
     </Compile>
+    <Compile Include="Formularios\ABMC\Barrios\ConsultaBarrio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\ABMC\Barrios\ConsultaBarrio.Designer.cs">
+      <DependentUpon>ConsultaBarrio.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formularios\ABMC\Barrios\ModificacionBarrio.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -360,6 +366,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\ABMC\ABMC_Clientes\Forms\AltaClientes.resx">
       <DependentUpon>AltaClientes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\ABMC\Barrios\ConsultaBarrio.resx">
+      <DependentUpon>ConsultaBarrio.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\ABMC\Barrios\ModificacionBarrio.resx">
       <DependentUpon>ModificacionBarrio.cs</DependentUpon>

@@ -12,6 +12,7 @@ using Trabajo_Practico.Clases.BackEnd.NegocioBarrio;
 using System.Text.RegularExpressions;
 using Trabajo_Practico.Formularios.ABMC.Barrios;
 using Trabajo_Practico.Clases.Entidades;
+using Trabajo_Practico.Formularios.ABMC.ABMC_Clientes.Forms;
 
 namespace Trabajo_Practico.Formularios.ABMC.Barrios
 {
@@ -78,6 +79,12 @@ namespace Trabajo_Practico.Formularios.ABMC.Barrios
             {
                 MessageBox.Show("No se eliminara ningun barrio!");
             }
+        }
+
+        private void btn_Buscar_Click_1(object sender, EventArgs e)
+        {
+            ConsultaBarrio ventana = new ConsultaBarrio(this);
+            ventana.Show();
         }
     }
 }
