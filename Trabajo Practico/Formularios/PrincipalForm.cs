@@ -10,7 +10,7 @@ using System.Windows.Forms;
 using Trabajo_Practico.Clases;
 using Trabajo_Practico.Formularios.ABMC;
 using Trabajo_Practico.Formularios.ABMC.Barrios;
-using Trabajo_Practico.Formularios.ABMC.Gamas;
+
 using Trabajo_Practico.Formularios.ABMC.Marcas;
 using Trabajo_Practico.Formularios.ABMC.Telefonos;
 using Trabajo_Practico.Formularios.ABMC.Clientes;
@@ -68,11 +68,7 @@ namespace Trabajo_Practico.Formularios
 
         }
 
-        private void gamaToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            Gamas ventanaGamas = new Gamas();
-            ventanaGamas.Show();
-        }
+        
 
         private void barriosToolStripMenuItem_Click(object sender, EventArgs e)
         {

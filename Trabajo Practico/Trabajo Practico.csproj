@@ -238,12 +238,6 @@
     <Compile Include="Formularios\ABMC\ABMC_Autos\ABMC_Autos.Designer.cs">
       <DependentUpon>ABMC_Autos.cs</DependentUpon>
     </Compile>
-    <Compile Include="Formularios\ABMC\Gamas\Gamas.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Formularios\ABMC\Gamas\Gamas.Designer.cs">
-      <DependentUpon>Gamas.cs</DependentUpon>
-    </Compile>
     <Compile Include="Formularios\ABMC\ABMC_Empleados\Forms\ModificacionEmpleados.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -334,7 +328,6 @@
     <Compile Include="Formularios\ABMC\ABMC_Marcas\Forms\ModificarMarca.Designer.cs">
       <DependentUpon>ModificarMarca.cs</DependentUpon>
     </Compile>
-
     <Compile Include="Formularios\ABMC\Telefonos\AltaTelefono.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -606,6 +599,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -620,13 +614,20 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="Resources\211830_telephone_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\9162463_sign_map_location_placeholder_street_icon.png" />
+  </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Location.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Orders.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\326700_cart_shopping_icon.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
