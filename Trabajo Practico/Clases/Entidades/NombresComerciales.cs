@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Trabajo_Practico.Clases.BackEnd.NegocioNombreComercial;
-using Trabajo_Practico.Formularios.ABMC.NombreComercial;
+using Trabajo_Practico.Formularios.ABMC;
 
 namespace Trabajo_Practico.Clases.Entidades
 {
