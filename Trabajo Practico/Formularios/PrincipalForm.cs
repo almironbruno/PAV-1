@@ -66,7 +66,7 @@ namespace Trabajo_Practico.Formularios
         private void localidadesToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Localidades ventana = new Localidades();
-            ventana.Show();
+            ventana.ShowDialog();
         }
 
         private void reportesToolStripMenuItem_Click(object sender, EventArgs e)

@@ -30,11 +30,12 @@
         {
             this.label8 = new System.Windows.Forms.Label();
             this.lblNombreLocalidad = new System.Windows.Forms.Label();
-            this.txtNombreLocalidad = new System.Windows.Forms.TextBox();
+            this.txtNombreLocalidad = new System.Windows.Forms.MaskedTextBox();
             this.SuspendLayout();
             // 
             // btn_Aceptar
             // 
+            this.btn_Aceptar.TabIndex = 1;
             this.btn_Aceptar.Click += new System.EventHandler(this.btn_Aceptar_Click_1);
             // 
             // label8
@@ -52,7 +53,7 @@
             // 
             this.lblNombreLocalidad.AutoSize = true;
             this.lblNombreLocalidad.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNombreLocalidad.Location = new System.Drawing.Point(203, 155);
+            this.lblNombreLocalidad.Location = new System.Drawing.Point(197, 186);
             this.lblNombreLocalidad.Name = "lblNombreLocalidad";
             this.lblNombreLocalidad.Size = new System.Drawing.Size(138, 17);
             this.lblNombreLocalidad.TabIndex = 21;
@@ -60,24 +61,29 @@
             // 
             // txtNombreLocalidad
             // 
-            this.txtNombreLocalidad.Location = new System.Drawing.Point(347, 152);
+            this.txtNombreLocalidad.Location = new System.Drawing.Point(341, 186);
+            this.txtNombreLocalidad.Mask = "LLLLLLLLLLLLLLLLLLLLLLLLLLLLLLL";
             this.txtNombreLocalidad.Name = "txtNombreLocalidad";
             this.txtNombreLocalidad.Size = new System.Drawing.Size(173, 20);
-            this.txtNombreLocalidad.TabIndex = 20;
+            this.txtNombreLocalidad.TabIndex = 0;
             // 
             // ModificarLocalidad
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.label8);
             this.Controls.Add(this.txtNombreLocalidad);
+            this.Controls.Add(this.label8);
             this.Controls.Add(this.lblNombreLocalidad);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "ModificarLocalidad";
-            this.Text = "ModificarLocalidad";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.WindowsDefaultLocation;
+            this.Text = "Actualizar localidad";
             this.Controls.SetChildIndex(this.lblNombreLocalidad, 0);
-            this.Controls.SetChildIndex(this.txtNombreLocalidad, 0);
             this.Controls.SetChildIndex(this.label8, 0);
+            this.Controls.SetChildIndex(this.txtNombreLocalidad, 0);
             this.Controls.SetChildIndex(this.btn_Aceptar, 0);
             this.Controls.SetChildIndex(this.btn_LimpiarCampos, 0);
             this.ResumeLayout(false);
@@ -88,6 +94,6 @@
         #endregion
         public System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label lblNombreLocalidad;
-        private System.Windows.Forms.TextBox txtNombreLocalidad;
+        private System.Windows.Forms.MaskedTextBox txtNombreLocalidad;
     }
 }

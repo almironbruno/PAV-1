@@ -47,6 +47,7 @@
             // 
             // btn_Aceptar
             // 
+            this.btn_Aceptar.TabIndex = 7;
             this.btn_Aceptar.Click += new System.EventHandler(this.btn_Aceptar_Click);
             // 
             // cmb_prioridades_now
@@ -54,7 +55,7 @@
             this.cmb_prioridades_now.Location = new System.Drawing.Point(586, 137);
             this.cmb_prioridades_now.Name = "cmb_prioridades_now";
             this.cmb_prioridades_now.Size = new System.Drawing.Size(128, 28);
-            this.cmb_prioridades_now.TabIndex = 44;
+            this.cmb_prioridades_now.TabIndex = 6;
             // 
             // txtCodigo
             // 
@@ -62,7 +63,7 @@
             this.txtCodigo.Mask = "99999";
             this.txtCodigo.Name = "txtCodigo";
             this.txtCodigo.Size = new System.Drawing.Size(72, 20);
-            this.txtCodigo.TabIndex = 43;
+            this.txtCodigo.TabIndex = 5;
             this.txtCodigo.ValidatingType = typeof(int);
             // 
             // label9
@@ -91,7 +92,7 @@
             this.txtLegajo.Mask = "99999";
             this.txtLegajo.Name = "txtLegajo";
             this.txtLegajo.Size = new System.Drawing.Size(72, 20);
-            this.txtLegajo.TabIndex = 42;
+            this.txtLegajo.TabIndex = 4;
             this.txtLegajo.ValidatingType = typeof(int);
             // 
             // label6
@@ -109,7 +110,7 @@
             this.cmbNomComercial.Location = new System.Drawing.Point(212, 192);
             this.cmbNomComercial.Name = "cmbNomComercial";
             this.cmbNomComercial.Size = new System.Drawing.Size(128, 28);
-            this.cmbNomComercial.TabIndex = 41;
+            this.cmbNomComercial.TabIndex = 3;
             // 
             // label5
             // 
@@ -127,7 +128,7 @@
             this.txtFecha.Mask = "00/00/0000";
             this.txtFecha.Name = "txtFecha";
             this.txtFecha.Size = new System.Drawing.Size(75, 20);
-            this.txtFecha.TabIndex = 40;
+            this.txtFecha.TabIndex = 2;
             this.txtFecha.ValidatingType = typeof(System.DateTime);
             // 
             // label4
@@ -146,7 +147,7 @@
             this.txtNroDocumento.Mask = "99999999";
             this.txtNroDocumento.Name = "txtNroDocumento";
             this.txtNroDocumento.Size = new System.Drawing.Size(71, 20);
-            this.txtNroDocumento.TabIndex = 39;
+            this.txtNroDocumento.TabIndex = 1;
             // 
             // label3
             // 
@@ -163,7 +164,7 @@
             this.cmbTipoDocumento.Location = new System.Drawing.Point(209, 87);
             this.cmbTipoDocumento.Name = "cmbTipoDocumento";
             this.cmbTipoDocumento.Size = new System.Drawing.Size(128, 28);
-            this.cmbTipoDocumento.TabIndex = 38;
+            this.cmbTipoDocumento.TabIndex = 0;
             // 
             // label2
             // 
@@ -206,8 +207,12 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.cmbTipoDocumento);
             this.Controls.Add(this.label2);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "ModificarEncargos";
-            this.Text = "ModificarEncargos";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.WindowsDefaultLocation;
+            this.Text = "Actualizar encargos";
             this.Controls.SetChildIndex(this.btn_Aceptar, 0);
             this.Controls.SetChildIndex(this.btn_LimpiarCampos, 0);
             this.Controls.SetChildIndex(this.label2, 0);

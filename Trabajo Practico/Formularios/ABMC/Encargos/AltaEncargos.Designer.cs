@@ -211,8 +211,12 @@
             this.Controls.Add(this.cmbTipoDocumento);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label8);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "AltaEncargos";
-            this.Text = "AltaEncargos";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.WindowsDefaultLocation;
+            this.Text = "Agregar encargo";
             this.Controls.SetChildIndex(this.label8, 0);
             this.Controls.SetChildIndex(this.label2, 0);
             this.Controls.SetChildIndex(this.cmbTipoDocumento, 0);

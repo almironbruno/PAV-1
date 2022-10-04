@@ -29,9 +29,9 @@ namespace Trabajo_Practico.Formularios.ABMC.Encargos
             NE_Encargos negocioEncargos = new NE_Encargos();
             DataTable tabla = new DataTable();            
 
-            if(cmbTipoDocumento.TabIndex == -1)
+            if(cmbTipoDocumento.TabIndex == -1 && txtNroDocumento.Equals(""))
             {
-                MessageBox.Show("Porfavor ingrese un tipo de documento a buscar", "Mensaje");
+                MessageBox.Show("Porfavor ingrese un campo a buscar", "Mensaje");
                 return;
             }
             else

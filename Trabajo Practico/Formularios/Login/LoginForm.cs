@@ -64,10 +64,5 @@ namespace Trabajo_Practico
             nuevoUsuarioVtn.Show();
             
         }
-
-        private void LoginForm_Load(object sender, EventArgs e)
-        {
-
-        }
     }
 }

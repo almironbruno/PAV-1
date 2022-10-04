@@ -14,8 +14,10 @@ namespace Trabajo_Practico.Clases.BackEnd.NegocioLocalidades
 
         public void agregarLocalidad(Localidades localidad)
         {
-            string sqlInsertar = $"INSERT INTO localidades (nombre_localidad) VALUES ('{localidad.nombreLocalidad}')";
-            _BD.ejecutar(sqlInsertar);
+            string sqlInsertar = "INSERT INTO localidades (nombre_localidad) SELECT '" + localidad.nombreLocalidad.ToUpper().Trim() + "' WHERE NOT EXISTS(SELECT 1 FROM localidades WHERE nombre_localidad = '" + localidad.nombreLocalidad.ToUpper().Trim() + "')";
+            _BD.Insertar(sqlInsertar);
+
+            
         }
 
         public void modificarLocalidad(Localidades localidad, string antLocalidad)

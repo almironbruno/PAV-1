@@ -31,10 +31,9 @@ namespace Trabajo_Practico.Formularios.ABMC.Localidades
 
         private void btn_Actualizar_Click_2(object sender, EventArgs e)
         {
-            string nombreLocalidad = dataGridViewModificada1.FilaSeleccionada().Cells["nombre_localidad"].Value.ToString().Trim();
-            string regis = "Registro: Localidad " + System.Environment.NewLine;
+            string nombreLocalidad = dataGridViewModificada1.FilaSeleccionada().Cells["nombre_localidad"].Value.ToString().Trim();            
             Trabajo_Practico.Clases.Entidades.Localidades localidad = new Trabajo_Practico.Clases.Entidades.Localidades(nombreLocalidad);
-            DialogResult dialogResult = MessageBox.Show(regis, "Desea Modificar el registro?", MessageBoxButtons.YesNo);
+            DialogResult dialogResult = MessageBox.Show("Desea Modificar este registro", "Confirmación", MessageBoxButtons.YesNo);
 
             if (dialogResult == DialogResult.Yes)
             {
@@ -51,9 +50,8 @@ namespace Trabajo_Practico.Formularios.ABMC.Localidades
 
         private void btn_Eliminar_Click_2(object sender, EventArgs e)
         {
-            string nombreLocalidad = dataGridViewModificada1.FilaSeleccionada().Cells[1].Value.ToString();
-            string registro = "Registro: Nombre de localidad " + nombreLocalidad + ".";
-            DialogResult dialogResult = MessageBox.Show(registro, "Desea eliminar el registro?", MessageBoxButtons.YesNo);
+            string nombreLocalidad = dataGridViewModificada1.FilaSeleccionada().Cells[1].Value.ToString();            
+            DialogResult dialogResult = MessageBox.Show("Desea eliminar el registro seleccionado", "Confirmación", MessageBoxButtons.YesNo);
             if (dialogResult == DialogResult.Yes)
             {
                 NE_Localidades localidades = new NE_Localidades();

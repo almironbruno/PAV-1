@@ -36,6 +36,7 @@
             // 
             // btn_Aceptar
             // 
+            this.btn_Aceptar.TabIndex = 2;
             this.btn_Aceptar.Click += new System.EventHandler(this.btn_Aceptar_Click);
             // 
             // txtNroDocumento
@@ -44,7 +45,7 @@
             this.txtNroDocumento.Mask = "99999999";
             this.txtNroDocumento.Name = "txtNroDocumento";
             this.txtNroDocumento.Size = new System.Drawing.Size(71, 20);
-            this.txtNroDocumento.TabIndex = 33;
+            this.txtNroDocumento.TabIndex = 1;
             // 
             // label3
             // 
@@ -61,7 +62,7 @@
             this.cmbTipoDocumento.Location = new System.Drawing.Point(390, 136);
             this.cmbTipoDocumento.Name = "cmbTipoDocumento";
             this.cmbTipoDocumento.Size = new System.Drawing.Size(128, 28);
-            this.cmbTipoDocumento.TabIndex = 31;
+            this.cmbTipoDocumento.TabIndex = 0;
             // 
             // label2
             // 
@@ -82,8 +83,12 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.cmbTipoDocumento);
             this.Controls.Add(this.label2);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "BuscarEncargos";
-            this.Text = "BuscarEncargos";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.WindowsDefaultLocation;
+            this.Text = "Buscar Encargo";
             this.Controls.SetChildIndex(this.btn_LimpiarCampos, 0);
             this.Controls.SetChildIndex(this.btn_Aceptar, 0);
             this.Controls.SetChildIndex(this.label2, 0);

@@ -41,10 +41,12 @@
             // 
             // btn_Eliminar
             // 
+            this.btn_Eliminar.TabIndex = 3;
             this.btn_Eliminar.Click += new System.EventHandler(this.btn_Eliminar_Click_1);
             // 
             // btn_Buscar
             // 
+            this.btn_Buscar.TabIndex = 2;
             this.btn_Buscar.Click += new System.EventHandler(this.btn_Buscar_Click_1);
             // 
             // Encargos
@@ -52,6 +54,9 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "Encargos";
             this.Text = "Encagos";
             this.panel1.ResumeLayout(false);

@@ -27,26 +27,30 @@ namespace Trabajo_Practico.Formularios.ABMC.Encargos
 
         private void btn_Aceptar_Click(object sender, EventArgs e)
         {
-            if (validarCampos())
-            {                
-                int tipo_doc_cliente = int.Parse(cmbTipoDocumento.cmb_Cargable.SelectedValue.ToString());
-                int nro_doc_cliente = int.Parse(txtNroDocumento.Text);
-                string fecha = txtFecha.Text.Trim();
-                int nombre_comercial = int.Parse(cmbNomComercial.cmb_Cargable.SelectedValue.ToString());
-                int legajo = int.Parse(txtLegajo.Text);
-                int cod_caracteristica = int.Parse(txtCodigo.Text);
-                string prioridad = cmb_prioridades_now.cmb_Cargable.SelectedValue.ToString();
-
-
-                Trabajo_Practico.Clases.Entidades.Encargos nuevoEncargo = new Clases.Entidades.Encargos(tipo_doc_cliente, nro_doc_cliente, fecha, nombre_comercial, legajo, cod_caracteristica, prioridad);
-                MessageBox.Show(nuevoEncargo.toString());
-
-                NE_Encargos encargo = new NE_Encargos();
-                encargo.agregarEncargo(nuevoEncargo);
-            }
-            else
+            try
             {
-                return;
+                if (validarCampos())
+                {
+                    int tipo_doc_cliente = int.Parse(cmbTipoDocumento.cmb_Cargable.SelectedValue.ToString());
+                    int nro_doc_cliente = int.Parse(txtNroDocumento.Text);
+                    string fecha = txtFecha.Text.Trim();
+                    int nombre_comercial = int.Parse(cmbNomComercial.cmb_Cargable.SelectedValue.ToString());
+                    int legajo = int.Parse(txtLegajo.Text);
+                    int cod_caracteristica = int.Parse(txtCodigo.Text);
+                    string prioridad = cmb_prioridades_now.cmb_Cargable.SelectedValue.ToString();
+
+
+                    Trabajo_Practico.Clases.Entidades.Encargos nuevoEncargo = new Clases.Entidades.Encargos(tipo_doc_cliente, nro_doc_cliente, fecha, nombre_comercial, legajo, cod_caracteristica, prioridad);
+                    //MessageBox.Show(nuevoEncargo.toString());
+
+                    NE_Encargos encargo = new NE_Encargos();
+                    encargo.agregarEncargo(nuevoEncargo);
+                }
+                
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Hay un campo ingresado que no coincide correctamente");                
             }
         }
     }
