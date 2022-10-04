@@ -21,13 +21,13 @@ namespace Trabajo_Practico.Formularios.ABMC.Encargos
             cmbTipoDocumento.cargar("SELECT * FROM tipo_doc_clientes", "nombre_tipo_doc", "id_doc_cliente");
             cmbNomComercial.cargar("SELECT * FROM nombres_comerciales", "nombre_comercial", "id_nombreComercial");
             cmb_prioridades_now.cargar("SELECT * FROM prioridades", "nombre_prioridad", "id_prioridad");
-            cmbTipoDocumento.cmb_Cargable.SelectedValue = bd.SelectNumeros($"SELECT id_doc_cliente FROM tipo_doc_clientes WHERE nombre_tipo_doc LIKE '{row.Cells[1].Value.ToString()}'");
-            txtNroDocumento.Text = row.Cells[2].Value.ToString();
-            txtFecha.Text = row.Cells[3].Value.ToString().Trim();
-            cmbNomComercial.cmb_Cargable.SelectedValue = bd.SelectNumeros($"SELECT id_nombrecomercial FROM nombres_comerciales WHERE nombre_comercial LIKE '{row.Cells[4].Value.ToString()}'");
-            txtLegajo.Text = row.Cells[5].Value.ToString();
-            txtCodigo.Text = row.Cells[6].Value.ToString();
-            cmb_prioridades_now.cmb_Cargable.SelectedValue = bd.SelectNumeros($"SELECT id_prioridad FROM prioridades WHERE nombre_prioridad LIKE '{row.Cells[7].Value.ToString()}'");
+            cmbTipoDocumento.cmb_Cargable.SelectedValue = bd.SelectNumeros($"SELECT id_doc_cliente FROM tipo_doc_clientes WHERE nombre_tipo_doc LIKE '{row.Cells[0].Value.ToString()}'");
+            txtNroDocumento.Text = row.Cells[1].Value.ToString();
+            txtFecha.Text = row.Cells[2].Value.ToString().Trim();
+            cmbNomComercial.cmb_Cargable.SelectedValue = bd.SelectNumeros($"SELECT id_nombrecomercial FROM nombres_comerciales WHERE nombre_comercial LIKE '{row.Cells[3].Value.ToString()}'");
+            txtLegajo.Text = row.Cells[4].Value.ToString();
+            txtCodigo.Text = row.Cells[5].Value.ToString();
+            cmb_prioridades_now.cmb_Cargable.SelectedValue = bd.SelectNumeros($"SELECT id_prioridad FROM prioridades WHERE nombre_prioridad LIKE '{row.Cells[6].Value.ToString()}'");
 
 
 
@@ -38,28 +38,30 @@ namespace Trabajo_Practico.Formularios.ABMC.Encargos
         {
             if (validarCampos())
             {
-                // Toma lo ingresado en el formulario
-                int tipo_doc_cliente = int.Parse(cmbTipoDocumento.cmb_Cargable.SelectedValue.ToString());
-                int nro_doc_cliente = int.Parse(txtNroDocumento.Text);
-                string fecha = txtFecha.Text.Trim();
-                int nombre_comercial = int.Parse(cmbNomComercial.cmb_Cargable.SelectedValue.ToString());
-                int legajo = int.Parse(txtLegajo.Text);
-                int cod_caracteristica = int.Parse(txtCodigo.Text);
-                string prioridad = cmb_prioridades_now.cmb_Cargable.SelectedValue.ToString();
+                try
+                {
+                    cmbTipoDocumento.Focus();
+                    // Toma lo ingresado en el formulario
+                    int tipo_doc_cliente = int.Parse(cmbTipoDocumento.cmb_Cargable.SelectedValue.ToString());
+                    int nro_doc_cliente = int.Parse(txtNroDocumento.Text);
+                    string fecha = txtFecha.Text.Trim();
+                    int nombre_comercial = int.Parse(cmbNomComercial.cmb_Cargable.SelectedValue.ToString());
+                    int legajo = int.Parse(txtLegajo.Text);
+                    int cod_caracteristica = int.Parse(txtCodigo.Text);
+                    string prioridad = cmb_prioridades_now.cmb_Cargable.SelectedValue.ToString();
 
 
-                Trabajo_Practico.Clases.Entidades.Encargos nuevoEncargo = new Clases.Entidades.Encargos(tipo_doc_cliente, nro_doc_cliente, fecha, nombre_comercial, legajo, cod_caracteristica, prioridad);
-                MessageBox.Show(nuevoEncargo.toString());
+                    Trabajo_Practico.Clases.Entidades.Encargos nuevoEncargo = new Clases.Entidades.Encargos(tipo_doc_cliente, nro_doc_cliente, fecha, nombre_comercial, legajo, cod_caracteristica, prioridad);
 
-                NE_Encargos encargo = new NE_Encargos();
-                encargo.modificarEncargo(nuevoEncargo);
+                    NE_Encargos encargo = new NE_Encargos();
+                    encargo.modificarEncargo(nuevoEncargo);
+                    this.Close();
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Ha ocurrido un problema", "Mensaje");
+                }
             }
-        }
-
-        /*
-         cmbCargable_TipoDoc.cmb_Cargable.SelectedValue = bd.SelectNumeros($"SELECT id_doc_cliente FROM tipo_doc_clientes WHERE nombre_tipo_doc LIKE '{row.Cells[0].Value.ToString()}'");
-         mTxt_NroDocu.Text = row.Cells[1].Value.ToString() ;
-        mTxt_FechaNac.Text = row.Cells[4].Value.ToString().Trim();
-         */
+        }        
     }
 }

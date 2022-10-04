@@ -31,6 +31,7 @@ namespace Trabajo_Practico.Formularios.ABMC.Encargos
             {
                 if (validarCampos())
                 {
+                    cmbTipoDocumento.Focus();
                     int tipo_doc_cliente = int.Parse(cmbTipoDocumento.cmb_Cargable.SelectedValue.ToString());
                     int nro_doc_cliente = int.Parse(txtNroDocumento.Text);
                     string fecha = txtFecha.Text.Trim();
@@ -40,11 +41,11 @@ namespace Trabajo_Practico.Formularios.ABMC.Encargos
                     string prioridad = cmb_prioridades_now.cmb_Cargable.SelectedValue.ToString();
 
 
-                    Trabajo_Practico.Clases.Entidades.Encargos nuevoEncargo = new Clases.Entidades.Encargos(tipo_doc_cliente, nro_doc_cliente, fecha, nombre_comercial, legajo, cod_caracteristica, prioridad);
-                    //MessageBox.Show(nuevoEncargo.toString());
+                    Trabajo_Practico.Clases.Entidades.Encargos nuevoEncargo = new Clases.Entidades.Encargos(tipo_doc_cliente, nro_doc_cliente, fecha, nombre_comercial, legajo, cod_caracteristica, prioridad);                    
 
                     NE_Encargos encargo = new NE_Encargos();
                     encargo.agregarEncargo(nuevoEncargo);
+                    this.Close();
                 }
                 
             }

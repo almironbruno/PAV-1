@@ -24,22 +24,30 @@ namespace Trabajo_Practico.Formularios.ABMC.Localidades
 
         private void btn_Aceptar_Click_1(object sender, EventArgs e)
         {
-            if (validarCampos())
+            try
             {
-                string nombreLocalidad = txtNombreLocalidad.Text;
+                if (validarCampos())
+                {
+                    txtNombreLocalidad.Focus();
+                    string nombreLocalidad = txtNombreLocalidad.Text;
 
 
-                Trabajo_Practico.Clases.Entidades.Localidades nuevaLocalidad = new Trabajo_Practico.Clases.Entidades.Localidades(nombreLocalidad);
-                MessageBox.Show(nuevaLocalidad.toString());
+                    Trabajo_Practico.Clases.Entidades.Localidades nuevaLocalidad = new Trabajo_Practico.Clases.Entidades.Localidades(nombreLocalidad);
+                    MessageBox.Show(nuevaLocalidad.toString());
 
-                NE_Localidades Localidad = new NE_Localidades();
+                    NE_Localidades Localidad = new NE_Localidades();
 
-                Localidad.agregarLocalidad(nuevaLocalidad);
-                this.Close();
+                    Localidad.agregarLocalidad(nuevaLocalidad);
+                    this.Close();
+                }
+                else
+                {
+                    return;
+                }
             }
-            else
+            catch (Exception ex)
             {
-                return;
+                MessageBox.Show("Ha ocurrido un problema", "Mensaje");
             }
         }
     }

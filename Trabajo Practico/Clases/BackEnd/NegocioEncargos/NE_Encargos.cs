@@ -30,9 +30,9 @@ namespace Trabajo_Practico.Clases.BackEnd.NegocioEncargos
             _BD.ejecutar(sqlModificar);
         }
 
-        public void BorrarEncargo(int nro_encargo)
+        public void BorrarEncargo(int nro_doc )
         {
-            string sqlBorrar = $"DELETE FROM encargos WHERE nro_encargo = {nro_encargo}";
+            string sqlBorrar = $"DELETE FROM encargos WHERE nro_doc_cliente = {nro_doc}";
             _BD.Eliminar(sqlBorrar);
         }
 

@@ -31,13 +31,13 @@ namespace Trabajo_Practico.Clases.Entidades
 
         public string toString()
         {
-            string s = $" Tipo de documento: {tipoDocumento}" +
-                       $" Nro. de documento: {nroDocumento}" +
-                       $" Fecha: {fecha}" +
-                       $" Nombre comercial: {nombreComercial}" +
-                       $" Legajo del empleado: {legajoEmpletado}" +
-                       $" Codigo característica: {codCaracteristica}" +
-                       $" Prioridad: {prioridad}";                       
+            string s = $" Tipo de documento: {tipoDocumento}\n" +
+                       $" Nro. de documento: {nroDocumento}\n" +
+                       $" Fecha: {fecha}\n" +
+                       $" Nombre comercial: {nombreComercial} \n" +
+                       $" Legajo del empleado: {legajoEmpletado} \n" +
+                       $" Codigo característica: {codCaracteristica} \n" +
+                       $" Prioridad: {prioridad} \n";                       
             return s;
         }
 

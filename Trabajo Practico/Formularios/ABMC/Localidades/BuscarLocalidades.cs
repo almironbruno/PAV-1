@@ -24,25 +24,34 @@ namespace Trabajo_Practico.Formularios.ABMC.Localidades
 
         private void btn_Aceptar_Click_1(object sender, EventArgs e)
         {
-            string codigoPostal = txtNombreLocalidad.Text;
-
-            NE_Localidades negoLocalidad = new NE_Localidades();
-
-            DataTable tabla = new DataTable();
-            tabla = negoLocalidad.buscarLocalidad(codigoPostal);
-
-            if (tabla.Rows.Count > 0)
+            try
             {
-                string nombreLocalidad = tabla.Rows[0]["nombre_localidad"].ToString();
+                txtNombreLocalidad.Focus();
+                string codigoPostal = txtNombreLocalidad.Text;
 
-                Trabajo_Practico.Clases.Entidades.Localidades localidad = new Trabajo_Practico.Clases.Entidades.Localidades(nombreLocalidad);
-                string salida = localidad.toString();
+                NE_Localidades negoLocalidad = new NE_Localidades();
 
-                MessageBox.Show("Se se ha encontrado la localidad buscada: " + "\n" + salida, "Mensaje");
+                DataTable tabla = new DataTable();
+                tabla = negoLocalidad.buscarLocalidad(codigoPostal);
+
+                if (tabla.Rows.Count > 0)
+                {
+                    string nombreLocalidad = tabla.Rows[0]["nombre_localidad"].ToString();
+
+                    Trabajo_Practico.Clases.Entidades.Localidades localidad = new Trabajo_Practico.Clases.Entidades.Localidades(nombreLocalidad);
+                    string salida = localidad.toString();
+
+                    MessageBox.Show("Se se ha encontrado la localidad buscada: " + "\n" + salida, "Mensaje");
+                }
+                else
+                {
+                    MessageBox.Show("Localidad no encontrada");
+                }
             }
-            else
+            catch (Exception)
             {
-                MessageBox.Show("Localidad no encontrada");
+
+                MessageBox.Show("Ha ocurrido un problema", "Mensaje");
             }
         }
     }

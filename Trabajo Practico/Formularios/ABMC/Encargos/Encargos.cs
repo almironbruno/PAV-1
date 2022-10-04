@@ -15,7 +15,7 @@ namespace Trabajo_Practico.Formularios.ABMC.Encargos
     {
         public Encargos()
         {
-            consultaPrincipal = "SELECT e.nro_encargo, t.nombre_tipo_doc, e.nro_doc_cliente, e.fecha, n.nombre_comercial, e.legajo_empleado, e.cod_caracteristica, p.nombre_prioridad from encargos e join tipo_doc_clientes as t on e.tipo_doc_cliente = t.id_doc_cliente join nombres_comerciales as n on e.id_nombrecomercial = n.id_nombrecomercial join prioridades as p on e.prioridad =  p.id_prioridad";
+            consultaPrincipal = "SELECT t.nombre_tipo_doc, e.nro_doc_cliente, e.fecha, n.nombre_comercial, e.legajo_empleado, e.cod_caracteristica, p.nombre_prioridad from encargos e join tipo_doc_clientes as t on e.tipo_doc_cliente = t.id_doc_cliente join nombres_comerciales as n on e.id_nombrecomercial = n.id_nombrecomercial join prioridades as p on e.prioridad =  p.id_prioridad";
             InitializeComponent();
             cambiarNombre("Encargos");
         }
@@ -29,7 +29,7 @@ namespace Trabajo_Practico.Formularios.ABMC.Encargos
         private void btn_Buscar_Click_1(object sender, EventArgs e)
         {
             BuscarEncargos ventana = new BuscarEncargos();
-            ventana.Show();
+            ventana.Show();            
         }
 
         private void btn_Actualizar_Click_1(object sender, EventArgs e)
@@ -39,16 +39,15 @@ namespace Trabajo_Practico.Formularios.ABMC.Encargos
         }
 
         private void btn_Eliminar_Click_1(object sender, EventArgs e)
-        {
-            int nro_encargo = int.Parse(dataGridViewModificada1.FilaSeleccionada().Cells[0].Value.ToString());
-            string tipo_doc = dataGridViewModificada1.FilaSeleccionada().Cells[1].Value.ToString();
-            int nro_doc = int.Parse(dataGridViewModificada1.FilaSeleccionada().Cells[2].Value.ToString());
+        {            
+            string tipo_doc = dataGridViewModificada1.FilaSeleccionada().Cells[0].Value.ToString();
+            int nro_doc = int.Parse(dataGridViewModificada1.FilaSeleccionada().Cells[1].Value.ToString());
             // Confirmamos si desea realmente borra este registro
             DialogResult dialogResult = MessageBox.Show("Desea eliminar el registro seleccionado", "Confirmación", MessageBoxButtons.YesNo);
             if (dialogResult == DialogResult.Yes)
             {
                 NE_Encargos borrarEncargo = new NE_Encargos();
-                borrarEncargo.BorrarEncargo(nro_encargo);
+                borrarEncargo.BorrarEncargo(nro_doc);
             }
         
         

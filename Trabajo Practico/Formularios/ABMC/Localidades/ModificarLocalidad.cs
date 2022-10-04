@@ -31,11 +31,19 @@ namespace Trabajo_Practico.Formularios.ABMC.Localidades
 
         private void btn_Aceptar_Click_1(object sender, EventArgs e)
         {
-            NE_Localidades modLocalidad = new NE_Localidades();
-            localidadMod.nombreLocalidad = txtNombreLocalidad.Text;
+            try
+            {
+                txtNombreLocalidad.Focus();
+                NE_Localidades modLocalidad = new NE_Localidades();
+                localidadMod.nombreLocalidad = txtNombreLocalidad.Text;
 
-            modLocalidad.modificarLocalidad(localidadMod, nomLocalidad);
-            this.Close();
+                modLocalidad.modificarLocalidad(localidadMod, nomLocalidad);
+                this.Close();
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Ha ocurrido un problema", "Mensaje");
+            }
         }
     }
 }
