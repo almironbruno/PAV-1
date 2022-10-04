@@ -29,10 +29,12 @@ namespace Trabajo_Practico.Formularios.ABMC.Barrios
 
         private void btn_Aceptar_Click(object sender, EventArgs e)
         {
+            // Asigno el dato que carga el usario
             string nombreBarrio = txtNombreBarrioABuscar.Text.Trim();
 
-            NE_Barrio cl = new NE_Barrio();
-            formularioPrincipal.consultaPrincipal = cl.consutaCl(nombreBarrio);
+            //Llamo al BackEnd
+            NE_Barrio br = new NE_Barrio();
+            formularioPrincipal.consultaPrincipal = br.consutaBr(nombreBarrio);
 
             this.Close();
 

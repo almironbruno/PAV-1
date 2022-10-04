@@ -15,7 +15,7 @@ namespace Trabajo_Practico.Clases.BackEnd.NegocioTelefonos
 
         public void AgregarTelefono(Telefono telefonoAgregar)
         {
-            string sqlInsertar = $"INSERT into telefonos (nro_telefono, nro_caracteristica, tipo_doc_cliente, nro_doc_cliente)" +
+            string sqlInsertar = $"INSERT INTO telefonos (nro_telefono, nro_caracteristica, tipo_doc_cliente, nro_doc_cliente)" +
                                  $" VALUES ({telefonoAgregar.nroTelefono}, {telefonoAgregar.nroCaracteristica}," +
                                  $"{telefonoAgregar.tipoDocCliente}, {telefonoAgregar.nroDocCliente})";
 
@@ -36,6 +36,18 @@ namespace Trabajo_Practico.Clases.BackEnd.NegocioTelefonos
             string sqlInsertar = $"UPDATE telefonos SET nro_telefono = {telefonoModificar.nroTelefono}, nro_caracteristica = {telefonoModificar.nroCaracteristica} WHERE nro_doc_cliente = {telefonoModificar.nroDocCliente} AND tipo_doc_cliente = {telefonoModificar.tipoDocCliente} AND nro_telefono = {pkVieja}";
             _BD.ejecutar(sqlInsertar);
                
+        }
+
+        public string consultaTel(string numTelCliente, string caracTelCliente, string numDocCliente, string tipoDocCliente)
+        {
+
+            string sqlConsulta = $@"SELECT * FROM telefonos WHERE
+                                 nro_telefono LIKE '{numTelCliente}'
+                                 AND nro_caracteristica LIKE '{caracTelCliente}' AND
+                                 nro_doc_cliente LIKE '{numDocCliente}'
+                                 AND tipo_doc_cliente LIKE '{tipoDocCliente}'";
+
+            return sqlConsulta;
         }
     }
 }

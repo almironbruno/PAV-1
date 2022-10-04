@@ -54,6 +54,7 @@
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Name = "Barrios";
             this.Text = "Barrios";
+            this.Activated += new System.EventHandler(this.Barrios_Activated);
             this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();

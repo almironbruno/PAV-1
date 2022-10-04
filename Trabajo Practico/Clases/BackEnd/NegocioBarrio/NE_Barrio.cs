@@ -39,7 +39,7 @@ namespace Trabajo_Practico.Clases.BackEnd.NegocioBarrio
             _BD.Insertar(sqlInsertar);
         }
 
-        public string consutaCl(string nombreBarrio)
+        public string consutaBr(string nombreBarrio)
         {
             string sqlConsulta = $@"SELECT * FROM barrios WHERE nombre_barrio LIKE '{nombreBarrio}' ";
 

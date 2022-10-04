@@ -43,6 +43,10 @@
             // 
             this.btn_Eliminar.Click += new System.EventHandler(this.btn_Eliminar_Click_1);
             // 
+            // btn_Buscar
+            // 
+            this.btn_Buscar.Click += new System.EventHandler(this.btn_Buscar_Click_1);
+            // 
             // TelefonosPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -50,6 +54,7 @@
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Name = "TelefonosPrincipal";
             this.Text = "Telefonos";
+            this.Activated += new System.EventHandler(this.TelefonosPrincipal_Activated);
             this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();

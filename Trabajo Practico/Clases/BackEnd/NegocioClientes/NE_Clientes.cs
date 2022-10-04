@@ -61,9 +61,8 @@ namespace Trabajo_Practico.Clases.BackEnd.NegocioClientes
                                 id_barrio LIKE '{barrio}'";
             return sqlConsulta;
 
-
-
         }
+
         
     }
 }

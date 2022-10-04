@@ -25,6 +25,7 @@ namespace Trabajo_Practico.Formularios.ABMC.Barrios
             consultaPrincipal = (@"SELECT *  from barrios ");
             InitializeComponent();
             cambiarNombre("Barrios");
+            dataGridViewModificada1.forme = new InfoBarrios();
         }
 
         private void btn_Agregar_Click_1(object sender, EventArgs e)
@@ -85,6 +86,11 @@ namespace Trabajo_Practico.Formularios.ABMC.Barrios
         {
             ConsultaBarrio ventana = new ConsultaBarrio(this);
             ventana.Show();
+        }
+
+        private void Barrios_Activated(object sender, EventArgs e)
+        {
+            dataGridViewModificada1.forme = new InfoBarrios();
         }
     }
 }
