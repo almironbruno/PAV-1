@@ -61,6 +61,7 @@
             // 
             // txtNombreLocalidad
             // 
+            this.txtNombreLocalidad.HidePromptOnLeave = true;
             this.txtNombreLocalidad.Location = new System.Drawing.Point(359, 159);
             this.txtNombreLocalidad.Mask = "LLLLLLLLLLLLLLLLLLLLLLLLLLLLLLL";
             this.txtNombreLocalidad.Name = "txtNombreLocalidad";
