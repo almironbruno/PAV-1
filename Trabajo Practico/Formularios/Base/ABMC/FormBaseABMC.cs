@@ -26,7 +26,9 @@ namespace Trabajo_Practico.Formularios
         public FormBaseABMC()
         {
             InitializeComponent();
+            consultaPrincipal = "";
             bd = new BE_Acceso_Datos();
+            
             
         }
         protected void cargargrilla()

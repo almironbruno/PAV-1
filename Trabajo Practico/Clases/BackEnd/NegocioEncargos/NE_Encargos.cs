@@ -24,6 +24,11 @@ namespace Trabajo_Practico.Clases.BackEnd.NegocioEncargos
             string sqlBuscar = $"SELECT * FROM encargos where tipo_doc_cliente = {tipoDocumento} and nro_doc_cliente = {nroDocumento}";
             return _BD.Ejecutar_Select(sqlBuscar);
         }
+        public string buscarEncargos(int tipoDocumento, int nroDocumento)
+        {
+            string sqlBuscar = $"SELECT * FROM encargos where tipo_doc_cliente = {tipoDocumento} and nro_doc_cliente = {nroDocumento}";
+            return sqlBuscar;
+        }
         public void modificarEncargo(Encargos encargoModificado)
         {
             string sqlModificar = $"UPDATE encargos SET tipo_doc_cliente = {encargoModificado.tipoDocumento}, nro_doc_cliente = {encargoModificado.nroDocumento}, fecha = CONVERT(DATETIME, '{encargoModificado.fecha}',103), id_nombrecomercial = {encargoModificado.nombreComercial}, legajo_empleado = {encargoModificado.legajoEmpletado}, cod_caracteristica = {encargoModificado.codCaracteristica}, prioridad = {encargoModificado.prioridad} WHERE tipo_doc_cliente = {encargoModificado.tipoDocumento} AND  nro_doc_cliente = {encargoModificado.nroDocumento} ";

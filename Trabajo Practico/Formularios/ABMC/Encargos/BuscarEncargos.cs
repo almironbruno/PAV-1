@@ -16,9 +16,11 @@ namespace Trabajo_Practico.Formularios.ABMC.Encargos
 {
     public partial class BuscarEncargos : FormBaseConsulta
     {
-        public BuscarEncargos()
+        private FormBaseABMC formPrincipal;
+        public BuscarEncargos(FormBaseABMC form)
         {
             InitializeComponent();
+            formPrincipal = form;
             cmbTipoDocumento.cargar("SELECT * FROM tipo_doc_clientes", "nombre_tipo_doc", "id_doc_cliente");
             cambiarNombre("Encargos");
         }
@@ -47,6 +49,7 @@ namespace Trabajo_Practico.Formularios.ABMC.Encargos
                         cmbTipoDocumento.Focus();
                         int tipoDocumento = int.Parse(cmbTipoDocumento.cmb_Cargable.SelectedValue.ToString());
                         int nroDocumento = int.Parse(txtNroDocumento.Text);
+                        formPrincipal.consultaPrincipal = negocioEncargos.buscarEncargos(tipoDocumento, nroDocumento);
 
                         tabla = negocioEncargos.buscarEncargo(tipoDocumento, nroDocumento);
 
@@ -63,8 +66,8 @@ namespace Trabajo_Practico.Formularios.ABMC.Encargos
 
                             Trabajo_Practico.Clases.Entidades.Encargos nuevoEncargo = new Clases.Entidades.Encargos(tipo_doc_cliente, nro_doc_cliente, fecha, nombre_comercial, legajo, cod_caracteristica, prioridad);
                             MessageBox.Show("Si se encuentró el registro buscado", "Información");
-                            MessageBox.Show(nuevoEncargo.toString(), "Mensaje");                            
-
+                            MessageBox.Show(nuevoEncargo.toString(), "Mensaje");
+                           
                         }
                         else
                         {

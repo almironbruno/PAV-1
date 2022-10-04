@@ -28,7 +28,7 @@ namespace Trabajo_Practico.Formularios.ABMC.Encargos
 
         private void btn_Buscar_Click_1(object sender, EventArgs e)
         {
-            BuscarEncargos ventana = new BuscarEncargos();
+            BuscarEncargos ventana = new BuscarEncargos(this);
             ventana.Show();            
         }
 
