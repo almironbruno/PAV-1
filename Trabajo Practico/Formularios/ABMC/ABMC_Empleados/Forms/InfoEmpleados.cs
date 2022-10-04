@@ -25,6 +25,7 @@ namespace Trabajo_Practico.Formularios.ABMC.ABMC_Empleados.Forms
             InitializeComponent();
             //Cambia los botones al modo Consulta
             cambiarFormaConsulta();
+            
         }
         public override void cargarInfo(DataGridViewRow row)
         {

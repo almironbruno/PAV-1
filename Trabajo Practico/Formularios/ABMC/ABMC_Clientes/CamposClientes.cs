@@ -52,5 +52,34 @@ namespace Trabajo_Practico.Formularios.ABMC.ABMC_Clientes
         {
 
         }
+
+        private void mTxt_FechaNac_TextChanged(object sender, EventArgs e)
+        {
+
+            try
+            {
+                //Separa el string en partes para validar
+                int dia = int.Parse(mTxt_FechaNac.Text.Substring(0, 2));
+                int mes = int.Parse(mTxt_FechaNac.Text.Substring(3, 2));
+                int anio = int.Parse(mTxt_FechaNac.Text.Substring(6, 4));
+
+
+                if (dia > 0 & dia < 32 & mes > 0 & mes < 13)
+                {
+                    btn_Aceptar.Enabled = true;
+                    errorProviderBase.Clear();
+
+                }
+                    
+
+            }
+            catch (Exception ex)
+            {
+                //Deshabilita el boton Aceptar
+                btn_Aceptar.Enabled = false;
+                //Muestra el error en pantalla
+                errorProviderBase.SetError(mTxt_FechaNac, "Debe ingresar una fecha correcta");
+            }
+        }
     }
 }

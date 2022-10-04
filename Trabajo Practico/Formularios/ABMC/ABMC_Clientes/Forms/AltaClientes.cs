@@ -42,7 +42,7 @@ namespace Trabajo_Practico.Formularios.ABMC.Clientes
                 NE_Clientes Cliente = new NE_Clientes();
 
                 Cliente.AgregarCliente(nuevoCliente);
-                this.Close();
+                //this.Close();
             }
    
             
