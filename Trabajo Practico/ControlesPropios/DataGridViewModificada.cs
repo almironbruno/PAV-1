@@ -41,6 +41,7 @@ namespace Trabajo_Practico
         
         }
 
+         
         private void dgr_Principal_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
             //Llama al form que se define en cada ABM
@@ -59,8 +60,13 @@ namespace Trabajo_Practico
 
         }
 
-        //private void dgr_Principal_CellMouseEnter(object sender, DataGridViewCellEventArgs e)
-        //{
+
+        /*/
+        private void dgr_Principal_CellMouseEnter(object sender, DataGridViewCellEventArgs e)
+        {
+
+
+
             
         //        //Establece los toolTips para cada celda
         //        for (int i = 0; i < dgr_Principal.Columns.Count; i++)
@@ -70,6 +76,11 @@ namespace Trabajo_Practico
         //        }
             
             
-        //}
+
+
+        }
+        /*/
+
+
     }
 }

@@ -9,7 +9,7 @@ using static System.Windows.Forms.VisualStyles.VisualStyleElement.TextBox;
 
 namespace Trabajo_Practico.Clases.BackEnd.NegocioClientes
 {
-    internal class NE_Clientes
+     class NE_Clientes
     {
         BE_Acceso_Datos _BD = new BE_Acceso_Datos();
 
@@ -61,9 +61,8 @@ namespace Trabajo_Practico.Clases.BackEnd.NegocioClientes
                                 id_barrio LIKE '{barrio}'";
             return sqlConsulta;
 
-
-
         }
+
         
     }
 }

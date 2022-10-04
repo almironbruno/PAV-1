@@ -25,6 +25,7 @@ namespace Trabajo_Practico.Formularios.ABMC.ABMC_Empleados.Forms
             InitializeComponent();
             //Cambia los botones al modo Consulta
             cambiarFormaConsulta();
+            
         }
         public override void cargarInfo(DataGridViewRow row)
         {
@@ -33,6 +34,11 @@ namespace Trabajo_Practico.Formularios.ABMC.ABMC_Empleados.Forms
             mTxt_Nombre.Text = row.Cells[1].Value.ToString();
             mTxt_Apellido.Text = row.Cells[2].Value.ToString();
             cmbCargable_Cargos.cmb_Cargable.Text = row.Cells[3].Value.ToString();
+
+        }
+
+        private void InfoEmpleados_Load(object sender, EventArgs e)
+        {
 
         }
     }
