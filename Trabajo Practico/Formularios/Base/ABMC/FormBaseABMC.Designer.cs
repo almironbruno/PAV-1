@@ -209,7 +209,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormBaseAMBC";
             this.Activated += new System.EventHandler(this.FormBaseABMC_Activated);
-            this.Load += new System.EventHandler(this.FormBaseABMC_Load_1);
+            this.Load += new System.EventHandler(this.FormBaseABMC_Load);
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();

@@ -1,6 +1,6 @@
-﻿namespace Trabajo_Practico.Formularios.ABMC.ABMC_Empleados
+﻿namespace Trabajo_Practico.Formularios.ABMC.Marcas
 {
-    partial class BajaEmpleado
+    partial class AltaMarcas
     {
         /// <summary>
         /// Required designer variable.
@@ -28,45 +28,43 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.lbl_Pregunta = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btn_Aceptar
             // 
-            this.btn_Aceptar.Click += new System.EventHandler(this.btn_Aceptar_Click);
+            this.btn_Aceptar.Location = new System.Drawing.Point(182, 330);
+            this.btn_Aceptar.Click += new System.EventHandler(this.btn_Aceptar_Click_1);
             // 
-            // lbl_Pregunta
+            // label2
             // 
-            this.lbl_Pregunta.AutoSize = true;
-            this.lbl_Pregunta.Location = new System.Drawing.Point(250, 58);
-            this.lbl_Pregunta.Name = "lbl_Pregunta";
-            this.lbl_Pregunta.Size = new System.Drawing.Size(167, 13);
-            this.lbl_Pregunta.TabIndex = 26;
-            this.lbl_Pregunta.Text = "Desea borrar el siguiente registro?";
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.SystemColors.MenuHighlight;
+            this.label2.Location = new System.Drawing.Point(246, 68);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(180, 25);
+            this.label2.TabIndex = 4;
+            this.label2.Text = "Registro de Marcas";
             // 
-            // BajaEmpleado
+            // AltaMarcas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.lbl_Pregunta);
-            this.Name = "BajaEmpleado";
-            this.Text = "BajaEmpleado";
-            this.Load += new System.EventHandler(this.BajaEmpleado_Load);
+            this.ClientSize = new System.Drawing.Size(761, 441);
+            this.Controls.Add(this.label2);
+            this.Name = "AltaMarcas";
+            this.Text = "AltaMarcas";
+            this.Load += new System.EventHandler(this.AltaMarcas_Load);
             this.Controls.SetChildIndex(this.btn_LimpiarCampos, 0);
-            this.Controls.SetChildIndex(this.mTxt_Nombre, 0);
-            this.Controls.SetChildIndex(this.mTxt_Apellido, 0);
-            this.Controls.SetChildIndex(this.cmbCargable_Cargos, 0);
             this.Controls.SetChildIndex(this.btn_Aceptar, 0);
-            this.Controls.SetChildIndex(this.mtxt_Legajo, 0);
-            this.Controls.SetChildIndex(this.lbl_Pregunta, 0);
+            this.Controls.SetChildIndex(this.label2, 0);
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.Label lbl_Pregunta;
+        public System.Windows.Forms.Label label2;
     }
 }

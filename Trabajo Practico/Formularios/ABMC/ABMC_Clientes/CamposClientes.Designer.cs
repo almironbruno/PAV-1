@@ -117,6 +117,7 @@
             this.mTxt_FechaNac.Size = new System.Drawing.Size(100, 20);
             this.mTxt_FechaNac.TabIndex = 41;
             this.mTxt_FechaNac.ValidatingType = typeof(System.DateTime);
+            this.mTxt_FechaNac.TextChanged += new System.EventHandler(this.mTxt_FechaNac_TextChanged);
             // 
             // lbl_Apellido
             // 
@@ -213,6 +214,7 @@
             this.Controls.Add(this.cmbCargable_TipoDoc);
             this.Name = "CamposClientes";
             this.Text = "CamposClientes";
+            this.Load += new System.EventHandler(this.CamposClientes_Load);
             this.Controls.SetChildIndex(this.cmbCargable_TipoDoc, 0);
             this.Controls.SetChildIndex(this.lbl_tipoDocumento, 0);
             this.Controls.SetChildIndex(this.label1, 0);

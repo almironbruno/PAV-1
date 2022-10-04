@@ -30,18 +30,6 @@
         {
             this.SuspendLayout();
             // 
-            // mTxt_Nombre
-            // 
-            this.mTxt_Nombre.HidePromptOnLeave = true;
-            // 
-            // mTxt_Apellido
-            // 
-            this.mTxt_Apellido.HidePromptOnLeave = true;
-            // 
-            // mtxt_Legajo
-            // 
-            this.mtxt_Legajo.HidePromptOnLeave = true;
-            // 
             // InfoEmpleados
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -49,8 +37,11 @@
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Name = "InfoEmpleados";
             this.Text = "InfoEmpleados";
+            this.Load += new System.EventHandler(this.InfoEmpleados_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
+
+
 
         }
 

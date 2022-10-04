@@ -79,7 +79,6 @@
             this.cmbCargable_Cargos.Location = new System.Drawing.Point(448, 147);
             this.cmbCargable_Cargos.Name = "cmbCargable_Cargos";
             this.cmbCargable_Cargos.Size = new System.Drawing.Size(230, 28);
-            this.cmbCargable_Cargos.cmb_Cargable.Size=new System.Drawing.Size(130, 28);
             this.cmbCargable_Cargos.TabIndex = 22;
             // 
             // mtxt_Legajo
@@ -125,6 +124,7 @@
             this.Controls.Add(this.mTxt_Nombre);
             this.Name = "CamposEmpleados";
             this.Text = "CamposEmpleados";
+            this.Load += new System.EventHandler(this.CamposEmpleados_Load);
             this.Controls.SetChildIndex(this.btn_LimpiarCampos, 0);
             this.Controls.SetChildIndex(this.mTxt_Nombre, 0);
             this.Controls.SetChildIndex(this.mTxt_Apellido, 0);

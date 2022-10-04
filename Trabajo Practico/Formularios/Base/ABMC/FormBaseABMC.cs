@@ -9,12 +9,10 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using Trabajo_Practico.Clases.BackEnd;
 using Trabajo_Practico.Formularios.Base;
-using Trabajo_Practico.ControlesPropios;
-using Trabajo_Practico.Clases.BackEnd.NegocioAutos;
 
 namespace Trabajo_Practico.Formularios
 {
-    public  partial class FormBaseABMC : Form
+    public partial class FormBaseABMC : Form
     {
         protected BE_Acceso_Datos bd;
         //Se definen la consulta para que sean genericas
@@ -76,7 +74,6 @@ namespace Trabajo_Practico.Formularios
         {
             //Se carga la grid cuando se carga el formulario
             dataGridViewModificada1.cargar(bd.Ejecutar_Select(consultaPrincipal));
-            
 
         }
 
@@ -85,15 +82,11 @@ namespace Trabajo_Practico.Formularios
 
         }
 
+        
         private void FormBaseABMC_Activated(object sender, EventArgs e)
         {
             dataGridViewModificada1.cargar(bd.Ejecutar_Select(consultaPrincipal));
-            lbl_Cantidad.Text = "Cantidad: "+dataGridViewModificada1.dgr_Principal.Rows.Count;
-        }
-
-        private void FormBaseABMC_Load_1(object sender, EventArgs e)
-        {
-
+            lbl_Cantidad.Text = "Cantidad: " + dataGridViewModificada1.dgr_Principal.Rows.Count;
         }
     }
 }

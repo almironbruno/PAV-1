@@ -35,7 +35,7 @@ namespace Trabajo_Practico.Formularios
 
         private void empleadosToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            ABMC_Empleados ventanaEmpleados = new ABMC_Empleados();
+            ABMC_Empleados ventanaEmpleados = new    ABMC_Empleados();
             ventanaEmpleados.Show();
         }
 
@@ -49,13 +49,13 @@ namespace Trabajo_Practico.Formularios
 
         private void autosToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Autos ventanaAutos = new Autos();
+            ABMC_Autos ventanaAutos = new ABMC_Autos();
             ventanaAutos.Show();
         }
 
         private void marcaToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Marcas ventanaMarcas = new Marcas();
+            ABMC_Marcas ventanaMarcas = new ABMC_Marcas();
             ventanaMarcas.Show();
 
         }
@@ -87,6 +87,10 @@ namespace Trabajo_Practico.Formularios
         {
             TelefonosPrincipal ventanaTelefono = new TelefonosPrincipal();
             ventanaTelefono.Show();
+	}
+        private void nombreComercialToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            
         }
     }
 }

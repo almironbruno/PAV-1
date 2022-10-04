@@ -160,21 +160,36 @@ namespace Trabajo_Practico.Clases.BackEnd
         public void ejecutar(string sql)
         {
             // Intenta ejecutar la operacion
-            //try {
+            try {
 
                 conectar();
                 cmd.CommandText = sql;
                 cmd.ExecuteNonQuery();
                 desconectar();
                 MessageBox.Show("Se ha realizado con exito la operacion!");
-            //}
+            }
             // En caso de que falle
-            //catch(Exception e) 
-            //{
-              //  MessageBox.Show("No se pudo realizar la operacion \n " +
+            catch(SqlException e) 
+            {
+                string advertencia="";
+                //  MessageBox.Show("No se pudo realizar la operacion \n " +
                 //    "Motivo: "+ e.Message.ToString());
-            
-           // }
+                switch (e.Number) 
+                {
+                    case 241:
+                        advertencia="Ha ingresado una fecha invalida";
+                        break;
+                    case 2627:
+                        advertencia = "Ya existe un registro con ese identificador";
+                        break;
+                     default:
+                        advertencia = "Ha ocurrido un error con la base de datos";
+                        break;
+
+
+                }
+                MessageBox.Show(advertencia);
+           }
 
         }
        

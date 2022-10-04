@@ -24,7 +24,7 @@ namespace Trabajo_Practico.Clases.Entidades
             nro_doc = nro_docu;
             nombre = nom;
             apellido = ape;
-            fecha_nacimiento = fechNac;
+            fecha_nacimiento =fechNac;
             calle = unaCalle;
             nro_calle = nro_Call;
             id_barrio = barrio;
