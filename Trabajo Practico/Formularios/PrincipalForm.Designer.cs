@@ -63,14 +63,14 @@
             this.lblUsr = new System.Windows.Forms.Label();
 
 
-            this.registrosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.cerrarSesionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.reportesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.empleadosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.clientesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.autosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.marcaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.nombreComercialToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            //this.registrosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            //this.cerrarSesionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            ///this.reportesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+           // this.empleadosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            //this.clientesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            //this.autosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            //this.marcaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            //this.nombreComercialToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 
             this.telefonosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 
