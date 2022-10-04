@@ -100,6 +100,6 @@
         protected System.Windows.Forms.Button btn_Aceptar;
         private  System.Windows.Forms.Button btn_Cancelar;
         protected  System.Windows.Forms.Button btn_LimpiarCampos;
-        private System.Windows.Forms.ErrorProvider errorProviderBase;
+        protected System.Windows.Forms.ErrorProvider errorProviderBase;
     }
 }

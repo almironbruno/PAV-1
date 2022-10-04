@@ -117,6 +117,7 @@
             this.mTxt_FechaNac.Size = new System.Drawing.Size(100, 20);
             this.mTxt_FechaNac.TabIndex = 41;
             this.mTxt_FechaNac.ValidatingType = typeof(System.DateTime);
+            this.mTxt_FechaNac.TextChanged += new System.EventHandler(this.mTxt_FechaNac_TextChanged);
             // 
             // lbl_Apellido
             // 

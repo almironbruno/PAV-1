@@ -59,6 +59,8 @@
             this.Text = "Autos";
             this.Activated += new System.EventHandler(this.ABMC_Autos_Activated);
             this.Load += new System.EventHandler(this.Autos_Load);
+
+
             this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
