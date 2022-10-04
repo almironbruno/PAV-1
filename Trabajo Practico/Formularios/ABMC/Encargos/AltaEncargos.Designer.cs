@@ -94,6 +94,7 @@
             // 
             // txtNroDocumento
             // 
+            this.txtNroDocumento.HidePromptOnLeave = true;
             this.txtNroDocumento.Location = new System.Drawing.Point(395, 126);
             this.txtNroDocumento.Mask = "99999999";
             this.txtNroDocumento.Name = "txtNroDocumento";
@@ -139,6 +140,7 @@
             // 
             // txtLegajo
             // 
+            this.txtLegajo.HidePromptOnLeave = true;
             this.txtLegajo.Location = new System.Drawing.Point(392, 186);
             this.txtLegajo.Mask = "99999";
             this.txtLegajo.Name = "txtLegajo";
@@ -158,6 +160,7 @@
             // 
             // txtCodigo
             // 
+            this.txtCodigo.HidePromptOnLeave = true;
             this.txtCodigo.Location = new System.Drawing.Point(392, 212);
             this.txtCodigo.Mask = "99999";
             this.txtCodigo.Name = "txtCodigo";

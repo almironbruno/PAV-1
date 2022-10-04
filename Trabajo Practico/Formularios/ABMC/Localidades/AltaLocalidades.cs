@@ -19,7 +19,10 @@ namespace Trabajo_Practico.Formularios.ABMC.Localidades
     {
         public AltaLocalidades()
         {
+            
             InitializeComponent();
+            //Hace invisible el prompt
+            txtNombreLocalidad.HidePromptOnLeave = true;
         }
 
         private void btn_Aceptar_Click_1(object sender, EventArgs e)
