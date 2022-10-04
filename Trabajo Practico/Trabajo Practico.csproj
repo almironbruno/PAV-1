@@ -270,18 +270,7 @@
     <Compile Include="Formularios\ABMC\ABMC_Marcas\Forms\ModificarMarca.Designer.cs">
       <DependentUpon>ModificarMarca.cs</DependentUpon>
     </Compile>
-    <Compile Include="Formularios\ABMC\NombreComercial\AltaNombreComercial.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Formularios\ABMC\NombreComercial\AltaNombreComercial.Designer.cs">
-      <DependentUpon>AltaNombreComercial.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Formularios\ABMC\NombreComercial\NombreComercial.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Formularios\ABMC\NombreComercial\NombreComercial.Designer.cs">
-      <DependentUpon>NombreComercial.cs</DependentUpon>
-    </Compile>
+
     <Compile Include="Formularios\ABMC\Telefonos\AltaTelefono.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -457,12 +446,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\ABMC\ABMC_Marcas\Forms\ModificarMarca.resx">
       <DependentUpon>ModificarMarca.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Formularios\ABMC\NombreComercial\AltaNombreComercial.resx">
-      <DependentUpon>AltaNombreComercial.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Formularios\ABMC\NombreComercial\NombreComercial.resx">
-      <DependentUpon>NombreComercial.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\ABMC\Telefonos\AltaTelefono.resx">
       <DependentUpon>AltaTelefono.cs</DependentUpon>
