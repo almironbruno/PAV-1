@@ -51,16 +51,15 @@
             // 
             this.dataGridViewModificada1.Load += new System.EventHandler(this.dataGridViewModificada1_Load);
             // 
-            // Autos
+            // ABMC_Autos
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Name = "Autos";
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.ClientSize = new System.Drawing.Size(1090, 554);
+            this.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.Name = "ABMC_Autos";
             this.Text = "Autos";
             this.Activated += new System.EventHandler(this.ABMC_Autos_Activated);
             this.Load += new System.EventHandler(this.Autos_Load);
-
-
             this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();

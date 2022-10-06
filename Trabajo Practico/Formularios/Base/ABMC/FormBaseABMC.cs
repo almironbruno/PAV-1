@@ -76,7 +76,7 @@ namespace Trabajo_Practico.Formularios
         private void FormBaseABMC_Load(object sender, EventArgs e)
         {
             //Se carga la grid cuando se carga el formulario
-            dataGridViewModificada1.cargar(bd.Ejecutar_Select(consultaPrincipal));
+            //dataGridViewModificada1.cargar(bd.Ejecutar_Select(consultaPrincipal));
 
         }
 

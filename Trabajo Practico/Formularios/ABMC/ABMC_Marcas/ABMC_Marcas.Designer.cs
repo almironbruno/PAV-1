@@ -47,13 +47,13 @@
             // 
             this.btn_Buscar.Click += new System.EventHandler(this.btn_Buscar_Click_1);
             // 
-            // Marcas
+            // ABMC_Marcas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1067, 554);
-            this.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
-            this.Name = "Marcas";
+            this.ClientSize = new System.Drawing.Size(1090, 554);
+            this.Margin = new System.Windows.Forms.Padding(5);
+            this.Name = "ABMC_Marcas";
             this.Text = "Marcas";
             this.Load += new System.EventHandler(this.Marcas_Load);
             this.panel1.ResumeLayout(false);

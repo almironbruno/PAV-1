@@ -28,33 +28,38 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(InfoBarrios));
             this.txtNombreBarrio = new System.Windows.Forms.TextBox();
             this.txtIdBarrio = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProviderBase)).BeginInit();
             this.SuspendLayout();
             // 
             // txtNombreBarrio
             // 
-            this.txtNombreBarrio.Location = new System.Drawing.Point(240, 89);
+            this.txtNombreBarrio.Location = new System.Drawing.Point(320, 110);
+            this.txtNombreBarrio.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtNombreBarrio.Name = "txtNombreBarrio";
-            this.txtNombreBarrio.Size = new System.Drawing.Size(100, 20);
+            this.txtNombreBarrio.Size = new System.Drawing.Size(132, 22);
             this.txtNombreBarrio.TabIndex = 0;
             // 
             // txtIdBarrio
             // 
-            this.txtIdBarrio.Location = new System.Drawing.Point(240, 144);
+            this.txtIdBarrio.Location = new System.Drawing.Point(320, 177);
+            this.txtIdBarrio.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtIdBarrio.Name = "txtIdBarrio";
-            this.txtIdBarrio.Size = new System.Drawing.Size(100, 20);
+            this.txtIdBarrio.Size = new System.Drawing.Size(132, 22);
             this.txtIdBarrio.TabIndex = 1;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(130, 90);
+            this.label1.Location = new System.Drawing.Point(173, 111);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(104, 17);
+            this.label1.Size = new System.Drawing.Size(124, 20);
             this.label1.TabIndex = 2;
             this.label1.Text = "Nombre Barrio:";
             // 
@@ -62,23 +67,33 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(173, 144);
+            this.label2.Location = new System.Drawing.Point(231, 177);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(61, 17);
+            this.label2.Size = new System.Drawing.Size(73, 20);
             this.label2.TabIndex = 3;
             this.label2.Text = "IdBarrio:";
             // 
             // InfoBarrios
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1067, 554);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txtIdBarrio);
             this.Controls.Add(this.txtNombreBarrio);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.Name = "InfoBarrios";
             this.Text = "InfoBarrios";
+            this.Controls.SetChildIndex(this.txtNombreBarrio, 0);
+            this.Controls.SetChildIndex(this.txtIdBarrio, 0);
+            this.Controls.SetChildIndex(this.label1, 0);
+            this.Controls.SetChildIndex(this.label2, 0);
+            this.Controls.SetChildIndex(this.btn_Aceptar, 0);
+            this.Controls.SetChildIndex(this.btn_LimpiarCampos, 0);
+            ((System.ComponentModel.ISupportInitialize)(this.errorProviderBase)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

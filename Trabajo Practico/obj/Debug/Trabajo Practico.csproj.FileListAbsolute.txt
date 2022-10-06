@@ -65,6 +65,9 @@ C:\Users\Almir\Desktop\PAV\PAV-1-tp\Trabajo Practico\bin\Debug\Trabajo Practico.
 C:\Users\Almir\Desktop\PAV\PAV-1-tp\Trabajo Practico\bin\Debug\Trabajo Practico.pdb
 C:\Users\Almir\Desktop\PAV\PAV-1-tp\Trabajo Practico\obj\Debug\Trabajo Practico.exe
 C:\Users\Almir\Desktop\PAV\PAV-1-tp\Trabajo Practico\obj\Debug\Trabajo Practico.pdb
+D:\TP PRESENTACION PAV\PAV-1\Trabajo Practico\bin\Debug\Trabajo Practico.exe.config
+D:\TP PRESENTACION PAV\PAV-1\Trabajo Practico\bin\Debug\Trabajo Practico.exe
+D:\TP PRESENTACION PAV\PAV-1\Trabajo Practico\bin\Debug\Trabajo Practico.pdb
 D:\TP PRESENTACION PAV\PAV-1\Trabajo Practico\obj\Debug\Trabajo Practico.csproj.AssemblyReference.cache
 D:\TP PRESENTACION PAV\PAV-1\Trabajo Practico\obj\Debug\Trabajo Practico.csproj.SuggestedBindingRedirects.cache
 D:\TP PRESENTACION PAV\PAV-1\Trabajo Practico\obj\Debug\Trabajo_Practico.ControlesPropios.ComboCargable.resources
@@ -129,6 +132,3 @@ D:\TP PRESENTACION PAV\PAV-1\Trabajo Practico\obj\Debug\Trabajo Practico.csproj.
 D:\TP PRESENTACION PAV\PAV-1\Trabajo Practico\obj\Debug\Trabajo Practico.csproj.CoreCompileInputs.cache
 D:\TP PRESENTACION PAV\PAV-1\Trabajo Practico\obj\Debug\Trabajo Practico.exe
 D:\TP PRESENTACION PAV\PAV-1\Trabajo Practico\obj\Debug\Trabajo Practico.pdb
-D:\TP PRESENTACION PAV\PAV-1\Trabajo Practico\bin\Debug\Trabajo Practico.exe.config
-D:\TP PRESENTACION PAV\PAV-1\Trabajo Practico\bin\Debug\Trabajo Practico.exe
-D:\TP PRESENTACION PAV\PAV-1\Trabajo Practico\bin\Debug\Trabajo Practico.pdb
