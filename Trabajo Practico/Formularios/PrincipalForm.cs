@@ -83,7 +83,7 @@ namespace Trabajo_Practico.Formularios
         private void cerrarSesionToolStripMenuItem_Click(object sender, EventArgs e)
         {
             this.Close();
-
+            
         }
         private void telefonosToolStripMenuItem_Click(object sender, EventArgs e)
         {
