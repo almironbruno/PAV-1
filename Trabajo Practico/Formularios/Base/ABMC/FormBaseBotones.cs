@@ -36,7 +36,7 @@ namespace Trabajo_Practico.Formularios.Base
             }
         }
 
-         private void btn_LimpiarCampos_Click(object sender, EventArgs e)
+         protected virtual void btn_LimpiarCampos_Click(object sender, EventArgs e)
         {
             DialogResult result= MessageBox.Show("Va a borrar todos los camppos \n\t ¿Esta seguro?","Advertencia para borrar campos", MessageBoxButtons.OKCancel);
             //Si el usuario selecciona OK, borra los campos
