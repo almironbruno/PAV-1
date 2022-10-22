@@ -155,19 +155,11 @@
             // 
             this.marcaToolStripMenuItem.Image = global::Trabajo_Practico.Properties.Resources._7422513_ford_cars_logo_motors_icon;
             this.marcaToolStripMenuItem.Name = "marcaToolStripMenuItem";
-<<<<<<< HEAD
             this.marcaToolStripMenuItem.Size = new System.Drawing.Size(218, 26);
             this.marcaToolStripMenuItem.Text = "Marcas";
             this.marcaToolStripMenuItem.Click += new System.EventHandler(this.marcaToolStripMenuItem_Click);
             // 
-            // nombreComercialToolStripMenuItem
-            // 
-            this.nombreComercialToolStripMenuItem.Image = global::Trabajo_Practico.Properties.Resources._4544812_business_comerce_delivery_shop_tag_icon;
-            this.nombreComercialToolStripMenuItem.Name = "nombreComercialToolStripMenuItem";
-            this.nombreComercialToolStripMenuItem.Size = new System.Drawing.Size(175, 22);
-            this.nombreComercialToolStripMenuItem.Text = "Nombre Comercial";
-            this.nombreComercialToolStripMenuItem.Click += new System.EventHandler(this.nombreComercialToolStripMenuItem_Click);
-            // 
+            
             // telefonosToolStripMenuItem
             // 
             this.telefonosToolStripMenuItem.Image = global::Trabajo_Practico.Properties.Resources._211830_telephone_icon;
