@@ -75,17 +75,23 @@ namespace Trabajo_Practico.Clases.BackEnd
         
         
 
-        } 
+        }
 
-      
+
         //Sirve para buscar strings de FK y devolver su equivalencia de PK, recib string y devuelve pk.
         public int SelectNumeros(string sqlBuscar)
         {
             int numero = 0;
             conectar();
-            
+
             cmd.CommandText = sqlBuscar;
-            numero = (int)cmd.ExecuteScalar();
+            try {
+
+                numero = (int)cmd.ExecuteScalar();
+            }
+            catch (Exception e){
+                MessageBox.Show("Ha ocurrido un error! Intentelo nuevamente");
+            }
             desconectar();
             if(numero > 0)
             {

@@ -28,8 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ConsultaBarrio));
             this.label1 = new System.Windows.Forms.Label();
             this.txtNombreBarrioABuscar = new System.Windows.Forms.TextBox();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProviderBase)).BeginInit();
             this.SuspendLayout();
             // 
             // btn_Aceptar
@@ -40,32 +42,37 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(124, 164);
+            this.label1.Location = new System.Drawing.Point(165, 202);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(236, 17);
+            this.label1.Size = new System.Drawing.Size(282, 20);
             this.label1.TabIndex = 17;
             this.label1.Text = "Escriba el Barrio que quiere Buscar:";
             // 
             // txtNombreBarrioABuscar
             // 
-            this.txtNombreBarrioABuscar.Location = new System.Drawing.Point(366, 164);
+            this.txtNombreBarrioABuscar.Location = new System.Drawing.Point(488, 202);
+            this.txtNombreBarrioABuscar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtNombreBarrioABuscar.Name = "txtNombreBarrioABuscar";
-            this.txtNombreBarrioABuscar.Size = new System.Drawing.Size(185, 20);
+            this.txtNombreBarrioABuscar.Size = new System.Drawing.Size(245, 22);
             this.txtNombreBarrioABuscar.TabIndex = 18;
             // 
             // ConsultaBarrio
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1067, 554);
             this.Controls.Add(this.txtNombreBarrioABuscar);
             this.Controls.Add(this.label1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
             this.Name = "ConsultaBarrio";
             this.Text = "ConsultaBarrio";
             this.Controls.SetChildIndex(this.btn_LimpiarCampos, 0);
             this.Controls.SetChildIndex(this.btn_Aceptar, 0);
             this.Controls.SetChildIndex(this.label1, 0);
             this.Controls.SetChildIndex(this.txtNombreBarrioABuscar, 0);
+            ((System.ComponentModel.ISupportInitialize)(this.errorProviderBase)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

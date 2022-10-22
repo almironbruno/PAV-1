@@ -1,3 +1,3 @@
 # PAV-1
-* **Tema:**  Menus de ABM <br />
-* **Prox Entrega:**  27 de septiembre
+* **Tema:**  Transacciones <br />
+* **Prox Entrega:**  25 de octubre
