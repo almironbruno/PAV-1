@@ -166,8 +166,9 @@ namespace Trabajo_Practico.Clases.BackEnd
                 cmd.CommandText = sql;
                 cmd.ExecuteNonQuery();
                 desconectar();
+            
                 MessageBox.Show("Se ha realizado con exito la operacion!");
-            }
+		}
             // En caso de que falle
             catch(SqlException e) 
             {

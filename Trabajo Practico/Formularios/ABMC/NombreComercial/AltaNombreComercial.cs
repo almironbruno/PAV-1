@@ -7,7 +7,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using Trabajo_Practico.Clases.BackEnd.NegocioMarcas;
 using Trabajo_Practico.Clases.BackEnd.NegocioNombreComercial;
 using Trabajo_Practico.Clases.Entidades;
 using Trabajo_Practico.Formularios.Base;
@@ -23,40 +22,64 @@ namespace Trabajo_Practico.Formularios.ABMC.NombreComercial
 
         private void AltaNombreComercial_Load(object sender, EventArgs e)
         {
-
+            string sqlMarca = (@"SELECT * FROM marcas");
+            string sqlGama = (@"SELECT * FROM gamas");
+            cmbMarca.cargar(sqlMarca, "nombre", "id_marca");
+            cmbGama.cargar(sqlGama, "nombre_gama", "id_gama");
         }
 
-        private void txtNombreComercial_TextChanged(object sender, EventArgs e)
+        private void comboCargable2_Load(object sender, EventArgs e)
         {
 
         }
 
-        private void btn_Aceptar_Click_1(object sender, EventArgs e)
+        private void btn_Aceptar_Click(object sender, EventArgs e)
         {
-            string nom = txtNombreComercial.Text;
-            int marc = int.Parse(txtIDMarca.Text);
-            int gam = int.Parse(txtIDGama.Text);
+            try
+            {
+                bool vacios = false;
+                foreach (Control item in this.Controls)
+                {
 
-            NombresComerciales nomcom = new NombresComerciales(nom, marc, gam);
+                    if (item is TextBox || item is MaskedTextBox)
+                    {
+                        if (item.Text.Equals(""))
+                        {
+                            item.Select();
+                            vacios = true;
+                            break;
 
-            NE_NombreComercial nomcomAgregar = new NE_NombreComercial();
+                        }
+                    }
 
-            nomcomAgregar.AgregarNombreComercial(nomcom);
-        }
+                }
+                if (vacios == false)
+                {
+                    string nombre_comercial = txtNombreComercial.Text;
+                    int marca = int.Parse(cmbMarca.cmb_Cargable.SelectedValue.ToString());
+                    int gama = int.Parse(cmbGama.cmb_Cargable.SelectedValue.ToString());
+                    
+                    NombresComerciales nvoNombreComercial = new NombresComerciales(nombre_comercial,marca,gama);
 
-        private void btn_Cancelar_Click_1(object sender, EventArgs e)
-        {
-            this.Close();
-        }
+                    //MessageBox.Show(nvoNombreComercial.mostrar(nvoNombreComercial));
 
-        private void txtIDMarca_TextChanged(object sender, EventArgs e)
-        {
+                    NE_NombreComercial NombresComerciales = new NE_NombreComercial();
 
-        }
+                    NombresComerciales.AgregarNombreComercial(nvoNombreComercial);
+                }
+                else
+                {
+                    MessageBox.Show("Complete todos los campos para registrar un Nombre Comercial");
+                }
 
-        private void txtIDGama_TextChanged(object sender, EventArgs e)
-        {
+            }
+            catch (Exception)
+            {
+
+                MessageBox.Show("Ya se encuentra registrado el Nombre Comercial");
+            }
 
         }
     }
+    
 }

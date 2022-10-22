@@ -38,5 +38,12 @@ namespace Trabajo_Practico.Clases.BackEnd.NegocioBarrio
             string sqlInsertar = $"UPDATE barrios SET nombre_barrio = '{modificarBarrio.nombre_Barrio}' WHERE Id_barrios = {pk}";
             _BD.Insertar(sqlInsertar);
         }
+
+        public string consutaBr(string nombreBarrio)
+        {
+            string sqlConsulta = $@"SELECT * FROM barrios WHERE nombre_barrio LIKE '{nombreBarrio}' ";
+
+            return sqlConsulta;
+        }
     }
 }

@@ -28,16 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.panel1.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // btn_Agregar
-            // 
-            this.btn_Agregar.Click += new System.EventHandler(this.btn_Agregar_Click_1);
-            // 
-            // btn_Eliminar
-            // 
-            this.btn_Eliminar.Click += new System.EventHandler(this.btn_Eliminar_Click_1);
             // 
             // NombreComercial
             // 
@@ -47,9 +38,7 @@
             this.Name = "NombreComercial";
             this.Text = "NombreComercial";
             this.Load += new System.EventHandler(this.NombreComercial_Load);
-            this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 

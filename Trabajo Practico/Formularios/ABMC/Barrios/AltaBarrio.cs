@@ -1,12 +1,14 @@
-﻿using System;
+﻿ using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Drawing.Text;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Trabajo_Practico.Clases.BackEnd;
 using Trabajo_Practico.Clases.BackEnd.NegocioBarrio;
 using Trabajo_Practico.Clases.Entidades;
 
@@ -22,6 +24,12 @@ namespace Trabajo_Practico.Formularios.ABMC.Barrios
         private void btn_Aceptar_Click(object sender, EventArgs e)
         {
 
+            if (validarExisBarrio())
+            {
+                MessageBox.Show("Ya existe el barrio: " + txtNombreNuevoBarrio.Text);
+                return; 
+            }
+            
             string nombreBarrio = txtNombreNuevoBarrio.Text;
 
             Barrio nvoBarrio = new Barrio(nombreBarrio);
@@ -50,6 +58,25 @@ namespace Trabajo_Practico.Formularios.ABMC.Barrios
         private void LimpiarCampos()
         {
             txtNombreNuevoBarrio.Text = "";
+        }
+
+        private bool validarExisBarrio()
+        {
+            string consulta = $"SELECT * FROM barrios WHERE nombre_barrio = '{txtNombreNuevoBarrio.Text}'";
+
+            BE_Acceso_Datos bd = new BE_Acceso_Datos();
+
+
+            DataTable dt = bd.Ejecutar_Select(consulta);
+
+            if(dt.Rows.Count > 0)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
         }
     }
 }

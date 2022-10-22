@@ -60,9 +60,11 @@ namespace Trabajo_Practico
 
         }
 
+
         /*/
         private void dgr_Principal_CellMouseEnter(object sender, DataGridViewCellEventArgs e)
         {
+
 
 
             
@@ -78,6 +80,7 @@ namespace Trabajo_Practico
 
         }
         /*/
+
 
     }
 }

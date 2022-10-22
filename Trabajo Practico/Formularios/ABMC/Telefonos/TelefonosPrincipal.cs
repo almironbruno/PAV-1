@@ -22,7 +22,15 @@ namespace Trabajo_Practico.Formularios.ABMC.Telefonos
             InitializeComponent();
 
             consultaPrincipal = (@"SELECT * FROM telefonos");
+
+            dataGridViewModificada1.forme = new InfoTelefonos();
+
+            cambiarNombre("Telefono Principal");
         }
+
+
+
+
 
         private void btn_Agregar_Click_1(object sender, EventArgs e)
         {
@@ -72,6 +80,17 @@ namespace Trabajo_Practico.Formularios.ABMC.Telefonos
                 MessageBox.Show("No se eliminara ningun telefono!");              
             }
 
+        }
+
+        private void btn_Buscar_Click_1(object sender, EventArgs e)
+        {
+            ConsultaTelefono vtnConsultaTelefono = new ConsultaTelefono(this);
+            vtnConsultaTelefono.Show();
+        }
+
+        private void TelefonosPrincipal_Activated(object sender, EventArgs e)
+        {
+            dataGridViewModificada1.forme = new InfoTelefonos();
         }
     }
 }
