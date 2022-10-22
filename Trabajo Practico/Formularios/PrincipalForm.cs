@@ -17,6 +17,7 @@ using Trabajo_Practico.Formularios.ABMC.Clientes;
 using Trabajo_Practico.Formularios.ABMC.Localidades;
 using Trabajo_Practico.Formularios.ABMC.Encargos;
 using Trabajo_Practico.Clases.Entidades;
+using Trabajo_Practico.Formularios.Proceso;
 
 namespace Trabajo_Practico.Formularios
 {
@@ -37,8 +38,8 @@ namespace Trabajo_Practico.Formularios
         {
             this.Show();
             //Abre el login
-            LoginForm login = new LoginForm();
-            login.ShowDialog();
+           // LoginForm login = new LoginForm();
+            //login.ShowDialog();
         }
 
         private void empleadosToolStripMenuItem_Click(object sender, EventArgs e)
@@ -127,6 +128,12 @@ namespace Trabajo_Practico.Formularios
         {
             Trabajo_Practico.Formularios.ABMC.Encargos.Encargos ventana = new Trabajo_Practico.Formularios.ABMC.Encargos.Encargos();
             ventana.ShowDialog();
+        }
+
+        private void facturacionToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Venta ventanaVenta = new Venta();
+            ventanaVenta.ShowDialog();
         }
     }
 }
