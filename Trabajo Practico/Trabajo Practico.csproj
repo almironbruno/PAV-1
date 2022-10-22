@@ -1,0 +1,651 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{BD3B2DAC-369F-49CF-B2DB-988BE874CC0D}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Trabajo_Practico</RootNamespace>
+    <AssemblyName>Trabajo Practico</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Clases\BackEnd\BE_Acceso_Datos.cs" />
+    <Compile Include="Clases\BackEnd\NegocioAutos\NE_Autos.cs" />
+    <Compile Include="Clases\BackEnd\NegocioClientes\NE_Clientes.cs" />
+    <Compile Include="Clases\BackEnd\NegocioEmpleados\NE_Empleados.cs" />
+    <Compile Include="Clases\BackEnd\NegocioEncargos\NE_Encargos.cs" />
+    <Compile Include="Clases\BackEnd\NegocioLocalidades\Ne_Localidades.cs" />
+    <Compile Include="Clases\BackEnd\NegocioMarcas\NE_Marcas.cs" />
+    <Compile Include="Clases\BackEnd\NegocioTelefonos\NE_Telefonos.cs" />
+    <Compile Include="Clases\BackEnd\NegocioNombreComercial\NE_NombreComercial.cs" />
+    <Compile Include="Clases\BackEnd\ValidarEmail.cs" />
+    <Compile Include="Clases\BackEnd\NegocioUsuarios\NE_usuarios.cs" />
+    <Compile Include="Clases\Entidades\Clientes.cs" />
+    <Compile Include="Clases\Entidades\Empleados.cs" />
+    <Compile Include="Clases\Entidades\Encargos.cs" />
+    <Compile Include="Clases\Entidades\Localidades.cs" />
+    <Compile Include="Clases\Entidades\Marca.cs" />
+    <Compile Include="Clases\BackEnd\NegocioBarrio\NE_Barrio.cs" />
+    <Compile Include="Clases\BackEnd\NegocioUsuarios\NE_usuarios.cs" />
+    <Compile Include="Clases\Entidades\Barrio.cs" />
+    <Compile Include="Clases\Entidades\Telefono.cs" />
+    <Compile Include="Clases\Entidades\NombresComerciales.cs" />
+    <Compile Include="Clases\Entidades\Vehiculos.cs" />
+    <Compile Include="Clases\Entidades\Usuario.cs" />
+    <Compile Include="ControlesPropios\Buscador.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ControlesPropios\Buscador.Designer.cs">
+      <DependentUpon>Buscador.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ControlesPropios\ComboCargable.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ControlesPropios\ComboCargable.Designer.cs">
+      <DependentUpon>ComboCargable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ControlesPropios\DataGridViewModificada.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ControlesPropios\DataGridViewModificada.Designer.cs">
+      <DependentUpon>DataGridViewModificada.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ControlesPropios\TextBoxCargable.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ControlesPropios\TextBoxCargable.Designer.cs">
+      <DependentUpon>TextBoxCargable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\ABMC\ABMC_Autos\CamposAutos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\ABMC\ABMC_Autos\CamposAutos.Designer.cs">
+      <DependentUpon>CamposAutos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\ABMC\ABMC_Autos\Forms\BajaAutos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\ABMC\ABMC_Autos\Forms\BajaAutos.Designer.cs">
+      <DependentUpon>BajaAutos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\ABMC\ABMC_Clientes\CamposClientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\ABMC\ABMC_Clientes\CamposClientes.Designer.cs">
+      <DependentUpon>CamposClientes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\ABMC\ABMC_Clientes\Forms\BajaClientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\ABMC\ABMC_Clientes\Forms\BajaClientes.Designer.cs">
+      <DependentUpon>BajaClientes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\ABMC\ABMC_Clientes\Forms\ConsultaClientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\ABMC\ABMC_Clientes\Forms\ConsultaClientes.Designer.cs">
+      <DependentUpon>ConsultaClientes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\ABMC\ABMC_Clientes\Forms\InfoClientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\ABMC\ABMC_Clientes\Forms\InfoClientes.Designer.cs">
+      <DependentUpon>InfoClientes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\ABMC\ABMC_Empleados\ABMC_Empleados.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\ABMC\ABMC_Empleados\ABMC_Empleados.Designer.cs">
+      <DependentUpon>ABMC_Empleados.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\ABMC\ABMC_Empleados\CamposEmpleados.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\ABMC\ABMC_Empleados\CamposEmpleados.Designer.cs">
+      <DependentUpon>CamposEmpleados.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\ABMC\ABMC_Empleados\Forms\BajaEmpleado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\ABMC\ABMC_Empleados\Forms\BajaEmpleado.Designer.cs">
+      <DependentUpon>BajaEmpleado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\ABMC\ABMC_Empleados\Forms\Consulta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\ABMC\ABMC_Empleados\Forms\Consulta.Designer.cs">
+      <DependentUpon>Consulta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\ABMC\ABMC_Empleados\Forms\InfoEmpleados.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\ABMC\ABMC_Empleados\Forms\InfoEmpleados.Designer.cs">
+      <DependentUpon>InfoEmpleados.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\ABMC\ABMC_Autos\Forms\AltaAutos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\ABMC\ABMC_Autos\Forms\AltaAutos.Designer.cs">
+      <DependentUpon>AltaAutos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\ABMC\Barrios\AltaBarrio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\ABMC\Barrios\AltaBarrio.Designer.cs">
+      <DependentUpon>AltaBarrio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\ABMC\Barrios\Barrios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\ABMC\Barrios\Barrios.Designer.cs">
+      <DependentUpon>Barrios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\ABMC\Barrios\ConsultaBarrio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\ABMC\Barrios\ConsultaBarrio.Designer.cs">
+      <DependentUpon>ConsultaBarrio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\ABMC\Barrios\InfoBarrios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\ABMC\Barrios\InfoBarrios.Designer.cs">
+      <DependentUpon>InfoBarrios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\ABMC\Barrios\ModificacionBarrio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\ABMC\Barrios\ModificacionBarrio.Designer.cs">
+      <DependentUpon>ModificacionBarrio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\ABMC\ABMC_Autos\Forms\BuscarAuto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\ABMC\ABMC_Autos\Forms\BuscarAuto.Designer.cs">
+      <DependentUpon>BuscarAuto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\ABMC\ABMC_Autos\Forms\InfoAutos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\ABMC\ABMC_Autos\Forms\InfoAutos.Designer.cs">
+      <DependentUpon>InfoAutos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\ABMC\ABMC_Autos\Forms\ModificarAuto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\ABMC\ABMC_Autos\Forms\ModificarAuto.Designer.cs">
+      <DependentUpon>ModificarAuto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\ABMC\ABMC_Clientes\Forms\AltaClientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\ABMC\ABMC_Clientes\Forms\AltaClientes.Designer.cs">
+      <DependentUpon>AltaClientes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\ABMC\ABMC_Clientes\ABMC_Clientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\ABMC\ABMC_Clientes\ABMC_Clientes.Designer.cs">
+      <DependentUpon>ABMC_Clientes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\ABMC\ABMC_Clientes\Forms\ModificacionCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\ABMC\ABMC_Clientes\Forms\ModificacionCliente.Designer.cs">
+      <DependentUpon>ModificacionCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\ABMC\ABMC_Empleados\Forms\AltaEmpleados.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\ABMC\ABMC_Empleados\Forms\AltaEmpleados.Designer.cs">
+      <DependentUpon>AltaEmpleados.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\ABMC\ABMC_Autos\ABMC_Autos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\ABMC\ABMC_Autos\ABMC_Autos.Designer.cs">
+      <DependentUpon>ABMC_Autos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\ABMC\ABMC_Empleados\Forms\ModificacionEmpleados.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\ABMC\ABMC_Empleados\Forms\ModificacionEmpleados.Designer.cs">
+      <DependentUpon>ModificacionEmpleados.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\ABMC\Encargos\AltaEncargos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\ABMC\Encargos\AltaEncargos.Designer.cs">
+      <DependentUpon>AltaEncargos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\ABMC\Encargos\BuscarEncargos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\ABMC\Encargos\BuscarEncargos.Designer.cs">
+      <DependentUpon>BuscarEncargos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\ABMC\Encargos\Encargos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\ABMC\Encargos\Encargos.Designer.cs">
+      <DependentUpon>Encargos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\ABMC\Encargos\ModificarEncargos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\ABMC\Encargos\ModificarEncargos.Designer.cs">
+      <DependentUpon>ModificarEncargos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\ABMC\Localidades\AltaLocalidades.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\ABMC\Localidades\AltaLocalidades.Designer.cs">
+      <DependentUpon>AltaLocalidades.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\ABMC\Localidades\BuscarLocalidades.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\ABMC\Localidades\BuscarLocalidades.Designer.cs">
+      <DependentUpon>BuscarLocalidades.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\ABMC\Localidades\Localidades.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\ABMC\Localidades\Localidades.Designer.cs">
+      <DependentUpon>Localidades.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\ABMC\Localidades\ModificarLocalidad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\ABMC\Localidades\ModificarLocalidad.Designer.cs">
+      <DependentUpon>ModificarLocalidad.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\ABMC\ABMC_Marcas\CamposMarcas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\ABMC\ABMC_Marcas\CamposMarcas.Designer.cs">
+      <DependentUpon>CamposMarcas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\ABMC\ABMC_Marcas\Forms\AltaMarcas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\ABMC\ABMC_Marcas\Forms\AltaMarcas.Designer.cs">
+      <DependentUpon>AltaMarcas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\ABMC\ABMC_Marcas\Forms\BajaMarca.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\ABMC\ABMC_Marcas\Forms\BajaMarca.Designer.cs">
+      <DependentUpon>BajaMarca.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\ABMC\ABMC_Marcas\Forms\BuscarMarca.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\ABMC\ABMC_Marcas\Forms\BuscarMarca.Designer.cs">
+      <DependentUpon>BuscarMarca.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\ABMC\ABMC_Marcas\ABMC_Marcas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\ABMC\ABMC_Marcas\ABMC_Marcas.Designer.cs">
+      <DependentUpon>ABMC_Marcas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\ABMC\ABMC_Marcas\Forms\ModificarMarca.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\ABMC\ABMC_Marcas\Forms\ModificarMarca.Designer.cs">
+      <DependentUpon>ModificarMarca.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\ABMC\Telefonos\AltaTelefono.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\ABMC\Telefonos\AltaTelefono.Designer.cs">
+      <DependentUpon>AltaTelefono.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\ABMC\Telefonos\ConsultaTelefono.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\ABMC\Telefonos\ConsultaTelefono.Designer.cs">
+      <DependentUpon>ConsultaTelefono.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\ABMC\Telefonos\InfoTelefonos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\ABMC\Telefonos\InfoTelefonos.Designer.cs">
+      <DependentUpon>InfoTelefonos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\ABMC\Telefonos\ModificacionTelefono.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\ABMC\Telefonos\ModificacionTelefono.Designer.cs">
+      <DependentUpon>ModificacionTelefono.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\ABMC\Telefonos\TelefonosPrincipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\ABMC\Telefonos\TelefonosPrincipal.Designer.cs">
+      <DependentUpon>TelefonosPrincipal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\ABMC\Usuarios\Usuarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\ABMC\Usuarios\Usuarios.Designer.cs">
+      <DependentUpon>Usuarios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Base\ABMC\FormBaseABMC.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Base\ABMC\FormBaseABMC.Designer.cs">
+      <DependentUpon>FormBaseABMC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Base\ABMC\FormBaseAlta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Base\ABMC\FormBaseAlta.Designer.cs">
+      <DependentUpon>FormBaseAlta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Base\ABMC\FormBaseBaja.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Base\ABMC\FormBaseBaja.Designer.cs">
+      <DependentUpon>FormBaseBaja.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Base\ABMC\FormBaseBotones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Base\ABMC\FormBaseBotones.Designer.cs">
+      <DependentUpon>FormBaseBotones.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Base\ABMC\FormBaseConsulta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Base\ABMC\FormBaseConsulta.Designer.cs">
+      <DependentUpon>FormBaseConsulta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Base\ABMC\FormBaseModificacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Base\ABMC\FormBaseModificacion.Designer.cs">
+      <DependentUpon>FormBaseModificacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Login\LoginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Login\LoginForm.Designer.cs">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\PrincipalForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\PrincipalForm.Designer.cs">
+      <DependentUpon>PrincipalForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Login\NewUsuarioForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Login\NewUsuarioForm.Designer.cs">
+      <DependentUpon>NewUsuarioForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Proceso\Venta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Proceso\Venta.Designer.cs">
+      <DependentUpon>Venta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="ControlesPropios\Buscador.resx">
+      <DependentUpon>Buscador.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ControlesPropios\ComboCargable.resx">
+      <DependentUpon>ComboCargable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ControlesPropios\DataGridViewModificada.resx">
+      <DependentUpon>DataGridViewModificada.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ControlesPropios\TextBoxCargable.resx">
+      <DependentUpon>TextBoxCargable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\ABMC\ABMC_Autos\CamposAutos.resx">
+      <DependentUpon>CamposAutos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\ABMC\ABMC_Autos\Forms\BajaAutos.resx">
+      <DependentUpon>BajaAutos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\ABMC\ABMC_Clientes\CamposClientes.resx">
+      <DependentUpon>CamposClientes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\ABMC\ABMC_Clientes\Forms\BajaClientes.resx">
+      <DependentUpon>BajaClientes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\ABMC\ABMC_Clientes\Forms\ConsultaClientes.resx">
+      <DependentUpon>ConsultaClientes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\ABMC\ABMC_Clientes\Forms\InfoClientes.resx">
+      <DependentUpon>InfoClientes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\ABMC\ABMC_Empleados\ABMC_Empleados.resx">
+      <DependentUpon>ABMC_Empleados.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\ABMC\ABMC_Empleados\CamposEmpleados.resx">
+      <DependentUpon>CamposEmpleados.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\ABMC\ABMC_Empleados\Forms\BajaEmpleado.resx">
+      <DependentUpon>BajaEmpleado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\ABMC\ABMC_Empleados\Forms\Consulta.resx">
+      <DependentUpon>Consulta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\ABMC\ABMC_Empleados\Forms\InfoEmpleados.resx">
+      <DependentUpon>InfoEmpleados.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\ABMC\ABMC_Autos\Forms\AltaAutos.resx">
+      <DependentUpon>AltaAutos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\ABMC\ABMC_Autos\ABMC_Autos.resx">
+      <DependentUpon>ABMC_Autos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\ABMC\ABMC_Autos\Forms\BuscarAuto.resx">
+      <DependentUpon>BuscarAuto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\ABMC\ABMC_Autos\Forms\InfoAutos.resx">
+      <DependentUpon>InfoAutos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\ABMC\ABMC_Autos\Forms\ModificarAuto.resx">
+      <DependentUpon>ModificarAuto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\ABMC\ABMC_Clientes\Forms\AltaClientes.resx">
+      <DependentUpon>AltaClientes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\ABMC\Barrios\ConsultaBarrio.resx">
+      <DependentUpon>ConsultaBarrio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\ABMC\Barrios\InfoBarrios.resx">
+      <DependentUpon>InfoBarrios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\ABMC\Barrios\ModificacionBarrio.resx">
+      <DependentUpon>ModificacionBarrio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\ABMC\Barrios\AltaBarrio.resx">
+      <DependentUpon>AltaBarrio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\ABMC\Barrios\Barrios.resx">
+      <DependentUpon>Barrios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\ABMC\ABMC_Clientes\ABMC_Clientes.resx">
+      <DependentUpon>ABMC_Clientes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\ABMC\ABMC_Clientes\Forms\ModificacionCliente.resx">
+      <DependentUpon>ModificacionCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\ABMC\ABMC_Empleados\Forms\AltaEmpleados.resx">
+      <DependentUpon>AltaEmpleados.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\ABMC\ABMC_Marcas\CamposMarcas.resx">
+      <DependentUpon>CamposMarcas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\ABMC\ABMC_Empleados\Forms\ModificacionEmpleados.resx">
+      <DependentUpon>ModificacionEmpleados.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\ABMC\Encargos\AltaEncargos.resx">
+      <DependentUpon>AltaEncargos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\ABMC\Encargos\BuscarEncargos.resx">
+      <DependentUpon>BuscarEncargos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\ABMC\Encargos\Encargos.resx">
+      <DependentUpon>Encargos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\ABMC\Encargos\ModificarEncargos.resx">
+      <DependentUpon>ModificarEncargos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\ABMC\Localidades\AltaLocalidades.resx">
+      <DependentUpon>AltaLocalidades.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\ABMC\Localidades\BuscarLocalidades.resx">
+      <DependentUpon>BuscarLocalidades.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\ABMC\Localidades\Localidades.resx">
+      <DependentUpon>Localidades.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\ABMC\Localidades\ModificarLocalidad.resx">
+      <DependentUpon>ModificarLocalidad.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\ABMC\ABMC_Marcas\Forms\AltaMarcas.resx">
+      <DependentUpon>AltaMarcas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\ABMC\ABMC_Marcas\Forms\BajaMarca.resx">
+      <DependentUpon>BajaMarca.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\ABMC\ABMC_Marcas\Forms\BuscarMarca.resx">
+      <DependentUpon>BuscarMarca.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\ABMC\ABMC_Marcas\ABMC_Marcas.resx">
+      <DependentUpon>ABMC_Marcas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\ABMC\ABMC_Marcas\Forms\ModificarMarca.resx">
+      <DependentUpon>ModificarMarca.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\ABMC\Telefonos\AltaTelefono.resx">
+      <DependentUpon>AltaTelefono.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\ABMC\Telefonos\ConsultaTelefono.resx">
+      <DependentUpon>ConsultaTelefono.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\ABMC\Telefonos\InfoTelefonos.resx">
+      <DependentUpon>InfoTelefonos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\ABMC\Telefonos\ModificacionTelefono.resx">
+      <DependentUpon>ModificacionTelefono.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\ABMC\Telefonos\TelefonosPrincipal.resx">
+      <DependentUpon>TelefonosPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Base\ABMC\FormBaseABMC.resx">
+      <DependentUpon>FormBaseABMC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Base\ABMC\FormBaseAlta.resx">
+      <DependentUpon>FormBaseAlta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Base\ABMC\FormBaseBaja.resx">
+      <DependentUpon>FormBaseBaja.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Base\ABMC\FormBaseBotones.resx">
+      <DependentUpon>FormBaseBotones.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Base\ABMC\FormBaseConsulta.resx">
+      <DependentUpon>FormBaseConsulta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Base\ABMC\FormBaseModificacion.resx">
+      <DependentUpon>FormBaseModificacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Login\LoginForm.resx">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\PrincipalForm.resx">
+      <DependentUpon>PrincipalForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Login\NewUsuarioForm.resx">
+      <DependentUpon>NewUsuarioForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Proceso\Venta.resx">
+      <DependentUpon>Venta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\211830_telephone_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\9162463_sign_map_location_placeholder_street_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Location.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Orders.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\326700_cart_shopping_icon.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
