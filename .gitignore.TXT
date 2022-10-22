@@ -1,0 +1,2 @@
+Trabajo Pracctico/bin/Debug
+Trabajo Practico/obj/Debug
