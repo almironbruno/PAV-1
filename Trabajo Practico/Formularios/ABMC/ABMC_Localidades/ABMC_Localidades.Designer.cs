@@ -1,6 +1,6 @@
-﻿namespace Trabajo_Practico.Formularios.ABMC.Encargos
+﻿namespace Trabajo_Practico.Formularios.ABMC.ABMC_Localidades
 {
-    partial class Encargos
+    partial class ABMC_Localidades
     {
         /// <summary>
         /// Required designer variable.
@@ -39,27 +39,22 @@
             // 
             this.btn_Actualizar.Click += new System.EventHandler(this.btn_Actualizar_Click_1);
             // 
-            // btn_Eliminar
-            // 
-            this.btn_Eliminar.TabIndex = 3;
-            this.btn_Eliminar.Click += new System.EventHandler(this.btn_Eliminar_Click_1);
-            // 
             // btn_Buscar
             // 
-            this.btn_Buscar.TabIndex = 2;
             this.btn_Buscar.Click += new System.EventHandler(this.btn_Buscar_Click_1);
             // 
-            // Encargos
+            // dataGridViewModificada1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.dataGridViewModificada1.AutoValidate = System.Windows.Forms.AutoValidate.EnablePreventFocusChange;
+            // 
+            // ABMC_Localidades
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1090, 554);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
-            this.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
-            this.MaximizeBox = false;
-            this.MinimizeBox = false;
-            this.Name = "Encargos";
-            this.Text = "Encagos";
+            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Name = "ABMC_Localidades";
+            this.Text = "ABMC_Localidades";
+            this.Load += new System.EventHandler(this.ABMC_Localidades_Load);
             this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();

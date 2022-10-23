@@ -6,6 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Trabajo_Practico.Clases.Entidades;
 
+
 namespace Trabajo_Practico.Clases.BackEnd.NegocioEncargos
 {
     internal class NE_Encargos
@@ -29,12 +30,11 @@ namespace Trabajo_Practico.Clases.BackEnd.NegocioEncargos
             string sqlBuscar = $"SELECT * FROM encargos where tipo_doc_cliente = {tipoDocumento} and nro_doc_cliente = {nroDocumento}";
             return sqlBuscar;
         }
-        public void modificarEncargo(Encargos encargoModificado)
+        public void modificarEncargo(Encargos encargo)
         {
-            string sqlModificar = $"UPDATE encargos SET tipo_doc_cliente = {encargoModificado.tipoDocumento}, nro_doc_cliente = {encargoModificado.nroDocumento}, fecha = CONVERT(DATETIME, '{encargoModificado.fecha}',103), id_nombrecomercial = {encargoModificado.nombreComercial}, legajo_empleado = {encargoModificado.legajoEmpletado}, cod_caracteristica = {encargoModificado.codCaracteristica}, prioridad = {encargoModificado.prioridad} WHERE tipo_doc_cliente = {encargoModificado.tipoDocumento} AND  nro_doc_cliente = {encargoModificado.nroDocumento} ";
+            string sqlModificar = $"UPDATE encargos SET tipo_doc_cliente = {encargo.tipoDocumento}, nro_doc_cliente = {encargo.nroDocumento}, fecha = CONVERT(DATETIME, '{encargo.fecha}', 103), id_nombrecomercial = {encargo.nombreComercial}, legajo_empleado = {encargo.legajoEmpletado}, cod_caracteristica = {encargo.codCaracteristica}, prioridad = {encargo.prioridad} WHERE tipo_doc_cliente = {encargo.tipoDocumento} AND nro_doc_cliente = {encargo.nroDocumento}";
             _BD.ejecutar(sqlModificar);
         }
-
         public void BorrarEncargo(int nro_doc )
         {
             string sqlBorrar = $"DELETE FROM encargos WHERE nro_doc_cliente = {nro_doc}";

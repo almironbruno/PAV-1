@@ -61,7 +61,7 @@ namespace Trabajo_Practico.Formularios.ABMC.Encargos
                             int nombre_comercial = int.Parse(tabla.Rows[0]["id_nombrecomercial"].ToString());
                             int legajo = int.Parse(tabla.Rows[0]["legajo_empleado"].ToString());
                             int cod_caracteristica = int.Parse(tabla.Rows[0]["cod_caracteristica"].ToString());
-                            string prioridad = tabla.Rows[0]["prioridad"].ToString();
+                            int prioridad = int.Parse(tabla.Rows[0]["prioridad"].ToString());
 
 
                             Trabajo_Practico.Clases.Entidades.Encargos nuevoEncargo = new Clases.Entidades.Encargos(tipo_doc_cliente, nro_doc_cliente, fecha, nombre_comercial, legajo, cod_caracteristica, prioridad);

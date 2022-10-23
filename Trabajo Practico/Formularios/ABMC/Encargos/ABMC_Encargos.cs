@@ -11,11 +11,11 @@ using Trabajo_Practico.Clases.BackEnd.NegocioEncargos;
 using Trabajo_Practico.Formularios.Base;
 namespace Trabajo_Practico.Formularios.ABMC.Encargos
 {
-    public partial class Encargos : FormBaseABMC
+    public partial class ABMC_Encargos : FormBaseABMC
     {
-        public Encargos()
+        public ABMC_Encargos()
         {
-            consultaPrincipal = "SELECT t.nombre_tipo_doc, e.nro_doc_cliente, e.fecha, n.nombre_comercial, e.legajo_empleado, e.cod_caracteristica, p.nombre_prioridad from encargos e join tipo_doc_clientes as t on e.tipo_doc_cliente = t.id_doc_cliente join nombres_comerciales as n on e.id_nombrecomercial = n.id_nombrecomercial join prioridades as p on e.prioridad =  p.id_prioridad";
+            consultaPrincipal = "SELECT d.nombre_tipo_doc as 'Tipo Doc.', e.nro_doc_cliente as 'Nro. Doc.', e.fecha as 'Fecha', c.nombre_comercial as 'Nombre Comercial', l.nombre as 'Nombre Empleado', t.nombre_tipo as 'Tipo Característica', p.nombre_prioridad as 'Prioridad'  FROM encargos e \r\njoin tipo_doc_clientes d on e.tipo_doc_cliente = d.id_doc_cliente\r\njoin nombres_comerciales c on e.id_nombrecomercial = c.id_nombrecomercial\r\njoin empleados l on e.legajo_empleado = l.legajo_empleado\r\njoin tipo_caracteristica t on e.cod_caracteristica = t.id_caracteristica\r\njoin prioridades p on e.prioridad = p.id_prioridad";
             InitializeComponent();
             cambiarNombre("Encargos");
         }

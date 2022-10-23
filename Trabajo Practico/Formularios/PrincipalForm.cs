@@ -125,7 +125,7 @@ namespace Trabajo_Practico.Formularios
 
         private void encargosToolStripMenuItem1_Click(object sender, EventArgs e)
         {
-            Trabajo_Practico.Formularios.ABMC.Encargos.Encargos ventana = new Trabajo_Practico.Formularios.ABMC.Encargos.Encargos();
+            Trabajo_Practico.Formularios.ABMC.Encargos.ABMC_Encargos ventana = new Trabajo_Practico.Formularios.ABMC.Encargos.ABMC_Encargos();
             ventana.ShowDialog();
         }
     }
