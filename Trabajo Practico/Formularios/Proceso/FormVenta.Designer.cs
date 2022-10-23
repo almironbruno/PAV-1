@@ -1,6 +1,6 @@
 ﻿namespace Trabajo_Practico.Formularios.Proceso
 {
-    partial class Venta
+    partial class FormVenta
     {
         /// <summary>
         /// Required designer variable.
@@ -35,12 +35,24 @@
             this.lbl_cliente = new System.Windows.Forms.Label();
             this.txt_fecha = new System.Windows.Forms.TextBox();
             this.lbl_fecha = new System.Windows.Forms.Label();
+            this.drg_autos = new System.Windows.Forms.DataGridView();
+            this.lbl_empleado = new System.Windows.Forms.Label();
+            this.btn_Agregar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.errorProviderBase)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.drg_autos)).BeginInit();
             this.SuspendLayout();
+            // 
+            // btn_Aceptar
+            // 
+            this.btn_Aceptar.Location = new System.Drawing.Point(167, 427);
+            // 
+            // btn_Cancelar
+            // 
+            this.btn_Cancelar.Location = new System.Drawing.Point(331, 427);
             // 
             // btn_LimpiarCampos
             // 
-            
+            this.btn_LimpiarCampos.Location = new System.Drawing.Point(482, 427);
             // 
             // lbl_venta
             // 
@@ -56,7 +68,7 @@
             // 
             this.buscador1.Location = new System.Drawing.Point(156, 111);
             this.buscador1.Name = "buscador1";
-            this.buscador1.Size = new System.Drawing.Size(422, 83);
+            this.buscador1.Size = new System.Drawing.Size(248, 38);
             this.buscador1.TabIndex = 18;
             // 
             // txt_nroFactura
@@ -102,11 +114,49 @@
             this.lbl_fecha.TabIndex = 23;
             this.lbl_fecha.Text = "Fecha:";
             // 
+            // drg_autos
+            // 
+            this.drg_autos.AllowUserToAddRows = false;
+            this.drg_autos.AllowUserToDeleteRows = false;
+            this.drg_autos.AllowUserToResizeColumns = false;
+            this.drg_autos.AllowUserToResizeRows = false;
+            this.drg_autos.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.drg_autos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.drg_autos.Location = new System.Drawing.Point(156, 228);
+            this.drg_autos.Name = "drg_autos";
+            this.drg_autos.ReadOnly = true;
+            this.drg_autos.RowHeadersVisible = false;
+            this.drg_autos.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.drg_autos.Size = new System.Drawing.Size(474, 177);
+            this.drg_autos.TabIndex = 24;
+            // 
+            // lbl_empleado
+            // 
+            this.lbl_empleado.AutoSize = true;
+            this.lbl_empleado.Location = new System.Drawing.Point(87, 193);
+            this.lbl_empleado.Name = "lbl_empleado";
+            this.lbl_empleado.Size = new System.Drawing.Size(54, 13);
+            this.lbl_empleado.TabIndex = 25;
+            this.lbl_empleado.Text = "Empleado";
+            // 
+            // btn_Agregar
+            // 
+            this.btn_Agregar.Location = new System.Drawing.Point(568, 151);
+            this.btn_Agregar.Name = "btn_Agregar";
+            this.btn_Agregar.Size = new System.Drawing.Size(82, 34);
+            this.btn_Agregar.TabIndex = 26;
+            this.btn_Agregar.Text = "Agregar Auto";
+            this.btn_Agregar.UseVisualStyleBackColor = true;
+            this.btn_Agregar.Click += new System.EventHandler(this.btn_Agregar_Click);
+            // 
             // Venta
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 422);
+            this.ClientSize = new System.Drawing.Size(901, 490);
+            this.Controls.Add(this.btn_Agregar);
+            this.Controls.Add(this.lbl_empleado);
+            this.Controls.Add(this.drg_autos);
             this.Controls.Add(this.lbl_fecha);
             this.Controls.Add(this.txt_fecha);
             this.Controls.Add(this.lbl_cliente);
@@ -116,6 +166,7 @@
             this.Controls.Add(this.lbl_venta);
             this.Name = "Venta";
             this.Text = "Venta";
+            this.Controls.SetChildIndex(this.btn_Cancelar, 0);
             this.Controls.SetChildIndex(this.btn_Aceptar, 0);
             this.Controls.SetChildIndex(this.btn_LimpiarCampos, 0);
             this.Controls.SetChildIndex(this.lbl_venta, 0);
@@ -125,7 +176,11 @@
             this.Controls.SetChildIndex(this.lbl_cliente, 0);
             this.Controls.SetChildIndex(this.txt_fecha, 0);
             this.Controls.SetChildIndex(this.lbl_fecha, 0);
+            this.Controls.SetChildIndex(this.drg_autos, 0);
+            this.Controls.SetChildIndex(this.lbl_empleado, 0);
+            this.Controls.SetChildIndex(this.btn_Agregar, 0);
             ((System.ComponentModel.ISupportInitialize)(this.errorProviderBase)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.drg_autos)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -140,5 +195,8 @@
         private System.Windows.Forms.Label lbl_cliente;
         private System.Windows.Forms.TextBox txt_fecha;
         private System.Windows.Forms.Label lbl_fecha;
+        private System.Windows.Forms.DataGridView drg_autos;
+        private System.Windows.Forms.Label lbl_empleado;
+        private System.Windows.Forms.Button btn_Agregar;
     }
 }

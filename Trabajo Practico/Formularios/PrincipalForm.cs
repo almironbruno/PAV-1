@@ -132,7 +132,7 @@ namespace Trabajo_Practico.Formularios
 
         private void facturacionToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Venta ventanaVenta = new Venta();
+            FormVenta ventanaVenta = new FormVenta();
             ventanaVenta.ShowDialog();
         }
     }

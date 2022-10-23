@@ -12,9 +12,9 @@ using Trabajo_Practico.Formularios.Base;
 
 namespace Trabajo_Practico.Formularios.Proceso
 {
-    public partial class Venta : FormBaseBotones
+    public partial class FormVenta : FormBaseBotones
     {
-        public Venta()
+        public FormVenta()
         {
             InitializeComponent();
             this.buscador1.tablaConsulta = "clientes";
@@ -32,6 +32,11 @@ namespace Trabajo_Practico.Formularios.Proceso
 
         }
 
-        
+        private void btn_Agregar_Click(object sender, EventArgs e)
+        {
+            AgregarAuto ventana = new AgregarAuto();
+            ventana.Show();
+
+        }
     }
 }
