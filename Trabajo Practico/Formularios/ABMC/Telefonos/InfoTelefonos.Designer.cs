@@ -139,13 +139,13 @@
 
         #endregion
 
-        private System.Windows.Forms.TextBox txtNumTelCliente;
+        protected System.Windows.Forms.TextBox txtNumTelCliente;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox txtNumDocCliente;
-        private System.Windows.Forms.TextBox txtCaracteristica;
-        private System.Windows.Forms.TextBox txtTipoDocCliente;
+        protected System.Windows.Forms.TextBox txtNumDocCliente;
+        protected System.Windows.Forms.TextBox txtCaracteristica;
+        protected System.Windows.Forms.TextBox txtTipoDocCliente;
     }
 }
