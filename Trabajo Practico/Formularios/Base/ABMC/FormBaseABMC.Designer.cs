@@ -53,10 +53,10 @@
             // btn_Agregar
             // 
             this.btn_Agregar.BackColor = System.Drawing.Color.LightGreen;
-            this.btn_Agregar.Location = new System.Drawing.Point(27, 28);
-            this.btn_Agregar.Margin = new System.Windows.Forms.Padding(4);
+            this.btn_Agregar.Location = new System.Drawing.Point(36, 34);
+            this.btn_Agregar.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.btn_Agregar.Name = "btn_Agregar";
-            this.btn_Agregar.Size = new System.Drawing.Size(113, 51);
+            this.btn_Agregar.Size = new System.Drawing.Size(151, 63);
             this.btn_Agregar.TabIndex = 0;
             this.btn_Agregar.Text = "Agregar";
             this.btn_Agregar.UseVisualStyleBackColor = false;
@@ -65,11 +65,10 @@
             // btn_Actualizar
             // 
             this.btn_Actualizar.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.btn_Actualizar.Location = new System.Drawing.Point(27, 113);
-            this.btn_Actualizar.Margin = new System.Windows.Forms.Padding(4);
-
+            this.btn_Actualizar.Location = new System.Drawing.Point(36, 139);
+            this.btn_Actualizar.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.btn_Actualizar.Name = "btn_Actualizar";
-            this.btn_Actualizar.Size = new System.Drawing.Size(113, 51);
+            this.btn_Actualizar.Size = new System.Drawing.Size(151, 63);
             this.btn_Actualizar.TabIndex = 1;
             this.btn_Actualizar.Text = "Actualizar";
             this.btn_Actualizar.UseVisualStyleBackColor = false;
@@ -79,10 +78,10 @@
             // 
             this.btn_Eliminar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.btn_Eliminar.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Eliminar.Location = new System.Drawing.Point(27, 286);
-            this.btn_Eliminar.Margin = new System.Windows.Forms.Padding(4);
+            this.btn_Eliminar.Location = new System.Drawing.Point(36, 352);
+            this.btn_Eliminar.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.btn_Eliminar.Name = "btn_Eliminar";
-            this.btn_Eliminar.Size = new System.Drawing.Size(113, 51);
+            this.btn_Eliminar.Size = new System.Drawing.Size(151, 63);
             this.btn_Eliminar.TabIndex = 2;
             this.btn_Eliminar.Text = "Eliminar";
             this.btn_Eliminar.UseVisualStyleBackColor = false;
@@ -92,7 +91,8 @@
             // 
             this.lbl_titulo.AutoSize = true;
             this.lbl_titulo.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_titulo.Location = new System.Drawing.Point(213, 38);
+            this.lbl_titulo.Location = new System.Drawing.Point(284, 47);
+            this.lbl_titulo.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl_titulo.Name = "lbl_titulo";
             this.lbl_titulo.Size = new System.Drawing.Size(136, 29);
             this.lbl_titulo.TabIndex = 3;
@@ -101,10 +101,10 @@
             // btn_Buscar
             // 
             this.btn_Buscar.BackColor = System.Drawing.Color.Khaki;
-            this.btn_Buscar.Location = new System.Drawing.Point(27, 196);
-            this.btn_Buscar.Margin = new System.Windows.Forms.Padding(4);
+            this.btn_Buscar.Location = new System.Drawing.Point(36, 241);
+            this.btn_Buscar.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.btn_Buscar.Name = "btn_Buscar";
-            this.btn_Buscar.Size = new System.Drawing.Size(113, 51);
+            this.btn_Buscar.Size = new System.Drawing.Size(151, 63);
             this.btn_Buscar.TabIndex = 4;
             this.btn_Buscar.Text = "Buscar";
             this.btn_Buscar.UseVisualStyleBackColor = false;
@@ -121,19 +121,19 @@
             this.panel1.Controls.Add(this.btn_Eliminar);
             this.panel1.Controls.Add(this.btn_Actualizar);
             this.panel1.Controls.Add(this.btn_Agregar);
-            this.panel1.Location = new System.Drawing.Point(812, 102);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4);
+            this.panel1.Location = new System.Drawing.Point(1083, 126);
+            this.panel1.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(192, 306);
+            this.panel1.Size = new System.Drawing.Size(255, 376);
             this.panel1.TabIndex = 5;
             // 
             // pictureBox4
             // 
             this.pictureBox4.Image = global::Trabajo_Practico.Properties.Resources._330399_bad_cancel_clear_close_decline_icon;
-            this.pictureBox4.Location = new System.Drawing.Point(139, 232);
-            this.pictureBox4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox4.Location = new System.Drawing.Point(185, 286);
+            this.pictureBox4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(47, 51);
+            this.pictureBox4.Size = new System.Drawing.Size(63, 63);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.pictureBox4.TabIndex = 8;
             this.pictureBox4.TabStop = false;
@@ -141,10 +141,10 @@
             // pictureBox3
             // 
             this.pictureBox3.Image = global::Trabajo_Practico.Properties.Resources._330396_browse_estimate_explore_explorer_find_icon__1_;
-            this.pictureBox3.Location = new System.Drawing.Point(139, 159);
-            this.pictureBox3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox3.Location = new System.Drawing.Point(185, 196);
+            this.pictureBox3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(47, 51);
+            this.pictureBox3.Size = new System.Drawing.Size(63, 63);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.pictureBox3.TabIndex = 7;
             this.pictureBox3.TabStop = false;
@@ -152,10 +152,10 @@
             // pictureBox2
             // 
             this.pictureBox2.Image = global::Trabajo_Practico.Properties.Resources._330400_arrows_connection_move_replication_transfer_icon;
-            this.pictureBox2.Location = new System.Drawing.Point(139, 92);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox2.Location = new System.Drawing.Point(185, 113);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(47, 51);
+            this.pictureBox2.Size = new System.Drawing.Size(63, 63);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.pictureBox2.TabIndex = 6;
             this.pictureBox2.TabStop = false;
@@ -163,10 +163,10 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = global::Trabajo_Practico.Properties.Resources._330397_accept_active_agree_approved_check_icon;
-            this.pictureBox1.Location = new System.Drawing.Point(139, 23);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox1.Location = new System.Drawing.Point(185, 28);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(47, 51);
+            this.pictureBox1.Size = new System.Drawing.Size(63, 63);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.pictureBox1.TabIndex = 5;
             this.pictureBox1.TabStop = false;
@@ -174,11 +174,10 @@
             // lbl_advertencia
             // 
             this.lbl_advertencia.AutoSize = true;
-            this.lbl_advertencia.Location = new System.Drawing.Point(71, 482);
-            this.lbl_advertencia.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbl_advertencia.Location = new System.Drawing.Point(95, 593);
+            this.lbl_advertencia.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.lbl_advertencia.Name = "lbl_advertencia";
             this.lbl_advertencia.Size = new System.Drawing.Size(291, 16);
-
             this.lbl_advertencia.TabIndex = 7;
             this.lbl_advertencia.Text = "Debe seleccionar uno para eliminar o actualizar";
             this.lbl_advertencia.Click += new System.EventHandler(this.lbl_advertencia_Click);
@@ -186,38 +185,34 @@
             // lbl_Cantidad
             // 
             this.lbl_Cantidad.AutoSize = true;
-
-            this.lbl_Cantidad.Location = new System.Drawing.Point(689, 484);
+            this.lbl_Cantidad.Location = new System.Drawing.Point(919, 596);
+            this.lbl_Cantidad.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl_Cantidad.Name = "lbl_Cantidad";
             this.lbl_Cantidad.Size = new System.Drawing.Size(64, 16);
-
             this.lbl_Cantidad.TabIndex = 9;
             this.lbl_Cantidad.Text = "Cantidad:";
             // 
             // dataGridViewModificada1
             // 
-            this.dataGridViewModificada1.Location = new System.Drawing.Point(75, 102);
-            this.dataGridViewModificada1.Margin = new System.Windows.Forms.Padding(5);
+            this.dataGridViewModificada1.Location = new System.Drawing.Point(100, 126);
+            this.dataGridViewModificada1.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
             this.dataGridViewModificada1.Name = "dataGridViewModificada1";
-            this.dataGridViewModificada1.Size = new System.Drawing.Size(728, 377);
-
+            this.dataGridViewModificada1.Size = new System.Drawing.Size(971, 464);
             this.dataGridViewModificada1.TabIndex = 8;
+            this.dataGridViewModificada1.Load += new System.EventHandler(this.dataGridViewModificada1_Load);
             // 
             // FormBaseABMC
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-
-            this.ClientSize = new System.Drawing.Size(1090, 554);
-
+            this.ClientSize = new System.Drawing.Size(1453, 682);
             this.Controls.Add(this.lbl_Cantidad);
             this.Controls.Add(this.dataGridViewModificada1);
             this.Controls.Add(this.lbl_advertencia);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.lbl_titulo);
-
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(4);
+            this.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.Name = "FormBaseABMC";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormBaseAMBC";
