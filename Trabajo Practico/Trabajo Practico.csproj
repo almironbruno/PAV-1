@@ -71,6 +71,7 @@
     <Compile Include="Clases\Entidades\NombresComerciales.cs" />
     <Compile Include="Clases\Entidades\Vehiculos.cs" />
     <Compile Include="Clases\Entidades\Usuario.cs" />
+    <Compile Include="Clases\Entidades\Venta.cs" />
     <Compile Include="ControlesPropios\Buscador.cs">
       <SubType>UserControl</SubType>
     </Compile>

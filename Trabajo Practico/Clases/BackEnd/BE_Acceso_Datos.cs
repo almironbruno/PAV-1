@@ -142,6 +142,7 @@ namespace Trabajo_Practico.Clases.BackEnd
                 MessageBox.Show("Ha ocurrido un error! Intentelo nuevamente");
             }
             desconectar();
+            
             if(numero > 0)
             {
                 return numero;
