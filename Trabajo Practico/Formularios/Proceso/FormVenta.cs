@@ -24,12 +24,10 @@ namespace Trabajo_Practico.Formularios.Proceso
             buscador1.columna = "nombre";
             txt_fecha.Text = DateTime.Now.ToShortDateString();
 
-<<<<<<< HEAD
             txt_legajo.Text = legajo;
-=======
             txtMontoTotal.Text = 0.ToString();
 
->>>>>>> 337ea8265cb584fcaf96451b3b9e91fbb3e83ff0
+
             cmbMarca.cargarAlmacenado("GetNombres", "nombre", "id_marca");
             cmbModelo.cargarAlmacenado("GetNombresComerciales", "nombre_comercial", "id_nombrecomercial");
             cmbCondicion.cargarAlmacenado("GetCondiciones", "nombre_condicion", "id_condicion");
@@ -123,10 +121,9 @@ namespace Trabajo_Practico.Formularios.Proceso
                                     dgr_autos.SelectedRows[0].Cells[3].Value,
                                     dgr_autos.SelectedRows[0].Cells[6].Value);
 
-<<<<<<< HEAD
-=======
+
             SumEachRows();
->>>>>>> 337ea8265cb584fcaf96451b3b9e91fbb3e83ff0
+
 
         }
 
