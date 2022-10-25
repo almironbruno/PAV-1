@@ -14,7 +14,7 @@ namespace Trabajo_Practico.Formularios.Proceso
 {
     public partial class FormVenta : FormBaseBotones
     {
-        public FormVenta()
+        public FormVenta(DataTable tabla)
         {
             InitializeComponent();
             this.buscador1.tablaConsulta = "clientes";

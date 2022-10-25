@@ -49,24 +49,26 @@
             this.dgr_Principal.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dgr_Principal.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgr_Principal.Location = new System.Drawing.Point(0, 0);
+            this.dgr_Principal.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dgr_Principal.MultiSelect = false;
             this.dgr_Principal.Name = "dgr_Principal";
             this.dgr_Principal.ReadOnly = true;
             this.dgr_Principal.RowHeadersVisible = false;
             this.dgr_Principal.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgr_Principal.Size = new System.Drawing.Size(540, 306);
+            this.dgr_Principal.Size = new System.Drawing.Size(720, 377);
             this.dgr_Principal.TabIndex = 0;
             this.dgr_Principal.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgr_Principal_CellClick);
+            this.dgr_Principal.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgr_Principal_CellContentClick);
             this.dgr_Principal.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgr_Principal_CellDoubleClick);
-            //this.dgr_Principal.CellMouseEnter += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgr_Principal_CellMouseEnter);
             // 
             // DataGridViewModificada
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.dgr_Principal);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "DataGridViewModificada";
-            this.Size = new System.Drawing.Size(549, 306);
+            this.Size = new System.Drawing.Size(732, 377);
             ((System.ComponentModel.ISupportInitialize)(this.dgr_Principal)).EndInit();
             this.ResumeLayout(false);
 

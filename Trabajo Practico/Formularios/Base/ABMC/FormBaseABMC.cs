@@ -91,5 +91,10 @@ namespace Trabajo_Practico.Formularios
             dataGridViewModificada1.cargar(bd.Ejecutar_Select(consultaPrincipal));
             lbl_Cantidad.Text = "Cantidad: " + dataGridViewModificada1.dgr_Principal.Rows.Count;
         }
+
+        private void dataGridViewModificada1_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

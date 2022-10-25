@@ -54,6 +54,7 @@
     <Compile Include="Clases\BackEnd\NegocioEncargos\NE_Encargos.cs" />
     <Compile Include="Clases\BackEnd\NegocioLocalidades\Ne_Localidades.cs" />
     <Compile Include="Clases\BackEnd\NegocioMarcas\NE_Marcas.cs" />
+    <Compile Include="Clases\BackEnd\NegocioProceso\NE_Proceso.cs" />
     <Compile Include="Clases\BackEnd\NegocioTelefonos\NE_Telefonos.cs" />
     <Compile Include="Clases\BackEnd\NegocioNombreComercial\NE_NombreComercial.cs" />
     <Compile Include="Clases\BackEnd\ValidarEmail.cs" />
