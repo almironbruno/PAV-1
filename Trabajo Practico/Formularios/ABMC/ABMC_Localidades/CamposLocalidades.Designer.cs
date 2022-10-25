@@ -36,7 +36,7 @@
             // txtNombreLocalidad
             // 
             this.txtNombreLocalidad.HidePromptOnLeave = true;
-            this.txtNombreLocalidad.Location = new System.Drawing.Point(341, 163);
+            this.txtNombreLocalidad.Location = new System.Drawing.Point(361, 167);
             this.txtNombreLocalidad.Mask = "LLLLLLLLLLLLLLLLLLLLLLLLLLLLLLL";
             this.txtNombreLocalidad.Name = "txtNombreLocalidad";
             this.txtNombreLocalidad.Size = new System.Drawing.Size(173, 20);
@@ -46,7 +46,7 @@
             // 
             this.lblNombreLocalidad.AutoSize = true;
             this.lblNombreLocalidad.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNombreLocalidad.Location = new System.Drawing.Point(197, 163);
+            this.lblNombreLocalidad.Location = new System.Drawing.Point(217, 167);
             this.lblNombreLocalidad.Name = "lblNombreLocalidad";
             this.lblNombreLocalidad.Size = new System.Drawing.Size(138, 17);
             this.lblNombreLocalidad.TabIndex = 21;

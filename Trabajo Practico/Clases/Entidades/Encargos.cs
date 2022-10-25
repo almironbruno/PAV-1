@@ -28,6 +28,11 @@ namespace Trabajo_Practico.Clases.Entidades
             this.codCaracteristica = codCaracteristica;
             this.prioridad = prioridad;
         }
+        public Encargos(int _tipoDocumento, int _nroDocumento)
+        {
+            tipoDocumento = _tipoDocumento;
+            nroDocumento = _nroDocumento;
+        }
 
         public string toString()
         {

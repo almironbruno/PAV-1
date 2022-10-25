@@ -28,7 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label8 = new System.Windows.Forms.Label();
+            this.txtNombreLocalidad = new System.Windows.Forms.MaskedTextBox();
+            this.lblNombreLocalidad = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.errorProviderBase)).BeginInit();
             this.SuspendLayout();
             // 
@@ -36,28 +37,41 @@
             // 
             this.btn_Aceptar.Click += new System.EventHandler(this.btn_Aceptar_Click);
             // 
-            // label8
+            // txtNombreLocalidad
             // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.label8.Location = new System.Drawing.Point(277, 88);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(162, 25);
-            this.label8.TabIndex = 23;
-            this.label8.Text = "Buscar Localidad";
+            this.txtNombreLocalidad.HidePromptOnLeave = true;
+            this.txtNombreLocalidad.Location = new System.Drawing.Point(356, 175);
+            this.txtNombreLocalidad.Mask = "LLLLLLLLLLLLLLLLLLLLLLLLLLLLLLL";
+            this.txtNombreLocalidad.Name = "txtNombreLocalidad";
+            this.txtNombreLocalidad.Size = new System.Drawing.Size(173, 20);
+            this.txtNombreLocalidad.TabIndex = 22;
+            // 
+            // lblNombreLocalidad
+            // 
+            this.lblNombreLocalidad.AutoSize = true;
+            this.lblNombreLocalidad.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNombreLocalidad.Location = new System.Drawing.Point(212, 175);
+            this.lblNombreLocalidad.Name = "lblNombreLocalidad";
+            this.lblNombreLocalidad.Size = new System.Drawing.Size(138, 17);
+            this.lblNombreLocalidad.TabIndex = 23;
+            this.lblNombreLocalidad.Text = "Nombre de localidad";
             // 
             // BuscarLocalidades
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.label8);
+            this.Controls.Add(this.txtNombreLocalidad);
+            this.Controls.Add(this.lblNombreLocalidad);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "BuscarLocalidades";
-            this.Text = "BuscarLocalidades";
+            this.Text = "Buscar Localidad";
             this.Controls.SetChildIndex(this.btn_Aceptar, 0);
             this.Controls.SetChildIndex(this.btn_LimpiarCampos, 0);
-            this.Controls.SetChildIndex(this.label8, 0);
+            this.Controls.SetChildIndex(this.lblNombreLocalidad, 0);
+            this.Controls.SetChildIndex(this.txtNombreLocalidad, 0);
             ((System.ComponentModel.ISupportInitialize)(this.errorProviderBase)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -66,6 +80,7 @@
 
         #endregion
 
-        public System.Windows.Forms.Label label8;
+        protected System.Windows.Forms.MaskedTextBox txtNombreLocalidad;
+        protected System.Windows.Forms.Label lblNombreLocalidad;
     }
 }

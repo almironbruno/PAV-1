@@ -29,7 +29,7 @@ namespace Trabajo_Practico.Formularios.ABMC.ABMC_Localidades.Forms
                     string nombreLocalidad = txtNombreLocalidad.Text;
 
                     Trabajo_Practico.Clases.Entidades.Localidades nuevaLocalidad = new Trabajo_Practico.Clases.Entidades.Localidades(nombreLocalidad);
-                    MessageBox.Show(nuevaLocalidad.toString());
+                    //MessageBox.Show(nuevaLocalidad.toString());
 
                     NE_Localidades localidad = new NE_Localidades();
 

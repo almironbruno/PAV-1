@@ -28,10 +28,38 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.panel1.SuspendLayout();
+            this.SuspendLayout();
+            // 
+            // btn_Agregar
+            // 
+            this.btn_Agregar.Click += new System.EventHandler(this.btn_Agregar_Click_1);
+            // 
+            // btn_Actualizar
+            // 
+            this.btn_Actualizar.Click += new System.EventHandler(this.btn_Actualizar_Click_1);
+            // 
+            // btn_Eliminar
+            // 
+            this.btn_Eliminar.Click += new System.EventHandler(this.btn_Eliminar_Click_1);
+            // 
+            // btn_Buscar
+            // 
+            this.btn_Buscar.Click += new System.EventHandler(this.btn_Buscar_Click_1);
+            // 
+            // ABMC_Encargos
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "ABMC_Encargos";
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Name = "ABMC_Encargos";
+            this.Text = "Encargos";
+            this.Activated += new System.EventHandler(this.ABMC_Encargos_Activated_1);
+            this.panel1.ResumeLayout(false);
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
         }
 
         #endregion

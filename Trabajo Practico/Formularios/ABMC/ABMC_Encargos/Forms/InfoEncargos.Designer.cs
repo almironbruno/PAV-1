@@ -28,10 +28,23 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProviderBase)).BeginInit();
+            this.SuspendLayout();
+            // 
+            // InfoEncargos
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "InfoEncargos";
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
+            this.Name = "InfoEncargos";
+            this.Text = "Información de Encargo";
+            ((System.ComponentModel.ISupportInitialize)(this.errorProviderBase)).EndInit();
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
         }
 
         #endregion

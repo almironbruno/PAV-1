@@ -53,8 +53,13 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.label8);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "AltaLocalidades";
-            this.Text = "AltaLocalidades";
+            this.Text = "Agregar Localidad";
+            this.Controls.SetChildIndex(this.lblNombreLocalidad, 0);
+            this.Controls.SetChildIndex(this.txtNombreLocalidad, 0);
             this.Controls.SetChildIndex(this.btn_Aceptar, 0);
             this.Controls.SetChildIndex(this.btn_LimpiarCampos, 0);
             this.Controls.SetChildIndex(this.label8, 0);

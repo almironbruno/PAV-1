@@ -14,8 +14,8 @@ using Trabajo_Practico.Formularios.ABMC.Barrios;
 using Trabajo_Practico.Formularios.ABMC.Marcas;
 using Trabajo_Practico.Formularios.ABMC.Telefonos;
 using Trabajo_Practico.Formularios.ABMC.Clientes;
-using Trabajo_Practico.Formularios.ABMC.Localidades;
-using Trabajo_Practico.Formularios.ABMC.Encargos;
+using Trabajo_Practico.Formularios.ABMC.ABMC_Encargos;
+using Trabajo_Practico.Formularios.ABMC.ABMC_Localidades;
 using Trabajo_Practico.Clases.Entidades;
 
 namespace Trabajo_Practico.Formularios
@@ -97,8 +97,10 @@ namespace Trabajo_Practico.Formularios
 
         private void localidadesToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Trabajo_Practico.Formularios.ABMC.Localidades.Localidades ventana = new Trabajo_Practico.Formularios.ABMC.Localidades.Localidades();
-            ventana.ShowDialog();
+            // Llammos a la clase ABMC_Localidades para poder realizar las distintas peticiones.
+            ABMC_Localidades ventanaLocalidad = new ABMC_Localidades();
+            ventanaLocalidad.ShowDialog();
+            
         }
 
         private void reportesToolStripMenuItem_Click(object sender, EventArgs e)
@@ -125,8 +127,8 @@ namespace Trabajo_Practico.Formularios
 
         private void encargosToolStripMenuItem1_Click(object sender, EventArgs e)
         {
-            Trabajo_Practico.Formularios.ABMC.Encargos.ABMC_Encargos ventana = new Trabajo_Practico.Formularios.ABMC.Encargos.ABMC_Encargos();
-            ventana.ShowDialog();
+            ABMC_Encargos ventanaEncargo = new ABMC_Encargos();
+            ventanaEncargo.ShowDialog();
         }
     }
 }

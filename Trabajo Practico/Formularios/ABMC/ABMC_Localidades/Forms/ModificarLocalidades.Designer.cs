@@ -43,9 +43,9 @@
             this.label8.ForeColor = System.Drawing.SystemColors.MenuHighlight;
             this.label8.Location = new System.Drawing.Point(274, 52);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(180, 25);
+            this.label8.Size = new System.Drawing.Size(187, 25);
             this.label8.TabIndex = 33;
-            this.label8.Text = "Modificar Localidad";
+            this.label8.Text = "Actualizar Localidad";
             // 
             // ModificarLocalidades
             // 
@@ -53,8 +53,12 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.label8);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "ModificarLocalidades";
-            this.Text = "ModificarLocalidades";
+            this.Text = "Actualizar Localidad";
+            this.Controls.SetChildIndex(this.lblNombreLocalidad, 0);
+            this.Controls.SetChildIndex(this.txtNombreLocalidad, 0);
             this.Controls.SetChildIndex(this.btn_Aceptar, 0);
             this.Controls.SetChildIndex(this.btn_LimpiarCampos, 0);
             this.Controls.SetChildIndex(this.label8, 0);

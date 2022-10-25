@@ -73,7 +73,7 @@ namespace Trabajo_Practico.Formularios.ABMC.ABMC_Clientes
                     
 
             }
-            catch (Exception ex)
+            catch (Exception)
             {
                 //Deshabilita el boton Aceptar
                 btn_Aceptar.Enabled = false;

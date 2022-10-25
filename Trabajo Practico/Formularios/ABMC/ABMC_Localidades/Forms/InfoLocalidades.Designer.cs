@@ -28,10 +28,23 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProviderBase)).BeginInit();
+            this.SuspendLayout();
+            // 
+            // InfoLocalidades
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "InfoLocalidades";
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
+            this.Name = "InfoLocalidades";
+            this.Text = "Información de Localidad";
+            ((System.ComponentModel.ISupportInitialize)(this.errorProviderBase)).EndInit();
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
         }
 
         #endregion

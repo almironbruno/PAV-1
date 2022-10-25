@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Trabajo_Practico.Formularios.Base;
+using Trabajo_Practico.Clases.Entidades;
 
 namespace Trabajo_Practico.Formularios.ABMC.ABMC_Localidades
 {
@@ -17,6 +18,10 @@ namespace Trabajo_Practico.Formularios.ABMC.ABMC_Localidades
         {
             InitializeComponent();
             txtNombreLocalidad.HidePromptOnLeave = true;
-        }        
+        }
+        protected void cargarCampos(Localidades localidad)
+        {
+            txtNombreLocalidad.Text = localidad.nombreLocalidad;
+        }
     }
 }

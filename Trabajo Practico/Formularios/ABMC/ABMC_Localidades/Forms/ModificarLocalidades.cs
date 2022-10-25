@@ -18,7 +18,7 @@ namespace Trabajo_Practico.Formularios.ABMC.ABMC_Localidades.Forms
         string nomLocalidad;
 
         public ModificarLocalidades(Trabajo_Practico.Clases.Entidades.Localidades localidadModificado)
-        {
+        {            
             localidadMod = localidadModificado;
             nomLocalidad = localidadModificado.nombreLocalidad;
             InitializeComponent();

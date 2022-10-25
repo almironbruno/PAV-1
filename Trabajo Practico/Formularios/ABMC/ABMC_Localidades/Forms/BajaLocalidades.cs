@@ -8,36 +8,38 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Trabajo_Practico.Clases.BackEnd.NegocioLocalidades;
+using Trabajo_Practico.Clases.Entidades;
 
 namespace Trabajo_Practico.Formularios.ABMC.ABMC_Localidades.Forms
 {
     public partial class BajaLocalidades : CamposLocalidades
-    {
-        string nomLocalidad;
-        public BajaLocalidades(Trabajo_Practico.Clases.Entidades.Localidades localidad)
+    {        
+        public BajaLocalidades(DataGridViewRow row)
         {
-            nomLocalidad = localidad.nombreLocalidad;
+            // Deshabilita el campo nombre de localidad.
+            txtNombreLocalidad.ReadOnly = true;
+
+            // Toma el valor que contiene la grilla.
+            string nomLocalidad = row.Cells[1].Value.ToString();
+
+            Localidades localidad = new Localidades(nomLocalidad);
+
+            cargarCampos(localidad);
+            //nomLocalidad = localidad.nombreLocalidad;
             InitializeComponent();
-            txtNombreLocalidad.Text = localidad.nombreLocalidad;
-            txtNombreLocalidad.Enabled = false;
+            //txtNombreLocalidad.Text = localidad.nombreLocalidad;
+            //txtNombreLocalidad.Enabled = false;
         }
 
         private void btn_Aceptar_Click(object sender, EventArgs e)
         {
-            try
+            DialogResult resultado = MessageBox.Show("¿ Desea eliminar esta localidad del sistema ?", "Eliminar Localidad", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
+            if(resultado == DialogResult.OK)
             {
-                DialogResult dialogResult = MessageBox.Show("¿Seguro que desea eliminar esta localidad ?", "Confirmación", MessageBoxButtons.YesNo);
-                if (dialogResult == DialogResult.Yes)
-                {
-                    NE_Localidades negoLocalidad = new NE_Localidades();
-                    negoLocalidad.borrarLocalidad(nomLocalidad);
-                    this.Close();
-                }
-            }
-            catch (Exception)
-            {
-                MessageBox.Show("Ha ocurrido un problema", "Mensaje");
-            }
+                NE_Localidades localidadBorrar = new NE_Localidades();
+                localidadBorrar.borrarLocalidad(txtNombreLocalidad.Text);
+                this.Close();
+            }                                  
         }
     }
 }
