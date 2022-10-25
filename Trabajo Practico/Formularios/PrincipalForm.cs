@@ -133,8 +133,8 @@ namespace Trabajo_Practico.Formularios
         private void facturacionToolStripMenuItem_Click(object sender, EventArgs e)
         {
             //Vacia para que el form arranque
-            DataTable dt = new DataTable();
-            FormVenta ventanaVenta = new FormVenta(dt);
+            DataGridView dtg = new DataGridView();
+            FormVenta ventanaVenta = new FormVenta(dtg);
             ventanaVenta.ShowDialog();
         }
     }
