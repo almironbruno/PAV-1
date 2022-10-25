@@ -134,6 +134,7 @@
             this.dgr_autos.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgr_autos.Size = new System.Drawing.Size(805, 190);
             this.dgr_autos.TabIndex = 29;
+            this.dgr_autos.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgr_autos_CellDoubleClick);
             // 
             // btn_agregar
             // 

@@ -77,11 +77,22 @@ namespace Trabajo_Practico.Formularios.Proceso
         }
 
         private void btn_Aceptar_Click(object sender, EventArgs e)
-        {
+        { //Aca se supone que debeira poderse enviar los datos al form ventas
             if (dgr_autos.Rows.Count > 0)
             {
                 DataTable tabla = dgr_autos.DataSource as DataTable;
+                
+                
+            }
+        }
 
+        private void dgr_autos_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.RowIndex > -1)
+            {
+                int idfila = e.RowIndex;
+            }
+               
                 
             }
         }
