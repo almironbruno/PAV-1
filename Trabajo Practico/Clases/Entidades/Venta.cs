@@ -13,8 +13,8 @@ namespace Trabajo_Practico.Clases.Entidades
         public int num_dni { get; set; }
         public string fecha { get; set; }
         public int tipo_doc { get; set; }
+        public int nro_factura { get; set; }
 
-   
         public Venta(int legajo, int num_dni, string fecha, int tipo_doc)
         {
             this.legajo = legajo;

@@ -71,7 +71,7 @@ namespace Trabajo_Practico.Clases.BackEnd.NegocioProceso
                 SqlCommand cmd = new SqlCommand();
 
 
-                string consulta = "INSERT INTO ventas values (@tipo_doc, @nro_doc, @fecha)";
+                string consulta = "INSERT INTO ventas(tipo_doc_cliente,nro_doc_cliente,fecha) values (@tipo_doc, @nro_doc, @fecha)";
 
                 cmd.Parameters.Clear();
 
@@ -99,20 +99,21 @@ namespace Trabajo_Practico.Clases.BackEnd.NegocioProceso
                 //Devuelve valor numerico casteando a Int
                 cmd.ExecuteNonQuery();
 
-                
+
 
                 foreach (var codSerie in ListaSerie)
                 {
                     BE_Acceso_Datos bd = new BE_Acceso_Datos();
                     DataTable tabla = new DataTable();
-                    tabla = bd.Ejecutar_Select("SELECT monto FROM autos WHERE autos.cod_serie_fabrica like '"+codSerie+"'");
+                    tabla = bd.Ejecutar_Select("SELECT monto FROM autos WHERE autos.cod_serie_fabrica like '" + codSerie + "'");
 
 
 
-                    string consultaAutoPorFactura = "INSERT INTO detalle_ventas (cod_serie_fabrica, monto) values (@cod_serie, @monto)";
+                    string consultaAutoPorFactura = "INSERT INTO detalle_ventas (nro_factura,cod_serie_fabrica, monto) values (@nro_factura,@cod_serie, @monto)";
 
                     cmd.Parameters.Clear();
-                    cmd.Parameters.AddWithValue("@monto", tabla.Rows[0]["monto"]);
+                    cmd.Parameters.AddWithValue("@nro_factura", vta.nro_factura);
+                    cmd.Parameters.AddWithValue("@monto", tabla.Rows[0]["monto"].ToString());
                     cmd.Parameters.AddWithValue("@cod_serie", codSerie);
 
 

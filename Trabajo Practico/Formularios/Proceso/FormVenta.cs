@@ -31,7 +31,7 @@ namespace Trabajo_Practico.Formularios.Proceso
             cmbAño.cargarAlmacenado("GetAnoFabricacion", "año_fabricacion", "año_fabricacion");
             BE_Acceso_Datos bd = new BE_Acceso_Datos();
             
-            DataTable dt = bd.Ejecutar_Select("select IDENT_CURRENT('ventas') + 1 as 'venta'"); 
+            DataTable dt = bd.Ejecutar_Select("select IDENT_CURRENT('ventas') +1 as 'venta'"); 
 
  
 
@@ -127,7 +127,7 @@ namespace Trabajo_Practico.Formularios.Proceso
             vta.fecha = txt_fecha.Text;
             vta.num_dni = 33232;
             vta.tipo_doc = 1;
-            
+            vta.nro_factura = int.Parse(txt_nroFactura.Text);
 
             List<string> lista = new List<string>();
             for (int i = 0; i < dgr_factura.Rows.Count; i++)
