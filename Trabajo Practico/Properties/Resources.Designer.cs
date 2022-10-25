@@ -173,6 +173,16 @@ namespace Trabajo_Practico.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _4192087_address_billing_delivery_invoice_location_icon {
+            get {
+                object obj = ResourceManager.GetObject("4192087_address_billing_delivery_invoice_location_icon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap _4308153_chart_data_employee_graph_manager_icon {
             get {
                 object obj = ResourceManager.GetObject("4308153_chart_data_employee_graph_manager_icon", resourceCulture);

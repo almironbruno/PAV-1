@@ -23,6 +23,7 @@ namespace Trabajo_Practico.Formularios.Proceso
             buscador1.columna = "nombre";
             txt_fecha.Text = DateTime.Now.ToShortDateString();
 
+            txtMontoTotal.Text = 0.ToString();
 
             cmbMarca.cargarAlmacenado("GetNombres", "nombre", "id_marca");
             cmbModelo.cargarAlmacenado("GetNombresComerciales", "nombre_comercial", "id_nombrecomercial");
@@ -117,15 +118,19 @@ namespace Trabajo_Practico.Formularios.Proceso
                                     dgr_autos.SelectedRows[0].Cells[3].Value,
                                     dgr_autos.SelectedRows[0].Cells[6].Value);
 
+            SumEachRows();
+
         }
 
         private void dgr_factura_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
+            //Aca agarrar el valor del monto de la celda a eliminar, y restarselo al txtMontoTotal.
 
+            decimal monto = decimal.Parse(dgr_factura.SelectedRows[0].Cells[6].Value.ToString());
             dgr_factura.Rows.Remove(dgr_factura.CurrentRow);
-            //For Each r As DataGridViewRow In DataGridViewRow1.SelectedRows
-            //DataGridViewRow1.Rows.Remove(r)
-            //Next//
+            SumEachRows();
+
+         
         }
 
         private void btn_Aceptar_Click(object sender, EventArgs e)
@@ -146,26 +151,51 @@ namespace Trabajo_Practico.Formularios.Proceso
                 lista.Add(agregar);
             }
 
+            //Para probar que se reciban bien los items
+            /*/
             foreach (var item in lista)
             {
                 MessageBox.Show(item);
             }
+            /*/
+
 
             NE_Proceso nP = new NE_Proceso();
             bool rta = nP.Venta(vta, lista);
             
             if (rta)
             {
-                MessageBox.Show("Funciona");
+                MessageBox.Show("Transaccion Exitosa");
             }
             else
             {
-                MessageBox.Show("No funciona");
+                MessageBox.Show("Fallo en la Transaccion");
             }
 
 
 
         }
+
+        //Sumar monto total
+        private void SumEachRows()
+        {
+            decimal total = 0;
+            if (dgr_factura.Rows.Count > 0)
+            {
+                foreach (DataGridViewRow row in dgr_factura.Rows)
+                {
+                    total += Convert.ToDecimal(row.Cells[6].Value);
+                    
+                }
+                txtMontoTotal.Text = Convert.ToString(total);
+            }
+            else
+            {
+                txtMontoTotal.Text = Convert.ToString(0);
+            }
+        }
+
+        
 
         private void buscador1_Load(object sender, EventArgs e)
         {

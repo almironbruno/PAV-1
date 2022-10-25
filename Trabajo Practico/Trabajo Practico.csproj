@@ -667,5 +667,8 @@
   <ItemGroup>
     <None Include="Resources\326700_cart_shopping_icon.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\4192087_address_billing_delivery_invoice_location_icon.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

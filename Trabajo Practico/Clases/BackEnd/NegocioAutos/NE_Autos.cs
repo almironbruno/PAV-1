@@ -98,6 +98,12 @@ namespace Trabajo_Practico.Clases.BackEnd.NegocioAutos
             _BD.Eliminar(sqlBorrar);
         }
 
+        public void BorrarAutoCodSerie(string codSerie)
+        {
+            string sqlBorrar = "DELETE FROM autos WHERE cod_serie_fabrica = '" + codSerie + "'";
+            _BD.Eliminar(sqlBorrar);
+        }
+
 
 
         //Relacionar el auto modificado , con algun dato que sirva como antecedente para vincularlo, en este caso la patente vieja.

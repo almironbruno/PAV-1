@@ -48,7 +48,6 @@
             this.btnBuscar = new System.Windows.Forms.Button();
             this.cmbAño = new Trabajo_Practico.ControlesPropios.ComboCargable();
             this.dgr_autos = new System.Windows.Forms.DataGridView();
-            this.dgr_factura = new System.Windows.Forms.DataGridView();
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Codigo_Serie = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Año = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -56,6 +55,7 @@
             this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Monto = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgr_factura = new System.Windows.Forms.DataGridView();
             this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -63,6 +63,8 @@
             this.dataGridViewTextBoxColumn9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn11 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.label6 = new System.Windows.Forms.Label();
+            this.txtMontoTotal = new System.Windows.Forms.MaskedTextBox();
             ((System.ComponentModel.ISupportInitialize)(this.errorProviderBase)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgr_autos)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgr_factura)).BeginInit();
@@ -273,30 +275,6 @@
             this.dgr_autos.TabIndex = 29;
             this.dgr_autos.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgr_autos_CellDoubleClick);
             // 
-            // dgr_factura
-            // 
-            this.dgr_factura.AllowUserToAddRows = false;
-            this.dgr_factura.AllowUserToDeleteRows = false;
-            this.dgr_factura.AllowUserToResizeColumns = false;
-            this.dgr_factura.AllowUserToResizeRows = false;
-            this.dgr_factura.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgr_factura.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dataGridViewTextBoxColumn5,
-            this.dataGridViewTextBoxColumn6,
-            this.dataGridViewTextBoxColumn7,
-            this.dataGridViewTextBoxColumn8,
-            this.dataGridViewTextBoxColumn9,
-            this.dataGridViewTextBoxColumn10,
-            this.dataGridViewTextBoxColumn11});
-            this.dgr_factura.Location = new System.Drawing.Point(57, 436);
-            this.dgr_factura.Name = "dgr_factura";
-            this.dgr_factura.ReadOnly = true;
-            this.dgr_factura.RowHeadersVisible = false;
-            this.dgr_factura.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgr_factura.Size = new System.Drawing.Size(677, 132);
-            this.dgr_factura.TabIndex = 33;
-            this.dgr_factura.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgr_factura_CellDoubleClick);
-            // 
             // dataGridViewTextBoxColumn1
             // 
             this.dataGridViewTextBoxColumn1.DataPropertyName = "nombre";
@@ -345,6 +323,30 @@
             this.Monto.HeaderText = "Monto(USD)";
             this.Monto.Name = "Monto";
             this.Monto.ReadOnly = true;
+            // 
+            // dgr_factura
+            // 
+            this.dgr_factura.AllowUserToAddRows = false;
+            this.dgr_factura.AllowUserToDeleteRows = false;
+            this.dgr_factura.AllowUserToResizeColumns = false;
+            this.dgr_factura.AllowUserToResizeRows = false;
+            this.dgr_factura.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgr_factura.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewTextBoxColumn5,
+            this.dataGridViewTextBoxColumn6,
+            this.dataGridViewTextBoxColumn7,
+            this.dataGridViewTextBoxColumn8,
+            this.dataGridViewTextBoxColumn9,
+            this.dataGridViewTextBoxColumn10,
+            this.dataGridViewTextBoxColumn11});
+            this.dgr_factura.Location = new System.Drawing.Point(57, 436);
+            this.dgr_factura.Name = "dgr_factura";
+            this.dgr_factura.ReadOnly = true;
+            this.dgr_factura.RowHeadersVisible = false;
+            this.dgr_factura.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgr_factura.Size = new System.Drawing.Size(677, 132);
+            this.dgr_factura.TabIndex = 33;
+            this.dgr_factura.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgr_factura_CellDoubleClick);
             // 
             // dataGridViewTextBoxColumn5
             // 
@@ -395,11 +397,32 @@
             this.dataGridViewTextBoxColumn11.Name = "dataGridViewTextBoxColumn11";
             this.dataGridViewTextBoxColumn11.ReadOnly = true;
             // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(561, 589);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(70, 13);
+            this.label6.TabIndex = 34;
+            this.label6.Text = "Monto Total: ";
+            // 
+            // txtMontoTotal
+            // 
+            this.txtMontoTotal.Location = new System.Drawing.Point(637, 582);
+            this.txtMontoTotal.Mask = "999999999999999";
+            this.txtMontoTotal.Name = "txtMontoTotal";
+            this.txtMontoTotal.ReadOnly = true;
+            this.txtMontoTotal.Size = new System.Drawing.Size(97, 20);
+            this.txtMontoTotal.TabIndex = 35;
+            this.txtMontoTotal.ValidatingType = typeof(int);
+            // 
             // FormVenta
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(783, 691);
+            this.Controls.Add(this.txtMontoTotal);
+            this.Controls.Add(this.label6);
             this.Controls.Add(this.dgr_factura);
             this.Controls.Add(this.dgr_autos);
             this.Controls.Add(this.cmbAño);
@@ -449,6 +472,8 @@
             this.Controls.SetChildIndex(this.cmbAño, 0);
             this.Controls.SetChildIndex(this.dgr_autos, 0);
             this.Controls.SetChildIndex(this.dgr_factura, 0);
+            this.Controls.SetChildIndex(this.label6, 0);
+            this.Controls.SetChildIndex(this.txtMontoTotal, 0);
             ((System.ComponentModel.ISupportInitialize)(this.errorProviderBase)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgr_autos)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgr_factura)).EndInit();
@@ -494,5 +519,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn9;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn10;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn11;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.MaskedTextBox txtMontoTotal;
     }
 }
