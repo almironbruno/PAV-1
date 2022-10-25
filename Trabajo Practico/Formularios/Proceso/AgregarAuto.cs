@@ -78,6 +78,9 @@ namespace Trabajo_Practico.Formularios.Proceso
 
         private void btn_Aceptar_Click(object sender, EventArgs e)
         { //Aca se supone que debeira poderse enviar los datos al form ventas
+
+            //Si hay mas de 0 es que se eligio un vehiculo con el filtro
+
             if (dgr_autos.Rows.Count > 0)
             {
                 DataTable tabla = dgr_autos.DataSource as DataTable;
@@ -94,7 +97,7 @@ namespace Trabajo_Practico.Formularios.Proceso
             }
                
                 
-            }
+            
         }
     }
 }
