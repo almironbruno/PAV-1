@@ -5,6 +5,7 @@ using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Trabajo_Practico.Clases.BackEnd.NegocioAutos;
 using Trabajo_Practico.Clases.Entidades;
 
 namespace Trabajo_Practico.Clases.BackEnd.NegocioProceso
@@ -118,6 +119,8 @@ namespace Trabajo_Practico.Clases.BackEnd.NegocioProceso
                     cmd.Parameters.AddWithValue("@monto", tabla.Rows[0]["monto"].ToString());
                     cmd.Parameters.AddWithValue("@cod_serie", codSerie);
 
+                    NE_Autos nE_a = new NE_Autos();
+                    nE_a.BorrarAutoCodSerie(codSerie);
 
 
 
@@ -127,6 +130,7 @@ namespace Trabajo_Practico.Clases.BackEnd.NegocioProceso
                 }
 
                 objTransaccion.Commit();
+
                 return true;
 
             }
