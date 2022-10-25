@@ -115,9 +115,19 @@ namespace Trabajo_Practico.Formularios.Proceso
                                     dgr_autos.SelectedRows[0].Cells[4].Value, 
                                     dgr_autos.SelectedRows[0].Cells[1].Value, 
                                     dgr_autos.SelectedRows[0].Cells[2].Value,
-                                    dgr_autos.SelectedRows[0].Cells[3].Value);
-            monto += 0;
-            lbl_cantidad.Text = "Monto Total: "+monto;
+                                    dgr_autos.SelectedRows[0].Cells[3].Value,
+                                    dgr_autos.SelectedRows[0].Cells[6].Value);
+
+
+        }
+
+        private void dgr_factura_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+            dgr_factura.Rows.Remove(dgr_factura.CurrentRow);
+            //For Each r As DataGridViewRow In DataGridViewRow1.SelectedRows
+            //DataGridViewRow1.Rows.Remove(r)
+            //Next//
         }
 
         private void btn_Aceptar_Click(object sender, EventArgs e)
@@ -163,5 +173,7 @@ namespace Trabajo_Practico.Formularios.Proceso
         {
 
         }
+
+       
     }
 }

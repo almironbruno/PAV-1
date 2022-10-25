@@ -48,20 +48,25 @@
             this.btnBuscar = new System.Windows.Forms.Button();
             this.cmbAño = new Trabajo_Practico.ControlesPropios.ComboCargable();
             this.dgr_autos = new System.Windows.Forms.DataGridView();
+            this.dgr_factura = new System.Windows.Forms.DataGridView();
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Codigo_Serie = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Año = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dgr_factura = new System.Windows.Forms.DataGridView();
+            this.Monto = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+<<<<<<< HEAD
             this.txt_legajo = new System.Windows.Forms.TextBox();
+=======
+            this.dataGridViewTextBoxColumn11 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+>>>>>>> 2f0364156abe976e4657f88531ac86b450bdd3e4
             ((System.ComponentModel.ISupportInitialize)(this.errorProviderBase)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgr_autos)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgr_factura)).BeginInit();
@@ -98,7 +103,11 @@
             this.buscador1.Location = new System.Drawing.Point(412, 50);
             this.buscador1.Margin = new System.Windows.Forms.Padding(4);
             this.buscador1.Name = "buscador1";
+<<<<<<< HEAD
             this.buscador1.Size = new System.Drawing.Size(336, 38);
+=======
+            this.buscador1.Size = new System.Drawing.Size(248, 38);
+>>>>>>> 2f0364156abe976e4657f88531ac86b450bdd3e4
             this.buscador1.TabIndex = 18;
             this.buscador1.Load += new System.EventHandler(this.buscador1_Load);
             // 
@@ -262,15 +271,49 @@
             this.Año,
             this.dataGridViewTextBoxColumn2,
             this.dataGridViewTextBoxColumn3,
+<<<<<<< HEAD
             this.dataGridViewTextBoxColumn4});
             this.dgr_autos.Location = new System.Drawing.Point(201, 275);
+=======
+            this.dataGridViewTextBoxColumn4,
+            this.Monto});
+            this.dgr_autos.Location = new System.Drawing.Point(57, 275);
+>>>>>>> 2f0364156abe976e4657f88531ac86b450bdd3e4
             this.dgr_autos.Name = "dgr_autos";
             this.dgr_autos.ReadOnly = true;
             this.dgr_autos.RowHeadersVisible = false;
             this.dgr_autos.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+<<<<<<< HEAD
             this.dgr_autos.Size = new System.Drawing.Size(446, 132);
+=======
+            this.dgr_autos.Size = new System.Drawing.Size(677, 132);
+>>>>>>> 2f0364156abe976e4657f88531ac86b450bdd3e4
             this.dgr_autos.TabIndex = 29;
             this.dgr_autos.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgr_autos_CellDoubleClick);
+            // 
+            // dgr_factura
+            // 
+            this.dgr_factura.AllowUserToAddRows = false;
+            this.dgr_factura.AllowUserToDeleteRows = false;
+            this.dgr_factura.AllowUserToResizeColumns = false;
+            this.dgr_factura.AllowUserToResizeRows = false;
+            this.dgr_factura.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgr_factura.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewTextBoxColumn5,
+            this.dataGridViewTextBoxColumn6,
+            this.dataGridViewTextBoxColumn7,
+            this.dataGridViewTextBoxColumn8,
+            this.dataGridViewTextBoxColumn9,
+            this.dataGridViewTextBoxColumn10,
+            this.dataGridViewTextBoxColumn11});
+            this.dgr_factura.Location = new System.Drawing.Point(57, 436);
+            this.dgr_factura.Name = "dgr_factura";
+            this.dgr_factura.ReadOnly = true;
+            this.dgr_factura.RowHeadersVisible = false;
+            this.dgr_factura.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgr_factura.Size = new System.Drawing.Size(677, 132);
+            this.dgr_factura.TabIndex = 33;
+            this.dgr_factura.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgr_factura_CellDoubleClick);
             // 
             // dataGridViewTextBoxColumn1
             // 
@@ -314,8 +357,9 @@
             this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
             this.dataGridViewTextBoxColumn4.ReadOnly = true;
             // 
-            // dgr_factura
+            // Monto
             // 
+<<<<<<< HEAD
             this.dgr_factura.AllowUserToAddRows = false;
             this.dgr_factura.AllowUserToDeleteRows = false;
             this.dgr_factura.AllowUserToResizeColumns = false;
@@ -336,6 +380,12 @@
             this.dgr_factura.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgr_factura.Size = new System.Drawing.Size(446, 132);
             this.dgr_factura.TabIndex = 33;
+=======
+            this.Monto.DataPropertyName = "monto";
+            this.Monto.HeaderText = "Monto(USD)";
+            this.Monto.Name = "Monto";
+            this.Monto.ReadOnly = true;
+>>>>>>> 2f0364156abe976e4657f88531ac86b450bdd3e4
             // 
             // dataGridViewTextBoxColumn5
             // 
@@ -379,6 +429,7 @@
             this.dataGridViewTextBoxColumn10.Name = "dataGridViewTextBoxColumn10";
             this.dataGridViewTextBoxColumn10.ReadOnly = true;
             // 
+<<<<<<< HEAD
             // txt_legajo
             // 
             this.txt_legajo.Location = new System.Drawing.Point(412, 88);
@@ -386,13 +437,25 @@
             this.txt_legajo.ReadOnly = true;
             this.txt_legajo.Size = new System.Drawing.Size(100, 20);
             this.txt_legajo.TabIndex = 35;
+=======
+            // dataGridViewTextBoxColumn11
+            // 
+            this.dataGridViewTextBoxColumn11.DataPropertyName = "monto";
+            this.dataGridViewTextBoxColumn11.HeaderText = "Monto(USD)";
+            this.dataGridViewTextBoxColumn11.Name = "dataGridViewTextBoxColumn11";
+            this.dataGridViewTextBoxColumn11.ReadOnly = true;
+>>>>>>> 2f0364156abe976e4657f88531ac86b450bdd3e4
             // 
             // FormVenta
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+<<<<<<< HEAD
             this.ClientSize = new System.Drawing.Size(783, 609);
             this.Controls.Add(this.txt_legajo);
+=======
+            this.ClientSize = new System.Drawing.Size(783, 691);
+>>>>>>> 2f0364156abe976e4657f88531ac86b450bdd3e4
             this.Controls.Add(this.dgr_factura);
             this.Controls.Add(this.dgr_autos);
             this.Controls.Add(this.cmbAño);
@@ -474,18 +537,26 @@
         private ControlesPropios.ComboCargable cmbAño;
         private System.Windows.Forms.DataGridView dgr_autos;
         private System.Windows.Forms.DataGridView dgr_factura;
+<<<<<<< HEAD
         private System.Windows.Forms.TextBox txt_legajo;
+=======
+>>>>>>> 2f0364156abe976e4657f88531ac86b450bdd3e4
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Codigo_Serie;
         private System.Windows.Forms.DataGridViewTextBoxColumn Año;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
+<<<<<<< HEAD
+=======
+        private System.Windows.Forms.DataGridViewTextBoxColumn Monto;
+>>>>>>> 2f0364156abe976e4657f88531ac86b450bdd3e4
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn5;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn6;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn7;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn8;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn9;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn10;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn11;
     }
 }
