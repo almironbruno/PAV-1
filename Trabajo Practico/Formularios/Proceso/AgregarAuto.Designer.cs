@@ -28,18 +28,22 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.cmb_marca = new Trabajo_Practico.ControlesPropios.ComboCargable();
-            this.cmb_nombreComercial = new Trabajo_Practico.ControlesPropios.ComboCargable();
             this.lbl_marca = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.cmb_Condicion = new Trabajo_Practico.ControlesPropios.ComboCargable();
-            this.cmb_gama = new Trabajo_Practico.ControlesPropios.ComboCargable();
             this.lbl = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.lbl_gama = new System.Windows.Forms.Label();
             this.dgr_autos = new System.Windows.Forms.DataGridView();
             this.btn_agregar = new System.Windows.Forms.Button();
-            this.cmbBoxAño = new System.Windows.Forms.ComboBox();
+            this.Marca = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Modelo = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Condicion = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Gama = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cmbAñoFab = new Trabajo_Practico.ControlesPropios.ComboCargable();
+            this.cmb_gama = new Trabajo_Practico.ControlesPropios.ComboCargable();
+            this.cmb_Condicion = new Trabajo_Practico.ControlesPropios.ComboCargable();
+            this.cmb_nombreComercial = new Trabajo_Practico.ControlesPropios.ComboCargable();
+            this.cmb_marca = new Trabajo_Practico.ControlesPropios.ComboCargable();
             ((System.ComponentModel.ISupportInitialize)(this.errorProviderBase)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgr_autos)).BeginInit();
             this.SuspendLayout();
@@ -48,6 +52,7 @@
             // 
             this.btn_Aceptar.Location = new System.Drawing.Point(247, 457);
             this.btn_Aceptar.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.btn_Aceptar.Click += new System.EventHandler(this.btn_Aceptar_Click);
             // 
             // btn_Cancelar
             // 
@@ -58,22 +63,6 @@
             // 
             this.btn_LimpiarCampos.Location = new System.Drawing.Point(656, 457);
             this.btn_LimpiarCampos.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
-            // 
-            // cmb_marca
-            // 
-            this.cmb_marca.Location = new System.Drawing.Point(261, 34);
-            this.cmb_marca.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
-            this.cmb_marca.Name = "cmb_marca";
-            this.cmb_marca.Size = new System.Drawing.Size(161, 26);
-            this.cmb_marca.TabIndex = 19;
-            // 
-            // cmb_nombreComercial
-            // 
-            this.cmb_nombreComercial.Location = new System.Drawing.Point(261, 82);
-            this.cmb_nombreComercial.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
-            this.cmb_nombreComercial.Name = "cmb_nombreComercial";
-            this.cmb_nombreComercial.Size = new System.Drawing.Size(161, 26);
-            this.cmb_nombreComercial.TabIndex = 20;
             // 
             // lbl_marca
             // 
@@ -94,22 +83,6 @@
             this.label1.Size = new System.Drawing.Size(123, 16);
             this.label1.TabIndex = 22;
             this.label1.Text = "Nombre Comercial:";
-            // 
-            // cmb_Condicion
-            // 
-            this.cmb_Condicion.Location = new System.Drawing.Point(261, 134);
-            this.cmb_Condicion.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
-            this.cmb_Condicion.Name = "cmb_Condicion";
-            this.cmb_Condicion.Size = new System.Drawing.Size(161, 26);
-            this.cmb_Condicion.TabIndex = 23;
-            // 
-            // cmb_gama
-            // 
-            this.cmb_gama.Location = new System.Drawing.Point(619, 82);
-            this.cmb_gama.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
-            this.cmb_gama.Name = "cmb_gama";
-            this.cmb_gama.Size = new System.Drawing.Size(161, 26);
-            this.cmb_gama.TabIndex = 25;
             // 
             // lbl
             // 
@@ -148,13 +121,18 @@
             this.dgr_autos.AllowUserToResizeColumns = false;
             this.dgr_autos.AllowUserToResizeRows = false;
             this.dgr_autos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgr_autos.Location = new System.Drawing.Point(247, 222);
+            this.dgr_autos.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Marca,
+            this.Modelo,
+            this.Condicion,
+            this.Gama});
+            this.dgr_autos.Location = new System.Drawing.Point(97, 222);
             this.dgr_autos.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dgr_autos.Name = "dgr_autos";
             this.dgr_autos.ReadOnly = true;
             this.dgr_autos.RowHeadersVisible = false;
             this.dgr_autos.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgr_autos.Size = new System.Drawing.Size(655, 190);
+            this.dgr_autos.Size = new System.Drawing.Size(805, 190);
             this.dgr_autos.TabIndex = 29;
             // 
             // btn_agregar
@@ -168,20 +146,80 @@
             this.btn_agregar.UseVisualStyleBackColor = true;
             this.btn_agregar.Click += new System.EventHandler(this.btn_agregar_Click);
             // 
-            // cmbBoxAño
+            // Marca
             // 
-            this.cmbBoxAño.FormattingEnabled = true;
-            this.cmbBoxAño.Location = new System.Drawing.Point(619, 25);
-            this.cmbBoxAño.Name = "cmbBoxAño";
-            this.cmbBoxAño.Size = new System.Drawing.Size(161, 24);
-            this.cmbBoxAño.TabIndex = 31;
+            this.Marca.DataPropertyName = "nombre";
+            this.Marca.HeaderText = "Marca";
+            this.Marca.Name = "Marca";
+            this.Marca.ReadOnly = true;
+            // 
+            // Modelo
+            // 
+            this.Modelo.DataPropertyName = "nombre_comercial";
+            this.Modelo.HeaderText = "Modelo";
+            this.Modelo.Name = "Modelo";
+            this.Modelo.ReadOnly = true;
+            // 
+            // Condicion
+            // 
+            this.Condicion.DataPropertyName = "nombre_condicion";
+            this.Condicion.HeaderText = "Condicion";
+            this.Condicion.Name = "Condicion";
+            this.Condicion.ReadOnly = true;
+            // 
+            // Gama
+            // 
+            this.Gama.DataPropertyName = "nombre_gama";
+            this.Gama.HeaderText = "Gama";
+            this.Gama.Name = "Gama";
+            this.Gama.ReadOnly = true;
+            // 
+            // cmbAñoFab
+            // 
+            this.cmbAñoFab.Location = new System.Drawing.Point(619, 24);
+            this.cmbAñoFab.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cmbAñoFab.Name = "cmbAñoFab";
+            this.cmbAñoFab.Size = new System.Drawing.Size(161, 26);
+            this.cmbAñoFab.TabIndex = 32;
+            // 
+            // cmb_gama
+            // 
+            this.cmb_gama.Location = new System.Drawing.Point(619, 82);
+            this.cmb_gama.Margin = new System.Windows.Forms.Padding(5);
+            this.cmb_gama.Name = "cmb_gama";
+            this.cmb_gama.Size = new System.Drawing.Size(161, 26);
+            this.cmb_gama.TabIndex = 25;
+            // 
+            // cmb_Condicion
+            // 
+            this.cmb_Condicion.Location = new System.Drawing.Point(261, 134);
+            this.cmb_Condicion.Margin = new System.Windows.Forms.Padding(5);
+            this.cmb_Condicion.Name = "cmb_Condicion";
+            this.cmb_Condicion.Size = new System.Drawing.Size(161, 26);
+            this.cmb_Condicion.TabIndex = 23;
+            // 
+            // cmb_nombreComercial
+            // 
+            this.cmb_nombreComercial.Location = new System.Drawing.Point(261, 82);
+            this.cmb_nombreComercial.Margin = new System.Windows.Forms.Padding(5);
+            this.cmb_nombreComercial.Name = "cmb_nombreComercial";
+            this.cmb_nombreComercial.Size = new System.Drawing.Size(161, 26);
+            this.cmb_nombreComercial.TabIndex = 20;
+            // 
+            // cmb_marca
+            // 
+            this.cmb_marca.Location = new System.Drawing.Point(261, 34);
+            this.cmb_marca.Margin = new System.Windows.Forms.Padding(5);
+            this.cmb_marca.Name = "cmb_marca";
+            this.cmb_marca.Size = new System.Drawing.Size(161, 26);
+            this.cmb_marca.TabIndex = 19;
             // 
             // AgregarAuto
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1067, 554);
-            this.Controls.Add(this.cmbBoxAño);
+            this.Controls.Add(this.cmbAñoFab);
             this.Controls.Add(this.btn_agregar);
             this.Controls.Add(this.dgr_autos);
             this.Controls.Add(this.lbl_gama);
@@ -211,7 +249,7 @@
             this.Controls.SetChildIndex(this.lbl_gama, 0);
             this.Controls.SetChildIndex(this.dgr_autos, 0);
             this.Controls.SetChildIndex(this.btn_agregar, 0);
-            this.Controls.SetChildIndex(this.cmbBoxAño, 0);
+            this.Controls.SetChildIndex(this.cmbAñoFab, 0);
             ((System.ComponentModel.ISupportInitialize)(this.errorProviderBase)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgr_autos)).EndInit();
             this.ResumeLayout(false);
@@ -231,6 +269,10 @@
         private System.Windows.Forms.Label lbl_gama;
         private System.Windows.Forms.DataGridView dgr_autos;
         private System.Windows.Forms.Button btn_agregar;
-        private System.Windows.Forms.ComboBox cmbBoxAño;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Marca;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Modelo;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Condicion;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Gama;
+        private ControlesPropios.ComboCargable cmbAñoFab;
     }
 }
