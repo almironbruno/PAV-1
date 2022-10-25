@@ -25,10 +25,13 @@ namespace Trabajo_Practico.Clases.BackEnd.NegocioLocalidades
             string sqlModificado = $"UPDATE localidades SET nombre_localidad = '{localidad.nombreLocalidad}' WHERE nombre_localidad = '{antLocalidad}'";
             _BD.modificar(sqlModificado);
         }
-        public DataTable buscarLocalidad(string nombreLocalidad)
+        public string buscarLocalidad(string nombreLocalidad)
         {
-            string sqlConsulta = $"SELECT * FROM localidades WHERE nombre_localidad = '{nombreLocalidad}'";
-            return _BD.Ejecutar_Select(sqlConsulta);
+            if (nombreLocalidad.Equals("")) nombreLocalidad = "%";
+            string sqlConsulta = $"SELECT * FROM localidades WHERE nombre_localidad LIKE'{nombreLocalidad}'";
+
+            return sqlConsulta;
+            
         }
 
         public void borrarLocalidad(string localidad)

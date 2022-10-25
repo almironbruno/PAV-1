@@ -138,7 +138,7 @@ namespace Trabajo_Practico.Clases.BackEnd
 
                 numero = (int)cmd.ExecuteScalar();
             }
-            catch (Exception e){
+            catch (Exception){
                 MessageBox.Show("Ha ocurrido un error! Intentelo nuevamente");
             }
             desconectar();

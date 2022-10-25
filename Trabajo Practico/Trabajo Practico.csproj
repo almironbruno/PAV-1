@@ -167,6 +167,90 @@
     <Compile Include="Formularios\ABMC\ABMC_Autos\Forms\AltaAutos.Designer.cs">
       <DependentUpon>AltaAutos.cs</DependentUpon>
     </Compile>
+    <Compile Include="Formularios\ABMC\ABMC_Encargos\ABMC_Encargos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\ABMC\ABMC_Encargos\ABMC_Encargos.Designer.cs">
+      <DependentUpon>ABMC_Encargos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\ABMC\ABMC_Encargos\Campos_Encargos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\ABMC\ABMC_Encargos\Campos_Encargos.Designer.cs">
+      <DependentUpon>Campos_Encargos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\ABMC\ABMC_Encargos\Forms\AltaEncargos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\ABMC\ABMC_Encargos\Forms\AltaEncargos.Designer.cs">
+      <DependentUpon>AltaEncargos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\ABMC\ABMC_Encargos\Forms\BajaEncargos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\ABMC\ABMC_Encargos\Forms\BajaEncargos.Designer.cs">
+      <DependentUpon>BajaEncargos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\ABMC\ABMC_Encargos\Forms\BuscarEncargos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\ABMC\ABMC_Encargos\Forms\BuscarEncargos.Designer.cs">
+      <DependentUpon>BuscarEncargos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\ABMC\ABMC_Encargos\Forms\InfoEncargos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\ABMC\ABMC_Encargos\Forms\InfoEncargos.Designer.cs">
+      <DependentUpon>InfoEncargos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\ABMC\ABMC_Encargos\Forms\ModificarEncargos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\ABMC\ABMC_Encargos\Forms\ModificarEncargos.Designer.cs">
+      <DependentUpon>ModificarEncargos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\ABMC\ABMC_Localidades\ABMC_Localidades.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\ABMC\ABMC_Localidades\ABMC_Localidades.Designer.cs">
+      <DependentUpon>ABMC_Localidades.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\ABMC\ABMC_Localidades\CamposLocalidades.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\ABMC\ABMC_Localidades\CamposLocalidades.Designer.cs">
+      <DependentUpon>CamposLocalidades.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\ABMC\ABMC_Localidades\Forms\AltaLocalidades.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\ABMC\ABMC_Localidades\Forms\AltaLocalidades.Designer.cs">
+      <DependentUpon>AltaLocalidades.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\ABMC\ABMC_Localidades\Forms\BajaLocalidades.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\ABMC\ABMC_Localidades\Forms\BajaLocalidades.Designer.cs">
+      <DependentUpon>BajaLocalidades.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\ABMC\ABMC_Localidades\Forms\BuscarLocalidades.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\ABMC\ABMC_Localidades\Forms\BuscarLocalidades.Designer.cs">
+      <DependentUpon>BuscarLocalidades.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\ABMC\ABMC_Localidades\Forms\InfoLocalidades.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\ABMC\ABMC_Localidades\Forms\InfoLocalidades.Designer.cs">
+      <DependentUpon>InfoLocalidades.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\ABMC\ABMC_Localidades\Forms\ModificarLocalidades.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\ABMC\ABMC_Localidades\Forms\ModificarLocalidades.Designer.cs">
+      <DependentUpon>ModificarLocalidades.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formularios\ABMC\Barrios\AltaBarrio.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -250,54 +334,6 @@
     </Compile>
     <Compile Include="Formularios\ABMC\ABMC_Empleados\Forms\ModificacionEmpleados.Designer.cs">
       <DependentUpon>ModificacionEmpleados.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Formularios\ABMC\Encargos\AltaEncargos.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Formularios\ABMC\Encargos\AltaEncargos.Designer.cs">
-      <DependentUpon>AltaEncargos.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Formularios\ABMC\Encargos\BuscarEncargos.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Formularios\ABMC\Encargos\BuscarEncargos.Designer.cs">
-      <DependentUpon>BuscarEncargos.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Formularios\ABMC\Encargos\Encargos.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Formularios\ABMC\Encargos\Encargos.Designer.cs">
-      <DependentUpon>Encargos.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Formularios\ABMC\Encargos\ModificarEncargos.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Formularios\ABMC\Encargos\ModificarEncargos.Designer.cs">
-      <DependentUpon>ModificarEncargos.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Formularios\ABMC\Localidades\AltaLocalidades.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Formularios\ABMC\Localidades\AltaLocalidades.Designer.cs">
-      <DependentUpon>AltaLocalidades.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Formularios\ABMC\Localidades\BuscarLocalidades.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Formularios\ABMC\Localidades\BuscarLocalidades.Designer.cs">
-      <DependentUpon>BuscarLocalidades.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Formularios\ABMC\Localidades\Localidades.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Formularios\ABMC\Localidades\Localidades.Designer.cs">
-      <DependentUpon>Localidades.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Formularios\ABMC\Localidades\ModificarLocalidad.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Formularios\ABMC\Localidades\ModificarLocalidad.Designer.cs">
-      <DependentUpon>ModificarLocalidad.cs</DependentUpon>
     </Compile>
     <Compile Include="Formularios\ABMC\ABMC_Marcas\CamposMarcas.cs">
       <SubType>Form</SubType>
@@ -508,6 +544,48 @@
     <EmbeddedResource Include="Formularios\ABMC\ABMC_Clientes\Forms\AltaClientes.resx">
       <DependentUpon>AltaClientes.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\ABMC\ABMC_Encargos\ABMC_Encargos.resx">
+      <DependentUpon>ABMC_Encargos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\ABMC\ABMC_Encargos\Campos_Encargos.resx">
+      <DependentUpon>Campos_Encargos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\ABMC\ABMC_Encargos\Forms\AltaEncargos.resx">
+      <DependentUpon>AltaEncargos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\ABMC\ABMC_Encargos\Forms\BajaEncargos.resx">
+      <DependentUpon>BajaEncargos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\ABMC\ABMC_Encargos\Forms\BuscarEncargos.resx">
+      <DependentUpon>BuscarEncargos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\ABMC\ABMC_Encargos\Forms\InfoEncargos.resx">
+      <DependentUpon>InfoEncargos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\ABMC\ABMC_Encargos\Forms\ModificarEncargos.resx">
+      <DependentUpon>ModificarEncargos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\ABMC\ABMC_Localidades\ABMC_Localidades.resx">
+      <DependentUpon>ABMC_Localidades.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\ABMC\ABMC_Localidades\CamposLocalidades.resx">
+      <DependentUpon>CamposLocalidades.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\ABMC\ABMC_Localidades\Forms\AltaLocalidades.resx">
+      <DependentUpon>AltaLocalidades.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\ABMC\ABMC_Localidades\Forms\BajaLocalidades.resx">
+      <DependentUpon>BajaLocalidades.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\ABMC\ABMC_Localidades\Forms\BuscarLocalidades.resx">
+      <DependentUpon>BuscarLocalidades.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\ABMC\ABMC_Localidades\Forms\InfoLocalidades.resx">
+      <DependentUpon>InfoLocalidades.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\ABMC\ABMC_Localidades\Forms\ModificarLocalidades.resx">
+      <DependentUpon>ModificarLocalidades.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Formularios\ABMC\Barrios\ConsultaBarrio.resx">
       <DependentUpon>ConsultaBarrio.cs</DependentUpon>
     </EmbeddedResource>
@@ -537,30 +615,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\ABMC\ABMC_Empleados\Forms\ModificacionEmpleados.resx">
       <DependentUpon>ModificacionEmpleados.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Formularios\ABMC\Encargos\AltaEncargos.resx">
-      <DependentUpon>AltaEncargos.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Formularios\ABMC\Encargos\BuscarEncargos.resx">
-      <DependentUpon>BuscarEncargos.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Formularios\ABMC\Encargos\Encargos.resx">
-      <DependentUpon>Encargos.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Formularios\ABMC\Encargos\ModificarEncargos.resx">
-      <DependentUpon>ModificarEncargos.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Formularios\ABMC\Localidades\AltaLocalidades.resx">
-      <DependentUpon>AltaLocalidades.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Formularios\ABMC\Localidades\BuscarLocalidades.resx">
-      <DependentUpon>BuscarLocalidades.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Formularios\ABMC\Localidades\Localidades.resx">
-      <DependentUpon>Localidades.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Formularios\ABMC\Localidades\ModificarLocalidad.resx">
-      <DependentUpon>ModificarLocalidad.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\ABMC\ABMC_Marcas\Forms\AltaMarcas.resx">
       <DependentUpon>AltaMarcas.cs</DependentUpon>
@@ -666,5 +720,6 @@
   <ItemGroup>
     <None Include="Resources\326700_cart_shopping_icon.png" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
