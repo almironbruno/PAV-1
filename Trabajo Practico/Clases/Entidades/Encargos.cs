@@ -15,10 +15,10 @@ namespace Trabajo_Practico.Clases.Entidades
         public int nombreComercial { get; set; }
         public int legajoEmpletado { get; set; }
         public int codCaracteristica { get; set; }
-        public string prioridad { get; set; }
+        public int prioridad { get; set; }
 
 
-        public Encargos(int tipoDocumento, int nroDocumento, string fecha, int nombreComercial, int legajoEmpletado, int codCaracteristica, string prioridad)
+        public Encargos(int tipoDocumento, int nroDocumento, string fecha, int nombreComercial, int legajoEmpletado, int codCaracteristica, int prioridad)
         {
             this.tipoDocumento = tipoDocumento;
             this.nroDocumento = nroDocumento;
@@ -27,6 +27,11 @@ namespace Trabajo_Practico.Clases.Entidades
             this.legajoEmpletado = legajoEmpletado;
             this.codCaracteristica = codCaracteristica;
             this.prioridad = prioridad;
+        }
+        public Encargos(int _tipoDocumento, int _nroDocumento)
+        {
+            tipoDocumento = _tipoDocumento;
+            nroDocumento = _nroDocumento;
         }
 
         public string toString()
