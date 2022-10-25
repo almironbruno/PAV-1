@@ -20,7 +20,8 @@ namespace Trabajo_Practico.Clases.BackEnd.NegocioProceso
 				condicion.nombre_condicion,
 				gamas.nombre_gama,
 				autos.año_fabricacion,
-                autos.cod_serie_fabrica
+                autos.cod_serie_fabrica,
+                autos.monto
                 
 
 				FROM autos
