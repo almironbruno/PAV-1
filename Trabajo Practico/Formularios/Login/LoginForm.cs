@@ -35,6 +35,7 @@ namespace Trabajo_Practico
                  {
 
                     this.Visible = false ;
+
                  }
                  else
                  {
@@ -80,6 +81,13 @@ namespace Trabajo_Practico
 
             }
             
+        }
+        public string buscarLeg() 
+        {
+            NE_usuarios usuario = new NE_usuarios();
+            
+            return usuario.buscarLegajo(txtEmailUsu.Text);
+
         }
     }
 }

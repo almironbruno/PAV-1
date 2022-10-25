@@ -23,7 +23,8 @@ namespace Trabajo_Practico.Formularios
 {
     public partial class PrincipalForm : Form
     {
-       private Form formLogin;
+        private Form formLogin;
+        private string legajo;
 
         //Seteo que reciba al usuario que se conectó como parametro
         public PrincipalForm()
@@ -37,9 +38,11 @@ namespace Trabajo_Practico.Formularios
         private void PrincipalForm_Load(object sender, EventArgs e)
         {
             this.Show();
-            //Abre el login
-           // LoginForm login = new LoginForm();
-            //login.ShowDialog();
+            ///Abre el login
+            LoginForm login = new LoginForm();
+            login.ShowDialog();
+            legajo = login.buscarLeg();
+            lbl_legajo.Text ="Legajo: "+ legajo;
         }
 
         private void empleadosToolStripMenuItem_Click(object sender, EventArgs e)
@@ -134,7 +137,7 @@ namespace Trabajo_Practico.Formularios
         {
             //Vacia para que el form arranque
             DataGridView dtg = new DataGridView();
-            FormVenta ventanaVenta = new FormVenta(dtg);
+            FormVenta ventanaVenta = new FormVenta(dtg,legajo);
             ventanaVenta.ShowDialog();
         }
     }

@@ -71,7 +71,7 @@ namespace Trabajo_Practico.Clases.BackEnd.NegocioProceso
                 SqlCommand cmd = new SqlCommand();
 
 
-                string consulta = "INSERT INTO ventas(tipo_doc_cliente,nro_doc_cliente,fecha) values (@tipo_doc, @nro_doc, @fecha)";
+                string consulta = "INSERT INTO ventas(tipo_doc_cliente,nro_doc_cliente,fecha,legajo_empleado) values (@tipo_doc, @nro_doc, @fecha,@legajo)";
 
                 cmd.Parameters.Clear();
 
@@ -79,7 +79,8 @@ namespace Trabajo_Practico.Clases.BackEnd.NegocioProceso
                 cmd.Parameters.AddWithValue("@tipo_doc", vta.tipo_doc);
                 cmd.Parameters.AddWithValue("@nro_doc", vta.num_dni);
                 cmd.Parameters.AddWithValue("@fecha", vta.fecha);
-                
+                cmd.Parameters.AddWithValue("@legajo", vta.legajo);
+
 
 
                 cmd.CommandType = CommandType.Text;

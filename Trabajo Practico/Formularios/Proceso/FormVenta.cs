@@ -16,14 +16,15 @@ namespace Trabajo_Practico.Formularios.Proceso
 {
     public partial class FormVenta : FormBaseBotones
     {
-        public FormVenta(DataGridView dtg)
+        private string monto;
+        public FormVenta(DataGridView dtg,string legajo)
         {
             InitializeComponent();
             this.buscador1.tablaConsulta = "clientes";
             buscador1.columna = "nombre";
             txt_fecha.Text = DateTime.Now.ToShortDateString();
 
-
+            txt_legajo.Text = legajo;
             cmbMarca.cargarAlmacenado("GetNombres", "nombre", "id_marca");
             cmbModelo.cargarAlmacenado("GetNombresComerciales", "nombre_comercial", "id_nombrecomercial");
             cmbCondicion.cargarAlmacenado("GetCondiciones", "nombre_condicion", "id_condicion");
@@ -115,7 +116,8 @@ namespace Trabajo_Practico.Formularios.Proceso
                                     dgr_autos.SelectedRows[0].Cells[1].Value, 
                                     dgr_autos.SelectedRows[0].Cells[2].Value,
                                     dgr_autos.SelectedRows[0].Cells[3].Value);
-
+            monto += 0;
+            lbl_cantidad.Text = "Monto Total: "+monto;
         }
 
         private void btn_Aceptar_Click(object sender, EventArgs e)
@@ -123,12 +125,12 @@ namespace Trabajo_Practico.Formularios.Proceso
             Venta vta = new Venta();
 
 
-            vta.legajo = 0;
+      
             vta.fecha = txt_fecha.Text;
             vta.num_dni = 33232;
             vta.tipo_doc = 1;
             vta.nro_factura = int.Parse(txt_nroFactura.Text);
-
+            vta.legajo =int.Parse(txt_legajo.Text);
             List<string> lista = new List<string>();
             for (int i = 0; i < dgr_factura.Rows.Count; i++)
             {

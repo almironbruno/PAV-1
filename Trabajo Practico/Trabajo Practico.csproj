@@ -65,7 +65,6 @@
     <Compile Include="Clases\Entidades\Localidades.cs" />
     <Compile Include="Clases\Entidades\Marca.cs" />
     <Compile Include="Clases\BackEnd\NegocioBarrio\NE_Barrio.cs" />
-    <Compile Include="Clases\BackEnd\NegocioUsuarios\NE_usuarios.cs" />
     <Compile Include="Clases\Entidades\Barrio.cs" />
     <Compile Include="Clases\Entidades\Telefono.cs" />
     <Compile Include="Clases\Entidades\NombresComerciales.cs" />
