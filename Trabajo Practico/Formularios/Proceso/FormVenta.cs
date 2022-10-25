@@ -120,7 +120,15 @@ namespace Trabajo_Practico.Formularios.Proceso
 
         private void btn_Aceptar_Click(object sender, EventArgs e)
         {
+            Venta vta = new Venta();
+
+
+            vta.legajo = 0;
+            vta.fecha = txt_fecha.Text;
+            vta.num_dni = 33232;
+            vta.tipo_doc = 1;
             
+
             List<string> lista = new List<string>();
             for (int i = 0; i < dgr_factura.Rows.Count; i++)
             {
@@ -132,9 +140,25 @@ namespace Trabajo_Practico.Formularios.Proceso
             {
                 MessageBox.Show(item);
             }
+
+            NE_Proceso nP = new NE_Proceso();
+            bool rta = nP.Venta(vta, lista);
             
+            if (rta)
+            {
+                MessageBox.Show("Funciona");
+            }
+            else
+            {
+                MessageBox.Show("No funciona");
+            }
 
 
+
+        }
+
+        private void buscador1_Load(object sender, EventArgs e)
+        {
 
         }
     }

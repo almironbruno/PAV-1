@@ -56,7 +56,7 @@ namespace Trabajo_Practico.Clases.BackEnd.NegocioProceso
 
         }
 
-        public static bool Venta(Venta vta,List<string> ListaSerie)
+        public bool Venta(Venta vta,List<string> ListaSerie)
         {
             string cadenaConexion = System.Configuration.ConfigurationManager.AppSettings["CadenaBD"];
 
@@ -71,15 +71,15 @@ namespace Trabajo_Practico.Clases.BackEnd.NegocioProceso
                 SqlCommand cmd = new SqlCommand();
 
 
-                string consulta = "INSERT INTO ventas values (@nro_factura,@tipo_doc, @nro_doc, @fecha, @legajo)";
+                string consulta = "INSERT INTO ventas values (@tipo_doc, @nro_doc, @fecha)";
 
                 cmd.Parameters.Clear();
 
-                cmd.Parameters.AddWithValue("@nro_factura", vta.nro_factura);
+                
                 cmd.Parameters.AddWithValue("@tipo_doc", vta.tipo_doc);
                 cmd.Parameters.AddWithValue("@nro_doc", vta.num_dni);
                 cmd.Parameters.AddWithValue("@fecha", vta.fecha);
-                cmd.Parameters.AddWithValue("@legajo", vta.legajo);
+                
 
 
                 cmd.CommandType = CommandType.Text;
@@ -99,20 +99,26 @@ namespace Trabajo_Practico.Clases.BackEnd.NegocioProceso
                 //Devuelve valor numerico casteando a Int
                 cmd.ExecuteNonQuery();
 
-                foreach (var Idalumno in ListaSerie)
-                {
+                
 
-                    string consultaCursoPorAlumno = "INSERT INTO detalle_ventas(@idPersona, @idCurso, @fecha)";
+                foreach (var codSerie in ListaSerie)
+                {
+                    BE_Acceso_Datos bd = new BE_Acceso_Datos();
+                    DataTable tabla = new DataTable();
+                    tabla = bd.Ejecutar_Select("SELECT monto FROM autos WHERE autos.cod_serie_fabrica like '"+codSerie+"'");
+
+
+
+                    string consultaAutoPorFactura = "INSERT INTO detalle_ventas (cod_serie_fabrica, monto) values (@cod_serie, @monto)";
 
                     cmd.Parameters.Clear();
-                    /*/
-                    cmd.Parameters.AddWithValue("@idPersona", Idalumno);
-                    cmd.Parameters.AddWithValue("@idCurso", idCurso);
-                    cmd.Parameters.AddWithValue("@fecha", DateTime.Now);
-                    /*/
+                    cmd.Parameters.AddWithValue("@monto", tabla.Rows[0]["monto"]);
+                    cmd.Parameters.AddWithValue("@cod_serie", codSerie);
 
 
-                    cmd.CommandText = consultaCursoPorAlumno;
+
+
+                    cmd.CommandText = consultaAutoPorFactura;
 
                     cmd.ExecuteNonQuery();
                 }

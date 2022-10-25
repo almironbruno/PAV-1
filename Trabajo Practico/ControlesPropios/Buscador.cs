@@ -65,6 +65,10 @@ namespace Trabajo_Practico.ControlesPropios
         {
             btn_deshacer.PerformClick();
         }
-        
+
+        private void txt_buscar_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -100,6 +100,7 @@
             this.buscador1.Name = "buscador1";
             this.buscador1.Size = new System.Drawing.Size(331, 47);
             this.buscador1.TabIndex = 18;
+            this.buscador1.Load += new System.EventHandler(this.buscador1_Load);
             // 
             // txt_nroFactura
             // 
