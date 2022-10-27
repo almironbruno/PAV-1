@@ -18,7 +18,7 @@ namespace Trabajo_Practico.Clases.BackEnd.NegocioAutos
         {
 
             string sqlInsertar = @"INSERT INTO autos"
-                                 + "(cod_serie_fabrica, id_nombrecomercial, año_fabricacion, id_condicion, nro_chasis, nro_motor, patente)"
+                                 + "(cod_serie_fabrica, id_nombrecomercial, año_fabricacion, id_condicion, nro_chasis, nro_motor, patente, monto, estado)"
                                  + "VALUES('"
                                  + autoAgregar.cod_serie_fabrica + "'"
                                  + ", '" + autoAgregar.nombreComercial + "'"
@@ -26,7 +26,9 @@ namespace Trabajo_Practico.Clases.BackEnd.NegocioAutos
                                  + ", '" + autoAgregar.condicion + "'"
                                  + ", '" + autoAgregar.nro_Chasis + "'"
                                  + ", '" + autoAgregar.nro_Motor + "'"
-                                 + ", '" + autoAgregar.patente+ "')";
+                                 + ", '" + autoAgregar.patente + "'" 
+                                 + ", '" + autoAgregar.precio + "'" 
+                                 + ", '" + autoAgregar.estado + "')";
 
             //Insertar A Travez de la funcion de BackEnd
 
@@ -104,13 +106,18 @@ namespace Trabajo_Practico.Clases.BackEnd.NegocioAutos
             _BD.Eliminar(sqlBorrar);
         }
 
+        public void AutoVendido(string codSerie)
+        {
+            string sqlInsertar = $"UPDATE autos SET estado = 'true' WHERE cod_serie_fabrica = '" + codSerie + "'";
+            _BD.modificar(sqlInsertar);
+        }
 
 
         //Relacionar el auto modificado , con algun dato que sirva como antecedente para vincularlo, en este caso la patente vieja.
         public void ModificarAuto(Vehiculos autoMod,string patentevieja)
         {
             string sqlInsertar = $"UPDATE autos SET cod_serie_fabrica = '"+autoMod.cod_serie_fabrica+"', id_nombrecomercial = '"+autoMod.nombreComercial+"', año_fabricacion = '"+autoMod.año_Fabricacion+"' " +
-                $", id_condicion = '"+autoMod.condicion+"', nro_chasis = '"+autoMod.nro_Chasis+"', nro_motor ='"+autoMod.nro_Motor+"' , patente = '"+autoMod.patente+"' " +
+                $", id_condicion = '"+autoMod.condicion+"', nro_chasis = '"+autoMod.nro_Chasis+"', nro_motor ='"+autoMod.nro_Motor+"' , patente = '"+autoMod.patente+"' , monto = '"+autoMod.precio+"' " +
                 $" WHERE patente = '"+patentevieja+"' ";
             _BD.modificar(sqlInsertar);
         }

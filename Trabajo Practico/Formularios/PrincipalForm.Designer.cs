@@ -61,7 +61,21 @@
             this.marcasToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
             this.nombreComercialToolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
             this.lbl_legajo = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.dgrMisDetalles = new System.Windows.Forms.DataGridView();
+            this.Nro_Factura = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Cod_Serie_Fabrica = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Monto = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.label2 = new System.Windows.Forms.Label();
+            this.dgrMisVentas = new System.Windows.Forms.DataGridView();
+            this.Num_Factura = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Tipo_Doc_Cliente = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Nro_Doc_Cliente = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Fecha = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.btnRefreshVentas = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgrMisDetalles)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgrMisVentas)).BeginInit();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -77,7 +91,7 @@
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Padding = new System.Windows.Forms.Padding(4, 2, 0, 2);
-            this.menuStrip1.Size = new System.Drawing.Size(950, 28);
+            this.menuStrip1.Size = new System.Drawing.Size(1047, 28);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -119,7 +133,7 @@
             // 
             this.barriosToolStripMenuItem.Image = global::Trabajo_Practico.Properties.Resources._9162463_sign_map_location_placeholder_street_icon;
             this.barriosToolStripMenuItem.Name = "barriosToolStripMenuItem";
-            this.barriosToolStripMenuItem.Size = new System.Drawing.Size(184, 26);
+            this.barriosToolStripMenuItem.Size = new System.Drawing.Size(136, 22);
             this.barriosToolStripMenuItem.Text = "Barrios";
             this.barriosToolStripMenuItem.Click += new System.EventHandler(this.barriosToolStripMenuItem_Click);
             // 
@@ -127,8 +141,7 @@
             // 
             this.empleadosToolStripMenuItem.Image = global::Trabajo_Practico.Properties.Resources._4308153_chart_data_employee_graph_manager_icon;
             this.empleadosToolStripMenuItem.Name = "empleadosToolStripMenuItem";
-            this.empleadosToolStripMenuItem.Size = new System.Drawing.Size(184, 26);
-
+            this.empleadosToolStripMenuItem.Size = new System.Drawing.Size(136, 22);
             this.empleadosToolStripMenuItem.Text = "Empleados";
             this.empleadosToolStripMenuItem.Click += new System.EventHandler(this.empleadosToolStripMenuItem_Click);
             // 
@@ -136,9 +149,7 @@
             // 
             this.clientesToolStripMenuItem.Image = global::Trabajo_Practico.Properties.Resources._4308184_client_costs_employee_finance_money_icon;
             this.clientesToolStripMenuItem.Name = "clientesToolStripMenuItem";
-
-            this.clientesToolStripMenuItem.Size = new System.Drawing.Size(184, 26);
-
+            this.clientesToolStripMenuItem.Size = new System.Drawing.Size(136, 22);
             this.clientesToolStripMenuItem.Text = "Clientes";
             this.clientesToolStripMenuItem.Click += new System.EventHandler(this.clientesToolStripMenuItem_Click);
             // 
@@ -146,9 +157,7 @@
             // 
             this.autosToolStripMenuItem.Image = global::Trabajo_Practico.Properties.Resources._352315_car_directions_icon;
             this.autosToolStripMenuItem.Name = "autosToolStripMenuItem";
-
-            this.autosToolStripMenuItem.Size = new System.Drawing.Size(184, 26);
-
+            this.autosToolStripMenuItem.Size = new System.Drawing.Size(136, 22);
             this.autosToolStripMenuItem.Text = "Autos";
             this.autosToolStripMenuItem.Click += new System.EventHandler(this.autosToolStripMenuItem_Click);
             // 
@@ -156,9 +165,7 @@
             // 
             this.marcaToolStripMenuItem.Image = global::Trabajo_Practico.Properties.Resources._7422513_ford_cars_logo_motors_icon;
             this.marcaToolStripMenuItem.Name = "marcaToolStripMenuItem";
-
-            this.marcaToolStripMenuItem.Size = new System.Drawing.Size(184, 26);
-
+            this.marcaToolStripMenuItem.Size = new System.Drawing.Size(136, 22);
             this.marcaToolStripMenuItem.Text = "Marcas";
             this.marcaToolStripMenuItem.Click += new System.EventHandler(this.marcaToolStripMenuItem_Click);
             // 
@@ -166,8 +173,7 @@
             // 
             this.telefonosToolStripMenuItem.Image = global::Trabajo_Practico.Properties.Resources._211830_telephone_icon;
             this.telefonosToolStripMenuItem.Name = "telefonosToolStripMenuItem";
-            this.telefonosToolStripMenuItem.Size = new System.Drawing.Size(184, 26);
-
+            this.telefonosToolStripMenuItem.Size = new System.Drawing.Size(136, 22);
             this.telefonosToolStripMenuItem.Text = "Telefonos";
             this.telefonosToolStripMenuItem.Click += new System.EventHandler(this.telefonosToolStripMenuItem_Click);
             // 
@@ -175,9 +181,7 @@
             // 
             this.localidadesToolStripMenuItem.Image = global::Trabajo_Practico.Properties.Resources.Location;
             this.localidadesToolStripMenuItem.Name = "localidadesToolStripMenuItem";
-
-            this.localidadesToolStripMenuItem.Size = new System.Drawing.Size(184, 26);
-
+            this.localidadesToolStripMenuItem.Size = new System.Drawing.Size(136, 22);
             this.localidadesToolStripMenuItem.Text = "Localidades";
             this.localidadesToolStripMenuItem.Click += new System.EventHandler(this.localidadesToolStripMenuItem_Click);
             // 
@@ -185,7 +189,7 @@
             // 
             this.encargosToolStripMenuItem1.Image = global::Trabajo_Practico.Properties.Resources._326700_cart_shopping_icon;
             this.encargosToolStripMenuItem1.Name = "encargosToolStripMenuItem1";
-            this.encargosToolStripMenuItem1.Size = new System.Drawing.Size(184, 26);
+            this.encargosToolStripMenuItem1.Size = new System.Drawing.Size(136, 22);
             this.encargosToolStripMenuItem1.Text = "Encargos";
             this.encargosToolStripMenuItem1.Click += new System.EventHandler(this.encargosToolStripMenuItem1_Click);
             // 
@@ -239,14 +243,11 @@
             this.informesToolStripMenuItem.Size = new System.Drawing.Size(66, 24);
             this.informesToolStripMenuItem.Text = "Procesos";
             // 
-          
-
             // facturacionToolStripMenuItem
             // 
             this.facturacionToolStripMenuItem.Image = global::Trabajo_Practico.Properties.Resources._4192087_address_billing_delivery_invoice_location_icon;
             this.facturacionToolStripMenuItem.Name = "facturacionToolStripMenuItem";
-            this.facturacionToolStripMenuItem.Size = new System.Drawing.Size(184, 26);
-
+            this.facturacionToolStripMenuItem.Size = new System.Drawing.Size(136, 22);
             this.facturacionToolStripMenuItem.Text = "Facturacion";
             this.facturacionToolStripMenuItem.Click += new System.EventHandler(this.facturacionToolStripMenuItem_Click);
             // 
@@ -343,11 +344,130 @@
             this.lbl_legajo.TabIndex = 1;
             this.lbl_legajo.Text = "Legajo:";
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.label1.Location = new System.Drawing.Point(245, 116);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(119, 25);
+            this.label1.TabIndex = 3;
+            this.label1.Text = "Mis Ventas";
+            // 
+            // dgrMisDetalles
+            // 
+            this.dgrMisDetalles.AllowUserToAddRows = false;
+            this.dgrMisDetalles.AllowUserToDeleteRows = false;
+            this.dgrMisDetalles.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgrMisDetalles.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Nro_Factura,
+            this.Cod_Serie_Fabrica,
+            this.Monto});
+            this.dgrMisDetalles.Location = new System.Drawing.Point(601, 144);
+            this.dgrMisDetalles.Name = "dgrMisDetalles";
+            this.dgrMisDetalles.ReadOnly = true;
+            this.dgrMisDetalles.Size = new System.Drawing.Size(346, 306);
+            this.dgrMisDetalles.TabIndex = 5;
+            this.dgrMisDetalles.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgrMisDetalles_CellDoubleClick);
+            // 
+            // Nro_Factura
+            // 
+            this.Nro_Factura.DataPropertyName = "nro_factura";
+            this.Nro_Factura.HeaderText = "Nro_Factura";
+            this.Nro_Factura.Name = "Nro_Factura";
+            this.Nro_Factura.ReadOnly = true;
+            // 
+            // Cod_Serie_Fabrica
+            // 
+            this.Cod_Serie_Fabrica.DataPropertyName = "cod_serie_fabrica";
+            this.Cod_Serie_Fabrica.HeaderText = "Cod_Serie_Fabrica";
+            this.Cod_Serie_Fabrica.Name = "Cod_Serie_Fabrica";
+            this.Cod_Serie_Fabrica.ReadOnly = true;
+            // 
+            // Monto
+            // 
+            this.Monto.DataPropertyName = "monto";
+            this.Monto.HeaderText = "Monto";
+            this.Monto.Name = "Monto";
+            this.Monto.ReadOnly = true;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.label2.Location = new System.Drawing.Point(612, 116);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(307, 25);
+            this.label2.TabIndex = 6;
+            this.label2.Text = "Detalle de Venta Seleccionada";
+            // 
+            // dgrMisVentas
+            // 
+            this.dgrMisVentas.AllowUserToAddRows = false;
+            this.dgrMisVentas.AllowUserToDeleteRows = false;
+            this.dgrMisVentas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgrMisVentas.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Num_Factura,
+            this.Tipo_Doc_Cliente,
+            this.Nro_Doc_Cliente,
+            this.Fecha});
+            this.dgrMisVentas.Location = new System.Drawing.Point(72, 144);
+            this.dgrMisVentas.Name = "dgrMisVentas";
+            this.dgrMisVentas.ReadOnly = true;
+            this.dgrMisVentas.Size = new System.Drawing.Size(447, 306);
+            this.dgrMisVentas.TabIndex = 7;
+            this.dgrMisVentas.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgrMisVentas_CellDoubleClick);
+            // 
+            // Num_Factura
+            // 
+            this.Num_Factura.DataPropertyName = "nro_factura";
+            this.Num_Factura.HeaderText = "Num_Factura";
+            this.Num_Factura.Name = "Num_Factura";
+            this.Num_Factura.ReadOnly = true;
+            // 
+            // Tipo_Doc_Cliente
+            // 
+            this.Tipo_Doc_Cliente.DataPropertyName = "tipo_doc_cliente";
+            this.Tipo_Doc_Cliente.HeaderText = "Tipo_Doc_Cliente";
+            this.Tipo_Doc_Cliente.Name = "Tipo_Doc_Cliente";
+            this.Tipo_Doc_Cliente.ReadOnly = true;
+            // 
+            // Nro_Doc_Cliente
+            // 
+            this.Nro_Doc_Cliente.DataPropertyName = "nro_doc_cliente";
+            this.Nro_Doc_Cliente.HeaderText = "Nro_Doc_Cliente";
+            this.Nro_Doc_Cliente.Name = "Nro_Doc_Cliente";
+            this.Nro_Doc_Cliente.ReadOnly = true;
+            // 
+            // Fecha
+            // 
+            this.Fecha.DataPropertyName = "fecha";
+            this.Fecha.HeaderText = "Fecha";
+            this.Fecha.Name = "Fecha";
+            this.Fecha.ReadOnly = true;
+            // 
+            // btnRefreshVentas
+            // 
+            this.btnRefreshVentas.Location = new System.Drawing.Point(246, 456);
+            this.btnRefreshVentas.Name = "btnRefreshVentas";
+            this.btnRefreshVentas.Size = new System.Drawing.Size(118, 39);
+            this.btnRefreshVentas.TabIndex = 8;
+            this.btnRefreshVentas.Text = "Actualizar ";
+            this.btnRefreshVentas.UseVisualStyleBackColor = true;
+            this.btnRefreshVentas.Click += new System.EventHandler(this.btnRefreshVentas_Click);
+            // 
             // PrincipalForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(950, 558);
+            this.ClientSize = new System.Drawing.Size(1047, 558);
+            this.Controls.Add(this.btnRefreshVentas);
+            this.Controls.Add(this.dgrMisVentas);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.dgrMisDetalles);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.lbl_legajo);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
@@ -358,6 +478,8 @@
             this.Shown += new System.EventHandler(this.PrincipalForm_Shown);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgrMisDetalles)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgrMisVentas)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -399,5 +521,17 @@
         private System.Windows.Forms.ToolStripMenuItem localidadesToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem encargosToolStripMenuItem1;
         private System.Windows.Forms.Label lbl_legajo;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.DataGridView dgrMisDetalles;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Nro_Factura;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Cod_Serie_Fabrica;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Monto;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.DataGridView dgrMisVentas;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Num_Factura;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Tipo_Doc_Cliente;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Nro_Doc_Cliente;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Fecha;
+        private System.Windows.Forms.Button btnRefreshVentas;
     }
 }

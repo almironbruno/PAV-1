@@ -18,6 +18,7 @@ using Trabajo_Practico.Formularios.ABMC.ABMC_Encargos;
 using Trabajo_Practico.Formularios.ABMC.ABMC_Localidades;
 using Trabajo_Practico.Clases.Entidades;
 using Trabajo_Practico.Formularios.Proceso;
+using Trabajo_Practico.Clases.BackEnd;
 
 namespace Trabajo_Practico.Formularios
 {
@@ -32,7 +33,7 @@ namespace Trabajo_Practico.Formularios
             InitializeComponent();
 
             WindowState = FormWindowState.Maximized;
-
+            
         }
 
         private void PrincipalForm_Load(object sender, EventArgs e)
@@ -43,6 +44,13 @@ namespace Trabajo_Practico.Formularios
             login.ShowDialog();
             legajo = login.buscarLeg();
             lbl_legajo.Text ="Legajo: "+ legajo;
+
+            CargarVentas(legajo);
+            
+            
+            ;
+
+
         }
 
         private void empleadosToolStripMenuItem_Click(object sender, EventArgs e)
@@ -82,6 +90,29 @@ namespace Trabajo_Practico.Formularios
             
 
             
+        }
+
+        public void CargarVentas(string legajo)
+
+        {
+            
+            string consulta = (@"SELECT nro_factura, tipo_doc_cliente, nro_doc_cliente, fecha FROM ventas WHERE legajo_empleado = '"+legajo+"'");
+            try
+            {
+                DataTable tabla = new DataTable();
+                BE_Acceso_Datos bd = new BE_Acceso_Datos();
+                tabla = bd.Ejecutar_Select(consulta);
+                if (tabla.Rows.Count > 0)
+                {
+                    dgrMisVentas.DataSource = tabla;
+                }
+                
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error en la consulta de Ventas Realizadas");
+
+            }
         }
 
         private void cerrarSesionToolStripMenuItem_Click(object sender, EventArgs e)
@@ -141,6 +172,40 @@ namespace Trabajo_Practico.Formularios
             DataGridView dtg = new DataGridView();
             FormVenta ventanaVenta = new FormVenta(dtg,legajo);
             ventanaVenta.ShowDialog();
+        }
+
+        private void btnRefreshVentas_Click(object sender, EventArgs e)
+        {
+            CargarVentas(legajo);
+        }
+
+        private void dgrMisDetalles_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void dgrMisVentas_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            
+            var fila = dgrMisVentas.CurrentRow;
+            if (fila != null)
+            {
+                int nroFactura = int.Parse(fila.Cells[0].Value.ToString());
+                string consulta = "SELECT * FROM detalle_ventas WHERE nro_factura = '" + nroFactura +"'";
+                BE_Acceso_Datos db = new BE_Acceso_Datos();
+                DataTable dt = new DataTable();
+                dgrMisDetalles.DataSource = db.Ejecutar_Select(consulta); ;
+
+            }
+            else
+            {
+                MessageBox.Show("Fila Vacia!");
+            }
+            
+
+
+
+
         }
     }
 }

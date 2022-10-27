@@ -90,19 +90,43 @@ namespace Trabajo_Practico.Formularios.Proceso
             int condicion = int.Parse(cmbCondicion.cmb_Cargable.SelectedValue.ToString());
             int modelo = int.Parse(cmbModelo.cmb_Cargable.SelectedValue.ToString());
 
+            DataTable dt = new DataTable();
+
+
+
             try
             {
                 DataTable tabla = new DataTable();
                 tabla = nP.SelectVehiculoDisponible(marca, modelo, condicion, gama, año);
                 if (tabla.Rows.Count > 0)
                 {
-                    dgr_autos.DataSource = tabla;
+                    string vigente = tabla.Rows[0]["estado"].ToString();
+                    if(vigente == "False") 
+                    {
+                        txtEstado.Text = "Disponible";
+                        dgr_autos.DataSource = tabla;
+
+                    }
+                    else
+                    {
+                        txtEstado.Text = "Vendido";
+                        MessageBox.Show("El vehiculo Seleccionado se encuentra Vendido");
+                          
+                    }
                 }
+                //if (tabla.Rows.Count > 0)
+                //{
+                    //dgr_autos.DataSource = tabla;
+
+
+                //}
                 else
                 {
                     MessageBox.Show("No se encontraron vehiculos con las caracteristicas seleccionadas");
                     cmbMarca.Focus();
                 }
+
+
             }
             catch (Exception ex)
             {
@@ -171,6 +195,7 @@ namespace Trabajo_Practico.Formularios.Proceso
             if (rta)
             {
                 MessageBox.Show("Transaccion Exitosa");
+                
             }
             else
             {
@@ -207,6 +232,9 @@ namespace Trabajo_Practico.Formularios.Proceso
 
         }
 
-       
+        private void btn_Cancelar_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

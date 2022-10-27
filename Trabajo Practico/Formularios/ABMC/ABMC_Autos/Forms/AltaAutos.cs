@@ -61,8 +61,11 @@ namespace Trabajo_Practico.Formularios.ABMC.Autos
                     string nroChasis = txtNroChasis.Text;
                     string nroMotor = txtNroMotor.Text;
                     string patente = txtPatente.Text;
+                    string precio = txtPrecioAuto.Text;
+                    //Al ser un nuevo auto, su estado de vendido es false.
+                    bool vendido = false;
 
-                    Vehiculos nvoAuto = new Vehiculos(codSerie, nombComer, añoFab, condicion, nroChasis, nroMotor, patente);
+                    Vehiculos nvoAuto = new Vehiculos(codSerie, nombComer, añoFab, condicion, nroChasis, nroMotor, patente,precio,vendido);
 
                     //MessageBox.Show(nvoAuto.mostrar(nvoAuto));
 

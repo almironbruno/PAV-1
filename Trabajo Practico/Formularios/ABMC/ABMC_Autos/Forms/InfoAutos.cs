@@ -23,6 +23,8 @@ namespace Trabajo_Practico.Formularios.ABMC.Autos
             txtNroChasis.Enabled = false;
             txtNroMotor.Enabled = false;
             txtPatente.Enabled = false;
+            txtPrecioAuto.Enabled = false;
+            
             cmbCondicion.cmb_Cargable.Enabled = false;
             cmbNomComr.cmb_Cargable.Enabled = false;
 
@@ -53,6 +55,8 @@ namespace Trabajo_Practico.Formularios.ABMC.Autos
             txtNroChasis.Text = row.Cells[4].Value.ToString();
             txtNroMotor.Text = row.Cells[5].Value.ToString();
             txtPatente.Text = row.Cells[3].Value.ToString();
+            txtPrecioAuto.Text = row.Cells[7].Value.ToString();
+            
             
         
         }

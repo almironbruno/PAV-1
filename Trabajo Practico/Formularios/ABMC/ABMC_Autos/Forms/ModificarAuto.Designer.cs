@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.label8 = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProviderBase)).BeginInit();
             this.SuspendLayout();
             // 
             // btn_Aceptar
@@ -55,6 +56,8 @@
             this.Name = "ModificarAuto";
             this.Text = "ModificarAuto";
             this.Load += new System.EventHandler(this.ModificarAuto_Load);
+            this.Controls.SetChildIndex(this.txtPrecioAuto, 0);
+            this.Controls.SetChildIndex(this.btn_Cancelar, 0);
             this.Controls.SetChildIndex(this.btn_LimpiarCampos, 0);
             this.Controls.SetChildIndex(this.txtCodSerieFab, 0);
             this.Controls.SetChildIndex(this.cmbNomComr, 0);
@@ -65,6 +68,7 @@
             this.Controls.SetChildIndex(this.txtPatente, 0);
             this.Controls.SetChildIndex(this.btn_Aceptar, 0);
             this.Controls.SetChildIndex(this.label8, 0);
+            ((System.ComponentModel.ISupportInitialize)(this.errorProviderBase)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
