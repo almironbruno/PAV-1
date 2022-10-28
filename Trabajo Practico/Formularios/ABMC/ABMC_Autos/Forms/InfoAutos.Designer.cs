@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            ((System.ComponentModel.ISupportInitialize)(this.errorProviderBase)).BeginInit();
             this.SuspendLayout();
             // 
             // InfoAutos
@@ -38,7 +39,9 @@
             this.Name = "InfoAutos";
             this.Text = "InfoAutos";
             this.Load += new System.EventHandler(this.InfoAutos_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.errorProviderBase)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 

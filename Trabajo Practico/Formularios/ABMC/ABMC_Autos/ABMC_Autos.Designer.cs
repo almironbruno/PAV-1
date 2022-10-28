@@ -49,7 +49,8 @@
             // 
             // panel1
             // 
-            this.panel1.Size = new System.Drawing.Size(255, 426);
+            this.panel1.Margin = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.panel1.Size = new System.Drawing.Size(192, 346);
             // 
             // dataGridViewModificada1
             // 
@@ -57,8 +58,9 @@
             // 
             // ABMC_Autos
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
-            this.ClientSize = new System.Drawing.Size(1322, 554);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.ClientSize = new System.Drawing.Size(1154, 572);
+            this.Margin = new System.Windows.Forms.Padding(3, 3, 3, 3);
             this.Name = "ABMC_Autos";
             this.Text = "Autos";
             this.Activated += new System.EventHandler(this.ABMC_Autos_Activated);

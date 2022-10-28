@@ -22,7 +22,8 @@ namespace Trabajo_Practico.Clases.BackEnd.NegocioProceso
 				gamas.nombre_gama,
 				autos.año_fabricacion,
                 autos.cod_serie_fabrica,
-                autos.monto
+                autos.monto,
+                autos.estado
                 
 
 				FROM autos
@@ -120,7 +121,7 @@ namespace Trabajo_Practico.Clases.BackEnd.NegocioProceso
                     cmd.Parameters.AddWithValue("@cod_serie", codSerie);
 
                     NE_Autos nE_a = new NE_Autos();
-                    nE_a.BorrarAutoCodSerie(codSerie);
+                    nE_a.AutoVendido(codSerie);
 
 
 

@@ -70,3 +70,79 @@ C:\Users\Almir\Desktop\PAV\PAV-1-tp\Trabajo Practico\obj\Debug\Trabajo_Practico.
 C:\Users\Almir\Desktop\PAV\PAV-1-tp\Trabajo Practico\obj\Debug\Trabajo_Practico.Properties.Resources.resources
 C:\Users\Almir\Desktop\PAV\PAV-1-tp\Trabajo Practico\obj\Debug\Trabajo Practico.csproj.GenerateResource.cache
 C:\Users\Almir\Desktop\PAV\PAV-1-tp\Trabajo Practico\obj\Debug\Trabajo Practico.csproj.CoreCompileInputs.cache
+D:\Cosas facultad\PAV1\Presentacion\PAV-1\Trabajo Practico\obj\Debug\Trabajo Practico.csproj.AssemblyReference.cache
+D:\Cosas facultad\PAV1\Presentacion\PAV-1\Trabajo Practico\obj\Debug\Trabajo Practico.csproj.SuggestedBindingRedirects.cache
+D:\Cosas facultad\PAV1\Presentacion\PAV-1\Trabajo Practico\obj\Debug\Trabajo_Practico.ControlesPropios.Buscador.resources
+D:\Cosas facultad\PAV1\Presentacion\PAV-1\Trabajo Practico\obj\Debug\Trabajo_Practico.ControlesPropios.ComboCargable.resources
+D:\Cosas facultad\PAV1\Presentacion\PAV-1\Trabajo Practico\obj\Debug\Trabajo_Practico.DataGridViewModificada.resources
+D:\Cosas facultad\PAV1\Presentacion\PAV-1\Trabajo Practico\obj\Debug\Trabajo_Practico.ControlesPropios.TextBoxCargable.resources
+D:\Cosas facultad\PAV1\Presentacion\PAV-1\Trabajo Practico\obj\Debug\Trabajo_Practico.Formularios.ABMC.ABMC_Autos.CamposAutos.resources
+D:\Cosas facultad\PAV1\Presentacion\PAV-1\Trabajo Practico\obj\Debug\Trabajo_Practico.Formularios.ABMC.ABMC_Autos.Forms.BajaAutos.resources
+D:\Cosas facultad\PAV1\Presentacion\PAV-1\Trabajo Practico\obj\Debug\Trabajo_Practico.Formularios.ABMC.ABMC_Clientes.CamposClientes.resources
+D:\Cosas facultad\PAV1\Presentacion\PAV-1\Trabajo Practico\obj\Debug\Trabajo_Practico.Formularios.ABMC.ABMC_Clientes.Forms.BajaClientes.resources
+D:\Cosas facultad\PAV1\Presentacion\PAV-1\Trabajo Practico\obj\Debug\Trabajo_Practico.Formularios.ABMC.ABMC_Clientes.Forms.ConsultaClientes.resources
+D:\Cosas facultad\PAV1\Presentacion\PAV-1\Trabajo Practico\obj\Debug\Trabajo_Practico.Formularios.ABMC.ABMC_Clientes.Forms.InfoClientes.resources
+D:\Cosas facultad\PAV1\Presentacion\PAV-1\Trabajo Practico\obj\Debug\Trabajo_Practico.Formularios.ABMC_Empleados.resources
+D:\Cosas facultad\PAV1\Presentacion\PAV-1\Trabajo Practico\obj\Debug\Trabajo_Practico.Formularios.ABMC.Empleados.CamposEmpleados.resources
+D:\Cosas facultad\PAV1\Presentacion\PAV-1\Trabajo Practico\obj\Debug\Trabajo_Practico.Formularios.ABMC.ABMC_Empleados.BajaEmpleado.resources
+D:\Cosas facultad\PAV1\Presentacion\PAV-1\Trabajo Practico\obj\Debug\Trabajo_Practico.Formularios.ABMC.ABMC_Empleados.Forms.Consulta.resources
+D:\Cosas facultad\PAV1\Presentacion\PAV-1\Trabajo Practico\obj\Debug\Trabajo_Practico.Formularios.ABMC.ABMC_Empleados.Forms.InfoEmpleados.resources
+D:\Cosas facultad\PAV1\Presentacion\PAV-1\Trabajo Practico\obj\Debug\Trabajo_Practico.Formularios.ABMC.Autos.AltaAutos.resources
+D:\Cosas facultad\PAV1\Presentacion\PAV-1\Trabajo Practico\obj\Debug\Trabajo_Practico.Formularios.ABMC_Autos.resources
+D:\Cosas facultad\PAV1\Presentacion\PAV-1\Trabajo Practico\obj\Debug\Trabajo_Practico.Formularios.ABMC.Autos.BuscarAuto.resources
+D:\Cosas facultad\PAV1\Presentacion\PAV-1\Trabajo Practico\obj\Debug\Trabajo_Practico.Formularios.ABMC.Autos.InfoAutos.resources
+D:\Cosas facultad\PAV1\Presentacion\PAV-1\Trabajo Practico\obj\Debug\Trabajo_Practico.Formularios.ABMC.Autos.ModificarAuto.resources
+D:\Cosas facultad\PAV1\Presentacion\PAV-1\Trabajo Practico\obj\Debug\Trabajo_Practico.Formularios.ABMC.Clientes.AltaClientes.resources
+D:\Cosas facultad\PAV1\Presentacion\PAV-1\Trabajo Practico\obj\Debug\Trabajo_Practico.Formularios.ABMC.ABMC_Encargos.ABMC_Encargos.resources
+D:\Cosas facultad\PAV1\Presentacion\PAV-1\Trabajo Practico\obj\Debug\Trabajo_Practico.Formularios.ABMC.ABMC_Encargos.Campos_Encargos.resources
+D:\Cosas facultad\PAV1\Presentacion\PAV-1\Trabajo Practico\obj\Debug\Trabajo_Practico.Formularios.ABMC.ABMC_Encargos.Forms.AltaEncargos.resources
+D:\Cosas facultad\PAV1\Presentacion\PAV-1\Trabajo Practico\obj\Debug\Trabajo_Practico.Formularios.ABMC.ABMC_Encargos.Forms.BajaEncargos.resources
+D:\Cosas facultad\PAV1\Presentacion\PAV-1\Trabajo Practico\obj\Debug\Trabajo_Practico.Formularios.ABMC.ABMC_Encargos.Forms.BuscarEncargos.resources
+D:\Cosas facultad\PAV1\Presentacion\PAV-1\Trabajo Practico\obj\Debug\Trabajo_Practico.Formularios.ABMC.ABMC_Encargos.Forms.InfoEncargos.resources
+D:\Cosas facultad\PAV1\Presentacion\PAV-1\Trabajo Practico\obj\Debug\Trabajo_Practico.Formularios.ABMC.ABMC_Encargos.Forms.ModificarEncargos.resources
+D:\Cosas facultad\PAV1\Presentacion\PAV-1\Trabajo Practico\obj\Debug\Trabajo_Practico.Formularios.ABMC.ABMC_Localidades.ABMC_Localidades.resources
+D:\Cosas facultad\PAV1\Presentacion\PAV-1\Trabajo Practico\obj\Debug\Trabajo_Practico.Formularios.ABMC.ABMC_Localidades.CamposLocalidades.resources
+D:\Cosas facultad\PAV1\Presentacion\PAV-1\Trabajo Practico\obj\Debug\Trabajo_Practico.Formularios.ABMC.ABMC_Localidades.Forms.AltaLocalidades.resources
+D:\Cosas facultad\PAV1\Presentacion\PAV-1\Trabajo Practico\obj\Debug\Trabajo_Practico.Formularios.ABMC.ABMC_Localidades.Forms.BajaLocalidades.resources
+D:\Cosas facultad\PAV1\Presentacion\PAV-1\Trabajo Practico\obj\Debug\Trabajo_Practico.Formularios.ABMC.ABMC_Localidades.Forms.BuscarLocalidades.resources
+D:\Cosas facultad\PAV1\Presentacion\PAV-1\Trabajo Practico\obj\Debug\Trabajo_Practico.Formularios.ABMC.ABMC_Localidades.Forms.InfoLocalidades.resources
+D:\Cosas facultad\PAV1\Presentacion\PAV-1\Trabajo Practico\obj\Debug\Trabajo_Practico.Formularios.ABMC.ABMC_Localidades.Forms.ModificarLocalidades.resources
+D:\Cosas facultad\PAV1\Presentacion\PAV-1\Trabajo Practico\obj\Debug\Trabajo_Practico.Formularios.ABMC.Barrios.ConsultaBarrio.resources
+D:\Cosas facultad\PAV1\Presentacion\PAV-1\Trabajo Practico\obj\Debug\Trabajo_Practico.Formularios.ABMC.Barrios.InfoBarrios.resources
+D:\Cosas facultad\PAV1\Presentacion\PAV-1\Trabajo Practico\obj\Debug\Trabajo_Practico.Formularios.ABMC.Barrios.ModBarrio.resources
+D:\Cosas facultad\PAV1\Presentacion\PAV-1\Trabajo Practico\obj\Debug\Trabajo_Practico.Formularios.ABMC.Barrios.AltaBarrio.resources
+D:\Cosas facultad\PAV1\Presentacion\PAV-1\Trabajo Practico\obj\Debug\Trabajo_Practico.Formularios.ABMC.Barrios.Barrios.resources
+D:\Cosas facultad\PAV1\Presentacion\PAV-1\Trabajo Practico\obj\Debug\Trabajo_Practico.Formularios.ABMC.Clientes.ABMC_Clientes.resources
+D:\Cosas facultad\PAV1\Presentacion\PAV-1\Trabajo Practico\obj\Debug\Trabajo_Practico.Formularios.ABMC.Clientes.ModificacionCliente.resources
+D:\Cosas facultad\PAV1\Presentacion\PAV-1\Trabajo Practico\obj\Debug\Trabajo_Practico.Formularios.ABMC.Empleados.AltaEmpleados.resources
+D:\Cosas facultad\PAV1\Presentacion\PAV-1\Trabajo Practico\obj\Debug\Trabajo_Practico.Formularios.ABMC.ABMC_Marcas.CamposMarcas.resources
+D:\Cosas facultad\PAV1\Presentacion\PAV-1\Trabajo Practico\obj\Debug\Trabajo_Practico.Formularios.ABMC.Empleados.ModificacionEmpleados.resources
+D:\Cosas facultad\PAV1\Presentacion\PAV-1\Trabajo Practico\obj\Debug\Trabajo_Practico.Formularios.ABMC.Marcas.AltaMarcas.resources
+D:\Cosas facultad\PAV1\Presentacion\PAV-1\Trabajo Practico\obj\Debug\Trabajo_Practico.Formularios.ABMC.ABMC_Marcas.Forms.BajaMarca.resources
+D:\Cosas facultad\PAV1\Presentacion\PAV-1\Trabajo Practico\obj\Debug\Trabajo_Practico.Formularios.ABMC.Marcas.BuscarMarca.resources
+D:\Cosas facultad\PAV1\Presentacion\PAV-1\Trabajo Practico\obj\Debug\Trabajo_Practico.Formularios.ABMC_Marcas.resources
+D:\Cosas facultad\PAV1\Presentacion\PAV-1\Trabajo Practico\obj\Debug\Trabajo_Practico.Formularios.ABMC.Marcas.ModificarMarca.resources
+D:\Cosas facultad\PAV1\Presentacion\PAV-1\Trabajo Practico\obj\Debug\Trabajo_Practico.Formularios.ABMC.Telefonos.AltaTelefono.resources
+D:\Cosas facultad\PAV1\Presentacion\PAV-1\Trabajo Practico\obj\Debug\Trabajo_Practico.Formularios.ABMC.Telefonos.BajaTelefono.resources
+D:\Cosas facultad\PAV1\Presentacion\PAV-1\Trabajo Practico\obj\Debug\Trabajo_Practico.Formularios.ABMC.Telefonos.ConsultaTelefono.resources
+D:\Cosas facultad\PAV1\Presentacion\PAV-1\Trabajo Practico\obj\Debug\Trabajo_Practico.Formularios.ABMC.Telefonos.InfoTelefonos.resources
+D:\Cosas facultad\PAV1\Presentacion\PAV-1\Trabajo Practico\obj\Debug\Trabajo_Practico.Formularios.ABMC.Telefonos.ModificacionTelefono.resources
+D:\Cosas facultad\PAV1\Presentacion\PAV-1\Trabajo Practico\obj\Debug\Trabajo_Practico.Formularios.ABMC.Telefonos.TelefonosPrincipal.resources
+D:\Cosas facultad\PAV1\Presentacion\PAV-1\Trabajo Practico\obj\Debug\Trabajo_Practico.Formularios.FormBaseABMC.resources
+D:\Cosas facultad\PAV1\Presentacion\PAV-1\Trabajo Practico\obj\Debug\Trabajo_Practico.Formularios.Base.FormBaseAlta.resources
+D:\Cosas facultad\PAV1\Presentacion\PAV-1\Trabajo Practico\obj\Debug\Trabajo_Practico.Formularios.Base.FormBaseBaja.resources
+D:\Cosas facultad\PAV1\Presentacion\PAV-1\Trabajo Practico\obj\Debug\Trabajo_Practico.Formularios.Base.FormBaseBotones.resources
+D:\Cosas facultad\PAV1\Presentacion\PAV-1\Trabajo Practico\obj\Debug\Trabajo_Practico.Formularios.Base.FormBaseConsulta.resources
+D:\Cosas facultad\PAV1\Presentacion\PAV-1\Trabajo Practico\obj\Debug\Trabajo_Practico.Formularios.Base.FormBaseModificacion.resources
+D:\Cosas facultad\PAV1\Presentacion\PAV-1\Trabajo Practico\obj\Debug\Trabajo_Practico.LoginForm.resources
+D:\Cosas facultad\PAV1\Presentacion\PAV-1\Trabajo Practico\obj\Debug\Trabajo_Practico.Formularios.PrincipalForm.resources
+D:\Cosas facultad\PAV1\Presentacion\PAV-1\Trabajo Practico\obj\Debug\Trabajo_Practico.Formularios.NewUsuarioForm.resources
+D:\Cosas facultad\PAV1\Presentacion\PAV-1\Trabajo Practico\obj\Debug\Trabajo_Practico.Formularios.Proceso.FormVenta.resources
+D:\Cosas facultad\PAV1\Presentacion\PAV-1\Trabajo Practico\obj\Debug\Trabajo_Practico.Properties.Resources.resources
+D:\Cosas facultad\PAV1\Presentacion\PAV-1\Trabajo Practico\obj\Debug\Trabajo Practico.csproj.GenerateResource.cache
+D:\Cosas facultad\PAV1\Presentacion\PAV-1\Trabajo Practico\obj\Debug\Trabajo Practico.csproj.CoreCompileInputs.cache
+D:\Cosas facultad\PAV1\Presentacion\PAV-1\Trabajo Practico\bin\Debug\Trabajo Practico.exe.config
+D:\Cosas facultad\PAV1\Presentacion\PAV-1\Trabajo Practico\bin\Debug\Trabajo Practico.exe
+D:\Cosas facultad\PAV1\Presentacion\PAV-1\Trabajo Practico\bin\Debug\Trabajo Practico.pdb
+D:\Cosas facultad\PAV1\Presentacion\PAV-1\Trabajo Practico\obj\Debug\Trabajo Practico.exe
+D:\Cosas facultad\PAV1\Presentacion\PAV-1\Trabajo Practico\obj\Debug\Trabajo Practico.pdb

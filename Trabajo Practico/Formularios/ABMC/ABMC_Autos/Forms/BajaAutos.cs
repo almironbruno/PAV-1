@@ -24,6 +24,7 @@ namespace Trabajo_Practico.Formularios.ABMC.ABMC_Autos.Forms
             txtNroChasis.ReadOnly = true;
             txtNroMotor.ReadOnly = true;
             txtPatente.ReadOnly = true;
+            txtPrecioAuto.ReadOnly = true;
             cmbCondicion.Enabled = false;
             cmbNomComr.Enabled = false;
             btn_LimpiarCampos.Hide();
@@ -36,11 +37,15 @@ namespace Trabajo_Practico.Formularios.ABMC.ABMC_Autos.Forms
             string nro_chasis = row.Cells[4].Value.ToString();
             string nro_motor = row.Cells[5].Value.ToString();
             string patente = row.Cells[3].Value.ToString();
+            string monto = row.Cells[7].Value.ToString();
+            //Estado de Venta..
+
+            bool vendido = false;
 
 
             //Crear Objeto Auto
 
-            Vehiculos auto = new Vehiculos(codSerie, id_comer, añoFab, id_cond, nro_chasis, nro_motor, patente);
+            Vehiculos auto = new Vehiculos(codSerie, id_comer, añoFab, id_cond, nro_chasis, nro_motor, patente,monto,vendido);
 
             //cargar los campos con los datos del auto
 

@@ -467,12 +467,6 @@
     <Compile Include="Formularios\Login\NewUsuarioForm.Designer.cs">
       <DependentUpon>NewUsuarioForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Formularios\Proceso\AgregarAuto.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Formularios\Proceso\AgregarAuto.Designer.cs">
-      <DependentUpon>AgregarAuto.cs</DependentUpon>
-    </Compile>
     <Compile Include="Formularios\Proceso\FormVenta.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -675,9 +669,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\Login\NewUsuarioForm.resx">
       <DependentUpon>NewUsuarioForm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Formularios\Proceso\AgregarAuto.resx">
-      <DependentUpon>AgregarAuto.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\Proceso\FormVenta.resx">
       <DependentUpon>FormVenta.cs</DependentUpon>

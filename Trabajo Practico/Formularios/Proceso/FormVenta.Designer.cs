@@ -66,6 +66,8 @@
             this.txt_legajo = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.txtMontoTotal = new System.Windows.Forms.MaskedTextBox();
+            this.txtEstado = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.errorProviderBase)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgr_autos)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgr_factura)).BeginInit();
@@ -81,6 +83,7 @@
             // 
             this.btn_Cancelar.Location = new System.Drawing.Point(320, 604);
             this.btn_Cancelar.Margin = new System.Windows.Forms.Padding(4);
+            this.btn_Cancelar.Click += new System.EventHandler(this.btn_Cancelar_Click);
             // 
             // btn_LimpiarCampos
             // 
@@ -237,7 +240,7 @@
             // 
             // btnBuscar
             // 
-            this.btnBuscar.Location = new System.Drawing.Point(499, 229);
+            this.btnBuscar.Location = new System.Drawing.Point(375, 230);
             this.btnBuscar.Name = "btnBuscar";
             this.btnBuscar.Size = new System.Drawing.Size(75, 23);
             this.btnBuscar.TabIndex = 30;
@@ -407,6 +410,7 @@
             this.txt_legajo.ReadOnly = true;
             this.txt_legajo.Size = new System.Drawing.Size(100, 20);
             this.txt_legajo.TabIndex = 35;
+            // 
             // label6
             // 
             this.label6.AutoSize = true;
@@ -426,14 +430,33 @@
             this.txtMontoTotal.TabIndex = 35;
             this.txtMontoTotal.ValidatingType = typeof(int);
             // 
+            // txtEstado
+            // 
+            this.txtEstado.Location = new System.Drawing.Point(526, 230);
+            this.txtEstado.Name = "txtEstado";
+            this.txtEstado.ReadOnly = true;
+            this.txtEstado.Size = new System.Drawing.Size(121, 20);
+            this.txtEstado.TabIndex = 36;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(476, 237);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(46, 13);
+            this.label7.TabIndex = 37;
+            this.label7.Text = "Estado: ";
+            // 
             // FormVenta
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(783, 691);
-            this.Controls.Add(this.txt_legajo);
+            this.Controls.Add(this.label7);
+            this.Controls.Add(this.txtEstado);
             this.Controls.Add(this.txtMontoTotal);
             this.Controls.Add(this.label6);
+            this.Controls.Add(this.txt_legajo);
             this.Controls.Add(this.dgr_factura);
             this.Controls.Add(this.dgr_autos);
             this.Controls.Add(this.cmbAño);
@@ -486,6 +509,8 @@
             this.Controls.SetChildIndex(this.txt_legajo, 0);
             this.Controls.SetChildIndex(this.label6, 0);
             this.Controls.SetChildIndex(this.txtMontoTotal, 0);
+            this.Controls.SetChildIndex(this.txtEstado, 0);
+            this.Controls.SetChildIndex(this.label7, 0);
             ((System.ComponentModel.ISupportInitialize)(this.errorProviderBase)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgr_autos)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgr_factura)).EndInit();
@@ -537,5 +562,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn11;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.MaskedTextBox txtMontoTotal;
+        private System.Windows.Forms.TextBox txtEstado;
+        private System.Windows.Forms.Label label7;
     }
 }

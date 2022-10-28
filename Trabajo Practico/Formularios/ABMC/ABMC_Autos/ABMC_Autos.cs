@@ -19,7 +19,7 @@ namespace Trabajo_Practico.Formularios
         public ABMC_Autos()
         {
             //Consulta para relacionar los id nombre comercial y condicion, con los diferentes tipos de nombres comerciales y condiciones
-            consultaPrincipal = (@"SELECT a.cod_serie_fabrica, n.nombre_comercial, a.año_fabricacion, a.patente, a.nro_chasis, a.nro_motor, c.nombre_condicion
+            consultaPrincipal = (@"SELECT a.cod_serie_fabrica, n.nombre_comercial, a.año_fabricacion, a.patente, a.nro_chasis, a.nro_motor, c.nombre_condicion, a.monto
                 FROM autos A
                 JOIN nombres_comerciales AS N
                 ON A.id_nombrecomercial = N.id_nombrecomercial
