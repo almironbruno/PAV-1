@@ -27,7 +27,7 @@ namespace Trabajo_Practico.Formularios.Proceso
             txt_legajo.Text = legajo;
             txtMontoTotal.Text = 0.ToString();
 
-
+            txtEstado.Text = " ";
             cmbMarca.cargarAlmacenado("GetNombres", "nombre", "id_marca");
             cmbModelo.cargarAlmacenado("GetNombresComerciales", "nombre_comercial", "id_nombrecomercial");
             cmbCondicion.cargarAlmacenado("GetCondiciones", "nombre_condicion", "id_condicion");
@@ -43,14 +43,12 @@ namespace Trabajo_Practico.Formularios.Proceso
             {
                 string nro = dt.Rows[0]["venta"].ToString();
 
-                txt_nroFactura.Text = nro;
-
-                MessageBox.Show(nro);
+                txt_nroFactura.Text = nro;;
 
             }
             else
             {
-                MessageBox.Show("error");
+                MessageBox.Show("Error - nroFactura Invalido");
 
             }
         }
@@ -137,6 +135,12 @@ namespace Trabajo_Practico.Formularios.Proceso
 
         private void dgr_autos_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
+           
+           if(validarInclusion(dgr_autos.SelectedRows[0].Cells[5].Value.ToString()))
+            {
+                MessageBox.Show("¡Ya se incluyo el auto en la factura!");
+                return;
+            };
             dgr_factura.Rows.Add(dgr_autos.SelectedRows[0].Cells[0].Value, 
                                     dgr_autos.SelectedRows[0].Cells[5].Value,
                                     dgr_autos.SelectedRows[0].Cells[4].Value, 
@@ -149,6 +153,22 @@ namespace Trabajo_Practico.Formularios.Proceso
             SumEachRows();
 
 
+        }
+        private bool validarInclusion(string codigo)
+        {
+            //Controla que el codigo no este ya incluido en la factura
+            for (int i = 0; i < dgr_factura.Rows.Count; i++)
+            {
+                MessageBox.Show(dgr_factura.Rows[i].Cells[1].Value.ToString());
+                if (codigo == dgr_factura.Rows[i].Cells[1].Value.ToString())
+                {
+                    return true;
+                }
+
+            }
+                
+                
+            return false;
         }
 
         private void dgr_factura_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
@@ -164,6 +184,8 @@ namespace Trabajo_Practico.Formularios.Proceso
 
         private void btn_Aceptar_Click(object sender, EventArgs e)
         {
+            //validaciones
+            if (!validarCampos() || dgr_factura.Rows.Count==0) return;
             Venta vta = new Venta();
 
 
@@ -195,6 +217,8 @@ namespace Trabajo_Practico.Formularios.Proceso
             if (rta)
             {
                 MessageBox.Show("Transaccion Exitosa");
+                limpiarGrillas();
+                this.Close();
                 
             }
             else
@@ -234,6 +258,20 @@ namespace Trabajo_Practico.Formularios.Proceso
 
         private void btn_Cancelar_Click(object sender, EventArgs e)
         {
+
+        }
+        private void limpiarGrillas() 
+        {
+            //funcion que limpia la grilla de Autos y factura
+            DataTable dt = dgr_autos.DataSource as DataTable;
+
+            if (dt != null) 
+            {
+                dt.Rows.Clear();
+            }
+           
+            dgr_factura.Rows.Clear();
+            
 
         }
     }

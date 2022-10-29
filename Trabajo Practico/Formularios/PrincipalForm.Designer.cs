@@ -359,6 +359,7 @@
             // 
             this.dgrMisDetalles.AllowUserToAddRows = false;
             this.dgrMisDetalles.AllowUserToDeleteRows = false;
+            this.dgrMisDetalles.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgrMisDetalles.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgrMisDetalles.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Nro_Factura,
@@ -367,6 +368,8 @@
             this.dgrMisDetalles.Location = new System.Drawing.Point(601, 144);
             this.dgrMisDetalles.Name = "dgrMisDetalles";
             this.dgrMisDetalles.ReadOnly = true;
+            this.dgrMisDetalles.RowHeadersVisible = false;
+            this.dgrMisDetalles.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgrMisDetalles.Size = new System.Drawing.Size(346, 306);
             this.dgrMisDetalles.TabIndex = 5;
             this.dgrMisDetalles.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgrMisDetalles_CellDoubleClick);
@@ -407,6 +410,9 @@
             // 
             this.dgrMisVentas.AllowUserToAddRows = false;
             this.dgrMisVentas.AllowUserToDeleteRows = false;
+            this.dgrMisVentas.AllowUserToResizeColumns = false;
+            this.dgrMisVentas.AllowUserToResizeRows = false;
+            this.dgrMisVentas.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgrMisVentas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgrMisVentas.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Num_Factura,
@@ -416,6 +422,8 @@
             this.dgrMisVentas.Location = new System.Drawing.Point(72, 144);
             this.dgrMisVentas.Name = "dgrMisVentas";
             this.dgrMisVentas.ReadOnly = true;
+            this.dgrMisVentas.RowHeadersVisible = false;
+            this.dgrMisVentas.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgrMisVentas.Size = new System.Drawing.Size(447, 306);
             this.dgrMisVentas.TabIndex = 7;
             this.dgrMisVentas.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgrMisVentas_CellDoubleClick);
@@ -474,6 +482,7 @@
             this.Name = "PrincipalForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Sistema de Gestion Consecionario";
+            this.Activated += new System.EventHandler(this.PrincipalForm_Activated);
             this.Load += new System.EventHandler(this.PrincipalForm_Load);
             this.Shown += new System.EventHandler(this.PrincipalForm_Shown);
             this.menuStrip1.ResumeLayout(false);

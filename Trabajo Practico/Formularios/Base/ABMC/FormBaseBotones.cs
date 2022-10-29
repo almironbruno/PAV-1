@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Trabajo_Practico.Clases.BackEnd;
+using Trabajo_Practico.ControlesPropios;
 
 namespace Trabajo_Practico.Formularios.Base
 {
@@ -91,6 +92,18 @@ namespace Trabajo_Practico.Formularios.Base
                         hayErrores = true;
                     }
 
+                }
+                if (item is Buscador) 
+                {
+                    //se fija que el buscador no este vacio
+                    //Hace la conversion
+                    Buscador buscador = (Buscador)item;
+                    if (buscador.cmb_buscar.ValueMember == "") 
+                    {
+                        item.Focus();// Mueve el cursor al campo
+                        errorProviderBase.SetError(item, "No puede dejar el cliente vacio");
+                        hayErrores = true;
+                    }
                 }
 
             }

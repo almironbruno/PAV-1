@@ -65,7 +65,6 @@ C:\Users\Almir\Desktop\PAV\PAV-1-tp\Trabajo Practico\obj\Debug\Trabajo_Practico.
 C:\Users\Almir\Desktop\PAV\PAV-1-tp\Trabajo Practico\obj\Debug\Trabajo_Practico.LoginForm.resources
 C:\Users\Almir\Desktop\PAV\PAV-1-tp\Trabajo Practico\obj\Debug\Trabajo_Practico.Formularios.PrincipalForm.resources
 C:\Users\Almir\Desktop\PAV\PAV-1-tp\Trabajo Practico\obj\Debug\Trabajo_Practico.Formularios.NewUsuarioForm.resources
-C:\Users\Almir\Desktop\PAV\PAV-1-tp\Trabajo Practico\obj\Debug\Trabajo_Practico.Formularios.Proceso.AgregarAuto.resources
 C:\Users\Almir\Desktop\PAV\PAV-1-tp\Trabajo Practico\obj\Debug\Trabajo_Practico.Formularios.Proceso.FormVenta.resources
 C:\Users\Almir\Desktop\PAV\PAV-1-tp\Trabajo Practico\obj\Debug\Trabajo_Practico.Properties.Resources.resources
 C:\Users\Almir\Desktop\PAV\PAV-1-tp\Trabajo Practico\obj\Debug\Trabajo Practico.csproj.GenerateResource.cache
@@ -146,3 +145,8 @@ D:\Cosas facultad\PAV1\Presentacion\PAV-1\Trabajo Practico\bin\Debug\Trabajo Pra
 D:\Cosas facultad\PAV1\Presentacion\PAV-1\Trabajo Practico\bin\Debug\Trabajo Practico.pdb
 D:\Cosas facultad\PAV1\Presentacion\PAV-1\Trabajo Practico\obj\Debug\Trabajo Practico.exe
 D:\Cosas facultad\PAV1\Presentacion\PAV-1\Trabajo Practico\obj\Debug\Trabajo Practico.pdb
+C:\Users\Almir\Desktop\PAV\PAV-1-tp\Trabajo Practico\bin\Debug\Trabajo Practico.exe.config
+C:\Users\Almir\Desktop\PAV\PAV-1-tp\Trabajo Practico\bin\Debug\Trabajo Practico.exe
+C:\Users\Almir\Desktop\PAV\PAV-1-tp\Trabajo Practico\bin\Debug\Trabajo Practico.pdb
+C:\Users\Almir\Desktop\PAV\PAV-1-tp\Trabajo Practico\obj\Debug\Trabajo Practico.exe
+C:\Users\Almir\Desktop\PAV\PAV-1-tp\Trabajo Practico\obj\Debug\Trabajo Practico.pdb

@@ -207,6 +207,12 @@ namespace Trabajo_Practico.Formularios
 
 
         }
+
+        private void PrincipalForm_Activated(object sender, EventArgs e)
+        {
+            //carga las grillas cuando se graba 
+            CargarVentas(legajo);
+        }
     }
 }
 
