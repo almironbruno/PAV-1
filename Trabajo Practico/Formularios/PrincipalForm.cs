@@ -44,7 +44,7 @@ namespace Trabajo_Practico.Formularios
             login.ShowDialog();
             legajo = login.buscarLeg();
             lbl_legajo.Text ="Legajo: "+ legajo;
-
+            dgrMisVentas.ShowCellToolTips = true;
             CargarVentas(legajo);
             
             
@@ -112,6 +112,15 @@ namespace Trabajo_Practico.Formularios
             {
                 MessageBox.Show("Error en la consulta de Ventas Realizadas");
 
+            }
+            for (int i = 0; i < dgrMisVentas.Rows.Count; i++)
+            {
+                for (int j = 0; j < 4; j++)
+                {
+                    dgrMisVentas.Rows[i].Cells[j].ToolTipText = "Doble Click para mostrar el detalle";
+                }
+              
+                
             }
         }
 
