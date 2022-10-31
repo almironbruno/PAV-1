@@ -59,7 +59,7 @@
             // ABMC_Autos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.ClientSize = new System.Drawing.Size(1154, 572);
+            this.ClientSize = new System.Drawing.Size(880, 557);
             this.Margin = new System.Windows.Forms.Padding(3, 3, 3, 3);
             this.Name = "ABMC_Autos";
             this.Text = "Autos";

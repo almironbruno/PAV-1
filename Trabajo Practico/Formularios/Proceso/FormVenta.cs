@@ -104,6 +104,7 @@ namespace Trabajo_Practico.Formularios.Proceso
                         txtEstado.Text = "Disponible";
                         dgr_autos.DataSource = tabla;
 
+
                     }
                     else
                     {
@@ -123,7 +124,7 @@ namespace Trabajo_Practico.Formularios.Proceso
                     MessageBox.Show("No se encontraron vehiculos con las caracteristicas seleccionadas");
                     cmbMarca.Focus();
                 }
-
+                colorear();
 
             }
             catch (Exception ex)
@@ -132,10 +133,33 @@ namespace Trabajo_Practico.Formularios.Proceso
 
             }
         }
+        private void colorear() 
+        {
+            //Colorea segun el estado
+            for (int i = 0; i < dgr_autos.Rows.Count; i++)
+            {
+                
+                if (dgr_autos.Rows[i].Cells[7].Value.ToString() == "False") 
+                {
+                    dgr_autos.Rows[i].Cells[7].Style.BackColor=Color.LightGreen;
 
+                }
+                else
+
+                {
+                    dgr_autos.Rows[i].Cells[7].Style.BackColor = Color.LightCoral;
+                };
+            }
+            
+        }
         private void dgr_autos_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
-           
+            if (validarEstado(dgr_autos.SelectedRows[0]))
+            {
+                MessageBox.Show("¡El auto está vendido, no puede comprarlo!");
+                return;
+
+            }
            if(validarInclusion(dgr_autos.SelectedRows[0].Cells[5].Value.ToString()))
             {
                 MessageBox.Show("¡Ya se incluyo el auto en la factura!");
@@ -154,16 +178,29 @@ namespace Trabajo_Practico.Formularios.Proceso
 
 
         }
+        private bool validarEstado(DataGridViewRow c)
+        {
+            //Valida que no este vendido
+            
+                if (c.Cells[7].Value.ToString() == "True")
+                {
+                    return true;
+                }
+            
+            return false;
+        }
         private bool validarInclusion(string codigo)
         {
+            
+            
             //Controla que el codigo no este ya incluido en la factura
             for (int i = 0; i < dgr_factura.Rows.Count; i++)
             {
-                MessageBox.Show(dgr_factura.Rows[i].Cells[1].Value.ToString());
                 if (codigo == dgr_factura.Rows[i].Cells[1].Value.ToString())
                 {
                     return true;
                 }
+                
 
             }
                 

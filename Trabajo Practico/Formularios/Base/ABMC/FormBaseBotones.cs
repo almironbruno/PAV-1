@@ -98,7 +98,7 @@ namespace Trabajo_Practico.Formularios.Base
                     //se fija que el buscador no este vacio
                     //Hace la conversion
                     Buscador buscador = (Buscador)item;
-                    if (buscador.cmb_buscar.ValueMember == "") 
+                    if (/*buscador.cmb_buscar.ValueMember == "" ||*/ buscador.cmb_buscar.Text=="") 
                     {
                         item.Focus();// Mueve el cursor al campo
                         errorProviderBase.SetError(item, "No puede dejar el cliente vacio");

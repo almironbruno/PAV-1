@@ -12,7 +12,7 @@ using Trabajo_Practico.Formularios.Base;
 
 namespace Trabajo_Practico.Formularios
 {
-    public partial class FormBaseABMC : Form
+    public partial class FormBaseABMC : FormBaseBotones
     {
         protected BE_Acceso_Datos bd;
         //Se definen la consultas para que sean genericas
