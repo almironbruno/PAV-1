@@ -36,29 +36,26 @@
             // 
             // txt_buscar
             // 
-            this.txt_buscar.Location = new System.Drawing.Point(0, 6);
-            this.txt_buscar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txt_buscar.Location = new System.Drawing.Point(0, 0);
             this.txt_buscar.Multiline = true;
             this.txt_buscar.Name = "txt_buscar";
-            this.txt_buscar.Size = new System.Drawing.Size(200, 25);
+            this.txt_buscar.Size = new System.Drawing.Size(151, 21);
             this.txt_buscar.TabIndex = 0;
             this.txt_buscar.TextChanged += new System.EventHandler(this.txt_buscar_TextChanged);
             // 
             // cmb_buscar
             // 
             this.cmb_buscar.FormattingEnabled = true;
-            this.cmb_buscar.Location = new System.Drawing.Point(0, 6);
-            this.cmb_buscar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cmb_buscar.Location = new System.Drawing.Point(0, 0);
             this.cmb_buscar.Name = "cmb_buscar";
-            this.cmb_buscar.Size = new System.Drawing.Size(200, 24);
+            this.cmb_buscar.Size = new System.Drawing.Size(151, 21);
             this.cmb_buscar.TabIndex = 1;
             // 
             // btn_buscar
             // 
-            this.btn_buscar.Location = new System.Drawing.Point(209, 6);
-            this.btn_buscar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_buscar.Location = new System.Drawing.Point(157, 0);
             this.btn_buscar.Name = "btn_buscar";
-            this.btn_buscar.Size = new System.Drawing.Size(100, 28);
+            this.btn_buscar.Size = new System.Drawing.Size(75, 23);
             this.btn_buscar.TabIndex = 2;
             this.btn_buscar.Text = "Buscar";
             this.btn_buscar.UseVisualStyleBackColor = true;
@@ -66,10 +63,9 @@
             // 
             // btn_deshacer
             // 
-            this.btn_deshacer.Location = new System.Drawing.Point(317, 6);
-            this.btn_deshacer.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_deshacer.Location = new System.Drawing.Point(238, 0);
             this.btn_deshacer.Name = "btn_deshacer";
-            this.btn_deshacer.Size = new System.Drawing.Size(100, 28);
+            this.btn_deshacer.Size = new System.Drawing.Size(75, 23);
             this.btn_deshacer.TabIndex = 3;
             this.btn_deshacer.Text = "Deshacer";
             this.btn_deshacer.UseVisualStyleBackColor = true;
@@ -77,15 +73,14 @@
             // 
             // Buscador
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.btn_deshacer);
             this.Controls.Add(this.btn_buscar);
             this.Controls.Add(this.txt_buscar);
             this.Controls.Add(this.cmb_buscar);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Buscador";
-            this.Size = new System.Drawing.Size(425, 39);
+            this.Size = new System.Drawing.Size(429, 24);
             this.ResumeLayout(false);
             this.PerformLayout();
 

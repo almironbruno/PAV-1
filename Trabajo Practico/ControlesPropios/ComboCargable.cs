@@ -13,6 +13,9 @@ namespace Trabajo_Practico.ControlesPropios
 {
     public partial class ComboCargable : UserControl
     {
+        public event EventHandler SelectionChanged;
+        public event EventHandler DatasourceChanged;
+        public event EventHandler textChanged;
         public ComboCargable()
         {
             InitializeComponent();
@@ -85,6 +88,24 @@ namespace Trabajo_Practico.ControlesPropios
         private void cmb_Cargable_SelectedIndexChanged(object sender, EventArgs e)
         {
 
+        }
+
+        protected void cmb_Cargable_SelectedValueChanged(object sender, EventArgs e)
+        {
+            if (this.SelectionChanged != null)
+                this.SelectionChanged(this, e);
+        }
+
+        private void cmb_Cargable_DataSourceChanged(object sender, EventArgs e)
+        {
+            if (this.DatasourceChanged != null)
+                this.DatasourceChanged(this, e);
+        }
+
+        private void cmb_Cargable_TextChanged(object sender, EventArgs e)
+        {
+            if (this.DatasourceChanged != null)
+                this.DatasourceChanged(this, e);
         }
     }
 }

@@ -105,6 +105,28 @@ namespace Trabajo_Practico.Formularios.Base
                         hayErrores = true;
                     }
                 }
+                if (item is Panel) 
+                {
+                    Panel unPanel = (Panel)item;
+                    foreach(Control item1 in unPanel.Controls) 
+                    {
+                        if (item1 is Buscador)
+                        {
+                            //se fija que el buscador no este vacio
+                            //Hace la conversion
+                            Buscador buscador = (Buscador)item1;
+                            if (/*buscador.cmb_buscar.ValueMember == "" ||*/ buscador.cmb_buscar.Text == "")
+                            {
+                                item1.Focus();// Mueve el cursor al campo
+                                errorProviderBase.SetError(item, "No puede dejar el cliente vacio");
+                                hayErrores = true;
+                            }
+                        }
+
+
+                    }
+                
+                }
 
             }
             if (hayErrores)

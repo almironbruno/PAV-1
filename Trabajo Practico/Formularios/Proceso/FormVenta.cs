@@ -11,6 +11,7 @@ using Trabajo_Practico.Clases.BackEnd;
 using Trabajo_Practico.Clases.BackEnd.NegocioProceso;
 using Trabajo_Practico.Clases.Entidades;
 using Trabajo_Practico.Formularios.Base;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace Trabajo_Practico.Formularios.Proceso
 {
@@ -28,11 +29,23 @@ namespace Trabajo_Practico.Formularios.Proceso
             txtMontoTotal.Text = 0.ToString();
 
             txtEstado.Text = " ";
+
             cmbMarca.cargarAlmacenado("GetNombres", "nombre", "id_marca");
-            cmbModelo.cargarAlmacenado("GetNombresComerciales", "nombre_comercial", "id_nombrecomercial");
+            string sqlnombres = "SELECT DISTINCT nombres_comerciales.nombre_comercial, nombres_comerciales.id_nombrecomercial FROM autos INNER JOIN nombres_comerciales On autos.id_nombrecomercial = nombres_comerciales.id_nombrecomercial WHERE autos.estado = 'false' AND nombres_comerciales.id_marca = " + cmbMarca.cmb_Cargable.SelectedValue.ToString();
+
+            //handle the event
+            cmbModelo.cargar(sqlnombres, "nombre_comercial", "id_nombrecomercial");
+            string sqlanio = "SELECT distinct año_fabricacion FROM autos join nombres_comerciales on autos.id_nombrecomercial = nombres_comerciales.id_nombrecomercial WHERE autos.estado = 'false' and nombres_comerciales.nombre_comercial='" + cmbModelo.cmb_Cargable.Text.ToString()+"'";
+            cmbAño.cargar(sqlanio, "año_fabricacion", "año_fabricacion");
+
+            string sqlgama = "SELECT gamas.id_gama, gamas.nombre_gama\r\n\t\tFROM autos INNER JOIN nombres_comerciales\r\n\t\t\tOn autos.id_nombrecomercial = nombres_comerciales.id_nombrecomercial\r\n\t\t\tINNER JOIN gamas ON nombres_comerciales.id_gama = gamas.id_gama\r\n\t\t\t\r\n\t\tWHERE autos.estado = 'false' and nombres_comerciales.nombre_comercial ='" + cmbModelo.cmb_Cargable.Text.ToString() + "'  \r\n\t\tGROUP BY gamas.id_gama, gamas.nombre_gama";
+            cmbGama.cargar(sqlgama, "nombre_gama", "id_gama");
+
+
+            //cmbModelo.cargarAlmacenado("GetNombresComerciales", "nombre_comercial", "id_nombrecomercial");
             cmbCondicion.cargarAlmacenado("GetCondiciones", "nombre_condicion", "id_condicion");
-            cmbGama.cargarAlmacenado("GetGamas", "nombre_gama", "id_gama");
-            cmbAño.cargarAlmacenado("GetAnoFabricacion", "año_fabricacion", "año_fabricacion");
+            //cmbGama.cargarAlmacenado("GetGamas", "nombre_gama", "id_gama");
+            //cmbAño.cargarAlmacenado("GetAnoFabricacion", "año_fabricacion", "año_fabricacion");
             BE_Acceso_Datos bd = new BE_Acceso_Datos();
             CargarSugerencia();
             
@@ -189,7 +202,7 @@ namespace Trabajo_Practico.Formularios.Proceso
             }
            if(validarInclusion(dgr_autos.SelectedRows[0].Cells[5].Value.ToString()))
             {
-                MessageBox.Show("¡Ya se incluyo el auto en la factura!");
+                MessageBox.Show("¡Ya se incluyó el auto en la factura!");
                 return;
             };
             dgr_factura.Rows.Add(dgr_autos.SelectedRows[0].Cells[0].Value, 
@@ -339,5 +352,41 @@ namespace Trabajo_Practico.Formularios.Proceso
             
 
         }
-    }
+
+        protected void cmbMarca_SelectionChanged(object sender, EventArgs e)
+        {
+           if (cmbMarca.cmb_Cargable.DataSource!=null  )
+            {
+            string sqlnombres = "SELECT DISTINCT nombres_comerciales.nombre_comercial, nombres_comerciales.id_nombrecomercial FROM autos INNER JOIN nombres_comerciales On autos.id_nombrecomercial = nombres_comerciales.id_nombrecomercial WHERE autos.estado = 'false' AND nombres_comerciales.id_marca = " + cmbMarca.cmb_Cargable.SelectedValue.ToString();
+
+            cmbModelo.cargar(sqlnombres, "nombre_comercial", "id_nombrecomercial");
+            
+            string sqlanio = "SELECT distinct año_fabricacion FROM autos join nombres_comerciales on autos.id_nombrecomercial = nombres_comerciales.id_nombrecomercial WHERE autos.estado = 'false' and nombres_comerciales.nombre_comercial='" + cmbModelo.cmb_Cargable.Text.ToString() + "'";
+            cmbAño.cargar(sqlanio, "año_fabricacion", "año_fabricacion");
+
+                string sqlgama = "SELECT gamas.id_gama, gamas.nombre_gama\r\n\t\tFROM autos INNER JOIN nombres_comerciales\r\n\t\t\tOn autos.id_nombrecomercial = nombres_comerciales.id_nombrecomercial\r\n\t\t\tINNER JOIN gamas ON nombres_comerciales.id_gama = gamas.id_gama\r\n\t\t\t\r\n\t\tWHERE autos.estado = 'false' and nombres_comerciales.nombre_comercial ='" + cmbModelo.cmb_Cargable.Text.ToString() + "'  \r\n\t\tGROUP BY gamas.id_gama, gamas.nombre_gama";
+                cmbGama.cargar(sqlgama, "nombre_gama", "id_gama");
+            }
+
+        }
+        protected void cmbModelo_textChanged(object sender, EventArgs e)
+        {
+            string sqlanio = "SELECT distinct año_fabricacion FROM autos join nombres_comerciales on autos.id_nombrecomercial = nombres_comerciales.id_nombrecomercial WHERE autos.estado = 'false' and nombres_comerciales.nombre_comercial='" + cmbModelo.cmb_Cargable.Text.ToString() + "'";
+            cmbAño.cargar(sqlanio, "año_fabricacion", "año_fabricacion");
+            string sqlgama = "SELECT gamas.id_gama, gamas.nombre_gama\r\n\t\tFROM autos INNER JOIN nombres_comerciales\r\n\t\t\tOn autos.id_nombrecomercial = nombres_comerciales.id_nombrecomercial\r\n\t\t\tINNER JOIN gamas ON nombres_comerciales.id_gama = gamas.id_gama\r\n\t\t\t\r\n\t\tWHERE autos.estado = 'false' and nombres_comerciales.nombre_comercial ='"+cmbModelo.cmb_Cargable.Text.ToString()+"'  \r\n\t\tGROUP BY gamas.id_gama, gamas.nombre_gama";
+            cmbGama.cargar(sqlgama, "nombre_gama", "id_gama");
+
+        }
+        protected void cmbMarca_textChanged(object sender, EventArgs e) 
+        {
+            string sqlnombres = "SELECT DISTINCT nombres_comerciales.nombre_comercial, nombres_comerciales.id_nombrecomercial FROM autos INNER JOIN nombres_comerciales On autos.id_nombrecomercial = nombres_comerciales.id_nombrecomercial WHERE autos.estado = 'false' AND nombres_comerciales.id_marca = " + cmbMarca.cmb_Cargable.SelectedValue.ToString();
+
+            cmbModelo.cargar(sqlnombres, "nombre_comercial", "id_nombrecomercial");
+
+            string sqlanio = "SELECT distinct año_fabricacion FROM autos join nombres_comerciales on autos.id_nombrecomercial = nombres_comerciales.id_nombrecomercial WHERE autos.estado = 'false' and nombres_comerciales.nombre_comercial='" + cmbModelo.cmb_Cargable.Text.ToString() + "'";
+            cmbAño.cargar(sqlanio, "año_fabricacion", "año_fabricacion");
+
+
+        }
+}
 }

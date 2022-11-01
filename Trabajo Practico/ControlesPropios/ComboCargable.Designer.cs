@@ -40,6 +40,9 @@
             this.cmb_Cargable.Size = new System.Drawing.Size(121, 21);
             this.cmb_Cargable.TabIndex = 1;
             this.cmb_Cargable.SelectedIndexChanged += new System.EventHandler(this.cmb_Cargable_SelectedIndexChanged);
+            this.cmb_Cargable.DataSourceChanged += new System.EventHandler(this.cmb_Cargable_DataSourceChanged);
+            this.cmb_Cargable.SelectedValueChanged += new System.EventHandler(this.cmb_Cargable_SelectedValueChanged);
+            this.cmb_Cargable.TextChanged += new System.EventHandler(this.cmb_Cargable_TextChanged);
             // 
             // ComboCargable
             // 

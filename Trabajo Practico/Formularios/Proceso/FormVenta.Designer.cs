@@ -1,4 +1,6 @@
-﻿namespace Trabajo_Practico.Formularios.Proceso
+﻿using System;
+
+namespace Trabajo_Practico.Formularios.Proceso
 {
     partial class FormVenta
     {
@@ -76,34 +78,38 @@
             this.dataGridViewTextBoxColumn16 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn17 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn18 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.errorProviderBase)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgr_autos)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgr_factura)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDisponibles)).BeginInit();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // btn_Aceptar
             // 
-            this.btn_Aceptar.Location = new System.Drawing.Point(157, 604);
+            this.btn_Aceptar.Location = new System.Drawing.Point(157, 661);
             this.btn_Aceptar.Margin = new System.Windows.Forms.Padding(4);
             this.btn_Aceptar.Click += new System.EventHandler(this.btn_Aceptar_Click);
             // 
             // btn_Cancelar
             // 
-            this.btn_Cancelar.Location = new System.Drawing.Point(320, 604);
+            this.btn_Cancelar.Location = new System.Drawing.Point(320, 661);
             this.btn_Cancelar.Margin = new System.Windows.Forms.Padding(4);
             this.btn_Cancelar.Click += new System.EventHandler(this.btn_Cancelar_Click);
             // 
             // btn_LimpiarCampos
             // 
-            this.btn_LimpiarCampos.Location = new System.Drawing.Point(472, 604);
+            this.btn_LimpiarCampos.Location = new System.Drawing.Point(472, 661);
             this.btn_LimpiarCampos.Margin = new System.Windows.Forms.Padding(4);
             // 
             // lbl_venta
             // 
             this.lbl_venta.AutoSize = true;
             this.lbl_venta.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_venta.Location = new System.Drawing.Point(328, 7);
+            this.lbl_venta.Location = new System.Drawing.Point(372, 18);
             this.lbl_venta.Name = "lbl_venta";
             this.lbl_venta.Size = new System.Drawing.Size(64, 24);
             this.lbl_venta.TabIndex = 17;
@@ -111,16 +117,16 @@
             // 
             // buscador1
             // 
-            this.buscador1.Location = new System.Drawing.Point(412, 50);
+            this.buscador1.Location = new System.Drawing.Point(350, 28);
             this.buscador1.Margin = new System.Windows.Forms.Padding(4);
             this.buscador1.Name = "buscador1";
-            this.buscador1.Size = new System.Drawing.Size(336, 38);
+            this.buscador1.Size = new System.Drawing.Size(403, 30);
             this.buscador1.TabIndex = 18;
             this.buscador1.Load += new System.EventHandler(this.buscador1_Load);
             // 
             // txt_nroFactura
             // 
-            this.txt_nroFactura.Location = new System.Drawing.Point(224, 57);
+            this.txt_nroFactura.Location = new System.Drawing.Point(171, 28);
             this.txt_nroFactura.Name = "txt_nroFactura";
             this.txt_nroFactura.ReadOnly = true;
             this.txt_nroFactura.Size = new System.Drawing.Size(100, 20);
@@ -129,7 +135,7 @@
             // lbl_nroFactura
             // 
             this.lbl_nroFactura.AutoSize = true;
-            this.lbl_nroFactura.Location = new System.Drawing.Point(140, 59);
+            this.lbl_nroFactura.Location = new System.Drawing.Point(87, 30);
             this.lbl_nroFactura.Name = "lbl_nroFactura";
             this.lbl_nroFactura.Size = new System.Drawing.Size(69, 13);
             this.lbl_nroFactura.TabIndex = 20;
@@ -138,7 +144,7 @@
             // lbl_cliente
             // 
             this.lbl_cliente.AutoSize = true;
-            this.lbl_cliente.Location = new System.Drawing.Point(340, 59);
+            this.lbl_cliente.Location = new System.Drawing.Point(287, 28);
             this.lbl_cliente.Name = "lbl_cliente";
             this.lbl_cliente.Size = new System.Drawing.Size(42, 13);
             this.lbl_cliente.TabIndex = 21;
@@ -146,7 +152,7 @@
             // 
             // txt_fecha
             // 
-            this.txt_fecha.Location = new System.Drawing.Point(224, 89);
+            this.txt_fecha.Location = new System.Drawing.Point(171, 60);
             this.txt_fecha.Name = "txt_fecha";
             this.txt_fecha.ReadOnly = true;
             this.txt_fecha.Size = new System.Drawing.Size(100, 20);
@@ -155,7 +161,7 @@
             // lbl_fecha
             // 
             this.lbl_fecha.AutoSize = true;
-            this.lbl_fecha.Location = new System.Drawing.Point(154, 91);
+            this.lbl_fecha.Location = new System.Drawing.Point(101, 62);
             this.lbl_fecha.Name = "lbl_fecha";
             this.lbl_fecha.Size = new System.Drawing.Size(40, 13);
             this.lbl_fecha.TabIndex = 23;
@@ -164,32 +170,35 @@
             // lbl_empleado
             // 
             this.lbl_empleado.AutoSize = true;
-            this.lbl_empleado.Location = new System.Drawing.Point(340, 93);
+            this.lbl_empleado.Location = new System.Drawing.Point(287, 64);
             this.lbl_empleado.Name = "lbl_empleado";
-            this.lbl_empleado.Size = new System.Drawing.Size(54, 13);
+            this.lbl_empleado.Size = new System.Drawing.Size(57, 13);
             this.lbl_empleado.TabIndex = 25;
-            this.lbl_empleado.Text = "Empleado";
+            this.lbl_empleado.Text = "Empleado:";
             // 
             // cmbModelo
             // 
-            this.cmbModelo.Location = new System.Drawing.Point(216, 189);
+            this.cmbModelo.Location = new System.Drawing.Point(217, 215);
             this.cmbModelo.Margin = new System.Windows.Forms.Padding(4);
             this.cmbModelo.Name = "cmbModelo";
             this.cmbModelo.Size = new System.Drawing.Size(121, 21);
             this.cmbModelo.TabIndex = 20;
+            this.cmbModelo.textChanged += new System.EventHandler(this.cmbModelo_textChanged);
             // 
             // cmbMarca
             // 
-            this.cmbMarca.Location = new System.Drawing.Point(216, 150);
+            this.cmbMarca.Location = new System.Drawing.Point(217, 176);
             this.cmbMarca.Margin = new System.Windows.Forms.Padding(4);
             this.cmbMarca.Name = "cmbMarca";
             this.cmbMarca.Size = new System.Drawing.Size(121, 21);
             this.cmbMarca.TabIndex = 19;
+            this.cmbMarca.SelectionChanged += new System.EventHandler(this.cmbMarca_SelectionChanged);
+            this.cmbMarca.textChanged += new System.EventHandler(this.cmbMarca_textChanged);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(152, 150);
+            this.label1.Location = new System.Drawing.Point(153, 176);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(40, 13);
             this.label1.TabIndex = 21;
@@ -198,7 +207,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(95, 197);
+            this.label2.Location = new System.Drawing.Point(96, 223);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(96, 13);
             this.label2.TabIndex = 22;
@@ -206,7 +215,7 @@
             // 
             // cmbCondicion
             // 
-            this.cmbCondicion.Location = new System.Drawing.Point(216, 232);
+            this.cmbCondicion.Location = new System.Drawing.Point(217, 258);
             this.cmbCondicion.Margin = new System.Windows.Forms.Padding(4);
             this.cmbCondicion.Name = "cmbCondicion";
             this.cmbCondicion.Size = new System.Drawing.Size(121, 21);
@@ -214,7 +223,7 @@
             // 
             // cmbGama
             // 
-            this.cmbGama.Location = new System.Drawing.Point(526, 189);
+            this.cmbGama.Location = new System.Drawing.Point(527, 215);
             this.cmbGama.Margin = new System.Windows.Forms.Padding(4);
             this.cmbGama.Name = "cmbGama";
             this.cmbGama.Size = new System.Drawing.Size(121, 21);
@@ -223,7 +232,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(138, 239);
+            this.label3.Location = new System.Drawing.Point(139, 265);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(57, 13);
             this.label3.TabIndex = 26;
@@ -232,7 +241,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(476, 150);
+            this.label4.Location = new System.Drawing.Point(477, 176);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(29, 13);
             this.label4.TabIndex = 27;
@@ -241,7 +250,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(478, 197);
+            this.label5.Location = new System.Drawing.Point(479, 223);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(35, 13);
             this.label5.TabIndex = 28;
@@ -249,7 +258,7 @@
             // 
             // btnBuscar
             // 
-            this.btnBuscar.Location = new System.Drawing.Point(375, 230);
+            this.btnBuscar.Location = new System.Drawing.Point(376, 256);
             this.btnBuscar.Name = "btnBuscar";
             this.btnBuscar.Size = new System.Drawing.Size(75, 23);
             this.btnBuscar.TabIndex = 30;
@@ -259,7 +268,7 @@
             // 
             // cmbAño
             // 
-            this.cmbAño.Location = new System.Drawing.Point(526, 142);
+            this.cmbAño.Location = new System.Drawing.Point(527, 168);
             this.cmbAño.Name = "cmbAño";
             this.cmbAño.Size = new System.Drawing.Size(121, 21);
             this.cmbAño.TabIndex = 32;
@@ -280,7 +289,7 @@
             this.dataGridViewTextBoxColumn3,
             this.dataGridViewTextBoxColumn4,
             this.Monto});
-            this.dgr_autos.Location = new System.Drawing.Point(57, 275);
+            this.dgr_autos.Location = new System.Drawing.Point(58, 301);
             this.dgr_autos.Name = "dgr_autos";
             this.dgr_autos.ReadOnly = true;
             this.dgr_autos.RowHeadersVisible = false;
@@ -354,7 +363,7 @@
             this.dataGridViewTextBoxColumn9,
             this.dataGridViewTextBoxColumn10,
             this.dataGridViewTextBoxColumn11});
-            this.dgr_factura.Location = new System.Drawing.Point(57, 436);
+            this.dgr_factura.Location = new System.Drawing.Point(58, 462);
             this.dgr_factura.Name = "dgr_factura";
             this.dgr_factura.ReadOnly = true;
             this.dgr_factura.RowHeadersVisible = false;
@@ -414,7 +423,7 @@
             // 
             // txt_legajo
             // 
-            this.txt_legajo.Location = new System.Drawing.Point(412, 88);
+            this.txt_legajo.Location = new System.Drawing.Point(350, 60);
             this.txt_legajo.Name = "txt_legajo";
             this.txt_legajo.ReadOnly = true;
             this.txt_legajo.Size = new System.Drawing.Size(100, 20);
@@ -423,7 +432,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(609, 589);
+            this.label6.Location = new System.Drawing.Point(551, 613);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(70, 13);
             this.label6.TabIndex = 34;
@@ -431,7 +440,7 @@
             // 
             // txtMontoTotal
             // 
-            this.txtMontoTotal.Location = new System.Drawing.Point(696, 582);
+            this.txtMontoTotal.Location = new System.Drawing.Point(638, 606);
             this.txtMontoTotal.Mask = "999999999999999";
             this.txtMontoTotal.Name = "txtMontoTotal";
             this.txtMontoTotal.ReadOnly = true;
@@ -441,7 +450,7 @@
             // 
             // txtEstado
             // 
-            this.txtEstado.Location = new System.Drawing.Point(526, 230);
+            this.txtEstado.Location = new System.Drawing.Point(527, 256);
             this.txtEstado.Name = "txtEstado";
             this.txtEstado.ReadOnly = true;
             this.txtEstado.Size = new System.Drawing.Size(121, 20);
@@ -450,7 +459,7 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(476, 237);
+            this.label7.Location = new System.Drawing.Point(477, 263);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(46, 13);
             this.label7.TabIndex = 37;
@@ -460,7 +469,7 @@
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(822, 248);
+            this.label8.Location = new System.Drawing.Point(823, 274);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(226, 24);
             this.label8.TabIndex = 39;
@@ -481,7 +490,7 @@
             this.dataGridViewTextBoxColumn16,
             this.dataGridViewTextBoxColumn17,
             this.dataGridViewTextBoxColumn18});
-            this.dgvDisponibles.Location = new System.Drawing.Point(740, 275);
+            this.dgvDisponibles.Location = new System.Drawing.Point(741, 301);
             this.dgvDisponibles.Name = "dgvDisponibles";
             this.dgvDisponibles.ReadOnly = true;
             this.dgvDisponibles.RowHeadersVisible = false;
@@ -531,78 +540,104 @@
             this.dataGridViewTextBoxColumn18.Name = "dataGridViewTextBoxColumn18";
             this.dataGridViewTextBoxColumn18.ReadOnly = true;
             // 
+            // panel1
+            // 
+            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel1.Controls.Add(this.txt_legajo);
+            this.panel1.Controls.Add(this.lbl_empleado);
+            this.panel1.Controls.Add(this.lbl_fecha);
+            this.panel1.Controls.Add(this.txt_fecha);
+            this.panel1.Controls.Add(this.lbl_cliente);
+            this.panel1.Controls.Add(this.lbl_nroFactura);
+            this.panel1.Controls.Add(this.txt_nroFactura);
+            this.panel1.Controls.Add(this.buscador1);
+            this.panel1.Location = new System.Drawing.Point(54, 55);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(694, 107);
+            this.panel1.TabIndex = 41;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(58, 39);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(100, 13);
+            this.label9.TabIndex = 36;
+            this.label9.Text = "Datos de la factura:";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(58, 440);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(43, 13);
+            this.label10.TabIndex = 42;
+            this.label10.Text = "Detalle:";
+            // 
             // FormVenta
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1298, 737);
+            this.Controls.Add(this.label9);
+            this.Controls.Add(this.label10);
             this.Controls.Add(this.dgvDisponibles);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.txtEstado);
             this.Controls.Add(this.txtMontoTotal);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.txt_legajo);
             this.Controls.Add(this.dgr_factura);
             this.Controls.Add(this.dgr_autos);
             this.Controls.Add(this.cmbAño);
-            this.Controls.Add(this.lbl_empleado);
             this.Controls.Add(this.btnBuscar);
-            this.Controls.Add(this.lbl_fecha);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.txt_fecha);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.lbl_cliente);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.lbl_nroFactura);
             this.Controls.Add(this.cmbGama);
-            this.Controls.Add(this.txt_nroFactura);
             this.Controls.Add(this.cmbCondicion);
-            this.Controls.Add(this.buscador1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.lbl_venta);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.cmbModelo);
             this.Controls.Add(this.cmbMarca);
+            this.Controls.Add(this.panel1);
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FormVenta";
             this.Text = "Venta";
             this.Load += new System.EventHandler(this.FormVenta_Load);
-            this.Controls.SetChildIndex(this.btn_Cancelar, 0);
-            this.Controls.SetChildIndex(this.btn_Aceptar, 0);
+            this.Controls.SetChildIndex(this.panel1, 0);
             this.Controls.SetChildIndex(this.cmbMarca, 0);
             this.Controls.SetChildIndex(this.cmbModelo, 0);
-            this.Controls.SetChildIndex(this.btn_LimpiarCampos, 0);
             this.Controls.SetChildIndex(this.label1, 0);
             this.Controls.SetChildIndex(this.lbl_venta, 0);
             this.Controls.SetChildIndex(this.label2, 0);
-            this.Controls.SetChildIndex(this.buscador1, 0);
             this.Controls.SetChildIndex(this.cmbCondicion, 0);
-            this.Controls.SetChildIndex(this.txt_nroFactura, 0);
             this.Controls.SetChildIndex(this.cmbGama, 0);
-            this.Controls.SetChildIndex(this.lbl_nroFactura, 0);
             this.Controls.SetChildIndex(this.label3, 0);
-            this.Controls.SetChildIndex(this.lbl_cliente, 0);
             this.Controls.SetChildIndex(this.label4, 0);
-            this.Controls.SetChildIndex(this.txt_fecha, 0);
             this.Controls.SetChildIndex(this.label5, 0);
-            this.Controls.SetChildIndex(this.lbl_fecha, 0);
             this.Controls.SetChildIndex(this.btnBuscar, 0);
-            this.Controls.SetChildIndex(this.lbl_empleado, 0);
             this.Controls.SetChildIndex(this.cmbAño, 0);
             this.Controls.SetChildIndex(this.dgr_autos, 0);
             this.Controls.SetChildIndex(this.dgr_factura, 0);
-            this.Controls.SetChildIndex(this.txt_legajo, 0);
             this.Controls.SetChildIndex(this.label6, 0);
             this.Controls.SetChildIndex(this.txtMontoTotal, 0);
             this.Controls.SetChildIndex(this.txtEstado, 0);
             this.Controls.SetChildIndex(this.label7, 0);
             this.Controls.SetChildIndex(this.label8, 0);
             this.Controls.SetChildIndex(this.dgvDisponibles, 0);
+            this.Controls.SetChildIndex(this.btn_Cancelar, 0);
+            this.Controls.SetChildIndex(this.btn_Aceptar, 0);
+            this.Controls.SetChildIndex(this.btn_LimpiarCampos, 0);
+            this.Controls.SetChildIndex(this.label10, 0);
+            this.Controls.SetChildIndex(this.label9, 0);
             ((System.ComponentModel.ISupportInitialize)(this.errorProviderBase)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgr_autos)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgr_factura)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDisponibles)).EndInit();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -661,5 +696,8 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn16;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn17;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn18;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label label10;
     }
 }
