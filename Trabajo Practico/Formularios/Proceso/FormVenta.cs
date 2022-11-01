@@ -34,10 +34,12 @@ namespace Trabajo_Practico.Formularios.Proceso
             cmbGama.cargarAlmacenado("GetGamas", "nombre_gama", "id_gama");
             cmbAño.cargarAlmacenado("GetAnoFabricacion", "año_fabricacion", "año_fabricacion");
             BE_Acceso_Datos bd = new BE_Acceso_Datos();
+            CargarSugerencia();
             
             DataTable dt = bd.Ejecutar_Select("select IDENT_CURRENT('ventas') +1 as 'venta'"); 
 
- 
+
+            
 
             if (dt.Rows.Count > 0)
             {
@@ -51,6 +53,31 @@ namespace Trabajo_Practico.Formularios.Proceso
                 MessageBox.Show("Error - nroFactura Invalido");
 
             }
+        }
+
+
+        public void CargarSugerencia()
+
+        {
+
+            
+            try
+            {
+                DataTable tabla = new DataTable();
+                NE_Proceso nP = new NE_Proceso();
+                tabla = nP.Sugerencia();
+                if (tabla.Rows.Count > 0)
+                {
+                    dgvDisponibles.DataSource = tabla;
+                }
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error en la consulta de Sugerencias");
+
+            }
+            
         }
         protected override void btn_LimpiarCampos_Click(object sender, EventArgs e)
         {
@@ -256,6 +283,7 @@ namespace Trabajo_Practico.Formularios.Proceso
                 MessageBox.Show("Transaccion Exitosa");
                 limpiarGrillas();
                 this.Close();
+                CargarSugerencia();
                 
             }
             else
