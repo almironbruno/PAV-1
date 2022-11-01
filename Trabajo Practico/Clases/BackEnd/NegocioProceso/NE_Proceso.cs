@@ -58,6 +58,47 @@ namespace Trabajo_Practico.Clases.BackEnd.NegocioProceso
 
 
         }
+        public DataTable Sugerencia()
+        {
+            string consulta = (@"SELECT marcas.nombre,
+				nombres_comerciales.nombre_comercial,
+				condicion.nombre_condicion,
+				gamas.nombre_gama,
+                autos.año_fabricacion,
+			    autos.monto
+                
+                
+
+				FROM autos
+			
+				INNER JOIN nombres_comerciales
+				On autos.id_nombrecomercial = nombres_comerciales.id_nombrecomercial
+				INNER JOIN marcas on nombres_comerciales.id_marca = marcas.id_marca
+				INNER JOIN gamas on nombres_comerciales.id_gama = gamas.id_gama
+				INNER JOIN condicion on autos.id_condicion = condicion.id_condicion
+
+
+				WHERE autos.estado = 'false'");
+
+
+            try
+            {
+                DataTable tabla = new DataTable();
+                tabla = _BD.Ejecutar_Select(consulta);
+                return tabla;
+            }
+            catch (Exception ex)
+            {
+
+                throw;
+            }
+
+
+
+
+        }
+
+
 
         public bool Venta(Venta vta,List<string> ListaSerie)
         {
