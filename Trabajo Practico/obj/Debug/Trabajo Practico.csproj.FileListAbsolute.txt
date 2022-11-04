@@ -150,3 +150,132 @@ C:\Users\Almir\Desktop\PAV\PAV-1-tp\Trabajo Practico\bin\Debug\Trabajo Practico.
 C:\Users\Almir\Desktop\PAV\PAV-1-tp\Trabajo Practico\bin\Debug\Trabajo Practico.pdb
 C:\Users\Almir\Desktop\PAV\PAV-1-tp\Trabajo Practico\obj\Debug\Trabajo Practico.exe
 C:\Users\Almir\Desktop\PAV\PAV-1-tp\Trabajo Practico\obj\Debug\Trabajo Practico.pdb
+C:\Users\Tomas\Desktop\PAV-1\Trabajo Practico\bin\Debug\SqlServerTypes\x64\msvcr120.dll
+C:\Users\Tomas\Desktop\PAV-1\Trabajo Practico\bin\Debug\SqlServerTypes\x64\SqlServerSpatial140.dll
+C:\Users\Tomas\Desktop\PAV-1\Trabajo Practico\bin\Debug\SqlServerTypes\x86\msvcr120.dll
+C:\Users\Tomas\Desktop\PAV-1\Trabajo Practico\bin\Debug\SqlServerTypes\x86\SqlServerSpatial140.dll
+C:\Users\Tomas\Desktop\PAV-1\Trabajo Practico\bin\Debug\Trabajo Practico.exe.config
+C:\Users\Tomas\Desktop\PAV-1\Trabajo Practico\bin\Debug\Trabajo Practico.exe
+C:\Users\Tomas\Desktop\PAV-1\Trabajo Practico\bin\Debug\Trabajo Practico.pdb
+C:\Users\Tomas\Desktop\PAV-1\Trabajo Practico\bin\Debug\Microsoft.ReportViewer.Common.dll
+C:\Users\Tomas\Desktop\PAV-1\Trabajo Practico\bin\Debug\Microsoft.ReportViewer.DataVisualization.dll
+C:\Users\Tomas\Desktop\PAV-1\Trabajo Practico\bin\Debug\Microsoft.ReportViewer.Design.dll
+C:\Users\Tomas\Desktop\PAV-1\Trabajo Practico\bin\Debug\Microsoft.ReportViewer.ProcessingObjectModel.dll
+C:\Users\Tomas\Desktop\PAV-1\Trabajo Practico\bin\Debug\Microsoft.ReportViewer.WinForms.dll
+C:\Users\Tomas\Desktop\PAV-1\Trabajo Practico\bin\Debug\Microsoft.SqlServer.Types.dll
+C:\Users\Tomas\Desktop\PAV-1\Trabajo Practico\bin\Debug\EnvDTE.dll
+C:\Users\Tomas\Desktop\PAV-1\Trabajo Practico\bin\Debug\stdole.dll
+C:\Users\Tomas\Desktop\PAV-1\Trabajo Practico\bin\Debug\de\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Tomas\Desktop\PAV-1\Trabajo Practico\bin\Debug\es\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Tomas\Desktop\PAV-1\Trabajo Practico\bin\Debug\fr\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Tomas\Desktop\PAV-1\Trabajo Practico\bin\Debug\it\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Tomas\Desktop\PAV-1\Trabajo Practico\bin\Debug\ja\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Tomas\Desktop\PAV-1\Trabajo Practico\bin\Debug\ko\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Tomas\Desktop\PAV-1\Trabajo Practico\bin\Debug\pt\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Tomas\Desktop\PAV-1\Trabajo Practico\bin\Debug\ru\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Tomas\Desktop\PAV-1\Trabajo Practico\bin\Debug\zh-CHS\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Tomas\Desktop\PAV-1\Trabajo Practico\bin\Debug\zh-CHT\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Tomas\Desktop\PAV-1\Trabajo Practico\bin\Debug\de\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Tomas\Desktop\PAV-1\Trabajo Practico\bin\Debug\es\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Tomas\Desktop\PAV-1\Trabajo Practico\bin\Debug\fr\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Tomas\Desktop\PAV-1\Trabajo Practico\bin\Debug\it\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Tomas\Desktop\PAV-1\Trabajo Practico\bin\Debug\ja\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Tomas\Desktop\PAV-1\Trabajo Practico\bin\Debug\ko\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Tomas\Desktop\PAV-1\Trabajo Practico\bin\Debug\pt\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Tomas\Desktop\PAV-1\Trabajo Practico\bin\Debug\ru\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Tomas\Desktop\PAV-1\Trabajo Practico\bin\Debug\zh-CHS\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Tomas\Desktop\PAV-1\Trabajo Practico\bin\Debug\zh-CHT\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Tomas\Desktop\PAV-1\Trabajo Practico\bin\Debug\de\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Tomas\Desktop\PAV-1\Trabajo Practico\bin\Debug\es\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Tomas\Desktop\PAV-1\Trabajo Practico\bin\Debug\fr\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Tomas\Desktop\PAV-1\Trabajo Practico\bin\Debug\it\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Tomas\Desktop\PAV-1\Trabajo Practico\bin\Debug\ja\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Tomas\Desktop\PAV-1\Trabajo Practico\bin\Debug\ko\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Tomas\Desktop\PAV-1\Trabajo Practico\bin\Debug\pt\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Tomas\Desktop\PAV-1\Trabajo Practico\bin\Debug\ru\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Tomas\Desktop\PAV-1\Trabajo Practico\bin\Debug\zh-CHS\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Tomas\Desktop\PAV-1\Trabajo Practico\bin\Debug\zh-CHT\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Tomas\Desktop\PAV-1\Trabajo Practico\bin\Debug\de\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Tomas\Desktop\PAV-1\Trabajo Practico\bin\Debug\es\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Tomas\Desktop\PAV-1\Trabajo Practico\bin\Debug\fr\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Tomas\Desktop\PAV-1\Trabajo Practico\bin\Debug\it\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Tomas\Desktop\PAV-1\Trabajo Practico\bin\Debug\ja\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Tomas\Desktop\PAV-1\Trabajo Practico\bin\Debug\ko\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Tomas\Desktop\PAV-1\Trabajo Practico\bin\Debug\pt\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Tomas\Desktop\PAV-1\Trabajo Practico\bin\Debug\ru\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Tomas\Desktop\PAV-1\Trabajo Practico\bin\Debug\zh-CHS\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Tomas\Desktop\PAV-1\Trabajo Practico\bin\Debug\zh-CHT\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Tomas\Desktop\PAV-1\Trabajo Practico\obj\Debug\Trabajo Practico.csproj.AssemblyReference.cache
+C:\Users\Tomas\Desktop\PAV-1\Trabajo Practico\obj\Debug\Trabajo Practico.csproj.SuggestedBindingRedirects.cache
+C:\Users\Tomas\Desktop\PAV-1\Trabajo Practico\obj\Debug\Trabajo_Practico.ControlesPropios.Buscador.resources
+C:\Users\Tomas\Desktop\PAV-1\Trabajo Practico\obj\Debug\Trabajo_Practico.ControlesPropios.ComboCargable.resources
+C:\Users\Tomas\Desktop\PAV-1\Trabajo Practico\obj\Debug\Trabajo_Practico.DataGridViewModificada.resources
+C:\Users\Tomas\Desktop\PAV-1\Trabajo Practico\obj\Debug\Trabajo_Practico.ControlesPropios.TextBoxCargable.resources
+C:\Users\Tomas\Desktop\PAV-1\Trabajo Practico\obj\Debug\Trabajo_Practico.Formularios.ABMC.ABMC_Autos.CamposAutos.resources
+C:\Users\Tomas\Desktop\PAV-1\Trabajo Practico\obj\Debug\Trabajo_Practico.Formularios.ABMC.ABMC_Autos.Forms.BajaAutos.resources
+C:\Users\Tomas\Desktop\PAV-1\Trabajo Practico\obj\Debug\Trabajo_Practico.Formularios.ABMC.ABMC_Clientes.CamposClientes.resources
+C:\Users\Tomas\Desktop\PAV-1\Trabajo Practico\obj\Debug\Trabajo_Practico.Formularios.ABMC.ABMC_Clientes.Forms.BajaClientes.resources
+C:\Users\Tomas\Desktop\PAV-1\Trabajo Practico\obj\Debug\Trabajo_Practico.Formularios.ABMC.ABMC_Clientes.Forms.ConsultaClientes.resources
+C:\Users\Tomas\Desktop\PAV-1\Trabajo Practico\obj\Debug\Trabajo_Practico.Formularios.ABMC.ABMC_Clientes.Forms.InfoClientes.resources
+C:\Users\Tomas\Desktop\PAV-1\Trabajo Practico\obj\Debug\Trabajo_Practico.Formularios.ABMC_Empleados.resources
+C:\Users\Tomas\Desktop\PAV-1\Trabajo Practico\obj\Debug\Trabajo_Practico.Formularios.ABMC.Empleados.CamposEmpleados.resources
+C:\Users\Tomas\Desktop\PAV-1\Trabajo Practico\obj\Debug\Trabajo_Practico.Formularios.ABMC.ABMC_Empleados.BajaEmpleado.resources
+C:\Users\Tomas\Desktop\PAV-1\Trabajo Practico\obj\Debug\Trabajo_Practico.Formularios.ABMC.ABMC_Empleados.Forms.Consulta.resources
+C:\Users\Tomas\Desktop\PAV-1\Trabajo Practico\obj\Debug\Trabajo_Practico.Formularios.ABMC.ABMC_Empleados.Forms.InfoEmpleados.resources
+C:\Users\Tomas\Desktop\PAV-1\Trabajo Practico\obj\Debug\Trabajo_Practico.Formularios.ABMC.Autos.AltaAutos.resources
+C:\Users\Tomas\Desktop\PAV-1\Trabajo Practico\obj\Debug\Trabajo_Practico.Formularios.ABMC_Autos.resources
+C:\Users\Tomas\Desktop\PAV-1\Trabajo Practico\obj\Debug\Trabajo_Practico.Formularios.ABMC.Autos.BuscarAuto.resources
+C:\Users\Tomas\Desktop\PAV-1\Trabajo Practico\obj\Debug\Trabajo_Practico.Formularios.ABMC.Autos.InfoAutos.resources
+C:\Users\Tomas\Desktop\PAV-1\Trabajo Practico\obj\Debug\Trabajo_Practico.Formularios.ABMC.Autos.ModificarAuto.resources
+C:\Users\Tomas\Desktop\PAV-1\Trabajo Practico\obj\Debug\Trabajo_Practico.Formularios.ABMC.Clientes.AltaClientes.resources
+C:\Users\Tomas\Desktop\PAV-1\Trabajo Practico\obj\Debug\Trabajo_Practico.Formularios.ABMC.ABMC_Encargos.ABMC_Encargos.resources
+C:\Users\Tomas\Desktop\PAV-1\Trabajo Practico\obj\Debug\Trabajo_Practico.Formularios.ABMC.ABMC_Encargos.Campos_Encargos.resources
+C:\Users\Tomas\Desktop\PAV-1\Trabajo Practico\obj\Debug\Trabajo_Practico.Formularios.ABMC.ABMC_Encargos.Forms.AltaEncargos.resources
+C:\Users\Tomas\Desktop\PAV-1\Trabajo Practico\obj\Debug\Trabajo_Practico.Formularios.ABMC.ABMC_Encargos.Forms.BajaEncargos.resources
+C:\Users\Tomas\Desktop\PAV-1\Trabajo Practico\obj\Debug\Trabajo_Practico.Formularios.ABMC.ABMC_Encargos.Forms.BuscarEncargos.resources
+C:\Users\Tomas\Desktop\PAV-1\Trabajo Practico\obj\Debug\Trabajo_Practico.Formularios.ABMC.ABMC_Encargos.Forms.InfoEncargos.resources
+C:\Users\Tomas\Desktop\PAV-1\Trabajo Practico\obj\Debug\Trabajo_Practico.Formularios.ABMC.ABMC_Encargos.Forms.ModificarEncargos.resources
+C:\Users\Tomas\Desktop\PAV-1\Trabajo Practico\obj\Debug\Trabajo_Practico.Formularios.ABMC.ABMC_Localidades.ABMC_Localidades.resources
+C:\Users\Tomas\Desktop\PAV-1\Trabajo Practico\obj\Debug\Trabajo_Practico.Formularios.ABMC.ABMC_Localidades.CamposLocalidades.resources
+C:\Users\Tomas\Desktop\PAV-1\Trabajo Practico\obj\Debug\Trabajo_Practico.Formularios.ABMC.ABMC_Localidades.Forms.AltaLocalidades.resources
+C:\Users\Tomas\Desktop\PAV-1\Trabajo Practico\obj\Debug\Trabajo_Practico.Formularios.ABMC.ABMC_Localidades.Forms.BajaLocalidades.resources
+C:\Users\Tomas\Desktop\PAV-1\Trabajo Practico\obj\Debug\Trabajo_Practico.Formularios.ABMC.ABMC_Localidades.Forms.BuscarLocalidades.resources
+C:\Users\Tomas\Desktop\PAV-1\Trabajo Practico\obj\Debug\Trabajo_Practico.Formularios.ABMC.ABMC_Localidades.Forms.InfoLocalidades.resources
+C:\Users\Tomas\Desktop\PAV-1\Trabajo Practico\obj\Debug\Trabajo_Practico.Formularios.ABMC.ABMC_Localidades.Forms.ModificarLocalidades.resources
+C:\Users\Tomas\Desktop\PAV-1\Trabajo Practico\obj\Debug\Trabajo_Practico.Formularios.ABMC.Barrios.ConsultaBarrio.resources
+C:\Users\Tomas\Desktop\PAV-1\Trabajo Practico\obj\Debug\Trabajo_Practico.Formularios.ABMC.Barrios.InfoBarrios.resources
+C:\Users\Tomas\Desktop\PAV-1\Trabajo Practico\obj\Debug\Trabajo_Practico.Formularios.ABMC.Barrios.ModBarrio.resources
+C:\Users\Tomas\Desktop\PAV-1\Trabajo Practico\obj\Debug\Trabajo_Practico.Formularios.ABMC.Barrios.AltaBarrio.resources
+C:\Users\Tomas\Desktop\PAV-1\Trabajo Practico\obj\Debug\Trabajo_Practico.Formularios.ABMC.Barrios.Barrios.resources
+C:\Users\Tomas\Desktop\PAV-1\Trabajo Practico\obj\Debug\Trabajo_Practico.Formularios.ABMC.Clientes.ABMC_Clientes.resources
+C:\Users\Tomas\Desktop\PAV-1\Trabajo Practico\obj\Debug\Trabajo_Practico.Formularios.ABMC.Clientes.ModificacionCliente.resources
+C:\Users\Tomas\Desktop\PAV-1\Trabajo Practico\obj\Debug\Trabajo_Practico.Formularios.ABMC.Empleados.AltaEmpleados.resources
+C:\Users\Tomas\Desktop\PAV-1\Trabajo Practico\obj\Debug\Trabajo_Practico.Formularios.ABMC.ABMC_Marcas.CamposMarcas.resources
+C:\Users\Tomas\Desktop\PAV-1\Trabajo Practico\obj\Debug\Trabajo_Practico.Formularios.ABMC.Empleados.ModificacionEmpleados.resources
+C:\Users\Tomas\Desktop\PAV-1\Trabajo Practico\obj\Debug\Trabajo_Practico.Formularios.ABMC.Marcas.AltaMarcas.resources
+C:\Users\Tomas\Desktop\PAV-1\Trabajo Practico\obj\Debug\Trabajo_Practico.Formularios.ABMC.ABMC_Marcas.Forms.BajaMarca.resources
+C:\Users\Tomas\Desktop\PAV-1\Trabajo Practico\obj\Debug\Trabajo_Practico.Formularios.ABMC.Marcas.BuscarMarca.resources
+C:\Users\Tomas\Desktop\PAV-1\Trabajo Practico\obj\Debug\Trabajo_Practico.Formularios.ABMC_Marcas.resources
+C:\Users\Tomas\Desktop\PAV-1\Trabajo Practico\obj\Debug\Trabajo_Practico.Formularios.ABMC.Marcas.ModificarMarca.resources
+C:\Users\Tomas\Desktop\PAV-1\Trabajo Practico\obj\Debug\Trabajo_Practico.Formularios.ABMC.Telefonos.AltaTelefono.resources
+C:\Users\Tomas\Desktop\PAV-1\Trabajo Practico\obj\Debug\Trabajo_Practico.Formularios.ABMC.Telefonos.BajaTelefono.resources
+C:\Users\Tomas\Desktop\PAV-1\Trabajo Practico\obj\Debug\Trabajo_Practico.Formularios.ABMC.Telefonos.ConsultaTelefono.resources
+C:\Users\Tomas\Desktop\PAV-1\Trabajo Practico\obj\Debug\Trabajo_Practico.Formularios.ABMC.Telefonos.InfoTelefonos.resources
+C:\Users\Tomas\Desktop\PAV-1\Trabajo Practico\obj\Debug\Trabajo_Practico.Formularios.ABMC.Telefonos.ModificacionTelefono.resources
+C:\Users\Tomas\Desktop\PAV-1\Trabajo Practico\obj\Debug\Trabajo_Practico.Formularios.ABMC.Telefonos.TelefonosPrincipal.resources
+C:\Users\Tomas\Desktop\PAV-1\Trabajo Practico\obj\Debug\Trabajo_Practico.Formularios.FormBaseABMC.resources
+C:\Users\Tomas\Desktop\PAV-1\Trabajo Practico\obj\Debug\Trabajo_Practico.Formularios.Base.FormBaseAlta.resources
+C:\Users\Tomas\Desktop\PAV-1\Trabajo Practico\obj\Debug\Trabajo_Practico.Formularios.Base.FormBaseBaja.resources
+C:\Users\Tomas\Desktop\PAV-1\Trabajo Practico\obj\Debug\Trabajo_Practico.Formularios.Base.FormBaseBotones.resources
+C:\Users\Tomas\Desktop\PAV-1\Trabajo Practico\obj\Debug\Trabajo_Practico.Formularios.Base.FormBaseConsulta.resources
+C:\Users\Tomas\Desktop\PAV-1\Trabajo Practico\obj\Debug\Trabajo_Practico.Formularios.Base.FormBaseModificacion.resources
+C:\Users\Tomas\Desktop\PAV-1\Trabajo Practico\obj\Debug\Trabajo_Practico.LoginForm.resources
+C:\Users\Tomas\Desktop\PAV-1\Trabajo Practico\obj\Debug\Trabajo_Practico.Formularios.PrincipalForm.resources
+C:\Users\Tomas\Desktop\PAV-1\Trabajo Practico\obj\Debug\Trabajo_Practico.Formularios.NewUsuarioForm.resources
+C:\Users\Tomas\Desktop\PAV-1\Trabajo Practico\obj\Debug\Trabajo_Practico.Formularios.Proceso.FormVenta.resources
+C:\Users\Tomas\Desktop\PAV-1\Trabajo Practico\obj\Debug\Trabajo_Practico.Properties.Resources.resources
+C:\Users\Tomas\Desktop\PAV-1\Trabajo Practico\obj\Debug\Trabajo Practico.csproj.GenerateResource.cache
+C:\Users\Tomas\Desktop\PAV-1\Trabajo Practico\obj\Debug\Trabajo Practico.csproj.CoreCompileInputs.cache
+C:\Users\Tomas\Desktop\PAV-1\Trabajo Practico\obj\Debug\Trabajo Practico.csproj.CopyComplete
+C:\Users\Tomas\Desktop\PAV-1\Trabajo Practico\obj\Debug\Trabajo Practico.exe
+C:\Users\Tomas\Desktop\PAV-1\Trabajo Practico\obj\Debug\Trabajo Practico.pdb
