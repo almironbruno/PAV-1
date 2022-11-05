@@ -16,5 +16,10 @@ namespace Trabajo_Practico.Formularios.Reportes
         {
             InitializeComponent();
         }
+
+        private void ReportesBase_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
