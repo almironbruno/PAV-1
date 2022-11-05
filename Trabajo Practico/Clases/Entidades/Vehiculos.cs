@@ -24,7 +24,13 @@ namespace Trabajo_Practico.Clases.Entidades
 
         public string patente { get; set; }
 
-        public Vehiculos(string cod_serie_fabrica, int nombreComercial, string año_Fabricacion, int condicion, string nro_Chasis, string nro_Motor, string patente)
+        public string precio { get; set; }
+        
+        public bool estado { get; set; }
+
+
+
+        public Vehiculos(string cod_serie_fabrica, int nombreComercial, string año_Fabricacion, int condicion, string nro_Chasis, string nro_Motor, string patente, string precio, bool estado)
         {
             this.cod_serie_fabrica = cod_serie_fabrica;
             this.nombreComercial = nombreComercial;
@@ -33,6 +39,8 @@ namespace Trabajo_Practico.Clases.Entidades
             this.nro_Chasis = nro_Chasis;
             this.nro_Motor = nro_Motor;
             this.patente = patente;
+            this.precio = precio;
+            this.estado = estado;
         }
 
         public string mostrar(Vehiculos vehi)
@@ -75,7 +83,7 @@ namespace Trabajo_Practico.Clases.Entidades
             
             //Salida completa de los datos del auto
             string salida = "Cod.Serie: " + vehi.cod_serie_fabrica + " - Nom.Comercial: " + comer + " - Año.Fab: " + vehi.año_Fabricacion +
-                System.Environment.NewLine +"Condicion: " + condi + " - Nro.Chas: " + vehi.nro_Chasis + " - Nro.Motor: " + vehi.nro_Motor +System.Environment.NewLine+"Patente: " + vehi.patente + ".";
+                System.Environment.NewLine +"Condicion: " + condi + " - Nro.Chas: " + vehi.nro_Chasis + " - Nro.Motor: " + vehi.nro_Motor +System.Environment.NewLine+" - Patente: " + vehi.patente + " Precio: " + vehi.precio + ".";
             
             return salida;
         }

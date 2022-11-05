@@ -93,7 +93,12 @@ namespace Trabajo_Practico.Clases.BackEnd
 
         }
 
-
+        public string buscarLegajo(string mail)
+        {
+            DataTable tabla =_BD.Ejecutar_Select("SELECT legajo from usuarios where email='"+mail+"'");
+            if(tabla.Rows.Count>0) return tabla.Rows[0][0].ToString();
+            return "";
+        }
 
 
 

@@ -36,6 +36,7 @@
             this.mtxt_Legajo = new System.Windows.Forms.MaskedTextBox();
             this.lbl_Legajo = new System.Windows.Forms.Label();
             this.lbl_Cargo = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProviderBase)).BeginInit();
             this.SuspendLayout();
             // 
             // mTxt_Nombre
@@ -44,7 +45,7 @@
             this.mTxt_Nombre.Location = new System.Drawing.Point(209, 155);
             this.mTxt_Nombre.Mask = "LLLLLLLLLLLLLL";
             this.mTxt_Nombre.Name = "mTxt_Nombre";
-            this.mTxt_Nombre.Size = new System.Drawing.Size(100, 20);
+            this.mTxt_Nombre.Size = new System.Drawing.Size(110, 20);
             this.mTxt_Nombre.TabIndex = 18;
             // 
             // mTxt_Apellido
@@ -53,7 +54,7 @@
             this.mTxt_Apellido.Location = new System.Drawing.Point(209, 193);
             this.mTxt_Apellido.Mask = "LLLLLLLLLLLLLLL";
             this.mTxt_Apellido.Name = "mTxt_Apellido";
-            this.mTxt_Apellido.Size = new System.Drawing.Size(100, 20);
+            this.mTxt_Apellido.Size = new System.Drawing.Size(110, 20);
             this.mTxt_Apellido.TabIndex = 19;
             // 
             // lbl_Nombre
@@ -76,18 +77,18 @@
             // 
             // cmbCargable_Cargos
             // 
-            this.cmbCargable_Cargos.Location = new System.Drawing.Point(448, 147);
+            this.cmbCargable_Cargos.Location = new System.Drawing.Point(446, 155);
             this.cmbCargable_Cargos.Name = "cmbCargable_Cargos";
-            this.cmbCargable_Cargos.Size = new System.Drawing.Size(230, 28);
+            this.cmbCargable_Cargos.Size = new System.Drawing.Size(121, 21);
             this.cmbCargable_Cargos.TabIndex = 22;
             // 
             // mtxt_Legajo
             // 
             this.mtxt_Legajo.HidePromptOnLeave = true;
-            this.mtxt_Legajo.Location = new System.Drawing.Point(209, 117);
+            this.mtxt_Legajo.Location = new System.Drawing.Point(209, 120);
             this.mtxt_Legajo.Mask = "99999";
             this.mtxt_Legajo.Name = "mtxt_Legajo";
-            this.mtxt_Legajo.Size = new System.Drawing.Size(100, 20);
+            this.mtxt_Legajo.Size = new System.Drawing.Size(110, 20);
             this.mtxt_Legajo.TabIndex = 23;
             this.mtxt_Legajo.ValidatingType = typeof(int);
             // 
@@ -103,7 +104,7 @@
             // lbl_Cargo
             // 
             this.lbl_Cargo.AutoSize = true;
-            this.lbl_Cargo.Location = new System.Drawing.Point(404, 155);
+            this.lbl_Cargo.Location = new System.Drawing.Point(402, 158);
             this.lbl_Cargo.Name = "lbl_Cargo";
             this.lbl_Cargo.Size = new System.Drawing.Size(38, 13);
             this.lbl_Cargo.TabIndex = 25;
@@ -135,6 +136,7 @@
             this.Controls.SetChildIndex(this.mtxt_Legajo, 0);
             this.Controls.SetChildIndex(this.lbl_Legajo, 0);
             this.Controls.SetChildIndex(this.lbl_Cargo, 0);
+            ((System.ComponentModel.ISupportInitialize)(this.errorProviderBase)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

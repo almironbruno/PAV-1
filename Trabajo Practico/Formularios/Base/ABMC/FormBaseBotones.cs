@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Trabajo_Practico.Clases.BackEnd;
+using Trabajo_Practico.ControlesPropios;
 
 namespace Trabajo_Practico.Formularios.Base
 {
@@ -36,7 +37,7 @@ namespace Trabajo_Practico.Formularios.Base
             }
         }
 
-         private void btn_LimpiarCampos_Click(object sender, EventArgs e)
+         protected virtual void btn_LimpiarCampos_Click(object sender, EventArgs e)
         {
             DialogResult result= MessageBox.Show("Va a borrar todos los camppos \n\t ¿Esta seguro?","Advertencia para borrar campos", MessageBoxButtons.OKCancel);
             //Si el usuario selecciona OK, borra los campos
@@ -91,6 +92,40 @@ namespace Trabajo_Practico.Formularios.Base
                         hayErrores = true;
                     }
 
+                }
+                if (item is Buscador) 
+                {
+                    //se fija que el buscador no este vacio
+                    //Hace la conversion
+                    Buscador buscador = (Buscador)item;
+                    if (/*buscador.cmb_buscar.ValueMember == "" ||*/ buscador.cmb_buscar.Text=="") 
+                    {
+                        item.Focus();// Mueve el cursor al campo
+                        errorProviderBase.SetError(item, "No puede dejar el cliente vacio");
+                        hayErrores = true;
+                    }
+                }
+                if (item is Panel) 
+                {
+                    Panel unPanel = (Panel)item;
+                    foreach(Control item1 in unPanel.Controls) 
+                    {
+                        if (item1 is Buscador)
+                        {
+                            //se fija que el buscador no este vacio
+                            //Hace la conversion
+                            Buscador buscador = (Buscador)item1;
+                            if (/*buscador.cmb_buscar.ValueMember == "" ||*/ buscador.cmb_buscar.Text == "")
+                            {
+                                item1.Focus();// Mueve el cursor al campo
+                                errorProviderBase.SetError(item, "No puede dejar el cliente vacio");
+                                hayErrores = true;
+                            }
+                        }
+
+
+                    }
+                
                 }
 
             }

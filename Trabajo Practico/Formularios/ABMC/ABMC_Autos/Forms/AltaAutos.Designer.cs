@@ -29,12 +29,13 @@
         private void InitializeComponent()
         {
             this.label8 = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProviderBase)).BeginInit();
             this.SuspendLayout();
             // 
             // btn_Aceptar
             // 
             this.btn_Aceptar.Location = new System.Drawing.Point(188, 330);
-            this.btn_Aceptar.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.btn_Aceptar.Margin = new System.Windows.Forms.Padding(5);
             this.btn_Aceptar.TabIndex = 8;
             this.btn_Aceptar.Click += new System.EventHandler(this.btn_Aceptar_Click_1);
             // 
@@ -59,13 +60,22 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.label8);
-            this.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.Margin = new System.Windows.Forms.Padding(5);
             this.Name = "AltaAutos";
             this.Text = "AltaAutos";
             this.Load += new System.EventHandler(this.AltaAutos_Load);
+            this.Controls.SetChildIndex(this.btn_Cancelar, 0);
+            this.Controls.SetChildIndex(this.txtCodSerieFab, 0);
+            this.Controls.SetChildIndex(this.cmbNomComr, 0);
+            this.Controls.SetChildIndex(this.txtAñoFab, 0);
+            this.Controls.SetChildIndex(this.cmbCondicion, 0);
+            this.Controls.SetChildIndex(this.txtNroChasis, 0);
+            this.Controls.SetChildIndex(this.txtNroMotor, 0);
+            this.Controls.SetChildIndex(this.txtPatente, 0);
             this.Controls.SetChildIndex(this.btn_LimpiarCampos, 0);
             this.Controls.SetChildIndex(this.btn_Aceptar, 0);
             this.Controls.SetChildIndex(this.label8, 0);
+            ((System.ComponentModel.ISupportInitialize)(this.errorProviderBase)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

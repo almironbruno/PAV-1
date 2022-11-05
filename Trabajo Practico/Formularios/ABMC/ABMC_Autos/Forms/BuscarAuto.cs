@@ -55,9 +55,12 @@ namespace Trabajo_Practico.Formularios.ABMC.Autos
                         string chasis = tabla.Rows[0]["nro_chasis"].ToString();
                         string motor = tabla.Rows[0]["nro_motor"].ToString();
                         string patente = tabla.Rows[0]["patente"].ToString();
+                        string precio = tabla.Rows[0]["monto"].ToString();
+                        //Estado de venta... ignorar.
+                        bool vendido = false;
 
                         //Se almacena todo en el objeto auto y se usa la funcion del objeto para mostrarlo
-                        Vehiculos auto = new Vehiculos(codS, id_comer, añoFab, id_cond, chasis, motor, patente);
+                        Vehiculos auto = new Vehiculos(codS, id_comer, añoFab, id_cond, chasis, motor, patente,precio,vendido);
 
                         string salida = auto.mostrar(auto);
 
@@ -86,9 +89,12 @@ namespace Trabajo_Practico.Formularios.ABMC.Autos
                             string chasis = tabla.Rows[0]["nro_chasis"].ToString();
                             string motor = tabla.Rows[0]["nro_motor"].ToString();
                             string patente = tabla.Rows[0]["patente"].ToString();
+                            string precio = tabla.Rows[0]["monto"].ToString();
+                            //Estado de venta... ignorar.
+                            bool vendido = false;
 
                             //Se almacena todo en el objeto auto y se usa la funcion del objeto para mostrarlo
-                            Vehiculos auto = new Vehiculos(codS, id_comer, añoFab, id_cond, chasis, motor, patente);
+                            Vehiculos auto = new Vehiculos(codS, id_comer, añoFab, id_cond, chasis, motor, patente, precio, vendido);
 
                             string salida = auto.mostrar(auto);
 
@@ -121,9 +127,11 @@ namespace Trabajo_Practico.Formularios.ABMC.Autos
                                 string chasis = tabla.Rows[0]["nro_chasis"].ToString();
                                 string motor = tabla.Rows[0]["nro_motor"].ToString();
                                 string patente = tabla.Rows[0]["patente"].ToString();
-
+                                string precio = tabla.Rows[0]["monto"].ToString();
+                                //Estado de Auto
+                                bool vendido = false;
                                 //Se almacena todo en el objeto auto y se usa la funcion del objeto para mostrarlo
-                                Vehiculos auto = new Vehiculos(codS, id_comer, añoFab, id_cond, chasis, motor, patente);
+                                Vehiculos auto = new Vehiculos(codS, id_comer, añoFab, id_cond, chasis, motor, patente,precio,vendido);
 
                                 string salida = auto.mostrar(auto);
 

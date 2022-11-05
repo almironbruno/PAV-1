@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.label8 = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProviderBase)).BeginInit();
             this.SuspendLayout();
             // 
             // txtPatente
@@ -83,6 +84,8 @@
             this.Name = "BajaAutos";
             this.Text = "BajaAutos";
             this.Load += new System.EventHandler(this.BajaAutos_Load);
+            this.Controls.SetChildIndex(this.txtPrecioAuto, 0);
+            this.Controls.SetChildIndex(this.btn_Cancelar, 0);
             this.Controls.SetChildIndex(this.btn_Aceptar, 0);
             this.Controls.SetChildIndex(this.btn_LimpiarCampos, 0);
             this.Controls.SetChildIndex(this.txtCodSerieFab, 0);
@@ -93,6 +96,7 @@
             this.Controls.SetChildIndex(this.txtNroMotor, 0);
             this.Controls.SetChildIndex(this.txtPatente, 0);
             this.Controls.SetChildIndex(this.label8, 0);
+            ((System.ComponentModel.ISupportInitialize)(this.errorProviderBase)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

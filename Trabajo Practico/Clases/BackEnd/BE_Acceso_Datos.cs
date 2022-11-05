@@ -33,6 +33,18 @@ namespace Trabajo_Practico.Clases.BackEnd
 
         }
 
+        private void conectarStoreProcedure()
+        {
+
+            cn.ConnectionString = cadenaConexion;
+            cn.Open();
+
+            cmd.Connection = cn;
+            //Definimos que el cmd trabaja con un texto
+            cmd.CommandType = CommandType.StoredProcedure;
+
+        }
+
         //Desconexion de la BD
         private void desconectar()
         {
@@ -75,18 +87,62 @@ namespace Trabajo_Practico.Clases.BackEnd
         
         
 
-        } 
+        }
 
-      
+        public DataTable EjecutraStoreProcedure(string sql)
+        {
+            conectarStoreProcedure();
+            //Comando a ejecutar, que viene de sql 
+            cmd.CommandText = sql;
+
+            //Definir datatable
+
+            DataTable tabla = new DataTable();
+
+            //Cargar en tabla el comando consultado
+            try
+            {
+                tabla.Load(cmd.ExecuteReader());
+            }
+            catch (Exception e)
+            {
+
+                MessageBox.Show("Error en la base de datos con la consulta: " +
+                     sql + " el error es: " + e.Message);
+
+                desconectar();
+                return tabla;
+
+            }                //Comando de Lectura
+
+
+            //Desconectar de la bd
+            desconectar();
+
+            //Devolver tabla
+            return tabla;
+        }
+
+
+        
+
+
         //Sirve para buscar strings de FK y devolver su equivalencia de PK, recib string y devuelve pk.
         public int SelectNumeros(string sqlBuscar)
         {
             int numero = 0;
             conectar();
-            
+
             cmd.CommandText = sqlBuscar;
-            numero = (int)cmd.ExecuteScalar();
+            try {
+
+                numero = (int)cmd.ExecuteScalar();
+            }
+            catch (Exception){
+                MessageBox.Show("Ha ocurrido un error! Intentelo nuevamente");
+            }
             desconectar();
+            
             if(numero > 0)
             {
                 return numero;
@@ -166,8 +222,9 @@ namespace Trabajo_Practico.Clases.BackEnd
                 cmd.CommandText = sql;
                 cmd.ExecuteNonQuery();
                 desconectar();
+            
                 MessageBox.Show("Se ha realizado con exito la operacion!");
-            }
+		}
             // En caso de que falle
             catch(SqlException e) 
             {

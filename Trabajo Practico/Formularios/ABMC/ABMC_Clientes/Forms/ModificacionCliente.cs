@@ -35,12 +35,6 @@ namespace Trabajo_Practico.Formularios.ABMC.Clientes
             
             cmbCargable_Barrio.cmb_Cargable.SelectedValue = bd.SelectNumeros($"SELECT id_barrios FROM barrios WHERE nombre_barrio LIKE '{row.Cells[7].Value.ToString()}'");
 
-
-
-
-
-
-
         }
 
         private void btn_Aceptar_Click_1(object sender, EventArgs e)
