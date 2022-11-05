@@ -333,3 +333,5 @@ C:\Users\Almir\Desktop\PAV\PAV-1-tp\Trabajo Practico\bin\Debug\zh-CHS\Microsoft.
 C:\Users\Almir\Desktop\PAV\PAV-1-tp\Trabajo Practico\bin\Debug\zh-CHT\Microsoft.ReportViewer.WinForms.resources.dll
 C:\Users\Almir\Desktop\PAV\PAV-1-tp\Trabajo Practico\obj\Debug\Trabajo Practico.csproj.CopyComplete
 C:\Users\Almir\Desktop\PAV\PAV-1-tp\Trabajo Practico\obj\Debug\Trabajo_Practico.Formularios.Reportes.ReportesBase.resources
+C:\Users\Almir\Desktop\PAV\PAV-1-tp\Trabajo Practico\obj\Debug\Trabajo_Practico.Formularios.Reportes.AutosXCliente.AutosXCliente.resources
+C:\Users\Almir\Desktop\PAV\PAV-1-tp\Trabajo Practico\obj\Debug\Trabajo_Practico.Formularios.Reportes.VentasXCliente.VentasXClientes.resources

@@ -1,6 +1,6 @@
-﻿namespace Trabajo_Practico.Formularios.Reportes.losReportes
+﻿namespace Trabajo_Practico.Formularios.Reportes.AutosXCliente
 {
-    partial class VentasCliente
+    partial class AutosXCliente
     {
         /// <summary>
         /// Required designer variable.
@@ -28,10 +28,24 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.SuspendLayout();
+            // 
+            // reportViewer1
+            // 
+            this.reportViewer1.LocalReport.ReportEmbeddedResource = "Trabajo_Practico.Formularios.Reportes.AutosXCliente.AutosXCliente.rdlc";
+            this.reportViewer1.ServerReport.BearerToken = null;
+            this.reportViewer1.Load += new System.EventHandler(this.reportViewer1_Load);
+            // 
+            // AutosXCliente
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "VentasCliente";
+            this.Name = "AutosXCliente";
+            this.Text = "AutosXCliente";
+            this.Load += new System.EventHandler(this.AutosXCliente_Load);
+            this.ResumeLayout(false);
+
         }
 
         #endregion

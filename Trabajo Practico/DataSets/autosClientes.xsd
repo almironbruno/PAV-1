@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="autos" targetNamespace="http://tempuri.org/DataSet1.xsd" xmlns:mstns="http://tempuri.org/DataSet1.xsd" xmlns="http://tempuri.org/DataSet1.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="BD3K3G03_2022ConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="BD3K3G03_2022ConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Trabajo_Practico.Properties.Settings.GlobalReference.Default.BD3K3G03_2022ConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="autosTableAdapter" GeneratorDataComponentClassName="autosTableAdapter" Name="autos" UserDataComponentName="autosTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="BD3K3G03_2022ConnectionString (Settings)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT        A.cod_serie_fabrica, N.nombre_comercial, A.año_fabricacion, A.patente, C.nombre_condicion, A.monto
+FROM            autos AS A INNER JOIN
+                         nombres_comerciales AS N ON A.id_nombrecomercial = N.id_nombrecomercial INNER JOIN
+                         condicion AS C ON A.id_condicion = C.id_condicion</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="cod_serie_fabrica" DataSetColumn="cod_serie_fabrica" />
+              <Mapping SourceColumn="año_fabricacion" DataSetColumn="año_fabricacion" />
+              <Mapping SourceColumn="patente" DataSetColumn="patente" />
+              <Mapping SourceColumn="monto" DataSetColumn="monto" />
+              <Mapping SourceColumn="nombre_comercial" DataSetColumn="nombre_comercial" />
+              <Mapping SourceColumn="nombre_condicion" DataSetColumn="nombre_condicion" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="autos" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_UserDSName="autos" msprop:Generator_DataSetName="_autos">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="autos" msprop:Generator_RowEvHandlerName="autosRowChangeEventHandler" msprop:Generator_RowDeletedName="autosRowDeleted" msprop:Generator_RowDeletingName="autosRowDeleting" msprop:Generator_RowEvArgName="autosRowChangeEvent" msprop:Generator_TablePropName="autos" msprop:Generator_RowChangedName="autosRowChanged" msprop:Generator_RowChangingName="autosRowChanging" msprop:Generator_TableClassName="autosDataTable" msprop:Generator_RowClassName="autosRow" msprop:Generator_TableVarName="tableautos" msprop:Generator_UserTableName="autos">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="cod_serie_fabrica" msprop:Generator_ColumnPropNameInRow="cod_serie_fabrica" msprop:Generator_ColumnPropNameInTable="cod_serie_fabricaColumn" msprop:Generator_ColumnVarNameInTable="columncod_serie_fabrica" msprop:Generator_UserColumnName="cod_serie_fabrica">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="25" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="año_fabricacion" msprop:Generator_ColumnPropNameInRow="año_fabricacion" msprop:Generator_ColumnPropNameInTable="año_fabricacionColumn" msprop:Generator_ColumnVarNameInTable="columnaño_fabricacion" msprop:Generator_UserColumnName="año_fabricacion" type="xs:int" />
+              <xs:element name="patente" msprop:Generator_ColumnPropNameInRow="patente" msprop:Generator_ColumnPropNameInTable="patenteColumn" msprop:Generator_ColumnVarNameInTable="columnpatente" msprop:Generator_UserColumnName="patente">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="monto" msprop:Generator_ColumnPropNameInRow="monto" msprop:Generator_ColumnPropNameInTable="montoColumn" msprop:Generator_ColumnVarNameInTable="columnmonto" msprop:Generator_UserColumnName="monto" type="xs:int" minOccurs="0" />
+              <xs:element name="nombre_comercial" msprop:Generator_ColumnPropNameInRow="nombre_comercial" msprop:Generator_ColumnPropNameInTable="nombre_comercialColumn" msprop:Generator_ColumnVarNameInTable="columnnombre_comercial" msprop:Generator_UserColumnName="nombre_comercial">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="25" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="nombre_condicion" msprop:Generator_ColumnPropNameInRow="nombre_condicion" msprop:Generator_ColumnPropNameInTable="nombre_condicionColumn" msprop:Generator_ColumnVarNameInTable="columnnombre_condicion" msprop:Generator_UserColumnName="nombre_condicion">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="25" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:autos" />
+      <xs:field xpath="mstns:cod_serie_fabrica" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

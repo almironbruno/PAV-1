@@ -74,6 +74,7 @@
     <Compile Include="Clases\BackEnd\NegocioLocalidades\Ne_Localidades.cs" />
     <Compile Include="Clases\BackEnd\NegocioMarcas\NE_Marcas.cs" />
     <Compile Include="Clases\BackEnd\NegocioProceso\NE_Proceso.cs" />
+    <Compile Include="Clases\BackEnd\NegocioReporte\NE_reporte.cs" />
     <Compile Include="Clases\BackEnd\NegocioTelefonos\NE_Telefonos.cs" />
     <Compile Include="Clases\BackEnd\NegocioNombreComercial\NE_NombreComercial.cs" />
     <Compile Include="Clases\BackEnd\ValidarEmail.cs" />
@@ -113,6 +114,11 @@
     </Compile>
     <Compile Include="ControlesPropios\TextBoxCargable.Designer.cs">
       <DependentUpon>TextBoxCargable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataSets\autosClientes.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>autosClientes.xsd</DependentUpon>
     </Compile>
     <Compile Include="Formularios\ABMC\ABMC_Autos\CamposAutos.cs">
       <SubType>Form</SubType>
@@ -492,15 +498,32 @@
     <Compile Include="Formularios\Proceso\FormVenta.Designer.cs">
       <DependentUpon>FormVenta.cs</DependentUpon>
     </Compile>
+    <Compile Include="Formularios\Reportes\AutosXCliente\AutosXCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Reportes\AutosXCliente\AutosXCliente.Designer.cs">
+      <DependentUpon>AutosXCliente.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formularios\Reportes\ReportesBase.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Formularios\Reportes\ReportesBase.Designer.cs">
       <DependentUpon>ReportesBase.cs</DependentUpon>
     </Compile>
+    <Compile Include="Formularios\Reportes\VentasXCliente\VentasXClientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Reportes\VentasXCliente\VentasXClientes.Designer.cs">
+      <DependentUpon>VentasXClientes.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SqlServerTypes\Loader.cs" />
+    <Compile Include="DataSets\ventasClientes.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ventasClientes.xsd</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="ControlesPropios\Buscador.resx">
       <DependentUpon>Buscador.cs</DependentUpon>
     </EmbeddedResource>
@@ -699,8 +722,16 @@
     <EmbeddedResource Include="Formularios\Proceso\FormVenta.resx">
       <DependentUpon>FormVenta.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Reportes\AutosXCliente\AutosXCliente.rdlc" />
+    <EmbeddedResource Include="Formularios\Reportes\AutosXCliente\AutosXCliente.resx">
+      <DependentUpon>AutosXCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Reportes\VentasXCliente\VentasXCliente.rdlc" />
     <EmbeddedResource Include="Formularios\Reportes\ReportesBase.resx">
       <DependentUpon>ReportesBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Reportes\VentasXCliente\VentasXClientes.resx">
+      <DependentUpon>VentasXClientes.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -712,6 +743,17 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <None Include="DataSets\autosClientes.xsc">
+      <DependentUpon>autosClientes.xsd</DependentUpon>
+    </None>
+    <None Include="DataSets\autosClientes.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>autosClientes.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSets\autosClientes.xss">
+      <DependentUpon>autosClientes.xsd</DependentUpon>
+    </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -722,6 +764,17 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="DataSets\ventasClientes.xsc">
+      <DependentUpon>ventasClientes.xsd</DependentUpon>
+    </None>
+    <None Include="DataSets\ventasClientes.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ventasClientes.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSets\ventasClientes.xss">
+      <DependentUpon>ventasClientes.xsd</DependentUpon>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
