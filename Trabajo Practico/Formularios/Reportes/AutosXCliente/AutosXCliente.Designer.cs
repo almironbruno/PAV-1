@@ -28,6 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.label1 = new System.Windows.Forms.Label();
+            this.comboCargable1 = new Trabajo_Practico.ControlesPropios.ComboCargable();
+            this.btn_Buscar = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // reportViewer1
@@ -36,18 +39,56 @@
             this.reportViewer1.ServerReport.BearerToken = null;
             this.reportViewer1.Load += new System.EventHandler(this.reportViewer1_Load);
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(61, 13);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(112, 13);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "Seleccione un cliente:";
+            // 
+            // comboCargable1
+            // 
+            this.comboCargable1.Location = new System.Drawing.Point(180, 13);
+            this.comboCargable1.Name = "comboCargable1";
+            this.comboCargable1.Size = new System.Drawing.Size(121, 21);
+            this.comboCargable1.TabIndex = 2;
+            // 
+            // btn_Buscar
+            // 
+            this.btn_Buscar.Location = new System.Drawing.Point(322, 10);
+            this.btn_Buscar.Name = "btn_Buscar";
+            this.btn_Buscar.Size = new System.Drawing.Size(75, 23);
+            this.btn_Buscar.TabIndex = 3;
+            this.btn_Buscar.Text = "Buscar";
+            this.btn_Buscar.UseVisualStyleBackColor = true;
+            this.btn_Buscar.Click += new System.EventHandler(this.btn_Buscar_Click);
+            // 
             // AutosXCliente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btn_Buscar);
+            this.Controls.Add(this.comboCargable1);
+            this.Controls.Add(this.label1);
             this.Name = "AutosXCliente";
             this.Text = "AutosXCliente";
             this.Load += new System.EventHandler(this.AutosXCliente_Load);
+            this.Controls.SetChildIndex(this.reportViewer1, 0);
+            this.Controls.SetChildIndex(this.label1, 0);
+            this.Controls.SetChildIndex(this.comboCargable1, 0);
+            this.Controls.SetChildIndex(this.btn_Buscar, 0);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
+
+        private System.Windows.Forms.Label label1;
+        private ControlesPropios.ComboCargable comboCargable1;
+        private System.Windows.Forms.Button btn_Buscar;
     }
 }

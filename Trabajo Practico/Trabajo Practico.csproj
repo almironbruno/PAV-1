@@ -120,6 +120,17 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>autosClientes.xsd</DependentUpon>
     </Compile>
+    <Compile Include="DataSets\AutosMarcas.cs">
+      <DependentUpon>AutosMarcas.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSets\AutosMarcas.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AutosMarcas.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSets\ventasClientes.cs">
+      <DependentUpon>ventasClientes.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Formularios\ABMC\ABMC_Autos\CamposAutos.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -474,6 +485,18 @@
     <Compile Include="Formularios\Base\ABMC\FormBaseModificacion.Designer.cs">
       <DependentUpon>FormBaseModificacion.cs</DependentUpon>
     </Compile>
+    <Compile Include="Formularios\Estadisticas\AutosXMarcas\AutosXMarcas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Estadisticas\AutosXMarcas\AutosXMarcas.Designer.cs">
+      <DependentUpon>AutosXMarcas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Estadisticas\VentasXEmpleados\VentasXEmpleados.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Estadisticas\VentasXEmpleados\VentasXEmpleados.Designer.cs">
+      <DependentUpon>VentasXEmpleados.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formularios\Login\LoginForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -523,6 +546,11 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>ventasClientes.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ventasEmpleados.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ventasEmpleados.xsd</DependentUpon>
     </Compile>
     <EmbeddedResource Include="ControlesPropios\Buscador.resx">
       <DependentUpon>Buscador.cs</DependentUpon>
@@ -710,6 +738,14 @@
     <EmbeddedResource Include="Formularios\Base\ABMC\FormBaseModificacion.resx">
       <DependentUpon>FormBaseModificacion.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Estadisticas\AutosXMarcas\AutosMarcas.rdlc" />
+    <EmbeddedResource Include="Formularios\Estadisticas\AutosXMarcas\AutosXMarcas.resx">
+      <DependentUpon>AutosXMarcas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Estadisticas\VentasXEmpleados\ventasEmpleados.rdlc" />
+    <EmbeddedResource Include="Formularios\Estadisticas\VentasXEmpleados\VentasXEmpleados.resx">
+      <DependentUpon>VentasXEmpleados.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Formularios\Login\LoginForm.resx">
       <DependentUpon>LoginForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -754,6 +790,17 @@
     <None Include="DataSets\autosClientes.xss">
       <DependentUpon>autosClientes.xsd</DependentUpon>
     </None>
+    <None Include="DataSets\AutosMarcas.xsc">
+      <DependentUpon>AutosMarcas.xsd</DependentUpon>
+    </None>
+    <None Include="DataSets\AutosMarcas.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>AutosMarcas.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSets\AutosMarcas.xss">
+      <DependentUpon>AutosMarcas.xsd</DependentUpon>
+    </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -774,6 +821,17 @@
     </None>
     <None Include="DataSets\ventasClientes.xss">
       <DependentUpon>ventasClientes.xsd</DependentUpon>
+    </None>
+    <None Include="ventasEmpleados.xsc">
+      <DependentUpon>ventasEmpleados.xsd</DependentUpon>
+    </None>
+    <None Include="ventasEmpleados.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ventasEmpleados.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ventasEmpleados.xss">
+      <DependentUpon>ventasEmpleados.xsd</DependentUpon>
     </None>
   </ItemGroup>
   <ItemGroup>

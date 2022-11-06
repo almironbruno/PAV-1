@@ -45,7 +45,9 @@ namespace Trabajo_Practico.ControlesPropios
                 "tipo_doc_cliente + '-' + nro_doc_cliente + '-'+ nombre + ' ' + apellido");
                 cmb_buscar.DataSource = tabla;
                 cmb_buscar.DisplayMember = "FullName";
+                cmb_buscar.ValueMember = "nro_doc_cliente";
                 cmb_buscar.SelectedItem = 1;
+                
                 btn_deshacer.Show();
 
             }

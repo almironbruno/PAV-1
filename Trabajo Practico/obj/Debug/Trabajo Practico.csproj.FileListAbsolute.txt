@@ -335,3 +335,5 @@ C:\Users\Almir\Desktop\PAV\PAV-1-tp\Trabajo Practico\obj\Debug\Trabajo Practico.
 C:\Users\Almir\Desktop\PAV\PAV-1-tp\Trabajo Practico\obj\Debug\Trabajo_Practico.Formularios.Reportes.ReportesBase.resources
 C:\Users\Almir\Desktop\PAV\PAV-1-tp\Trabajo Practico\obj\Debug\Trabajo_Practico.Formularios.Reportes.AutosXCliente.AutosXCliente.resources
 C:\Users\Almir\Desktop\PAV\PAV-1-tp\Trabajo Practico\obj\Debug\Trabajo_Practico.Formularios.Reportes.VentasXCliente.VentasXClientes.resources
+C:\Users\Almir\Desktop\PAV\PAV-1-tp\Trabajo Practico\obj\Debug\Trabajo_Practico.Formularios.Estadisticas.AutosXMarcas.AutosXMarcas.resources
+C:\Users\Almir\Desktop\PAV\PAV-1-tp\Trabajo Practico\obj\Debug\Trabajo_Practico.Formularios.Estadisticas.VentasXEmpleados.VentasXEmpleados.resources

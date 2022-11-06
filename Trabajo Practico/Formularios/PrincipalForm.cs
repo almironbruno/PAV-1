@@ -23,6 +23,8 @@ using Trabajo_Practico.Formularios.Reportes;
 
 using Trabajo_Practico.Formularios.Reportes.AutosXCliente;
 using Trabajo_Practico.Formularios.Reportes.VentasXCliente;
+using Trabajo_Practico.Formularios.Estadisticas.AutosXMarcas;
+using Trabajo_Practico.Formularios.Estadisticas.VentasXEmpleados;
 
 namespace Trabajo_Practico.Formularios {
 
@@ -238,7 +240,18 @@ public partial class PrincipalForm : Form
          AutosXCliente ventana = new AutosXCliente();
          ventana.Show();
     }
-    
-   }
+
+    private void autosToolStripMenuItem2_Click(object sender, EventArgs e)
+        {
+            AutosXMarcas ventana = new AutosXMarcas();
+            ventana.Show();
+        }
+
+        private void empleadosToolStripMenuItem2_Click(object sender, EventArgs e)
+        {
+            VentasXEmpleados ventana = new VentasXEmpleados();
+            ventana.Show();
+        }
+    }
 }
 
