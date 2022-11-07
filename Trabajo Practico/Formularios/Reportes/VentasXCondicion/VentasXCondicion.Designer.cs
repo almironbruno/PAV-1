@@ -1,6 +1,6 @@
-﻿namespace Trabajo_Practico.Formularios.Estadisticas.VentasXEmpleados
+﻿namespace Trabajo_Practico.Formularios.Reportes.VentasXCondicion
 {
-    partial class VentasXEmpleados
+    partial class VentasXCondicion
     {
         /// <summary>
         /// Required designer variable.
@@ -32,18 +32,19 @@
             // 
             // reportViewer1
             // 
-            this.reportViewer1.LocalReport.ReportEmbeddedResource = "Trabajo_Practico.Formularios.Estadisticas.VentasXEmpleados.ventasEmpleados.rdlc";
+            this.reportViewer1.LocalReport.ReportEmbeddedResource = "Trabajo_Practico.Formularios.Reportes.VentasXCondicion.ReportVentasXCondicion.rdl" +
+    "c";
             this.reportViewer1.ServerReport.BearerToken = null;
             this.reportViewer1.Load += new System.EventHandler(this.reportViewer1_Load);
             // 
-            // VentasXEmpleados
+            // VentasXCondicion
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Name = "VentasXEmpleados";
-            this.Text = "Estadisticas de Ventas por Empleado";
-            this.Load += new System.EventHandler(this.VentasXEmpleados_Load);
+            this.Name = "VentasXCondicion";
+            this.Text = "VentasXCondicion";
+            this.Load += new System.EventHandler(this.VentasXCondicion_Load);
             this.ResumeLayout(false);
 
         }

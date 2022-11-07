@@ -35,7 +35,7 @@ namespace Trabajo_Practico.Clases.BackEnd
             }
             else
             {
-                return ResultadoValidacion.no_existe;
+                return ResultadoValidacion.existe;
             }
 
         }

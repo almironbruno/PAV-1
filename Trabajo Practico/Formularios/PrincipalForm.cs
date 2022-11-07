@@ -23,6 +23,8 @@ using Trabajo_Practico.Formularios.Reportes;
 
 using Trabajo_Practico.Formularios.Reportes.AutosXCliente;
 using Trabajo_Practico.Formularios.Reportes.VentasXCliente;
+using Trabajo_Practico.Formularios.Reportes.VentasXGama;
+using Trabajo_Practico.Formularios.Reportes.VentasXCondicion;
 using Trabajo_Practico.Formularios.Estadisticas.AutosXMarcas;
 using Trabajo_Practico.Formularios.Estadisticas.VentasXEmpleados;
 using Trabajo_Practico.Formularios.Reportes.VentasXMarca;
@@ -30,7 +32,6 @@ using Trabajo_Practico.Formularios.Reportes.VentasXModelo;
 
 
 using Trabajo_Practico.Formularios.Estadisticas;
-
 namespace Trabajo_Practico.Formularios {
 
 public partial class PrincipalForm : Form
@@ -246,6 +247,16 @@ public partial class PrincipalForm : Form
          ventana.Show();
     }
 
+
+        private void gamasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            VentasXGamas ventana = new VentasXGamas();
+            ventana.Show();
+        }
+
+        private void condicionToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            VentasXCondicion ventana = new VentasXCondicion();
     private void autosToolStripMenuItem2_Click(object sender, EventArgs e)
         {
             AutosXMarcas ventana = new AutosXMarcas();
