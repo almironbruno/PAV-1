@@ -29,9 +29,11 @@ namespace Trabajo_Practico.Formularios.ABMC.Autos
             string nro_chasis = row.Cells[4].Value.ToString();
             string nro_motor = row.Cells[5].Value.ToString();
             string patente = row.Cells[3].Value.ToString();
-            
+            string precio = row.Cells[7].Value.ToString();
+            //Estado de venta, ignorar
+            bool vendido = false;
 
-            Vehiculos auto = new Vehiculos(codSerie, id_comer, añoFab, id_cond, nro_chasis, nro_motor, patente);
+            Vehiculos auto = new Vehiculos(codSerie, id_comer, añoFab, id_cond, nro_chasis, nro_motor, patente,precio,vendido);
 
 
             cargarCampos(auto);
@@ -82,8 +84,12 @@ namespace Trabajo_Practico.Formularios.ABMC.Autos
                 string nro_Chasis = txtNroChasis.Text.Trim();
                 string nro_Motor = txtNroMotor.Text.Trim();
                 string patente = txtPatente.Text.Trim();
+                string precio = txtPrecioAuto.Text.Trim();
+                //Estado de venta, ignorar
 
-                Vehiculos auto = new Vehiculos(cod_serie_fabrica, nombreComercial, año_Fabricacion, condicion, nro_Chasis, nro_Motor, patente);
+                bool vendido = false;
+
+                Vehiculos auto = new Vehiculos(cod_serie_fabrica, nombreComercial, año_Fabricacion, condicion, nro_Chasis, nro_Motor, patente,precio,vendido);
 
                 nEauto.ModificarAuto(auto, patente);
             }

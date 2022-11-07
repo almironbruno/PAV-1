@@ -8,10 +8,11 @@
     <OutputType>WinExe</OutputType>
     <RootNamespace>Trabajo_Practico</RootNamespace>
     <AssemblyName>Trabajo Practico</AssemblyName>
-    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -33,6 +34,24 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.900.148\lib\net40\Microsoft.ReportViewer.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.DataVisualization, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.900.148\lib\net40\Microsoft.ReportViewer.DataVisualization.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Design, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.900.148\lib\net40\Microsoft.ReportViewer.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.ProcessingObjectModel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.900.148\lib\net40\Microsoft.ReportViewer.ProcessingObjectModel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.900.148\lib\net40\Microsoft.ReportViewer.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.Types, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.SqlServer.Types.14.0.314.76\lib\net40\Microsoft.SqlServer.Types.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
@@ -47,25 +66,47 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BDreportesventaporcondicion.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BDreportesventaporcondicion.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="BDreporteVenXGam.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BDreporteVenXGam.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Clases\BackEnd\BE_Acceso_Datos.cs" />
     <Compile Include="Clases\BackEnd\NegocioAutos\NE_Autos.cs" />
     <Compile Include="Clases\BackEnd\NegocioClientes\NE_Clientes.cs" />
     <Compile Include="Clases\BackEnd\NegocioEmpleados\NE_Empleados.cs" />
+    <Compile Include="Clases\BackEnd\NegocioEncargos\NE_Encargos.cs" />
+    <Compile Include="Clases\BackEnd\NegocioLocalidades\Ne_Localidades.cs" />
     <Compile Include="Clases\BackEnd\NegocioMarcas\NE_Marcas.cs" />
+    <Compile Include="Clases\BackEnd\NegocioProceso\NE_Proceso.cs" />
+    <Compile Include="Clases\BackEnd\NegocioReporte\NE_reporte.cs" />
     <Compile Include="Clases\BackEnd\NegocioTelefonos\NE_Telefonos.cs" />
     <Compile Include="Clases\BackEnd\NegocioNombreComercial\NE_NombreComercial.cs" />
     <Compile Include="Clases\BackEnd\ValidarEmail.cs" />
     <Compile Include="Clases\BackEnd\NegocioUsuarios\NE_usuarios.cs" />
     <Compile Include="Clases\Entidades\Clientes.cs" />
     <Compile Include="Clases\Entidades\Empleados.cs" />
+    <Compile Include="Clases\Entidades\Encargos.cs" />
+    <Compile Include="Clases\Entidades\Localidades.cs" />
     <Compile Include="Clases\Entidades\Marca.cs" />
     <Compile Include="Clases\BackEnd\NegocioBarrio\NE_Barrio.cs" />
-    <Compile Include="Clases\BackEnd\NegocioUsuarios\NE_usuarios.cs" />
     <Compile Include="Clases\Entidades\Barrio.cs" />
     <Compile Include="Clases\Entidades\Telefono.cs" />
     <Compile Include="Clases\Entidades\NombresComerciales.cs" />
     <Compile Include="Clases\Entidades\Vehiculos.cs" />
     <Compile Include="Clases\Entidades\Usuario.cs" />
+    <Compile Include="Clases\Entidades\Venta.cs" />
+    <Compile Include="ControlesPropios\Buscador.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ControlesPropios\Buscador.Designer.cs">
+      <DependentUpon>Buscador.cs</DependentUpon>
+    </Compile>
     <Compile Include="ControlesPropios\ComboCargable.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -83,6 +124,11 @@
     </Compile>
     <Compile Include="ControlesPropios\TextBoxCargable.Designer.cs">
       <DependentUpon>TextBoxCargable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataSets\autosClientes.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>autosClientes.xsd</DependentUpon>
     </Compile>
     <Compile Include="Formularios\ABMC\ABMC_Autos\CamposAutos.cs">
       <SubType>Form</SubType>
@@ -155,6 +201,90 @@
     </Compile>
     <Compile Include="Formularios\ABMC\ABMC_Autos\Forms\AltaAutos.Designer.cs">
       <DependentUpon>AltaAutos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\ABMC\ABMC_Encargos\ABMC_Encargos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\ABMC\ABMC_Encargos\ABMC_Encargos.Designer.cs">
+      <DependentUpon>ABMC_Encargos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\ABMC\ABMC_Encargos\Campos_Encargos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\ABMC\ABMC_Encargos\Campos_Encargos.Designer.cs">
+      <DependentUpon>Campos_Encargos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\ABMC\ABMC_Encargos\Forms\AltaEncargos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\ABMC\ABMC_Encargos\Forms\AltaEncargos.Designer.cs">
+      <DependentUpon>AltaEncargos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\ABMC\ABMC_Encargos\Forms\BajaEncargos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\ABMC\ABMC_Encargos\Forms\BajaEncargos.Designer.cs">
+      <DependentUpon>BajaEncargos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\ABMC\ABMC_Encargos\Forms\BuscarEncargos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\ABMC\ABMC_Encargos\Forms\BuscarEncargos.Designer.cs">
+      <DependentUpon>BuscarEncargos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\ABMC\ABMC_Encargos\Forms\InfoEncargos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\ABMC\ABMC_Encargos\Forms\InfoEncargos.Designer.cs">
+      <DependentUpon>InfoEncargos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\ABMC\ABMC_Encargos\Forms\ModificarEncargos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\ABMC\ABMC_Encargos\Forms\ModificarEncargos.Designer.cs">
+      <DependentUpon>ModificarEncargos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\ABMC\ABMC_Localidades\ABMC_Localidades.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\ABMC\ABMC_Localidades\ABMC_Localidades.Designer.cs">
+      <DependentUpon>ABMC_Localidades.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\ABMC\ABMC_Localidades\CamposLocalidades.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\ABMC\ABMC_Localidades\CamposLocalidades.Designer.cs">
+      <DependentUpon>CamposLocalidades.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\ABMC\ABMC_Localidades\Forms\AltaLocalidades.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\ABMC\ABMC_Localidades\Forms\AltaLocalidades.Designer.cs">
+      <DependentUpon>AltaLocalidades.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\ABMC\ABMC_Localidades\Forms\BajaLocalidades.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\ABMC\ABMC_Localidades\Forms\BajaLocalidades.Designer.cs">
+      <DependentUpon>BajaLocalidades.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\ABMC\ABMC_Localidades\Forms\BuscarLocalidades.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\ABMC\ABMC_Localidades\Forms\BuscarLocalidades.Designer.cs">
+      <DependentUpon>BuscarLocalidades.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\ABMC\ABMC_Localidades\Forms\InfoLocalidades.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\ABMC\ABMC_Localidades\Forms\InfoLocalidades.Designer.cs">
+      <DependentUpon>InfoLocalidades.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\ABMC\ABMC_Localidades\Forms\ModificarLocalidades.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\ABMC\ABMC_Localidades\Forms\ModificarLocalidades.Designer.cs">
+      <DependentUpon>ModificarLocalidades.cs</DependentUpon>
     </Compile>
     <Compile Include="Formularios\ABMC\Barrios\AltaBarrio.cs">
       <SubType>Form</SubType>
@@ -234,12 +364,6 @@
     <Compile Include="Formularios\ABMC\ABMC_Autos\ABMC_Autos.Designer.cs">
       <DependentUpon>ABMC_Autos.cs</DependentUpon>
     </Compile>
-    <Compile Include="Formularios\ABMC\Gamas\Gamas.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Formularios\ABMC\Gamas\Gamas.Designer.cs">
-      <DependentUpon>Gamas.cs</DependentUpon>
-    </Compile>
     <Compile Include="Formularios\ABMC\ABMC_Empleados\Forms\ModificacionEmpleados.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -282,12 +406,17 @@
     <Compile Include="Formularios\ABMC\ABMC_Marcas\Forms\ModificarMarca.Designer.cs">
       <DependentUpon>ModificarMarca.cs</DependentUpon>
     </Compile>
-
     <Compile Include="Formularios\ABMC\Telefonos\AltaTelefono.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Formularios\ABMC\Telefonos\AltaTelefono.Designer.cs">
       <DependentUpon>AltaTelefono.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\ABMC\Telefonos\BajaTelefono.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\ABMC\Telefonos\BajaTelefono.Designer.cs">
+      <DependentUpon>BajaTelefono.cs</DependentUpon>
     </Compile>
     <Compile Include="Formularios\ABMC\Telefonos\ConsultaTelefono.cs">
       <SubType>Form</SubType>
@@ -373,8 +502,53 @@
     <Compile Include="Formularios\Login\NewUsuarioForm.Designer.cs">
       <DependentUpon>NewUsuarioForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Formularios\Proceso\FormVenta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Proceso\FormVenta.Designer.cs">
+      <DependentUpon>FormVenta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Reportes\AutosXCliente\AutosXCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Reportes\AutosXCliente\AutosXCliente.Designer.cs">
+      <DependentUpon>AutosXCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Reportes\ReportesBase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Reportes\ReportesBase.Designer.cs">
+      <DependentUpon>ReportesBase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Reportes\VentasXCliente\VentasXClientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Reportes\VentasXCliente\VentasXClientes.Designer.cs">
+      <DependentUpon>VentasXClientes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Reportes\VentasXCondicion\VentasXCondicion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Reportes\VentasXCondicion\VentasXCondicion.Designer.cs">
+      <DependentUpon>VentasXCondicion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Reportes\VentasXGama\VentasXGamas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Reportes\VentasXGama\VentasXGamas.Designer.cs">
+      <DependentUpon>VentasXGamas.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SqlServerTypes\Loader.cs" />
+    <Compile Include="DataSets\ventasClientes.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ventasClientes.xsd</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="ControlesPropios\Buscador.resx">
+      <DependentUpon>Buscador.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ControlesPropios\ComboCargable.resx">
       <DependentUpon>ComboCargable.cs</DependentUpon>
     </EmbeddedResource>
@@ -435,6 +609,48 @@
     <EmbeddedResource Include="Formularios\ABMC\ABMC_Clientes\Forms\AltaClientes.resx">
       <DependentUpon>AltaClientes.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\ABMC\ABMC_Encargos\ABMC_Encargos.resx">
+      <DependentUpon>ABMC_Encargos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\ABMC\ABMC_Encargos\Campos_Encargos.resx">
+      <DependentUpon>Campos_Encargos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\ABMC\ABMC_Encargos\Forms\AltaEncargos.resx">
+      <DependentUpon>AltaEncargos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\ABMC\ABMC_Encargos\Forms\BajaEncargos.resx">
+      <DependentUpon>BajaEncargos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\ABMC\ABMC_Encargos\Forms\BuscarEncargos.resx">
+      <DependentUpon>BuscarEncargos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\ABMC\ABMC_Encargos\Forms\InfoEncargos.resx">
+      <DependentUpon>InfoEncargos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\ABMC\ABMC_Encargos\Forms\ModificarEncargos.resx">
+      <DependentUpon>ModificarEncargos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\ABMC\ABMC_Localidades\ABMC_Localidades.resx">
+      <DependentUpon>ABMC_Localidades.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\ABMC\ABMC_Localidades\CamposLocalidades.resx">
+      <DependentUpon>CamposLocalidades.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\ABMC\ABMC_Localidades\Forms\AltaLocalidades.resx">
+      <DependentUpon>AltaLocalidades.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\ABMC\ABMC_Localidades\Forms\BajaLocalidades.resx">
+      <DependentUpon>BajaLocalidades.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\ABMC\ABMC_Localidades\Forms\BuscarLocalidades.resx">
+      <DependentUpon>BuscarLocalidades.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\ABMC\ABMC_Localidades\Forms\InfoLocalidades.resx">
+      <DependentUpon>InfoLocalidades.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\ABMC\ABMC_Localidades\Forms\ModificarLocalidades.resx">
+      <DependentUpon>ModificarLocalidades.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Formularios\ABMC\Barrios\ConsultaBarrio.resx">
       <DependentUpon>ConsultaBarrio.cs</DependentUpon>
     </EmbeddedResource>
@@ -462,6 +678,9 @@
     <EmbeddedResource Include="Formularios\ABMC\ABMC_Marcas\CamposMarcas.resx">
       <DependentUpon>CamposMarcas.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\ABMC\ABMC_Empleados\Forms\ModificacionEmpleados.resx">
+      <DependentUpon>ModificacionEmpleados.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Formularios\ABMC\ABMC_Marcas\Forms\AltaMarcas.resx">
       <DependentUpon>AltaMarcas.cs</DependentUpon>
     </EmbeddedResource>
@@ -479,6 +698,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\ABMC\Telefonos\AltaTelefono.resx">
       <DependentUpon>AltaTelefono.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\ABMC\Telefonos\BajaTelefono.resx">
+      <DependentUpon>BajaTelefono.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\ABMC\Telefonos\ConsultaTelefono.resx">
       <DependentUpon>ConsultaTelefono.cs</DependentUpon>
@@ -519,6 +741,28 @@
     <EmbeddedResource Include="Formularios\Login\NewUsuarioForm.resx">
       <DependentUpon>NewUsuarioForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Proceso\FormVenta.resx">
+      <DependentUpon>FormVenta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Reportes\AutosXCliente\AutosXCliente.rdlc" />
+    <EmbeddedResource Include="Formularios\Reportes\AutosXCliente\AutosXCliente.resx">
+      <DependentUpon>AutosXCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Reportes\VentasXCliente\VentasXCliente.rdlc" />
+    <EmbeddedResource Include="Formularios\Reportes\ReportesBase.resx">
+      <DependentUpon>ReportesBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Reportes\VentasXCliente\VentasXClientes.resx">
+      <DependentUpon>VentasXClientes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Reportes\VentasXCondicion\ReportVentasXCondicion.rdlc" />
+    <EmbeddedResource Include="Formularios\Reportes\VentasXCondicion\VentasXCondicion.resx">
+      <DependentUpon>VentasXCondicion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Reportes\VentasXGama\ReportVenXGama.rdlc" />
+    <EmbeddedResource Include="Formularios\Reportes\VentasXGama\VentasXGamas.resx">
+      <DependentUpon>VentasXGamas.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -527,7 +771,42 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
+    <None Include="BDreportesventaporcondicion.xsc">
+      <DependentUpon>BDreportesventaporcondicion.xsd</DependentUpon>
+    </None>
+    <None Include="BDreportesventaporcondicion.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BDreportesventaporcondicion.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="BDreportesventaporcondicion.xss">
+      <DependentUpon>BDreportesventaporcondicion.xsd</DependentUpon>
+    </None>
+    <None Include="BDreporteVenXGam.xsc">
+      <DependentUpon>BDreporteVenXGam.xsd</DependentUpon>
+    </None>
+    <None Include="BDreporteVenXGam.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BDreporteVenXGam.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="BDreporteVenXGam.xss">
+      <DependentUpon>BDreporteVenXGam.xsd</DependentUpon>
+    </None>
+    <None Include="DataSets\autosClientes.xsc">
+      <DependentUpon>autosClientes.xsd</DependentUpon>
+    </None>
+    <None Include="DataSets\autosClientes.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>autosClientes.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSets\autosClientes.xss">
+      <DependentUpon>autosClientes.xsd</DependentUpon>
+    </None>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -537,11 +816,53 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="DataSets\ventasClientes.xsc">
+      <DependentUpon>ventasClientes.xsd</DependentUpon>
+    </None>
+    <None Include="DataSets\ventasClientes.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ventasClientes.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSets\ventasClientes.xss">
+      <DependentUpon>ventasClientes.xsd</DependentUpon>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="Resources\211830_telephone_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\9162463_sign_map_location_placeholder_street_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Location.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Orders.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\326700_cart_shopping_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\4192087_address_billing_delivery_invoice_location_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="SqlServerTypes\readme.htm" />
+    <Content Include="SqlServerTypes\x64\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x64\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

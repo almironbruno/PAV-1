@@ -35,11 +35,14 @@
             // 
             this.cmb_Cargable.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmb_Cargable.FormattingEnabled = true;
-            this.cmb_Cargable.Location = new System.Drawing.Point(3, 3);
+            this.cmb_Cargable.Location = new System.Drawing.Point(0, 0);
             this.cmb_Cargable.Name = "cmb_Cargable";
             this.cmb_Cargable.Size = new System.Drawing.Size(121, 21);
             this.cmb_Cargable.TabIndex = 1;
             this.cmb_Cargable.SelectedIndexChanged += new System.EventHandler(this.cmb_Cargable_SelectedIndexChanged);
+            this.cmb_Cargable.DataSourceChanged += new System.EventHandler(this.cmb_Cargable_DataSourceChanged);
+            this.cmb_Cargable.SelectedValueChanged += new System.EventHandler(this.cmb_Cargable_SelectedValueChanged);
+            this.cmb_Cargable.TextChanged += new System.EventHandler(this.cmb_Cargable_TextChanged);
             // 
             // ComboCargable
             // 
@@ -47,7 +50,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.cmb_Cargable);
             this.Name = "ComboCargable";
-            this.Size = new System.Drawing.Size(128, 28);
+            this.Size = new System.Drawing.Size(121, 21);
             this.ResumeLayout(false);
 
         }

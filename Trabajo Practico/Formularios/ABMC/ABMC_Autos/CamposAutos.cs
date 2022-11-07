@@ -28,6 +28,7 @@ namespace Trabajo_Practico.Formularios.ABMC.ABMC_Autos
             txtNroChasis.Enabled = false;
             txtNroMotor.Enabled = false;
             txtPatente.Enabled = false;
+            txtPrecioAuto.Enabled = false;
         }
 
 
@@ -44,6 +45,7 @@ namespace Trabajo_Practico.Formularios.ABMC.ABMC_Autos
             txtNroChasis.Text = auto.nro_Chasis.Trim();
             txtNroMotor.Text = auto.nro_Motor.Trim();
             txtPatente.Text = auto.patente.Trim();
+            txtPrecioAuto.Text = auto.precio.Trim();
 
             cmbCondicion.cmb_Cargable.SelectedValue = auto.condicion;
             cmbNomComr.cmb_Cargable.SelectedValue = auto.nombreComercial;
@@ -53,6 +55,11 @@ namespace Trabajo_Practico.Formularios.ABMC.ABMC_Autos
         }
 
         private void CamposAutos_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label8_Click(object sender, EventArgs e)
         {
 
         }

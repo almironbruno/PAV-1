@@ -12,10 +12,11 @@ using Trabajo_Practico.Formularios.Base;
 
 namespace Trabajo_Practico.Formularios
 {
-    public partial class FormBaseABMC : Form
+    public partial class FormBaseABMC : FormBaseBotones
     {
         protected BE_Acceso_Datos bd;
-        //Se definen la consulta para que sean genericas
+        //Se definen la consultas para que sean genericas
+        // Este es un comentario
         protected string sqlConsulta;
         protected string sqlInsertar;
         protected string sqlEliminar;
@@ -25,7 +26,9 @@ namespace Trabajo_Practico.Formularios
         public FormBaseABMC()
         {
             InitializeComponent();
+            consultaPrincipal = "";
             bd = new BE_Acceso_Datos();
+            
             
         }
         protected void cargargrilla()
@@ -73,7 +76,7 @@ namespace Trabajo_Practico.Formularios
         private void FormBaseABMC_Load(object sender, EventArgs e)
         {
             //Se carga la grid cuando se carga el formulario
-            dataGridViewModificada1.cargar(bd.Ejecutar_Select(consultaPrincipal));
+            //dataGridViewModificada1.cargar(bd.Ejecutar_Select(consultaPrincipal));
 
         }
 
@@ -87,6 +90,11 @@ namespace Trabajo_Practico.Formularios
         {
             dataGridViewModificada1.cargar(bd.Ejecutar_Select(consultaPrincipal));
             lbl_Cantidad.Text = "Cantidad: " + dataGridViewModificada1.dgr_Principal.Rows.Count;
+        }
+
+        private void dataGridViewModificada1_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

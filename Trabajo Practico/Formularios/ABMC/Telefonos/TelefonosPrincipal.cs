@@ -63,22 +63,25 @@ namespace Trabajo_Practico.Formularios.ABMC.Telefonos
 
         private void btn_Eliminar_Click_1(object sender, EventArgs e)
         {
-            string nroParaBorrar = dataGridViewModificada1.FilaSeleccionada().Cells["nro_telefono"].Value.ToString();
-            string numDocParaBorrar = dataGridViewModificada1.FilaSeleccionada().Cells["nro_doc_cliente"].Value.ToString();
+            //string nroParaBorrar = dataGridViewModificada1.FilaSeleccionada().Cells["nro_telefono"].Value.ToString();
+            //string numDocParaBorrar = dataGridViewModificada1.FilaSeleccionada().Cells["nro_doc_cliente"].Value.ToString();
 
+            DataGridViewRow row = dataGridViewModificada1.FilaSeleccionada();
+            //string telefonoABorrar = "Telefono a eliminar: " + nroParaBorrar + System.Environment.NewLine + "del cliente con documento: " + numDocParaBorrar;
+            //DialogResult dialogResult = MessageBox.Show(telefonoABorrar, "ELIMINAR TELEFONO", MessageBoxButtons.YesNo);
+            BajaTelefono ventana = new BajaTelefono();
+            ventana.cargarInfo(row);
+            ventana.ShowDialog();
 
-            string telefonoABorrar = "Telefono a eliminar: " + nroParaBorrar + System.Environment.NewLine + "del cliente con documento: " + numDocParaBorrar;
-            DialogResult dialogResult = MessageBox.Show(telefonoABorrar, "ELIMINAR TELEFONO", MessageBoxButtons.YesNo);
-
-            if (dialogResult == DialogResult.Yes)
-            {
-                NE_Telefonos borrarTelefono = new NE_Telefonos();
-                borrarTelefono.BorrarTelefono(nroParaBorrar);
-            }
-            else
-            {                   
-                MessageBox.Show("No se eliminara ningun telefono!");              
-            }
+            //if (dialogResult == DialogResult.Yes)
+            //{
+            //    NE_Telefonos borrarTelefono = new NE_Telefonos();
+            //    borrarTelefono.BorrarTelefono(nroParaBorrar);
+            //}
+            //else
+            //{                   
+            //    MessageBox.Show("No se eliminara ningun telefono!");              
+            //}
 
         }
 

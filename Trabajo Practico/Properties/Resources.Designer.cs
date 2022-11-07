@@ -93,6 +93,26 @@ namespace Trabajo_Practico.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _211830_telephone_icon {
+            get {
+                object obj = ResourceManager.GetObject("211830_telephone_icon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _326700_cart_shopping_icon {
+            get {
+                object obj = ResourceManager.GetObject("326700_cart_shopping_icon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap _330396_browse_estimate_explore_explorer_find_icon__1_ {
             get {
                 object obj = ResourceManager.GetObject("330396_browse_estimate_explore_explorer_find_icon (1)", resourceCulture);
@@ -146,6 +166,16 @@ namespace Trabajo_Practico.Properties {
         internal static System.Drawing.Bitmap _3994382_access_close_exit_logout_sign_out_icon {
             get {
                 object obj = ResourceManager.GetObject("3994382_access_close_exit_logout_sign out_icon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _4192087_address_billing_delivery_invoice_location_icon {
+            get {
+                object obj = ResourceManager.GetObject("4192087_address_billing_delivery_invoice_location_icon", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -246,6 +276,36 @@ namespace Trabajo_Practico.Properties {
         internal static System.Drawing.Bitmap _9044874_query_queue_icon {
             get {
                 object obj = ResourceManager.GetObject("9044874_query_queue_icon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _9162463_sign_map_location_placeholder_street_icon {
+            get {
+                object obj = ResourceManager.GetObject("9162463_sign_map_location_placeholder_street_icon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Location {
+            get {
+                object obj = ResourceManager.GetObject("Location", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Orders {
+            get {
+                object obj = ResourceManager.GetObject("Orders", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

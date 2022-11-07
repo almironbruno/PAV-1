@@ -13,6 +13,9 @@ namespace Trabajo_Practico.ControlesPropios
 {
     public partial class ComboCargable : UserControl
     {
+        public event EventHandler SelectionChanged;
+        public event EventHandler DatasourceChanged;
+        public event EventHandler textChanged;
         public ComboCargable()
         {
             InitializeComponent();
@@ -33,6 +36,26 @@ namespace Trabajo_Practico.ControlesPropios
             cmb_Cargable.DataSource = tablaPrincipal;
         
         }
+        public void cargarAlmacenado(string sql, string nombreColumna, string pk)
+        {
+            // Params : nombreColumna = columna que muestra, pk = valor que se asocia a cada item
+
+            //Combo viejo
+            //Se carga el combo con la tabla y la columna que se le asigna
+            BE_Acceso_Datos bd = new BE_Acceso_Datos();
+            DataTable tablaPrincipal = bd.EjecutraStoreProcedure(sql);
+
+            //Ahora se le pasa al combo la consulta sql, de esta forma es mas reutilizable, adicional se le pasa la pk 
+            // de la tabla con la cual se lo relaciona, y la columna de la cual se desea extraer los datos.
+            cmb_Cargable.ValueMember = pk;
+            cmb_Cargable.DisplayMember = nombreColumna;
+            cmb_Cargable.DataSource = tablaPrincipal;
+
+        }
+
+
+
+
         public void cargarParaConsulta(string sql, string nombreColumna, string pk)
         {
             //Funcion para agregar la opcion "Todos" para buscar
@@ -65,6 +88,24 @@ namespace Trabajo_Practico.ControlesPropios
         private void cmb_Cargable_SelectedIndexChanged(object sender, EventArgs e)
         {
 
+        }
+
+        protected void cmb_Cargable_SelectedValueChanged(object sender, EventArgs e)
+        {
+            if (this.SelectionChanged != null)
+                this.SelectionChanged(this, e);
+        }
+
+        private void cmb_Cargable_DataSourceChanged(object sender, EventArgs e)
+        {
+            if (this.DatasourceChanged != null)
+                this.DatasourceChanged(this, e);
+        }
+
+        private void cmb_Cargable_TextChanged(object sender, EventArgs e)
+        {
+            if (this.DatasourceChanged != null)
+                this.DatasourceChanged(this, e);
         }
     }
 }

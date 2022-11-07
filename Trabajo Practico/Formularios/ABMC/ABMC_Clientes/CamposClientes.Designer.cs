@@ -44,6 +44,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.lbl_tipoDocumento = new System.Windows.Forms.Label();
             this.cmbCargable_TipoDoc = new Trabajo_Practico.ControlesPropios.ComboCargable();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProviderBase)).BeginInit();
             this.SuspendLayout();
             // 
             // lbl_Barrio
@@ -57,25 +58,25 @@
             // 
             // cmbCargable_Barrio
             // 
-            this.cmbCargable_Barrio.Location = new System.Drawing.Point(522, 189);
+            this.cmbCargable_Barrio.Location = new System.Drawing.Point(508, 182);
             this.cmbCargable_Barrio.Name = "cmbCargable_Barrio";
-            this.cmbCargable_Barrio.Size = new System.Drawing.Size(128, 28);
+            this.cmbCargable_Barrio.Size = new System.Drawing.Size(121, 21);
             this.cmbCargable_Barrio.TabIndex = 47;
             // 
             // mTxt_NroCalle
             // 
             this.mTxt_NroCalle.HidePromptOnLeave = true;
-            this.mTxt_NroCalle.Location = new System.Drawing.Point(535, 158);
+            this.mTxt_NroCalle.Location = new System.Drawing.Point(508, 155);
             this.mTxt_NroCalle.Mask = "9999";
             this.mTxt_NroCalle.Name = "mTxt_NroCalle";
-            this.mTxt_NroCalle.Size = new System.Drawing.Size(100, 20);
+            this.mTxt_NroCalle.Size = new System.Drawing.Size(121, 20);
             this.mTxt_NroCalle.TabIndex = 46;
             this.mTxt_NroCalle.ValidatingType = typeof(int);
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(462, 155);
+            this.label4.Location = new System.Drawing.Point(455, 158);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(47, 13);
             this.label4.TabIndex = 45;
@@ -84,7 +85,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(476, 130);
+            this.label3.Location = new System.Drawing.Point(469, 130);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(33, 13);
             this.label3.TabIndex = 44;
@@ -93,16 +94,16 @@
             // mtxt_Calle
             // 
             this.mtxt_Calle.HidePromptOnLeave = true;
-            this.mtxt_Calle.Location = new System.Drawing.Point(535, 123);
+            this.mtxt_Calle.Location = new System.Drawing.Point(508, 123);
             this.mtxt_Calle.Mask = "LLLLLLLLLLLLLLLLLLLL";
             this.mtxt_Calle.Name = "mtxt_Calle";
-            this.mtxt_Calle.Size = new System.Drawing.Size(100, 20);
+            this.mtxt_Calle.Size = new System.Drawing.Size(121, 20);
             this.mtxt_Calle.TabIndex = 43;
             // 
             // lbl_FechaNacimiento
             // 
             this.lbl_FechaNacimiento.AutoSize = true;
-            this.lbl_FechaNacimiento.Location = new System.Drawing.Point(131, 251);
+            this.lbl_FechaNacimiento.Location = new System.Drawing.Point(137, 254);
             this.lbl_FechaNacimiento.Name = "lbl_FechaNacimiento";
             this.lbl_FechaNacimiento.Size = new System.Drawing.Size(111, 13);
             this.lbl_FechaNacimiento.TabIndex = 42;
@@ -111,10 +112,10 @@
             // mTxt_FechaNac
             // 
             this.mTxt_FechaNac.HidePromptOnLeave = true;
-            this.mTxt_FechaNac.Location = new System.Drawing.Point(254, 244);
+            this.mTxt_FechaNac.Location = new System.Drawing.Point(254, 251);
             this.mTxt_FechaNac.Mask = "00/00/0000";
             this.mTxt_FechaNac.Name = "mTxt_FechaNac";
-            this.mTxt_FechaNac.Size = new System.Drawing.Size(100, 20);
+            this.mTxt_FechaNac.Size = new System.Drawing.Size(121, 20);
             this.mTxt_FechaNac.TabIndex = 41;
             this.mTxt_FechaNac.ValidatingType = typeof(System.DateTime);
             this.mTxt_FechaNac.TextChanged += new System.EventHandler(this.mTxt_FechaNac_TextChanged);
@@ -122,7 +123,7 @@
             // lbl_Apellido
             // 
             this.lbl_Apellido.AutoSize = true;
-            this.lbl_Apellido.Location = new System.Drawing.Point(195, 223);
+            this.lbl_Apellido.Location = new System.Drawing.Point(201, 220);
             this.lbl_Apellido.Name = "lbl_Apellido";
             this.lbl_Apellido.Size = new System.Drawing.Size(47, 13);
             this.lbl_Apellido.TabIndex = 40;
@@ -134,13 +135,13 @@
             this.mTxt_Apellido.Location = new System.Drawing.Point(254, 217);
             this.mTxt_Apellido.Mask = "LLLLLLLLLLLLLLLLLLLL";
             this.mTxt_Apellido.Name = "mTxt_Apellido";
-            this.mTxt_Apellido.Size = new System.Drawing.Size(100, 20);
+            this.mTxt_Apellido.Size = new System.Drawing.Size(121, 20);
             this.mTxt_Apellido.TabIndex = 39;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(192, 189);
+            this.label2.Location = new System.Drawing.Point(201, 189);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(47, 13);
             this.label2.TabIndex = 38;
@@ -152,7 +153,7 @@
             this.mTxt_Nombre.Location = new System.Drawing.Point(254, 182);
             this.mTxt_Nombre.Mask = "LLLLLLLLLLLLLLLLLLLL";
             this.mTxt_Nombre.Name = "mTxt_Nombre";
-            this.mTxt_Nombre.Size = new System.Drawing.Size(100, 20);
+            this.mTxt_Nombre.Size = new System.Drawing.Size(121, 20);
             this.mTxt_Nombre.TabIndex = 37;
             // 
             // mTxt_NroDocu
@@ -161,14 +162,14 @@
             this.mTxt_NroDocu.Location = new System.Drawing.Point(254, 155);
             this.mTxt_NroDocu.Mask = "99999999";
             this.mTxt_NroDocu.Name = "mTxt_NroDocu";
-            this.mTxt_NroDocu.Size = new System.Drawing.Size(100, 20);
+            this.mTxt_NroDocu.Size = new System.Drawing.Size(121, 20);
             this.mTxt_NroDocu.TabIndex = 36;
             this.mTxt_NroDocu.ValidatingType = typeof(int);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(119, 158);
+            this.label1.Location = new System.Drawing.Point(128, 158);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(120, 13);
             this.label1.TabIndex = 35;
@@ -178,7 +179,7 @@
             // 
             this.lbl_tipoDocumento.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lbl_tipoDocumento.AutoSize = true;
-            this.lbl_tipoDocumento.Location = new System.Drawing.Point(131, 123);
+            this.lbl_tipoDocumento.Location = new System.Drawing.Point(144, 126);
             this.lbl_tipoDocumento.Name = "lbl_tipoDocumento";
             this.lbl_tipoDocumento.Size = new System.Drawing.Size(104, 13);
             this.lbl_tipoDocumento.TabIndex = 34;
@@ -186,9 +187,9 @@
             // 
             // cmbCargable_TipoDoc
             // 
-            this.cmbCargable_TipoDoc.Location = new System.Drawing.Point(254, 123);
+            this.cmbCargable_TipoDoc.Location = new System.Drawing.Point(254, 121);
             this.cmbCargable_TipoDoc.Name = "cmbCargable_TipoDoc";
-            this.cmbCargable_TipoDoc.Size = new System.Drawing.Size(128, 28);
+            this.cmbCargable_TipoDoc.Size = new System.Drawing.Size(121, 28);
             this.cmbCargable_TipoDoc.TabIndex = 33;
             // 
             // CamposClientes
@@ -233,9 +234,9 @@
             this.Controls.SetChildIndex(this.lbl_Barrio, 0);
             this.Controls.SetChildIndex(this.btn_Aceptar, 0);
             this.Controls.SetChildIndex(this.btn_LimpiarCampos, 0);
+            ((System.ComponentModel.ISupportInitialize)(this.errorProviderBase)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
-
         }
 
         #endregion

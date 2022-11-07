@@ -60,9 +60,16 @@ namespace Trabajo_Practico
 
         }
 
+        private void dgr_Principal_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+
         /*/
         private void dgr_Principal_CellMouseEnter(object sender, DataGridViewCellEventArgs e)
         {
+
 
 
             
@@ -78,6 +85,7 @@ namespace Trabajo_Practico
 
         }
         /*/
+
 
     }
 }
