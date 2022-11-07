@@ -1,6 +1,6 @@
-﻿namespace Trabajo_Practico.Formularios.Reportes.losReportes
+﻿namespace Trabajo_Practico.Formularios.Reportes.VentasXCondicion
 {
-    partial class VentasCliente
+    partial class VentasXCondicion
     {
         /// <summary>
         /// Required designer variable.
@@ -28,10 +28,25 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.SuspendLayout();
+            // 
+            // reportViewer1
+            // 
+            this.reportViewer1.LocalReport.ReportEmbeddedResource = "Trabajo_Practico.Formularios.Reportes.VentasXCondicion.ReportVentasXCondicion.rdl" +
+    "c";
+            this.reportViewer1.ServerReport.BearerToken = null;
+            this.reportViewer1.Load += new System.EventHandler(this.reportViewer1_Load);
+            // 
+            // VentasXCondicion
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "VentasCliente";
+            this.Name = "VentasXCondicion";
+            this.Text = "VentasXCondicion";
+            this.Load += new System.EventHandler(this.VentasXCondicion_Load);
+            this.ResumeLayout(false);
+
         }
 
         #endregion

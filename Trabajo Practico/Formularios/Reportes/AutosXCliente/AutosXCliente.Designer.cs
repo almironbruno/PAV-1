@@ -1,6 +1,6 @@
-﻿namespace Trabajo_Practico.Formularios.Reportes
+﻿namespace Trabajo_Practico.Formularios.Reportes.AutosXCliente
 {
-    partial class ReportesBase
+    partial class AutosXCliente
     {
         /// <summary>
         /// Required designer variable.
@@ -28,32 +28,26 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.reportViewer1 = new Microsoft.Reporting.WinForms.ReportViewer();
             this.SuspendLayout();
             // 
             // reportViewer1
             // 
-            this.reportViewer1.Location = new System.Drawing.Point(78, 92);
-            this.reportViewer1.Name = "reportViewer1";
+            this.reportViewer1.LocalReport.ReportEmbeddedResource = "Trabajo_Practico.Formularios.Reportes.AutosXCliente.AutosXCliente.rdlc";
             this.reportViewer1.ServerReport.BearerToken = null;
-            this.reportViewer1.Size = new System.Drawing.Size(599, 300);
-            this.reportViewer1.TabIndex = 0;
+            this.reportViewer1.Load += new System.EventHandler(this.reportViewer1_Load);
             // 
-            // ReportesBase
+            // AutosXCliente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.reportViewer1);
-            this.Name = "ReportesBase";
-            this.Text = "ReportesBase";
-            this.Load += new System.EventHandler(this.ReportesBase_Load_1);
+            this.Name = "AutosXCliente";
+            this.Text = "AutosXCliente";
+            this.Load += new System.EventHandler(this.AutosXCliente_Load);
             this.ResumeLayout(false);
 
         }
 
         #endregion
-
-        protected Microsoft.Reporting.WinForms.ReportViewer reportViewer1;
     }
 }
