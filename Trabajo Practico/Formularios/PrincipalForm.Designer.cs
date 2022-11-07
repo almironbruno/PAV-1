@@ -42,12 +42,14 @@
             this.autosToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
             this.marcasToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.nombreComercialToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
+            this.ventasPorMarcaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.reportesToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.empleadosToolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
             this.clientesToolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
             this.autosToolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
             this.marcasToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
             this.nombreComercialToolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
+            this.ventasPorMarcaToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.lbl_legajo = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.dgrMisDetalles = new System.Windows.Forms.DataGridView();
@@ -152,7 +154,8 @@
             this.clientesToolStripMenuItem2,
             this.autosToolStripMenuItem2,
             this.marcasToolStripMenuItem1,
-            this.nombreComercialToolStripMenuItem2});
+            this.nombreComercialToolStripMenuItem2,
+            this.ventasPorMarcaToolStripMenuItem});
             this.estadisticasToolStripMenuItem1.Name = "estadisticasToolStripMenuItem1";
             this.estadisticasToolStripMenuItem1.Size = new System.Drawing.Size(79, 24);
             this.estadisticasToolStripMenuItem1.Text = "Estadisticas";
@@ -187,7 +190,15 @@
             // 
             this.nombreComercialToolStripMenuItem2.Name = "nombreComercialToolStripMenuItem2";
             this.nombreComercialToolStripMenuItem2.Size = new System.Drawing.Size(180, 22);
-            this.nombreComercialToolStripMenuItem2.Text = "Nombre Comercial";
+            this.nombreComercialToolStripMenuItem2.Text = "Ventas Por Modelo";
+            this.nombreComercialToolStripMenuItem2.Click += new System.EventHandler(this.nombreComercialToolStripMenuItem2_Click);
+            // 
+            // ventasPorMarcaToolStripMenuItem
+            // 
+            this.ventasPorMarcaToolStripMenuItem.Name = "ventasPorMarcaToolStripMenuItem";
+            this.ventasPorMarcaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.ventasPorMarcaToolStripMenuItem.Text = "Ventas por Marca ";
+            this.ventasPorMarcaToolStripMenuItem.Click += new System.EventHandler(this.ventasPorMarcaToolStripMenuItem_Click);
             // 
             // reportesToolStripMenuItem1
             // 
@@ -196,7 +207,8 @@
             this.clientesToolStripMenuItem3,
             this.autosToolStripMenuItem3,
             this.marcasToolStripMenuItem2,
-            this.nombreComercialToolStripMenuItem3});
+            this.nombreComercialToolStripMenuItem3,
+            this.ventasPorMarcaToolStripMenuItem1});
             this.reportesToolStripMenuItem1.Name = "reportesToolStripMenuItem1";
             this.reportesToolStripMenuItem1.Size = new System.Drawing.Size(65, 24);
             this.reportesToolStripMenuItem1.Text = "Reportes";
@@ -204,34 +216,42 @@
             // empleadosToolStripMenuItem3
             // 
             this.empleadosToolStripMenuItem3.Name = "empleadosToolStripMenuItem3";
-            this.empleadosToolStripMenuItem3.Size = new System.Drawing.Size(175, 22);
+            this.empleadosToolStripMenuItem3.Size = new System.Drawing.Size(180, 22);
             this.empleadosToolStripMenuItem3.Text = "Empleados";
             // 
             // clientesToolStripMenuItem3
             // 
             this.clientesToolStripMenuItem3.Name = "clientesToolStripMenuItem3";
-            this.clientesToolStripMenuItem3.Size = new System.Drawing.Size(175, 22);
+            this.clientesToolStripMenuItem3.Size = new System.Drawing.Size(180, 22);
             this.clientesToolStripMenuItem3.Text = "Clientes";
             this.clientesToolStripMenuItem3.Click += new System.EventHandler(this.clientesToolStripMenuItem3_Click);
             // 
             // autosToolStripMenuItem3
             // 
             this.autosToolStripMenuItem3.Name = "autosToolStripMenuItem3";
-            this.autosToolStripMenuItem3.Size = new System.Drawing.Size(175, 22);
+            this.autosToolStripMenuItem3.Size = new System.Drawing.Size(180, 22);
             this.autosToolStripMenuItem3.Text = "Autos";
             this.autosToolStripMenuItem3.Click += new System.EventHandler(this.autosToolStripMenuItem3_Click);
             // 
             // marcasToolStripMenuItem2
             // 
             this.marcasToolStripMenuItem2.Name = "marcasToolStripMenuItem2";
-            this.marcasToolStripMenuItem2.Size = new System.Drawing.Size(175, 22);
+            this.marcasToolStripMenuItem2.Size = new System.Drawing.Size(180, 22);
             this.marcasToolStripMenuItem2.Text = "Marcas";
             // 
             // nombreComercialToolStripMenuItem3
             // 
             this.nombreComercialToolStripMenuItem3.Name = "nombreComercialToolStripMenuItem3";
-            this.nombreComercialToolStripMenuItem3.Size = new System.Drawing.Size(175, 22);
-            this.nombreComercialToolStripMenuItem3.Text = "Nombre Comercial";
+            this.nombreComercialToolStripMenuItem3.Size = new System.Drawing.Size(180, 22);
+            this.nombreComercialToolStripMenuItem3.Text = "Ventas por Modelo";
+            this.nombreComercialToolStripMenuItem3.Click += new System.EventHandler(this.nombreComercialToolStripMenuItem3_Click);
+            // 
+            // ventasPorMarcaToolStripMenuItem1
+            // 
+            this.ventasPorMarcaToolStripMenuItem1.Name = "ventasPorMarcaToolStripMenuItem1";
+            this.ventasPorMarcaToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.ventasPorMarcaToolStripMenuItem1.Text = "Ventas por Marca";
+            this.ventasPorMarcaToolStripMenuItem1.Click += new System.EventHandler(this.ventasPorMarcaToolStripMenuItem1_Click);
             // 
             // lbl_legajo
             // 
@@ -546,5 +566,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Nro_Doc_Cliente;
         private System.Windows.Forms.DataGridViewTextBoxColumn Fecha;
         private System.Windows.Forms.Button btnRefreshVentas;
+        private System.Windows.Forms.ToolStripMenuItem ventasPorMarcaToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem ventasPorMarcaToolStripMenuItem1;
     }
 }
