@@ -268,7 +268,8 @@ namespace Trabajo_Practico.Formularios.Proceso
 
       
             vta.fecha = txt_fecha.Text;
-            vta.num_dni = 33232;
+            MessageBox.Show((int.Parse(buscador1.cmb_buscar.SelectedValue.ToString()).ToString()));
+            vta.num_dni =int.Parse(buscador1.cmb_buscar.SelectedValue.ToString());
             vta.tipo_doc = 1;
             vta.nro_factura = int.Parse(txt_nroFactura.Text);
             vta.legajo =int.Parse(txt_legajo.Text);

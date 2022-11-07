@@ -28,8 +28,7 @@ namespace Trabajo_Practico.Formularios.Reportes
         protected void cargar(string reporte,string sql)
         {
             //Funcion que carga el reporte
-            // param1: nombre de la tabla para
-            //         el reporte (sacada del DataSet)
+            // param1: nombre del dataset
             // param2: consulta para cargar el reporte
 
 

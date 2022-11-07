@@ -75,6 +75,11 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>BDreporteVenXGam.xsd</DependentUpon>
+	</Compile>
+    <Compile Include="BD3K3G03_2022DataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BD3K3G03_2022DataSet.xsd</DependentUpon>
     </Compile>
     <Compile Include="Clases\BackEnd\BE_Acceso_Datos.cs" />
     <Compile Include="Clases\BackEnd\NegocioAutos\NE_Autos.cs" />
@@ -129,6 +134,40 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>autosClientes.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSets\AutosMarcas.cs">
+      <DependentUpon>AutosMarcas.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSets\AutosMarcas.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AutosMarcas.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSets\DatosEstadisticaMarcas.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DatosEstadisticaMarcas.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSets\DatosModelosEstat.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DatosModelosEstat.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSets\ventasClientes.cs">
+      <DependentUpon>ventasClientes.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSets\VentasMarcas.cs">
+      <DependentUpon>VentasMarcas.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSets\VentasMarcas.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>VentasMarcas.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSets\ventasModelos.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ventasModelos.xsd</DependentUpon>
     </Compile>
     <Compile Include="Formularios\ABMC\ABMC_Autos\CamposAutos.cs">
       <SubType>Form</SubType>
@@ -484,6 +523,30 @@
     <Compile Include="Formularios\Base\ABMC\FormBaseModificacion.Designer.cs">
       <DependentUpon>FormBaseModificacion.cs</DependentUpon>
     </Compile>
+    <Compile Include="Formularios\Estadisticas\AutosXMarcas\AutosXMarcas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Estadisticas\AutosXMarcas\AutosXMarcas.Designer.cs">
+      <DependentUpon>AutosXMarcas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Estadisticas\VentasXEmpleados\VentasXEmpleados.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Estadisticas\VentasXEmpleados\VentasXEmpleados.Designer.cs">
+      <DependentUpon>VentasXEmpleados.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Estadisticas\VentasXmarcas\VentasXMarcasEstadisticas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Estadisticas\VentasXmarcas\VentasXMarcasEstadisticas.Designer.cs">
+      <DependentUpon>VentasXMarcasEstadisticas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Estadisticas\VentasXmodelos\VentasXModelosEstadistica.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Estadisticas\VentasXmodelos\VentasXModelosEstadistica.Designer.cs">
+      <DependentUpon>VentasXModelosEstadistica.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formularios\Login\LoginForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -538,6 +601,18 @@
     <Compile Include="Formularios\Reportes\VentasXGama\VentasXGamas.Designer.cs">
       <DependentUpon>VentasXGamas.cs</DependentUpon>
     </Compile>
+    <Compile Include="Formularios\Reportes\VentasXMarca\VentasXMarca.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Reportes\VentasXMarca\VentasXMarca.Designer.cs">
+      <DependentUpon>VentasXMarca.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Reportes\VentasXModelo\VentasXModelo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Reportes\VentasXModelo\VentasXModelo.Designer.cs">
+      <DependentUpon>VentasXModelo.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SqlServerTypes\Loader.cs" />
@@ -545,6 +620,11 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>ventasClientes.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ventasEmpleados.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ventasEmpleados.xsd</DependentUpon>
     </Compile>
     <EmbeddedResource Include="ControlesPropios\Buscador.resx">
       <DependentUpon>Buscador.cs</DependentUpon>
@@ -732,6 +812,22 @@
     <EmbeddedResource Include="Formularios\Base\ABMC\FormBaseModificacion.resx">
       <DependentUpon>FormBaseModificacion.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Estadisticas\AutosXMarcas\AutosMarcas.rdlc" />
+    <EmbeddedResource Include="Formularios\Estadisticas\AutosXMarcas\AutosXMarcas.resx">
+      <DependentUpon>AutosXMarcas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Estadisticas\VentasXEmpleados\ventasEmpleados.rdlc" />
+    <EmbeddedResource Include="Formularios\Estadisticas\VentasXEmpleados\VentasXEmpleados.resx">
+      <DependentUpon>VentasXEmpleados.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Estadisticas\VentasXmarcas\VentasXMarcaEstat.rdlc" />
+    <EmbeddedResource Include="Formularios\Estadisticas\VentasXmarcas\VentasXMarcasEstadisticas.resx">
+      <DependentUpon>VentasXMarcasEstadisticas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Estadisticas\VentasXmodelos\VentasPorModelosEstat.rdlc" />
+    <EmbeddedResource Include="Formularios\Estadisticas\VentasXmodelos\VentasXModelosEstadistica.resx">
+      <DependentUpon>VentasXModelosEstadistica.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Formularios\Login\LoginForm.resx">
       <DependentUpon>LoginForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -762,6 +858,13 @@
     <EmbeddedResource Include="Formularios\Reportes\VentasXGama\ReportVenXGama.rdlc" />
     <EmbeddedResource Include="Formularios\Reportes\VentasXGama\VentasXGamas.resx">
       <DependentUpon>VentasXGamas.cs</DependentUpon>
+    <EmbeddedResource Include="Formularios\Reportes\VentasXMarca\VentasXMarca.resx">
+      <DependentUpon>VentasXMarca.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Reportes\VentasXMarca\VentasXMarcas.rdlc" />
+    <EmbeddedResource Include="Formularios\Reportes\VentasXModelo\VentasXmodeloss.rdlc" />
+    <EmbeddedResource Include="Formularios\Reportes\VentasXModelo\VentasXModelo.resx">
+      <DependentUpon>VentasXModelo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -794,6 +897,16 @@
     </None>
     <None Include="BDreporteVenXGam.xss">
       <DependentUpon>BDreporteVenXGam.xsd</DependentUpon>
+    <None Include="BD3K3G03_2022DataSet.xsc">
+      <DependentUpon>BD3K3G03_2022DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="BD3K3G03_2022DataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BD3K3G03_2022DataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="BD3K3G03_2022DataSet.xss">
+      <DependentUpon>BD3K3G03_2022DataSet.xsd</DependentUpon>
     </None>
     <None Include="DataSets\autosClientes.xsc">
       <DependentUpon>autosClientes.xsd</DependentUpon>
@@ -805,6 +918,61 @@
     </None>
     <None Include="DataSets\autosClientes.xss">
       <DependentUpon>autosClientes.xsd</DependentUpon>
+    </None>
+    <None Include="DataSets\AutosMarcas.xsc">
+      <DependentUpon>AutosMarcas.xsd</DependentUpon>
+    </None>
+    <None Include="DataSets\AutosMarcas.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>AutosMarcas.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSets\AutosMarcas.xss">
+      <DependentUpon>AutosMarcas.xsd</DependentUpon>
+    </None>
+    <None Include="DataSets\DatosEstadisticaMarcas.xsc">
+      <DependentUpon>DatosEstadisticaMarcas.xsd</DependentUpon>
+    </None>
+    <None Include="DataSets\DatosEstadisticaMarcas.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DatosEstadisticaMarcas.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSets\DatosEstadisticaMarcas.xss">
+      <DependentUpon>DatosEstadisticaMarcas.xsd</DependentUpon>
+    </None>
+    <None Include="DataSets\DatosModelosEstat.xsc">
+      <DependentUpon>DatosModelosEstat.xsd</DependentUpon>
+    </None>
+    <None Include="DataSets\DatosModelosEstat.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DatosModelosEstat.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSets\DatosModelosEstat.xss">
+      <DependentUpon>DatosModelosEstat.xsd</DependentUpon>
+    </None>
+    <None Include="DataSets\VentasMarcas.xsc">
+      <DependentUpon>VentasMarcas.xsd</DependentUpon>
+    </None>
+    <None Include="DataSets\VentasMarcas.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>VentasMarcas.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSets\VentasMarcas.xss">
+      <DependentUpon>VentasMarcas.xsd</DependentUpon>
+    </None>
+    <None Include="DataSets\ventasModelos.xsc">
+      <DependentUpon>ventasModelos.xsd</DependentUpon>
+    </None>
+    <None Include="DataSets\ventasModelos.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ventasModelos.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSets\ventasModelos.xss">
+      <DependentUpon>ventasModelos.xsd</DependentUpon>
     </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -826,6 +994,17 @@
     </None>
     <None Include="DataSets\ventasClientes.xss">
       <DependentUpon>ventasClientes.xsd</DependentUpon>
+    </None>
+    <None Include="ventasEmpleados.xsc">
+      <DependentUpon>ventasEmpleados.xsd</DependentUpon>
+    </None>
+    <None Include="ventasEmpleados.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ventasEmpleados.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ventasEmpleados.xss">
+      <DependentUpon>ventasEmpleados.xsd</DependentUpon>
     </None>
   </ItemGroup>
   <ItemGroup>
@@ -863,6 +1042,10 @@
     <Content Include="SqlServerTypes\x86\SqlServerSpatial140.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Formularios\NewFolder1\" />
+    <Folder Include="NewFolder1\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
