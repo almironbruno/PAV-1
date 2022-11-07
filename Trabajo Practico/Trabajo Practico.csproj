@@ -66,6 +66,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BDreportesventaporcondicion.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BDreportesventaporcondicion.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="BDreporteVenXGam.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BDreporteVenXGam.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Clases\BackEnd\BE_Acceso_Datos.cs" />
     <Compile Include="Clases\BackEnd\NegocioAutos\NE_Autos.cs" />
     <Compile Include="Clases\BackEnd\NegocioClientes\NE_Clientes.cs" />
@@ -516,6 +526,18 @@
     <Compile Include="Formularios\Reportes\VentasXCliente\VentasXClientes.Designer.cs">
       <DependentUpon>VentasXClientes.cs</DependentUpon>
     </Compile>
+    <Compile Include="Formularios\Reportes\VentasXCondicion\VentasXCondicion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Reportes\VentasXCondicion\VentasXCondicion.Designer.cs">
+      <DependentUpon>VentasXCondicion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Reportes\VentasXGama\VentasXGamas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Reportes\VentasXGama\VentasXGamas.Designer.cs">
+      <DependentUpon>VentasXGamas.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SqlServerTypes\Loader.cs" />
@@ -733,6 +755,14 @@
     <EmbeddedResource Include="Formularios\Reportes\VentasXCliente\VentasXClientes.resx">
       <DependentUpon>VentasXClientes.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Reportes\VentasXCondicion\ReportVentasXCondicion.rdlc" />
+    <EmbeddedResource Include="Formularios\Reportes\VentasXCondicion\VentasXCondicion.resx">
+      <DependentUpon>VentasXCondicion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Reportes\VentasXGama\ReportVenXGama.rdlc" />
+    <EmbeddedResource Include="Formularios\Reportes\VentasXGama\VentasXGamas.resx">
+      <DependentUpon>VentasXGamas.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -743,6 +773,28 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <None Include="BDreportesventaporcondicion.xsc">
+      <DependentUpon>BDreportesventaporcondicion.xsd</DependentUpon>
+    </None>
+    <None Include="BDreportesventaporcondicion.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BDreportesventaporcondicion.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="BDreportesventaporcondicion.xss">
+      <DependentUpon>BDreportesventaporcondicion.xsd</DependentUpon>
+    </None>
+    <None Include="BDreporteVenXGam.xsc">
+      <DependentUpon>BDreporteVenXGam.xsd</DependentUpon>
+    </None>
+    <None Include="BDreporteVenXGam.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BDreporteVenXGam.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="BDreporteVenXGam.xss">
+      <DependentUpon>BDreporteVenXGam.xsd</DependentUpon>
+    </None>
     <None Include="DataSets\autosClientes.xsc">
       <DependentUpon>autosClientes.xsd</DependentUpon>
     </None>

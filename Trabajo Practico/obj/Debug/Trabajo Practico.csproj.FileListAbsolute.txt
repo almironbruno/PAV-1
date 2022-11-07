@@ -335,3 +335,8 @@ C:\Users\Almir\Desktop\PAV\PAV-1-tp\Trabajo Practico\obj\Debug\Trabajo Practico.
 C:\Users\Almir\Desktop\PAV\PAV-1-tp\Trabajo Practico\obj\Debug\Trabajo_Practico.Formularios.Reportes.ReportesBase.resources
 C:\Users\Almir\Desktop\PAV\PAV-1-tp\Trabajo Practico\obj\Debug\Trabajo_Practico.Formularios.Reportes.AutosXCliente.AutosXCliente.resources
 C:\Users\Almir\Desktop\PAV\PAV-1-tp\Trabajo Practico\obj\Debug\Trabajo_Practico.Formularios.Reportes.VentasXCliente.VentasXClientes.resources
+C:\Users\Tomas\Desktop\PAV-1\Trabajo Practico\obj\Debug\Trabajo_Practico.Formularios.Reportes.AutosXCliente.AutosXCliente.resources
+C:\Users\Tomas\Desktop\PAV-1\Trabajo Practico\obj\Debug\Trabajo_Practico.Formularios.Reportes.ReportesBase.resources
+C:\Users\Tomas\Desktop\PAV-1\Trabajo Practico\obj\Debug\Trabajo_Practico.Formularios.Reportes.VentasXCliente.VentasXClientes.resources
+C:\Users\Tomas\Desktop\PAV-1\Trabajo Practico\obj\Debug\Trabajo_Practico.Formularios.Reportes.VentasXGama.VentasXGamas.resources
+C:\Users\Tomas\Desktop\PAV-1\Trabajo Practico\obj\Debug\Trabajo_Practico.Formularios.Reportes.VentasXCondicion.VentasXCondicion.resources

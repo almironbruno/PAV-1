@@ -23,6 +23,8 @@ using Trabajo_Practico.Formularios.Reportes;
 
 using Trabajo_Practico.Formularios.Reportes.AutosXCliente;
 using Trabajo_Practico.Formularios.Reportes.VentasXCliente;
+using Trabajo_Practico.Formularios.Reportes.VentasXGama;
+using Trabajo_Practico.Formularios.Reportes.VentasXCondicion;
 
 namespace Trabajo_Practico.Formularios {
 
@@ -238,7 +240,18 @@ public partial class PrincipalForm : Form
          AutosXCliente ventana = new AutosXCliente();
          ventana.Show();
     }
-    
-   }
+
+        private void gamasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            VentasXGamas ventana = new VentasXGamas();
+            ventana.Show();
+        }
+
+        private void condicionToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            VentasXCondicion ventana = new VentasXCondicion();
+            ventana.Show();
+        }
+    }
 }
 
