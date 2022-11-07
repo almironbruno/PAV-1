@@ -51,5 +51,10 @@ namespace Trabajo_Practico.Formularios.Reportes.AutosXCliente
             cargar("autos", consulta);
             this.reportViewer1.RefreshReport();
         }
+
+        private void lbl_autos_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

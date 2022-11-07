@@ -42,7 +42,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Name = "VentasXEmpleados";
-            this.Text = "VentasXEmpleados";
+            this.Text = "Estadisticas de Ventas por Empleado";
             this.Load += new System.EventHandler(this.VentasXEmpleados_Load);
             this.ResumeLayout(false);
 

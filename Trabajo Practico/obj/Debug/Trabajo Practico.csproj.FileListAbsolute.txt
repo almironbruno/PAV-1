@@ -399,3 +399,7 @@ D:\Cosas facultad\PAV1\Presentacion\PAV-1\Trabajo Practico\obj\Debug\Trabajo_Pra
 D:\Cosas facultad\PAV1\Presentacion\PAV-1\Trabajo Practico\obj\Debug\Trabajo_Practico.Formularios.Reportes.VentasXModelo.VentasXModelo.resources
 D:\Cosas facultad\PAV1\Presentacion\PAV-1\Trabajo Practico\obj\Debug\Trabajo_Practico.Formularios.Estadisticas.VentasXmarcas.VentasXMarcasEstadisticas.resources
 D:\Cosas facultad\PAV1\Presentacion\PAV-1\Trabajo Practico\obj\Debug\Trabajo_Practico.Formularios.Estadisticas.VentasXmodelos.VentasXModelosEstadistica.resources
+C:\Users\Almir\Desktop\PAV\PAV-1-tp\Trabajo Practico\obj\Debug\Trabajo_Practico.Formularios.Estadisticas.VentasXmarcas.VentasXMarcasEstadisticas.resources
+C:\Users\Almir\Desktop\PAV\PAV-1-tp\Trabajo Practico\obj\Debug\Trabajo_Practico.Formularios.Estadisticas.VentasXmodelos.VentasXModelosEstadistica.resources
+C:\Users\Almir\Desktop\PAV\PAV-1-tp\Trabajo Practico\obj\Debug\Trabajo_Practico.Formularios.Reportes.VentasXMarca.VentasXMarca.resources
+C:\Users\Almir\Desktop\PAV\PAV-1-tp\Trabajo Practico\obj\Debug\Trabajo_Practico.Formularios.Reportes.VentasXModelo.VentasXModelo.resources
