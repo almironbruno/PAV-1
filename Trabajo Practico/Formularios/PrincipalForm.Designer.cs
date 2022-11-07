@@ -317,7 +317,7 @@
             this.marcasToolStripMenuItem2,
             this.nombreComercialToolStripMenuItem3,
             this.gamasToolStripMenuItem,
-            this.condicionToolStripMenuItem});
+            this.condicionToolStripMenuItem,
             this.ventasPorMarcaToolStripMenuItem1});
             this.reportesToolStripMenuItem1.Name = "reportesToolStripMenuItem1";
             this.reportesToolStripMenuItem1.Size = new System.Drawing.Size(65, 24);
@@ -588,6 +588,6 @@
         private System.Windows.Forms.ToolStripMenuItem condicionToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem ventasPorMarcaToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem ventasPorMarcaToolStripMenuItem1;
-
     }
 }
+

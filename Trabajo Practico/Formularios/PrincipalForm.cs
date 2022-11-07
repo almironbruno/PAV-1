@@ -257,7 +257,8 @@ public partial class PrincipalForm : Form
         private void condicionToolStripMenuItem_Click(object sender, EventArgs e)
         {
             VentasXCondicion ventana = new VentasXCondicion();
-    private void autosToolStripMenuItem2_Click(object sender, EventArgs e)
+        }
+        private void autosToolStripMenuItem2_Click(object sender, EventArgs e)
         {
             AutosXMarcas ventana = new AutosXMarcas();
             ventana.Show();
