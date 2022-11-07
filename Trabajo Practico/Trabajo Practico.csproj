@@ -81,6 +81,7 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>BD3K3G03_2022DataSet.xsd</DependentUpon>
     </Compile>
+	
     <Compile Include="Clases\BackEnd\BE_Acceso_Datos.cs" />
     <Compile Include="Clases\BackEnd\NegocioAutos\NE_Autos.cs" />
     <Compile Include="Clases\BackEnd\NegocioClientes\NE_Clientes.cs" />
@@ -858,6 +859,7 @@
     <EmbeddedResource Include="Formularios\Reportes\VentasXGama\ReportVenXGama.rdlc" />
     <EmbeddedResource Include="Formularios\Reportes\VentasXGama\VentasXGamas.resx">
       <DependentUpon>VentasXGamas.cs</DependentUpon>
+	</EmbeddedResource>
     <EmbeddedResource Include="Formularios\Reportes\VentasXMarca\VentasXMarca.resx">
       <DependentUpon>VentasXMarca.cs</DependentUpon>
     </EmbeddedResource>
@@ -897,6 +899,7 @@
     </None>
     <None Include="BDreporteVenXGam.xss">
       <DependentUpon>BDreporteVenXGam.xsd</DependentUpon>
+	</None>
     <None Include="BD3K3G03_2022DataSet.xsc">
       <DependentUpon>BD3K3G03_2022DataSet.xsd</DependentUpon>
     </None>
@@ -1006,7 +1009,7 @@
     <None Include="ventasEmpleados.xss">
       <DependentUpon>ventasEmpleados.xsd</DependentUpon>
     </None>
-  </ItemGroup>
+</ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
