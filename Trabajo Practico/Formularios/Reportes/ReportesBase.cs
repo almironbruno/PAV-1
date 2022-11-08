@@ -18,10 +18,13 @@ namespace Trabajo_Practico.Formularios.Reportes
         //Quedaron obsoletos estos atributos - no sirven
         protected string consulta;
         protected string reporte;
+        protected int cantidad;
         protected DataTable tabla;
         public ReportesBase( )
         {
             InitializeComponent();
+
+
         }
      
         
@@ -47,6 +50,8 @@ namespace Trabajo_Practico.Formularios.Reportes
             reportViewer1.LocalReport.DataSources.Add(ds);
             reportViewer1.LocalReport.Refresh();
 
+            
+            this.cantidad = dt.Rows.Count;
 
         }
         protected void ReportesBase_Load(object sender, EventArgs e)

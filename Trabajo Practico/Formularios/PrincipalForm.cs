@@ -29,9 +29,12 @@ using Trabajo_Practico.Formularios.Estadisticas.AutosXMarcas;
 using Trabajo_Practico.Formularios.Estadisticas.VentasXEmpleados;
 using Trabajo_Practico.Formularios.Reportes.VentasXMarca;
 using Trabajo_Practico.Formularios.Reportes.VentasXModelo;
+using Trabajo_Practico.Formularios.Estadisticas.VentasXCondicion;
 
 
 using Trabajo_Practico.Formularios.Estadisticas;
+using Trabajo_Practico.Formularios.Estadisticas.VentasXGamas;
+
 namespace Trabajo_Practico.Formularios {
 
 public partial class PrincipalForm : Form
@@ -257,6 +260,7 @@ public partial class PrincipalForm : Form
         private void condicionToolStripMenuItem_Click(object sender, EventArgs e)
         {
             VentasXCondicion ventana = new VentasXCondicion();
+            ventana.Show();
         }
         private void autosToolStripMenuItem2_Click(object sender, EventArgs e)
         {
@@ -291,6 +295,18 @@ public partial class PrincipalForm : Form
         private void nombreComercialToolStripMenuItem2_Click(object sender, EventArgs e)
         {
             Estadisticas.VentasXmodelos.VentasXModelosEstadistica ventana = new Estadisticas.VentasXmodelos.VentasXModelosEstadistica();
+            ventana.Show();
+        }
+
+        private void ventasPorCondicionToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            VentasXCondicionEstadisticas ventana = new VentasXCondicionEstadisticas();
+            ventana.Show();
+        }
+
+        private void ventasPorGamaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            VentasXGamasEstadisticas ventana = new VentasXGamasEstadisticas();
             ventana.Show();
         }
     }
