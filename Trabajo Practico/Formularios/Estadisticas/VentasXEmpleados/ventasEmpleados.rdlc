@@ -398,10 +398,10 @@
               </Style>
             </ChartNoDataMessage>
             <DataSetName>ventasEmpleados</DataSetName>
-            <Top>0.79057cm</Top>
+            <Top>2.88078cm</Top>
             <Left>1.76953cm</Left>
-            <Height>6.45521cm</Height>
-            <Width>11.54812cm</Width>
+            <Height>7.69875cm</Height>
+            <Width>14.14104cm</Width>
             <Style>
               <Border>
                 <Color>LightGrey</Color>
@@ -411,8 +411,75 @@
               <BackgroundGradientType>None</BackgroundGradientType>
             </Style>
           </Chart>
+          <Textbox Name="Textbox1">
+            <CanGrow>true</CanGrow>
+            <KeepTogether>true</KeepTogether>
+            <Paragraphs>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value>VENTAS DE CADA EMPLEADO</Value>
+                    <Style>
+                      <FontSize>13pt</FontSize>
+                      <FontWeight>Bold</FontWeight>
+                      <TextDecoration>Underline</TextDecoration>
+                    </Style>
+                  </TextRun>
+                </TextRuns>
+                <Style>
+                  <TextAlign>Center</TextAlign>
+                </Style>
+              </Paragraph>
+            </Paragraphs>
+            <rd:DefaultName>Textbox1</rd:DefaultName>
+            <Top>0.36724cm</Top>
+            <Left>1.13453cm</Left>
+            <Height>1.21736cm</Height>
+            <Width>14.77604cm</Width>
+            <ZIndex>1</ZIndex>
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
+              <VerticalAlign>Middle</VerticalAlign>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+          </Textbox>
+          <Textbox Name="Textbox2">
+            <CanGrow>true</CanGrow>
+            <KeepTogether>true</KeepTogether>
+            <Paragraphs>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value>Alcance: Todas las ventas de cada empleado</Value>
+                    <Style />
+                  </TextRun>
+                </TextRuns>
+                <Style />
+              </Paragraph>
+            </Paragraphs>
+            <rd:DefaultName>Textbox2</rd:DefaultName>
+            <Top>1.9021cm</Top>
+            <Left>2.24578cm</Left>
+            <Height>0.6cm</Height>
+            <Width>11.54812cm</Width>
+            <ZIndex>2</ZIndex>
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+          </Textbox>
         </ReportItems>
-        <Height>3.19642in</Height>
+        <Height>4.16517in</Height>
         <Style />
       </Body>
       <Width>6.5in</Width>

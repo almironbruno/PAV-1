@@ -20,7 +20,7 @@ namespace Trabajo_Practico.Formularios.Estadisticas.AutosXMarcas
 
         private void reportViewer1_Load(object sender, EventArgs e)
         {
-            string consulta = "select count(distinct v.nro_factura) as Cantidad,m.nombre from ventas v join detalle_ventas d on d.nro_factura=v.nro_factura join autos a on a.cod_serie_fabrica=d.cod_serie_fabrica join nombres_comerciales n on n.id_nombrecomercial=a.id_nombrecomercial join marcas m on m.id_marca=n.id_marca group by m.nombre";
+            string consulta = "select count(distinct a.cod_serie_fabrica) as Cantidad,m.nombre from detalle_ventas d join autos a on a.cod_serie_fabrica=d.cod_serie_fabrica join nombres_comerciales n on n.id_nombrecomercial=a.id_nombrecomercial join marcas m on m.id_marca=n.id_marca group by m.nombre";
             cargar("autosMarcas",consulta);
         }
 

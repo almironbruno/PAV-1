@@ -32,6 +32,9 @@
             this.comboCargable1 = new Trabajo_Practico.ControlesPropios.ComboCargable();
             this.btn_Buscar = new System.Windows.Forms.Button();
             this.lbl_autos = new System.Windows.Forms.Label();
+            this.txtCantAutos = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.lblAlcance = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // reportViewer1
@@ -43,7 +46,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(61, 54);
+            this.label1.Location = new System.Drawing.Point(76, 59);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(112, 13);
             this.label1.TabIndex = 1;
@@ -51,14 +54,14 @@
             // 
             // comboCargable1
             // 
-            this.comboCargable1.Location = new System.Drawing.Point(179, 54);
+            this.comboCargable1.Location = new System.Drawing.Point(195, 54);
             this.comboCargable1.Name = "comboCargable1";
             this.comboCargable1.Size = new System.Drawing.Size(121, 21);
             this.comboCargable1.TabIndex = 2;
             // 
             // btn_Buscar
             // 
-            this.btn_Buscar.Location = new System.Drawing.Point(322, 54);
+            this.btn_Buscar.Location = new System.Drawing.Point(332, 54);
             this.btn_Buscar.Name = "btn_Buscar";
             this.btn_Buscar.Size = new System.Drawing.Size(75, 23);
             this.btn_Buscar.TabIndex = 3;
@@ -77,11 +80,40 @@
             this.lbl_autos.Text = "Reporte de Autos para un Cliente";
             this.lbl_autos.Click += new System.EventHandler(this.lbl_autos_Click);
             // 
+            // txtCantAutos
+            // 
+            this.txtCantAutos.Location = new System.Drawing.Point(753, 87);
+            this.txtCantAutos.Name = "txtCantAutos";
+            this.txtCantAutos.ReadOnly = true;
+            this.txtCantAutos.Size = new System.Drawing.Size(27, 20);
+            this.txtCantAutos.TabIndex = 12;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(695, 90);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(52, 13);
+            this.label3.TabIndex = 11;
+            this.label3.Text = "Cantidad:";
+            // 
+            // lblAlcance
+            // 
+            this.lblAlcance.AutoSize = true;
+            this.lblAlcance.Location = new System.Drawing.Point(76, 87);
+            this.lblAlcance.Name = "lblAlcance";
+            this.lblAlcance.Size = new System.Drawing.Size(106, 13);
+            this.lblAlcance.TabIndex = 10;
+            this.lblAlcance.Text = "Alcance de los autos";
+            // 
             // AutosXCliente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(892, 507);
+            this.Controls.Add(this.txtCantAutos);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.lblAlcance);
             this.Controls.Add(this.lbl_autos);
             this.Controls.Add(this.btn_Buscar);
             this.Controls.Add(this.comboCargable1);
@@ -94,6 +126,9 @@
             this.Controls.SetChildIndex(this.comboCargable1, 0);
             this.Controls.SetChildIndex(this.btn_Buscar, 0);
             this.Controls.SetChildIndex(this.lbl_autos, 0);
+            this.Controls.SetChildIndex(this.lblAlcance, 0);
+            this.Controls.SetChildIndex(this.label3, 0);
+            this.Controls.SetChildIndex(this.txtCantAutos, 0);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -105,5 +140,8 @@
         private ControlesPropios.ComboCargable comboCargable1;
         private System.Windows.Forms.Button btn_Buscar;
         private System.Windows.Forms.Label lbl_autos;
+        private System.Windows.Forms.TextBox txtCantAutos;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label lblAlcance;
     }
 }

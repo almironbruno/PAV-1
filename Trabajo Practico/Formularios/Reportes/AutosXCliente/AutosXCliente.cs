@@ -15,7 +15,9 @@ namespace Trabajo_Practico.Formularios.Reportes.AutosXCliente
         public AutosXCliente()
         {
             InitializeComponent();
-            comboCargable1.cargar("select * from clientes","apellido","nro_doc_cliente");
+            comboCargable1.cargar("select * from clientes where nro_doc_cliente in (select nro_doc_cliente from ventas)","apellido","nro_doc_cliente");
+            lblAlcance.Text = "Alcance de los autos para el cliente " + comboCargable1.cmb_Cargable.Text;
+            
         }
 
         private void AutosXCliente_Load(object sender, EventArgs e)
@@ -30,15 +32,23 @@ namespace Trabajo_Practico.Formularios.Reportes.AutosXCliente
             string consulta = @"SELECT        A.cod_serie_fabrica, N.nombre_comercial, A.año_fabricacion, A.patente, C.nombre_condicion, A.monto
                         FROM            autos AS A INNER JOIN
                          nombres_comerciales AS N ON A.id_nombrecomercial = N.id_nombrecomercial INNER JOIN
-                         condicion AS C ON A.id_condicion = C.id_condicion";
+                         condicion AS C ON A.id_condicion = C.id_condicion
+                            join detalle_ventas dv on dv.cod_serie_fabrica=a.cod_serie_fabrica";
 
             cargar("autos", consulta);
+            lblAlcance.Text = "Alcance:Todos los autos vendidos para todos los clientes";
+            txtCantAutos.Text = cantidad.ToString();
         }
 
         private void btn_Buscar_Click(object sender, EventArgs e)
         {
+
+            
             string cliente = comboCargable1.cmb_Cargable.SelectedValue.ToString();
             
+            
+            
+            lblAlcance.Text = "Alcance: autos para el cliente "+comboCargable1.cmb_Cargable.Text;
             string consulta = $@"SELECT        A.cod_serie_fabrica,cl.nro_doc_cliente,Dv.nro_factura, N.nombre_comercial, A.año_fabricacion, A.patente, C.nombre_condicion, A.monto
                         FROM            autos AS A JOIN
                          nombres_comerciales AS N ON A.id_nombrecomercial = N.id_nombrecomercial JOIN
@@ -50,6 +60,7 @@ namespace Trabajo_Practico.Formularios.Reportes.AutosXCliente
 
             cargar("autos", consulta);
             this.reportViewer1.RefreshReport();
+            txtCantAutos.Text = cantidad.ToString();
         }
 
         private void lbl_autos_Click(object sender, EventArgs e)

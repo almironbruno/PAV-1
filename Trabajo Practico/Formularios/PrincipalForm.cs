@@ -309,6 +309,11 @@ public partial class PrincipalForm : Form
             VentasXGamasEstadisticas ventana = new VentasXGamasEstadisticas();
             ventana.Show();
         }
+
+        private void empleadosToolStripMenuItem3_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
 

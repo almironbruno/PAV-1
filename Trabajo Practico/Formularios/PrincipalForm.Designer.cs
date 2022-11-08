@@ -50,18 +50,14 @@
             this.facturacionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.estadisticasToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.empleadosToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
-            this.clientesToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
             this.autosToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
-            this.marcasToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.nombreComercialToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
             this.ventasPorMarcaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ventasPorCondicionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ventasPorGamaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.reportesToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.empleadosToolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
             this.clientesToolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
             this.autosToolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
-            this.marcasToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
             this.nombreComercialToolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
             this.gamasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.condicionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -253,7 +249,7 @@
             // 
             this.facturacionToolStripMenuItem.Image = global::Trabajo_Practico.Properties.Resources._4192087_address_billing_delivery_invoice_location_icon;
             this.facturacionToolStripMenuItem.Name = "facturacionToolStripMenuItem";
-            this.facturacionToolStripMenuItem.Size = new System.Drawing.Size(136, 22);
+            this.facturacionToolStripMenuItem.Size = new System.Drawing.Size(184, 26);
             this.facturacionToolStripMenuItem.Text = "Facturacion";
             this.facturacionToolStripMenuItem.Click += new System.EventHandler(this.facturacionToolStripMenuItem_Click);
             // 
@@ -261,9 +257,7 @@
             // 
             this.estadisticasToolStripMenuItem1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.empleadosToolStripMenuItem2,
-            this.clientesToolStripMenuItem2,
             this.autosToolStripMenuItem2,
-            this.marcasToolStripMenuItem1,
             this.nombreComercialToolStripMenuItem2,
             this.ventasPorMarcaToolStripMenuItem,
             this.ventasPorCondicionToolStripMenuItem,
@@ -276,27 +270,15 @@
             // 
             this.empleadosToolStripMenuItem2.Name = "empleadosToolStripMenuItem2";
             this.empleadosToolStripMenuItem2.Size = new System.Drawing.Size(187, 22);
-            this.empleadosToolStripMenuItem2.Text = "Empleados";
+            this.empleadosToolStripMenuItem2.Text = "Ventas por Empleado";
             this.empleadosToolStripMenuItem2.Click += new System.EventHandler(this.empleadosToolStripMenuItem2_Click);
-            // 
-            // clientesToolStripMenuItem2
-            // 
-            this.clientesToolStripMenuItem2.Name = "clientesToolStripMenuItem2";
-            this.clientesToolStripMenuItem2.Size = new System.Drawing.Size(187, 22);
-            this.clientesToolStripMenuItem2.Text = "Clientes";
             // 
             // autosToolStripMenuItem2
             // 
             this.autosToolStripMenuItem2.Name = "autosToolStripMenuItem2";
             this.autosToolStripMenuItem2.Size = new System.Drawing.Size(187, 22);
-            this.autosToolStripMenuItem2.Text = "Autos";
+            this.autosToolStripMenuItem2.Text = "Autos por Marca";
             this.autosToolStripMenuItem2.Click += new System.EventHandler(this.autosToolStripMenuItem2_Click);
-            // 
-            // marcasToolStripMenuItem1
-            // 
-            this.marcasToolStripMenuItem1.Name = "marcasToolStripMenuItem1";
-            this.marcasToolStripMenuItem1.Size = new System.Drawing.Size(187, 22);
-            this.marcasToolStripMenuItem1.Text = "Marcas";
             // 
             // nombreComercialToolStripMenuItem2
             // 
@@ -329,10 +311,8 @@
             // reportesToolStripMenuItem1
             // 
             this.reportesToolStripMenuItem1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.empleadosToolStripMenuItem3,
             this.clientesToolStripMenuItem3,
             this.autosToolStripMenuItem3,
-            this.marcasToolStripMenuItem2,
             this.nombreComercialToolStripMenuItem3,
             this.gamasToolStripMenuItem,
             this.condicionToolStripMenuItem,
@@ -341,31 +321,19 @@
             this.reportesToolStripMenuItem1.Size = new System.Drawing.Size(65, 24);
             this.reportesToolStripMenuItem1.Text = "Reportes";
             // 
-            // empleadosToolStripMenuItem3
-            // 
-            this.empleadosToolStripMenuItem3.Name = "empleadosToolStripMenuItem3";
-            this.empleadosToolStripMenuItem3.Size = new System.Drawing.Size(187, 22);
-            this.empleadosToolStripMenuItem3.Text = "Empleados";
-            // 
             // clientesToolStripMenuItem3
             // 
             this.clientesToolStripMenuItem3.Name = "clientesToolStripMenuItem3";
             this.clientesToolStripMenuItem3.Size = new System.Drawing.Size(187, 22);
-            this.clientesToolStripMenuItem3.Text = "Clientes";
+            this.clientesToolStripMenuItem3.Text = "Ventas por Cliente";
             this.clientesToolStripMenuItem3.Click += new System.EventHandler(this.clientesToolStripMenuItem3_Click);
             // 
             // autosToolStripMenuItem3
             // 
             this.autosToolStripMenuItem3.Name = "autosToolStripMenuItem3";
             this.autosToolStripMenuItem3.Size = new System.Drawing.Size(187, 22);
-            this.autosToolStripMenuItem3.Text = "Autos";
+            this.autosToolStripMenuItem3.Text = "Autos por Cliente";
             this.autosToolStripMenuItem3.Click += new System.EventHandler(this.autosToolStripMenuItem3_Click);
-            // 
-            // marcasToolStripMenuItem2
-            // 
-            this.marcasToolStripMenuItem2.Name = "marcasToolStripMenuItem2";
-            this.marcasToolStripMenuItem2.Size = new System.Drawing.Size(187, 22);
-            this.marcasToolStripMenuItem2.Text = "Marcas";
             // 
             // nombreComercialToolStripMenuItem3
             // 
@@ -574,15 +542,11 @@
         private System.Windows.Forms.ToolStripMenuItem facturacionToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem estadisticasToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem empleadosToolStripMenuItem2;
-        private System.Windows.Forms.ToolStripMenuItem clientesToolStripMenuItem2;
         private System.Windows.Forms.ToolStripMenuItem autosToolStripMenuItem2;
-        private System.Windows.Forms.ToolStripMenuItem marcasToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem nombreComercialToolStripMenuItem2;
         private System.Windows.Forms.ToolStripMenuItem reportesToolStripMenuItem1;
-        private System.Windows.Forms.ToolStripMenuItem empleadosToolStripMenuItem3;
         private System.Windows.Forms.ToolStripMenuItem clientesToolStripMenuItem3;
         private System.Windows.Forms.ToolStripMenuItem autosToolStripMenuItem3;
-        private System.Windows.Forms.ToolStripMenuItem marcasToolStripMenuItem2;
         private System.Windows.Forms.ToolStripMenuItem nombreComercialToolStripMenuItem3;
         private System.Windows.Forms.ToolStripMenuItem barriosToolStripMenuItem;
 
