@@ -120,6 +120,7 @@ namespace Trabajo_Practico.Formularios.Proceso
 
         private void btnBuscar_Click(object sender, EventArgs e)
         {
+          
             NE_Proceso nP = new NE_Proceso();
 
             int marca = int.Parse(cmbMarca.cmb_Cargable.SelectedValue.ToString());
@@ -268,9 +269,8 @@ namespace Trabajo_Practico.Formularios.Proceso
 
       
             vta.fecha = txt_fecha.Text;
-            MessageBox.Show((int.Parse(buscador1.cmb_buscar.SelectedValue.ToString()).ToString()));
             vta.num_dni =int.Parse(buscador1.cmb_buscar.SelectedValue.ToString());
-            vta.tipo_doc = 1;
+            vta.tipo_doc = int.Parse(buscador1.cmb_buscar.Text.Substring(0,1));
             vta.nro_factura = int.Parse(txt_nroFactura.Text);
             vta.legajo =int.Parse(txt_legajo.Text);
             List<string> lista = new List<string>();
