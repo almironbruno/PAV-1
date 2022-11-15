@@ -1,3 +1,4 @@
 # PAV-1
-* **Tema:**  Transacciones <br />
-* **Prox Entrega:**  25 de octubre
+* **Autores:** Almiron, Pizarro, Giacobino <br />
+* **Datos:** Grupo03-3K3-2022 <br />
+* **Nota Final:**  7
